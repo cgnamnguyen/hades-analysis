@@ -1,0 +1,111 @@
+{
+  "method": "Offline independent archive/member/hash/index reconciliation; no APK or Lua execution",
+  "issues": [
+    {
+      "id": "topic-classification-incomplete",
+      "status": "open",
+      "count": 1031
+    },
+    {
+      "id": "nonfood-table-omission",
+      "status": "fixed",
+      "added": 2
+    },
+    {
+      "id": "spice-generated-output-not-indexed",
+      "status": "candidate-index-added-runtime-unverified",
+      "count": 316
+    },
+    {
+      "id": "full-semantics",
+      "status": "open",
+      "note": "Inventory and lexical links do not explain all conditions, activities, cross-system behavior, save/load, native execution."
+    }
+  ],
+  "apk_sha256": "e1dad01a49604a0d09e5ed06948632423a96571d1eaada107e0764248efc7a4d",
+  "archive": {
+    "actual_members": 9364,
+    "catalog_rows": 9364,
+    "differences": 0
+  },
+  "scripts": {
+    "apk_members": 4068,
+    "catalog_members": 4068,
+    "missing": [],
+    "extra": [],
+    "byte_mismatches": []
+  },
+  "android": {
+    "catalog_rows": 8721,
+    "actual_java_files": 8721,
+    "bad": []
+  },
+  "invalid_source_anchors": [],
+  "sqlite_integrity": "ok",
+  "actions": {
+    "source_table_keys": 306,
+    "exported_ids": 306,
+    "missing_ids": [],
+    "extra_ids": []
+  },
+  "food_fix": {
+    "previous_direct_rows": 79,
+    "added_nonfood_names": [
+      "batnosehat",
+      "dustmeringue"
+    ],
+    "now_direct_rows": 81,
+    "by_source": {
+      "preparedfoods.lua": 68,
+      "preparedfoods_warly.lua": 11,
+      "preparednonfoods.lua": 2
+    },
+    "spices": [
+      "SPICE_GARLIC",
+      "SPICE_SUGAR",
+      "SPICE_CHILI",
+      "SPICE_SALT"
+    ],
+    "generated_candidates": 316,
+    "generated_candidates_are_runtime_observed": false
+  },
+  "classification": {
+    "total_groups": 88,
+    "source_traced_groups_partial_only": 7,
+    "inventory_groups": 81,
+    "structural_only_files": 1031,
+    "no_group_files": 0
+  },
+  "worldgen": {
+    "candidate_rows": 426,
+    "outside_map_review": [
+      {
+        "source": "scheduler.lua",
+        "line": 151,
+        "constructor": "AddTask",
+        "name": null,
+        "name_expression": "fn",
+        "runtime_enabled": "not-evaluated",
+        "classification": "name-match-outside-map-review"
+      },
+      {
+        "source": "scheduler.lua",
+        "line": 394,
+        "constructor": "AddTask",
+        "name": null,
+        "name_expression": "fn",
+        "runtime_enabled": "not-evaluated",
+        "classification": "name-match-outside-map-review"
+      },
+      {
+        "source": "scheduler.lua",
+        "line": 404,
+        "constructor": "AddTask",
+        "name": null,
+        "name_expression": "fn",
+        "runtime_enabled": "not-evaluated",
+        "classification": "name-match-outside-map-review"
+      }
+    ]
+  }
+}

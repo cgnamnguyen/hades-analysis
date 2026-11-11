@@ -1,0 +1,2530 @@
+[
+  {
+    "name": "butterflymuffin_spice_garlic",
+    "base": "butterflymuffin",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "butterflymuffin_spice_sugar",
+    "base": "butterflymuffin",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "butterflymuffin_spice_chili",
+    "base": "butterflymuffin",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "butterflymuffin_spice_salt",
+    "base": "butterflymuffin",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogglebunwich_spice_garlic",
+    "base": "frogglebunwich",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogglebunwich_spice_sugar",
+    "base": "frogglebunwich",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogglebunwich_spice_chili",
+    "base": "frogglebunwich",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogglebunwich_spice_salt",
+    "base": "frogglebunwich",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "taffy_spice_garlic",
+    "base": "taffy",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "taffy_spice_sugar",
+    "base": "taffy",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "taffy_spice_chili",
+    "base": "taffy",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "taffy_spice_salt",
+    "base": "taffy",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pumpkincookie_spice_garlic",
+    "base": "pumpkincookie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pumpkincookie_spice_sugar",
+    "base": "pumpkincookie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pumpkincookie_spice_chili",
+    "base": "pumpkincookie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pumpkincookie_spice_salt",
+    "base": "pumpkincookie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "stuffedeggplant_spice_garlic",
+    "base": "stuffedeggplant",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "stuffedeggplant_spice_sugar",
+    "base": "stuffedeggplant",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "stuffedeggplant_spice_chili",
+    "base": "stuffedeggplant",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "stuffedeggplant_spice_salt",
+    "base": "stuffedeggplant",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishsticks_spice_garlic",
+    "base": "fishsticks",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishsticks_spice_sugar",
+    "base": "fishsticks",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishsticks_spice_chili",
+    "base": "fishsticks",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishsticks_spice_salt",
+    "base": "fishsticks",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeynuggets_spice_garlic",
+    "base": "honeynuggets",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeynuggets_spice_sugar",
+    "base": "honeynuggets",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeynuggets_spice_chili",
+    "base": "honeynuggets",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeynuggets_spice_salt",
+    "base": "honeynuggets",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeyham_spice_garlic",
+    "base": "honeyham",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeyham_spice_sugar",
+    "base": "honeyham",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeyham_spice_chili",
+    "base": "honeyham",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "honeyham_spice_salt",
+    "base": "honeyham",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonpie_spice_garlic",
+    "base": "dragonpie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonpie_spice_sugar",
+    "base": "dragonpie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonpie_spice_chili",
+    "base": "dragonpie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonpie_spice_salt",
+    "base": "dragonpie",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "kabobs_spice_garlic",
+    "base": "kabobs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "kabobs_spice_sugar",
+    "base": "kabobs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "kabobs_spice_chili",
+    "base": "kabobs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "kabobs_spice_salt",
+    "base": "kabobs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mandrakesoup_spice_garlic",
+    "base": "mandrakesoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mandrakesoup_spice_sugar",
+    "base": "mandrakesoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mandrakesoup_spice_chili",
+    "base": "mandrakesoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mandrakesoup_spice_salt",
+    "base": "mandrakesoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "baconeggs_spice_garlic",
+    "base": "baconeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "baconeggs_spice_sugar",
+    "base": "baconeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "baconeggs_spice_chili",
+    "base": "baconeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "baconeggs_spice_salt",
+    "base": "baconeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatballs_spice_garlic",
+    "base": "meatballs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatballs_spice_sugar",
+    "base": "meatballs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatballs_spice_chili",
+    "base": "meatballs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatballs_spice_salt",
+    "base": "meatballs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonestew_spice_garlic",
+    "base": "bonestew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonestew_spice_sugar",
+    "base": "bonestew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonestew_spice_chili",
+    "base": "bonestew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonestew_spice_salt",
+    "base": "bonestew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "perogies_spice_garlic",
+    "base": "perogies",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "perogies_spice_sugar",
+    "base": "perogies",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "perogies_spice_chili",
+    "base": "perogies",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "perogies_spice_salt",
+    "base": "perogies",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "turkeydinner_spice_garlic",
+    "base": "turkeydinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "turkeydinner_spice_sugar",
+    "base": "turkeydinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "turkeydinner_spice_chili",
+    "base": "turkeydinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "turkeydinner_spice_salt",
+    "base": "turkeydinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ratatouille_spice_garlic",
+    "base": "ratatouille",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ratatouille_spice_sugar",
+    "base": "ratatouille",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ratatouille_spice_chili",
+    "base": "ratatouille",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ratatouille_spice_salt",
+    "base": "ratatouille",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jammypreserves_spice_garlic",
+    "base": "jammypreserves",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jammypreserves_spice_sugar",
+    "base": "jammypreserves",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jammypreserves_spice_chili",
+    "base": "jammypreserves",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jammypreserves_spice_salt",
+    "base": "jammypreserves",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fruitmedley_spice_garlic",
+    "base": "fruitmedley",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fruitmedley_spice_sugar",
+    "base": "fruitmedley",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fruitmedley_spice_chili",
+    "base": "fruitmedley",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fruitmedley_spice_salt",
+    "base": "fruitmedley",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishtacos_spice_garlic",
+    "base": "fishtacos",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishtacos_spice_sugar",
+    "base": "fishtacos",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishtacos_spice_chili",
+    "base": "fishtacos",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "fishtacos_spice_salt",
+    "base": "fishtacos",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "waffles_spice_garlic",
+    "base": "waffles",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "waffles_spice_sugar",
+    "base": "waffles",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "waffles_spice_chili",
+    "base": "waffles",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "waffles_spice_salt",
+    "base": "waffles",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monsterlasagna_spice_garlic",
+    "base": "monsterlasagna",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monsterlasagna_spice_sugar",
+    "base": "monsterlasagna",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monsterlasagna_spice_chili",
+    "base": "monsterlasagna",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monsterlasagna_spice_salt",
+    "base": "monsterlasagna",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "powcake_spice_garlic",
+    "base": "powcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "powcake_spice_sugar",
+    "base": "powcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "powcake_spice_chili",
+    "base": "powcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "powcake_spice_salt",
+    "base": "powcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "unagi_spice_garlic",
+    "base": "unagi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "unagi_spice_sugar",
+    "base": "unagi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "unagi_spice_chili",
+    "base": "unagi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "unagi_spice_salt",
+    "base": "unagi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "wetgoop_spice_garlic",
+    "base": "wetgoop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "wetgoop_spice_sugar",
+    "base": "wetgoop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "wetgoop_spice_chili",
+    "base": "wetgoop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "wetgoop_spice_salt",
+    "base": "wetgoop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "flowersalad_spice_garlic",
+    "base": "flowersalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "flowersalad_spice_sugar",
+    "base": "flowersalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "flowersalad_spice_chili",
+    "base": "flowersalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "flowersalad_spice_salt",
+    "base": "flowersalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "icecream_spice_garlic",
+    "base": "icecream",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "icecream_spice_sugar",
+    "base": "icecream",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "icecream_spice_chili",
+    "base": "icecream",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "icecream_spice_salt",
+    "base": "icecream",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "watermelonicle_spice_garlic",
+    "base": "watermelonicle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "watermelonicle_spice_sugar",
+    "base": "watermelonicle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "watermelonicle_spice_chili",
+    "base": "watermelonicle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "watermelonicle_spice_salt",
+    "base": "watermelonicle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "trailmix_spice_garlic",
+    "base": "trailmix",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "trailmix_spice_sugar",
+    "base": "trailmix",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "trailmix_spice_chili",
+    "base": "trailmix",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "trailmix_spice_salt",
+    "base": "trailmix",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "hotchili_spice_garlic",
+    "base": "hotchili",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "hotchili_spice_sugar",
+    "base": "hotchili",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "hotchili_spice_chili",
+    "base": "hotchili",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "hotchili_spice_salt",
+    "base": "hotchili",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "guacamole_spice_garlic",
+    "base": "guacamole",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "guacamole_spice_sugar",
+    "base": "guacamole",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "guacamole_spice_chili",
+    "base": "guacamole",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "guacamole_spice_salt",
+    "base": "guacamole",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jellybean_spice_garlic",
+    "base": "jellybean",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jellybean_spice_sugar",
+    "base": "jellybean",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jellybean_spice_chili",
+    "base": "jellybean",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "jellybean_spice_salt",
+    "base": "jellybean",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatotornado_spice_garlic",
+    "base": "potatotornado",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatotornado_spice_sugar",
+    "base": "potatotornado",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatotornado_spice_chili",
+    "base": "potatotornado",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatotornado_spice_salt",
+    "base": "potatotornado",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mashedpotatoes_spice_garlic",
+    "base": "mashedpotatoes",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mashedpotatoes_spice_sugar",
+    "base": "mashedpotatoes",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mashedpotatoes_spice_chili",
+    "base": "mashedpotatoes",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "mashedpotatoes_spice_salt",
+    "base": "mashedpotatoes",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "asparagussoup_spice_garlic",
+    "base": "asparagussoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "asparagussoup_spice_sugar",
+    "base": "asparagussoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "asparagussoup_spice_chili",
+    "base": "asparagussoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "asparagussoup_spice_salt",
+    "base": "asparagussoup",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "vegstinger_spice_garlic",
+    "base": "vegstinger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "vegstinger_spice_sugar",
+    "base": "vegstinger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "vegstinger_spice_chili",
+    "base": "vegstinger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "vegstinger_spice_salt",
+    "base": "vegstinger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananapop_spice_garlic",
+    "base": "bananapop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananapop_spice_sugar",
+    "base": "bananapop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananapop_spice_chili",
+    "base": "bananapop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananapop_spice_salt",
+    "base": "bananapop",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frozenbananadaiquiri_spice_garlic",
+    "base": "frozenbananadaiquiri",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frozenbananadaiquiri_spice_sugar",
+    "base": "frozenbananadaiquiri",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frozenbananadaiquiri_spice_chili",
+    "base": "frozenbananadaiquiri",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frozenbananadaiquiri_spice_salt",
+    "base": "frozenbananadaiquiri",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananajuice_spice_garlic",
+    "base": "bananajuice",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananajuice_spice_sugar",
+    "base": "bananajuice",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananajuice_spice_chili",
+    "base": "bananajuice",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bananajuice_spice_salt",
+    "base": "bananajuice",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ceviche_spice_garlic",
+    "base": "ceviche",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ceviche_spice_sugar",
+    "base": "ceviche",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ceviche_spice_chili",
+    "base": "ceviche",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "ceviche_spice_salt",
+    "base": "ceviche",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "salsa_spice_garlic",
+    "base": "salsa",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "salsa_spice_sugar",
+    "base": "salsa",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "salsa_spice_chili",
+    "base": "salsa",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "salsa_spice_salt",
+    "base": "salsa",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pepperpopper_spice_garlic",
+    "base": "pepperpopper",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pepperpopper_spice_sugar",
+    "base": "pepperpopper",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pepperpopper_spice_chili",
+    "base": "pepperpopper",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "pepperpopper_spice_salt",
+    "base": "pepperpopper",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "californiaroll_spice_garlic",
+    "base": "californiaroll",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "californiaroll_spice_sugar",
+    "base": "californiaroll",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "californiaroll_spice_chili",
+    "base": "californiaroll",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "californiaroll_spice_salt",
+    "base": "californiaroll",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "seafoodgumbo_spice_garlic",
+    "base": "seafoodgumbo",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "seafoodgumbo_spice_sugar",
+    "base": "seafoodgumbo",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "seafoodgumbo_spice_chili",
+    "base": "seafoodgumbo",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "seafoodgumbo_spice_salt",
+    "base": "seafoodgumbo",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "surfnturf_spice_garlic",
+    "base": "surfnturf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "surfnturf_spice_sugar",
+    "base": "surfnturf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "surfnturf_spice_chili",
+    "base": "surfnturf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "surfnturf_spice_salt",
+    "base": "surfnturf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterbisque_spice_garlic",
+    "base": "lobsterbisque",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterbisque_spice_sugar",
+    "base": "lobsterbisque",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterbisque_spice_chili",
+    "base": "lobsterbisque",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterbisque_spice_salt",
+    "base": "lobsterbisque",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterdinner_spice_garlic",
+    "base": "lobsterdinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterdinner_spice_sugar",
+    "base": "lobsterdinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterdinner_spice_chili",
+    "base": "lobsterdinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "lobsterdinner_spice_salt",
+    "base": "lobsterdinner",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclepita_spice_garlic",
+    "base": "barnaclepita",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclepita_spice_sugar",
+    "base": "barnaclepita",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclepita_spice_chili",
+    "base": "barnaclepita",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclepita_spice_salt",
+    "base": "barnaclepita",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclesushi_spice_garlic",
+    "base": "barnaclesushi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclesushi_spice_sugar",
+    "base": "barnaclesushi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclesushi_spice_chili",
+    "base": "barnaclesushi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclesushi_spice_salt",
+    "base": "barnaclesushi",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclinguine_spice_garlic",
+    "base": "barnaclinguine",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclinguine_spice_sugar",
+    "base": "barnaclinguine",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclinguine_spice_chili",
+    "base": "barnaclinguine",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclinguine_spice_salt",
+    "base": "barnaclinguine",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclestuffedfishhead_spice_garlic",
+    "base": "barnaclestuffedfishhead",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclestuffedfishhead_spice_sugar",
+    "base": "barnaclestuffedfishhead",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclestuffedfishhead_spice_chili",
+    "base": "barnaclestuffedfishhead",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "barnaclestuffedfishhead_spice_salt",
+    "base": "barnaclestuffedfishhead",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafloaf_spice_garlic",
+    "base": "leafloaf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafloaf_spice_sugar",
+    "base": "leafloaf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafloaf_spice_chili",
+    "base": "leafloaf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafloaf_spice_salt",
+    "base": "leafloaf",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatburger_spice_garlic",
+    "base": "leafymeatburger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatburger_spice_sugar",
+    "base": "leafymeatburger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatburger_spice_chili",
+    "base": "leafymeatburger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatburger_spice_salt",
+    "base": "leafymeatburger",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatsouffle_spice_garlic",
+    "base": "leafymeatsouffle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatsouffle_spice_sugar",
+    "base": "leafymeatsouffle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatsouffle_spice_chili",
+    "base": "leafymeatsouffle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "leafymeatsouffle_spice_salt",
+    "base": "leafymeatsouffle",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatysalad_spice_garlic",
+    "base": "meatysalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatysalad_spice_sugar",
+    "base": "meatysalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatysalad_spice_chili",
+    "base": "meatysalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "meatysalad_spice_salt",
+    "base": "meatysalad",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroomcake_spice_garlic",
+    "base": "shroomcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroomcake_spice_sugar",
+    "base": "shroomcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroomcake_spice_chili",
+    "base": "shroomcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroomcake_spice_salt",
+    "base": "shroomcake",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "sweettea_spice_garlic",
+    "base": "sweettea",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "sweettea_spice_sugar",
+    "base": "sweettea",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "sweettea_spice_chili",
+    "base": "sweettea",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "sweettea_spice_salt",
+    "base": "sweettea",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "koalefig_trunk_spice_garlic",
+    "base": "koalefig_trunk",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "koalefig_trunk_spice_sugar",
+    "base": "koalefig_trunk",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "koalefig_trunk_spice_chili",
+    "base": "koalefig_trunk",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "koalefig_trunk_spice_salt",
+    "base": "koalefig_trunk",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figatoni_spice_garlic",
+    "base": "figatoni",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figatoni_spice_sugar",
+    "base": "figatoni",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figatoni_spice_chili",
+    "base": "figatoni",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figatoni_spice_salt",
+    "base": "figatoni",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figkabab_spice_garlic",
+    "base": "figkabab",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figkabab_spice_sugar",
+    "base": "figkabab",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figkabab_spice_chili",
+    "base": "figkabab",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "figkabab_spice_salt",
+    "base": "figkabab",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frognewton_spice_garlic",
+    "base": "frognewton",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frognewton_spice_sugar",
+    "base": "frognewton",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frognewton_spice_chili",
+    "base": "frognewton",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frognewton_spice_salt",
+    "base": "frognewton",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bunnystew_spice_garlic",
+    "base": "bunnystew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bunnystew_spice_sugar",
+    "base": "bunnystew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bunnystew_spice_chili",
+    "base": "bunnystew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bunnystew_spice_salt",
+    "base": "bunnystew",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "justeggs_spice_garlic",
+    "base": "justeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "justeggs_spice_sugar",
+    "base": "justeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "justeggs_spice_chili",
+    "base": "justeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "justeggs_spice_salt",
+    "base": "justeggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "veggieomlet_spice_garlic",
+    "base": "veggieomlet",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "veggieomlet_spice_sugar",
+    "base": "veggieomlet",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "veggieomlet_spice_chili",
+    "base": "veggieomlet",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "veggieomlet_spice_salt",
+    "base": "veggieomlet",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "talleggs_spice_garlic",
+    "base": "talleggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "talleggs_spice_sugar",
+    "base": "talleggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "talleggs_spice_chili",
+    "base": "talleggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "talleggs_spice_salt",
+    "base": "talleggs",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalofeed_spice_garlic",
+    "base": "beefalofeed",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalofeed_spice_sugar",
+    "base": "beefalofeed",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalofeed_spice_chili",
+    "base": "beefalofeed",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalofeed_spice_salt",
+    "base": "beefalofeed",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalotreat_spice_garlic",
+    "base": "beefalotreat",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalotreat_spice_sugar",
+    "base": "beefalotreat",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalotreat_spice_chili",
+    "base": "beefalotreat",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "beefalotreat_spice_salt",
+    "base": "beefalotreat",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroombait_spice_garlic",
+    "base": "shroombait",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroombait_spice_sugar",
+    "base": "shroombait",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroombait_spice_chili",
+    "base": "shroombait",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "shroombait_spice_salt",
+    "base": "shroombait",
+    "base_source": "preparedfoods.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "nightmarepie_spice_garlic",
+    "base": "nightmarepie",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "nightmarepie_spice_sugar",
+    "base": "nightmarepie",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "nightmarepie_spice_chili",
+    "base": "nightmarepie",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "nightmarepie_spice_salt",
+    "base": "nightmarepie",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "voltgoatjelly_spice_garlic",
+    "base": "voltgoatjelly",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "voltgoatjelly_spice_sugar",
+    "base": "voltgoatjelly",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "voltgoatjelly_spice_chili",
+    "base": "voltgoatjelly",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "voltgoatjelly_spice_salt",
+    "base": "voltgoatjelly",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "glowberrymousse_spice_garlic",
+    "base": "glowberrymousse",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "glowberrymousse_spice_sugar",
+    "base": "glowberrymousse",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "glowberrymousse_spice_chili",
+    "base": "glowberrymousse",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "glowberrymousse_spice_salt",
+    "base": "glowberrymousse",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogfishbowl_spice_garlic",
+    "base": "frogfishbowl",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogfishbowl_spice_sugar",
+    "base": "frogfishbowl",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogfishbowl_spice_chili",
+    "base": "frogfishbowl",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "frogfishbowl_spice_salt",
+    "base": "frogfishbowl",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonchilisalad_spice_garlic",
+    "base": "dragonchilisalad",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonchilisalad_spice_sugar",
+    "base": "dragonchilisalad",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonchilisalad_spice_chili",
+    "base": "dragonchilisalad",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "dragonchilisalad_spice_salt",
+    "base": "dragonchilisalad",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "gazpacho_spice_garlic",
+    "base": "gazpacho",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "gazpacho_spice_sugar",
+    "base": "gazpacho",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "gazpacho_spice_chili",
+    "base": "gazpacho",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "gazpacho_spice_salt",
+    "base": "gazpacho",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatosouffle_spice_garlic",
+    "base": "potatosouffle",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatosouffle_spice_sugar",
+    "base": "potatosouffle",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatosouffle_spice_chili",
+    "base": "potatosouffle",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "potatosouffle_spice_salt",
+    "base": "potatosouffle",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monstertartare_spice_garlic",
+    "base": "monstertartare",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monstertartare_spice_sugar",
+    "base": "monstertartare",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monstertartare_spice_chili",
+    "base": "monstertartare",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "monstertartare_spice_salt",
+    "base": "monstertartare",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "freshfruitcrepes_spice_garlic",
+    "base": "freshfruitcrepes",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "freshfruitcrepes_spice_sugar",
+    "base": "freshfruitcrepes",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "freshfruitcrepes_spice_chili",
+    "base": "freshfruitcrepes",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "freshfruitcrepes_spice_salt",
+    "base": "freshfruitcrepes",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonesoup_spice_garlic",
+    "base": "bonesoup",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonesoup_spice_sugar",
+    "base": "bonesoup",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonesoup_spice_chili",
+    "base": "bonesoup",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "bonesoup_spice_salt",
+    "base": "bonesoup",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "moqueca_spice_garlic",
+    "base": "moqueca",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_GARLIC",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "moqueca_spice_sugar",
+    "base": "moqueca",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SUGAR",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "moqueca_spice_chili",
+    "base": "moqueca",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_CHILI",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  },
+  {
+    "name": "moqueca_spice_salt",
+    "base": "moqueca",
+    "base_source": "preparedfoods_warly.lua",
+    "spice": "SPICE_SALT",
+    "generator": "spicedfoods.lua",
+    "classification": "static-expansion-candidate-not-runtime-observed"
+  }
+]
