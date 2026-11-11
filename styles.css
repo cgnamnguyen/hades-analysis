@@ -899,12 +899,12 @@ body {
   background: rgba(245, 158, 11, 0.05);
 }
 
-/* Portraits inside tables */
+/* Portraits inside tables — fixed 68px box so mixed aspect ratios render evenly */
 .table-portrait-img {
+  width: 68px;
+  height: 68px;
   max-width: 68px;
   max-height: 68px;
-  width: auto;
-  height: auto;
   object-fit: contain;
   border-radius: 8px;
   border: 1.5px solid #363d59;
@@ -1137,6 +1137,10 @@ figcaption {
 .carousel-img-wrap {
   position: relative;
   max-width: 520px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border-radius: var(--radius-md);
   overflow: hidden;
   cursor: pointer;
