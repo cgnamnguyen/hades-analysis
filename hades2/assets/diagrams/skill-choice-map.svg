@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+ <title id="title">Bản đồ chọn skill/upgrade trong run Hades II</title><desc id="desc">Chọn nền weapon và Aspect, đặt mục tiêu build, phân loại reward offer, kiểm tra hành động tương thích, trigger và sống còn, chọn theo nhu cầu hoặc dùng fallback, sau đó cập nhật build plan.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.box{fill:#252833;stroke:#897650;stroke-width:2}.key{fill:#402b37;stroke:#df8b77;stroke-width:2}.yes{fill:#26372f;stroke:#83a78a;stroke-width:2}.fallback{fill:#392e23;stroke:#c69b5a;stroke-width:2}.h{font:700 21px system-ui,sans-serif;fill:#f4e7c7}.t{font:16px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#c5a064;stroke-width:2.5;marker-end:url(#a)}.d{fill:none;stroke:#897650;stroke-width:2;stroke-dasharray:7 6}</style></defs>
+ <rect class="bg" width="1200" height="650" rx="24"/><text class="h" x="42" y="44">SKILL PICK MAP · OFFER → FIT → NEED → CHOICE → BUILD UPDATE</text>
+ <rect class="box" x="40" y="93" width="240" height="96" rx="15"/><text class="h" x="62" y="130">PRE-RUN LOADOUT</text><text class="t" x="62" y="159">weapon · Aspect · Arcana</text><text class="s" x="62" y="179">Keepsake · Familiar · Vow</text>
+ <rect class="key" x="354" y="93" width="240" height="96" rx="15"/><text class="h" x="376" y="130">BUILD INTENT</text><text class="t" x="376" y="159">action damage chủ lực?</text><text class="s" x="376" y="179">thiếu survival / resource / control?</text>
+ <rect class="box" x="668" y="93" width="240" height="96" rx="15"/><text class="h" x="690" y="130">OFFER ĐANG LÀ GÌ?</text><text class="t" x="690" y="159">Boon · Hammer · Hex · door</text><text class="s" x="690" y="179">mỗi loại sửa lớp khác nhau</text>
+ <rect class="box" x="982" y="93" width="180" height="96" rx="15"/><text class="h" x="1004" y="130">4 CHECKS</text><text class="t" x="1004" y="159">slot · trigger</text><text class="s" x="1004" y="179">fit · risk</text>
+ <path class="a" d="M282 141h62"/><path class="a" d="M596 141h62"/><path class="a" d="M910 141h62"/>
+ <rect class="fallback" x="361" y="264" width="478" height="100" rx="15"/><text class="h" x="387" y="303">CÓ CHẠY ĐƯỢC VỚI ACTION / ASPECT?</text><text class="t" x="387" y="335">effect có áp dụng lên move/target đang dùng không?</text>
+ <path class="a" d="M1072 191v49H840v73"/>
+ <rect class="fallback" x="82" y="430" width="420" height="104" rx="15"/><text class="h" x="106" y="469">KHÔNG / CHƯA RÕ</text><text class="t" x="106" y="500">fallback: survival, Magick, control, resource</text><text class="s" x="106" y="521">đọc tooltip / không tự giả định synergy</text>
+ <rect class="yes" x="698" y="430" width="420" height="104" rx="15"/><text class="h" x="722" y="469">CÓ → GIẢI QUYẾT NHU CẦU NÀO?</text><text class="t" x="722" y="500">damage · defense · wave clear · boss · unlock</text><text class="s" x="722" y="521">xét Life, Magick, chặng kế tiếp</text>
+ <path class="a" d="M440 365v54H292v9"/><text class="s" x="292" y="411">no</text><path class="a" d="M760 365v54H908v9"/><text class="s" x="908" y="411">yes</text>
+ <rect class="key" x="389" y="561" width="420" height="62" rx="14"/><text class="h" x="412" y="599">CHỌN → GHI STATE MỚI → ĐÁNH THỬ Ở ROOM KẾ</text>
+ <path class="a" d="M292 535v57h90"/><path class="a" d="M908 535v57h-90"/>
+ <text class="s" x="42" y="640">Framework tư vấn lựa chọn; không mô tả số offer, rarity, weight hay thuật toán reward nội bộ.</text>
+</svg>

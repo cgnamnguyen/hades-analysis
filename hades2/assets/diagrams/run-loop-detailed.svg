@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+ <title id="title">Vòng run và qua Region trong Hades II</title><desc id="desc">Từ Crossroads chọn hành trình, đi qua room và encounter, nhận reward, lặp tới Guardian; thắng đi Region kế, kết thúc hoặc thua trở về Crossroads và đầu tư meta.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#bf9d65"/></marker><style>.bg{fill:#171820}.box{fill:#252833;stroke:#897650;stroke-width:2}.core{fill:#402b37;stroke:#df8b77;stroke-width:3}.green{fill:#26372f;stroke:#83a78a;stroke-width:2}.purple{fill:#2d2837;stroke:#a48bc5;stroke-width:2}.h{font:700 23px system-ui,sans-serif;fill:#f4e7c7}.t{font:17px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#bf9d65;stroke-width:3;marker-end:url(#a)}</style></defs>
+ <rect class="bg" width="1200" height="700" rx="24"/><text class="h" x="44" y="44">VÒNG RUN · ROOM LOOP → REGION GATE → CROSSROADS</text>
+ <rect class="box" x="50" y="100" width="240" height="98" rx="16"/><text class="h" x="75" y="137">1 · CROSSROADS</text><text class="t" x="75" y="169">weapon · Aspect · Arcana</text><text class="s" x="75" y="189">Keepsake · Familiar · Vows</text>
+ <rect class="box" x="350" y="100" width="230" height="98" rx="16"/><text class="h" x="375" y="137">2 · CHỌN TUYẾN</text><text class="t" x="375" y="170">Underworld / Surface</text>
+ <rect class="box" x="650" y="100" width="230" height="98" rx="16"/><text class="h" x="675" y="137">3 · REGION</text><text class="t" x="675" y="170">nhiều Location/room</text>
+ <rect class="core" x="950" y="100" width="210" height="98" rx="16"/><text class="h" x="975" y="137">4 · ROOM</text><text class="t" x="975" y="170">combat / event / shop</text>
+ <path class="a" d="M292 149h50"/><path class="a" d="M582 149h60"/><path class="a" d="M882 149h60"/>
+ <rect class="box" x="780" y="270" width="300" height="112" rx="16"/><text class="h" x="805" y="308">5 · HOÀN TẤT</text><text class="t" x="805" y="340">clear wave / event / giao dịch</text><text class="s" x="805" y="366">kiểm tra Life · resource · reward</text>
+ <rect class="purple" x="390" y="270" width="300" height="112" rx="16"/><text class="h" x="415" y="308">6 · CHỌN CỬA / REWARD</text><text class="t" x="415" y="340">build cần gì? nguy cơ tới là gì?</text><text class="s" x="415" y="366">door pool/reroll tùy phiên bản</text>
+ <path class="a" d="M1055 200v64"/><path class="a" d="M777 326h-80"/>
+ <path class="a" d="M540 268V230H1060V203"/><text class="s" x="580" y="222">lặp room/Location</text>
+ <rect class="core" x="390" y="458" width="300" height="98" rx="16"/><text class="h" x="415" y="496">7 · GUARDIAN GATE</text><text class="t" x="415" y="527">thắng → chuyển Region / route</text>
+ <rect class="green" x="50" y="458" width="260" height="98" rx="16"/><text class="h" x="75" y="496">8 · ROUTE TIẾP</text><text class="t" x="75" y="527">Region kế / final stage</text>
+ <rect class="purple" x="820" y="458" width="340" height="98" rx="16"/><text class="h" x="845" y="496">9 · RUN KẾT THÚC</text><text class="t" x="845" y="527">thua hoặc hoàn tất mục tiêu</text>
+ <path class="a" d="M540 382v70"/><path class="a" d="M388 507h-70"/><path class="a" d="M692 507h120"/>
+ <rect class="box" x="350" y="600" width="500" height="70" rx="15"/><text class="h" x="380" y="632">10 · QUAY CROSSROADS</text><text class="s" x="380" y="656">story · unlock · meta resources → chuẩn bị run tiếp</text>
+ <path class="a" d="M930 558v42H855"/><path class="a" d="M310 507 C250 507 215 570 215 620 H345"/>
+ <text class="s" x="50" y="680">Khung route/run để đọc hệ thống; không khẳng định mọi phòng đều combat hoặc thứ tự cụ thể đã xác minh trên ISO.</text>
+</svg>

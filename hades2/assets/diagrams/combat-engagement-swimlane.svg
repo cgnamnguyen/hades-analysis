@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 760" role="img" aria-labelledby="title desc">
+ <title id="title">Sơ đồ chiến đấu dạng ba làn: người chơi, địch và trạng thái phòng</title><desc id="desc">Theo từng nhịp, người chơi kiểm tra Life/Magick/weapon, địch telegraph attack, người chơi phản ứng, hit/status/resouce thay đổi, wave/room cập nhật và combat lặp đến clear.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.lane1{fill:#242638;stroke:#8176a4;stroke-width:2}.lane2{fill:#3a292b;stroke:#c97870;stroke-width:2}.lane3{fill:#243538;stroke:#6e9fa5;stroke-width:2}.h{font:700 20px system-ui,sans-serif;fill:#f5e9cb}.t{font:16px system-ui,sans-serif;fill:#e0d9cb}.s{font:14px system-ui,sans-serif;fill:#bbb09e}.a{fill:none;stroke:#c5a064;stroke-width:2.5;marker-end:url(#a)}.d{fill:none;stroke:#8d816d;stroke-width:2;stroke-dasharray:7 6}</style></defs>
+ <rect class="bg" width="1300" height="760" rx="24"/><text class="h" x="40" y="44">COMBAT DEEP DIVE · BA LÀN STATE (MÔ HÌNH ĐỌC CHƠI, KHÔNG PHẢI AI/DAMAGE CODE)</text>
+ <rect class="lane1" x="34" y="82" width="1232" height="164" rx="16"/><rect class="lane2" x="34" y="273" width="1232" height="164" rx="16"/><rect class="lane3" x="34" y="464" width="1232" height="164" rx="16"/>
+ <text class="h" x="54" y="112">LÀN NGƯỜI CHƠI</text><text class="h" x="54" y="303">LÀN ĐỊCH / HAZARD</text><text class="h" x="54" y="494">LÀN PHÒNG / BUILD</text>
+ <g>
+  <rect class="lane1" x="56" y="133" width="240" height="88" rx="12"/><text class="t" x="74" y="165">Đọc HUD</text><text class="s" x="74" y="191">Life · Armor · Magick · Hex</text>
+  <rect class="lane1" x="350" y="133" width="240" height="88" rx="12"/><text class="t" x="368" y="165">Chọn vị trí</text><text class="s" x="368" y="191">lối thoát · tầm weapon</text>
+  <rect class="lane1" x="644" y="133" width="240" height="88" rx="12"/><text class="t" x="662" y="165">Phản ứng</text><text class="s" x="662" y="191">dash / guard / move</text>
+  <rect class="lane1" x="938" y="133" width="290" height="88" rx="12"/><text class="t" x="956" y="165">Chọn Attack / Cast / Ω</text><text class="s" x="956" y="191">chỉ commit khi có cửa sổ</text>
+  <path class="a" d="M298 177h44"/><path class="a" d="M592 177h44"/><path class="a" d="M886 177h44"/>
+ </g>
+ <g>
+  <rect class="lane2" x="56" y="324" width="240" height="88" rx="12"/><text class="t" x="74" y="356">Spawn / áp lực</text><text class="s" x="74" y="382">melee · projectile · hazard</text>
+  <rect class="lane2" x="350" y="324" width="240" height="88" rx="12"/><text class="t" x="368" y="356">Telegraph</text><text class="s" x="368" y="382">tell · hướng · vùng</text>
+  <rect class="lane2" x="644" y="324" width="240" height="88" rx="12"/><text class="t" x="662" y="356">Active attack</text><text class="s" x="662" y="382">hitbox/timing cần đo</text>
+  <rect class="lane2" x="938" y="324" width="290" height="88" rx="12"/><text class="t" x="956" y="356">Recovery / phase / add</text><text class="s" x="956" y="382">mở cửa sổ tiếp theo</text>
+  <path class="a" d="M298 368h44"/><path class="a" d="M592 368h44"/><path class="a" d="M886 368h44"/>
+ </g>
+ <g>
+  <rect class="lane3" x="56" y="515" width="240" height="88" rx="12"/><text class="t" x="74" y="547">Room state</text><text class="s" x="74" y="573">wave · objective · exit</text>
+  <rect class="lane3" x="350" y="515" width="240" height="88" rx="12"/><text class="t" x="368" y="547">Build trigger</text><text class="s" x="368" y="573">slot · status · hit event</text>
+  <rect class="lane3" x="644" y="515" width="240" height="88" rx="12"/><text class="t" x="662" y="547">Resolve result</text><text class="s" x="662" y="573">Life/Armor · stagger · pickup</text>
+  <rect class="lane3" x="938" y="515" width="290" height="88" rx="12"/><text class="t" x="956" y="547">Clear? Door opens?</text><text class="s" x="956" y="573">reward → chọn màn kế</text>
+  <path class="a" d="M298 559h44"/><path class="a" d="M592 559h44"/><path class="a" d="M886 559h44"/>
+ </g>
+ <path class="d" d="M1080 221v95M770 412v96M1060 515V236H475V224"/><text class="s" x="892" y="282">mỗi quyết định phải phản hồi vào threat đang hoạt động</text>
+ <path class="a" d="M1228 559h28v105H75v-59"/><text class="s" x="460" y="691">Chưa clear: quay lại đọc spawn/telegraph · Đã clear: claim reward → cửa/Region/Guardian</text>
+ <text class="s" x="40" y="735">Mũi tên biểu diễn quan hệ để người chơi theo dõi; thứ tự resolution nội bộ, hitstop, i-frame, cancel và state transition chưa có local runtime.</text>
+</svg>

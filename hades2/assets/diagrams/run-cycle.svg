@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 820" role="img" aria-labelledby="t d">
+<title id="t">Vòng run và các nhánh tiến trình Hades II</title><desc id="d">Sơ đồ biểu diễn vòng chơi và các nhánh hệ thống đã được liệt kê trong danh mục.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#7b3756"/></marker></defs>
+<g font-family="Arial,sans-serif" text-anchor="middle" fill="#321b28">
+<g fill="#fff7fa" stroke="#aa6380" stroke-width="2">
+<rect x="220" y="24" width="560" height="84" rx="16"/><rect x="220" y="142" width="560" height="84" rx="16"/><rect x="220" y="260" width="560" height="84" rx="16"/><rect x="220" y="378" width="560" height="84" rx="16"/><rect x="220" y="496" width="560" height="84" rx="16"/>
+</g>
+<g font-size="21" font-weight="700"><text x="500" y="56">Crossroads · chuẩn bị run</text><text x="500" y="174">Route · Region · encounter · reward</text><text x="500" y="292">Build tạm · Boons · Hammer · Hex</text><text x="500" y="410">Guardian · đi tiếp hoặc kết thúc run</text><text x="500" y="528">Crossroads · tài nguyên và story/event flags</text></g>
+<g font-size="16"><text x="500" y="83">weapon / Aspect · Arcana · Keepsake · Familiar</text><text x="500" y="201">combat · shop · NPC · gathering · Chaos</text><text x="500" y="319">Path of Stars · sinh tồn · currency</text><text x="500" y="555">mở lựa chọn dài hạn và run tiếp theo</text></g>
+<g stroke="#7b3756" stroke-width="3" fill="none" marker-end="url(#a)"><path d="M500 108v30"/><path d="M500 226v30"/><path d="M500 344v30"/><path d="M500 462v30"/></g>
+<path d="M500 580v28M500 608H145M500 608H382M500 608H618M500 608H855" fill="none" stroke="#7b3756" stroke-width="2"/>
+<g fill="#f6efff" stroke="#8d70a9" stroke-width="2"><rect x="35" y="630" width="220" height="150" rx="14"/><rect x="275" y="630" width="220" height="150" rx="14"/><rect x="505" y="630" width="220" height="150" rx="14"/><rect x="745" y="630" width="220" height="150" rx="14"/></g>
+<g font-size="16" font-weight="700"><text x="145" y="662">Reagent</text><text x="385" y="662">Ashes / Psyche / Moon Dust</text><text x="615" y="662">Gifts / encounters</text><text x="855" y="662">Hai route + prophecy</text></g>
+<g font-size="14"><text x="145" y="692"><tspan x="145">Cauldron · route/tool/farm</tspan><tspan x="145" dy="20">Familiar · tiện ích</tspan></text><text x="385" y="692"><tspan x="385">Arcana · Grasp</tspan><tspan x="385" dy="20">rank / nâng cấp</tspan></text><text x="615" y="692"><tspan x="615">bond · Keepsake</tspan><tspan x="615" dy="20">dialogue · prophecy</tspan></text><text x="855" y="692"><tspan x="855">event flags · điều kiện</tspan><tspan x="855" dy="20">true ending / epilogue</tspan></text></g>
+</g></svg>

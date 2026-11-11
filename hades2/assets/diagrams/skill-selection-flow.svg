@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+ <title id="title">Quy trình chọn skill và reward trong Hades II</title><desc id="desc">Chuẩn bị weapon, aspect, Arcana, Keepsake, Familiar; đặt mục tiêu build; khi nhận boon, hammer, hex hoặc door reward thì kiểm tra action tương thích, trigger, sinh tồn/resource và chọn fallback.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#bf9d65"/></marker><style>.bg{fill:#171820}.box{fill:#252833;stroke:#897650;stroke-width:2}.core{fill:#402b37;stroke:#df8b77;stroke-width:2}.good{fill:#26372f;stroke:#83a78a;stroke-width:2}.warn{fill:#392e23;stroke:#c69b5a;stroke-width:2}.h{font:700 22px system-ui,sans-serif;fill:#f4e7c7}.t{font:17px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#bf9d65;stroke-width:3;marker-end:url(#a)}</style></defs>
+ <rect class="bg" width="1200" height="650" rx="24"/><text class="h" x="44" y="46">CHỌN SKILL = MỤC TIÊU BUILD + OFFER THẬT + NHU CẦU SỐNG CÒN</text>
+ <rect class="box" x="44" y="100" width="290" height="115" rx="16"/><text class="h" x="68" y="140">A · CHUẨN BỊ TRƯỚC RUN</text><text class="t" x="68" y="173">weapon · Aspect · Arcana</text><text class="s" x="68" y="198">Keepsake · Familiar · Vows</text>
+ <rect class="core" x="455" y="100" width="290" height="115" rx="16"/><text class="h" x="480" y="140">B · ĐẶT Ý ĐỊNH</text><text class="t" x="480" y="173">damage chính ở action nào?</text><text class="s" x="480" y="198">thiếu survival / Magick / control?</text>
+ <rect class="box" x="866" y="100" width="290" height="115" rx="16"/><text class="h" x="890" y="140">C · NHẬN OFFER</text><text class="t" x="890" y="173">Boon · Hammer · Hex · door</text><text class="s" x="890" y="198">reward pool không phải lúc nào cũng giống</text>
+ <path class="a" d="M336 157h109"/><path class="a" d="M747 157h109"/>
+ <rect class="warn" x="320" y="278" width="560" height="90" rx="16"/><text class="h" x="350" y="315">D · KIỂM TRA 4 ĐIỀU</text><text class="t" x="350" y="346">Action compatibility · trigger/target · synergy chain · Life/Magick cho encounter tới</text>
+ <path class="a" d="M1011 217v34H880"/><path class="a" d="M320 322H200V216"/>
+ <rect class="good" x="55" y="440" width="320" height="116" rx="16"/><text class="h" x="80" y="480">CÓ FIT VÀ ĐỦ GIÁ TRỊ</text><text class="t" x="80" y="513">chọn rồi ghi effect/trạng thái mới</text><text class="s" x="80" y="539">test trong encounter tiếp theo</text>
+ <rect class="warn" x="440" y="440" width="320" height="116" rx="16"/><text class="h" x="465" y="480">CHƯA CÓ SYNERGY</text><text class="t" x="465" y="513">lấy phần survival/resource nếu cần</text><text class="s" x="465" y="539">đừng chờ combo hiếm mới hoạt động</text>
+ <rect class="box" x="825" y="440" width="320" height="116" rx="16"/><text class="h" x="850" y="480">SAU KHI CHỌN</text><text class="t" x="850" y="513">cập nhật plan · xem slot/trigger</text><text class="s" x="850" y="539">lặp ở reward tiếp theo</text>
+ <path class="a" d="M600 370v60H215v8"/><path class="a" d="M600 370v60"/><path class="a" d="M600 370h385v60"/>
+ <path class="a" d="M375 498h60"/><path class="a" d="M760 498h60"/>
+ <text class="s" x="50" y="610">Đây là framework chọn lựa cho người chơi, không phải thuật toán offer/weight của game. Compatibility và chỉ số phải khóa theo version.</text>
+</svg>

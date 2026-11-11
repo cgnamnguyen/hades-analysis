@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 610" role="img" aria-labelledby="title desc">
+ <title id="title">Ba chuỗi trigger kỹ năng Hades II có ghi trong patch notes</title>
+ <desc id="desc">Ba ví dụ: Ares weapon strike tạo Plasma để hồi Magick, Cast với Fire Away, và Sky Fall Wounds kết hợp Profuse Bleeding giữa các phiên bản khác nhau.</desc>
+ <defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c2a36b"/></marker><style>.bg{fill:#171820}.box{fill:#252833;stroke:#897650;stroke-width:2}.red{fill:#402b37;stroke:#df8b77;stroke-width:2}.green{fill:#25372f;stroke:#83a78a;stroke-width:2}.title{font:700 23px system-ui,sans-serif;fill:#f4e7c7}.txt{font:17px system-ui,sans-serif;fill:#ddd5c5}.small{font:14px system-ui,sans-serif;fill:#b9af9d}.arrow{fill:none;stroke:#c2a36b;stroke-width:3;marker-end:url(#arr)}.dash{fill:none;stroke:#d17b6d;stroke-width:2.5;stroke-dasharray:8 7;marker-end:url(#arr)}</style></defs>
+ <rect class="bg" width="1120" height="610" rx="24"/><text class="title" x="40" y="45">TRIGGER → EFFECT → GIÁ TRỊ BUILD · VÍ DỤ CÓ NGUỒN, KHÔNG CÓ DAMAGE SỐ</text>
+ <text class="title" x="42" y="94">A · ARES: VÒNG TẠO TÀI NGUYÊN (POST-LAUNCH PATCH 2)</text>
+ <rect class="box" x="42" y="116" width="220" height="78" rx="14"/><text class="txt" x="65" y="148">Weapon strike</text><text class="small" x="65" y="174">chance tạo Plasma</text>
+ <rect class="box" x="334" y="116" width="220" height="78" rx="14"/><text class="txt" x="357" y="148">Thu Plasma</text><text class="small" x="357" y="174">nhặt trong giao tranh</text>
+ <rect class="green" x="626" y="116" width="220" height="78" rx="14"/><text class="txt" x="649" y="148">Magick hồi</text><text class="small" x="649" y="174">Grisly Gain · rarity/Pom</text>
+ <rect class="green" x="918" y="116" width="160" height="78" rx="14"/><text class="txt" x="941" y="148">Ω / Hex</text><text class="small" x="941" y="174">có resource để dùng</text>
+ <path class="arrow" d="M264 155h62"/><path class="arrow" d="M556 155h62"/><path class="arrow" d="M848 155h60"/>
+ <text class="small" x="43" y="225">Sanguinary Savor tăng Wounds và tự hút Plasma; Profuse Bleeding phản ứng khi nhặt Plasma hoặc gây Wounds.</text>
+ <text class="title" x="42" y="278">B · HESTIA: COMPATIBILITY CỦA CAST (POST-LAUNCH PATCH 2)</text>
+ <rect class="box" x="42" y="299" width="290" height="78" rx="14"/><text class="txt" x="65" y="331">Cast bất kỳ nguồn nào</text><text class="small" x="65" y="357">Cast nền hoặc được Boon đổi</text>
+ <rect class="red" x="414" y="299" width="290" height="78" rx="14"/><text class="txt" x="437" y="331">Hestia · Fire Away</text><text class="small" x="437" y="357">áp dụng với tất cả Cast</text>
+ <rect class="green" x="786" y="299" width="292" height="78" rx="14"/><text class="txt" x="809" y="331">Hiệu ứng được kích hoạt</text><text class="small" x="809" y="357">không chỉ Cast của Hestia</text>
+ <path class="arrow" d="M334 338h72"/><path class="arrow" d="M706 338h72"/>
+ <text class="title" x="42" y="430">C · HAI MỐC: SKY FALL → WOUNDS → PROFUSE BLEEDING</text>
+ <rect class="box" x="42" y="451" width="290" height="78" rx="14"/><text class="txt" x="65" y="483">Sky Fall trúng</text><text class="small" x="65" y="509">Godsent Lance of Ares</text>
+ <rect class="box" x="414" y="451" width="290" height="78" rx="14"/><text class="txt" x="437" y="483">Áp Wounds</text><text class="small" x="437" y="509">status / trigger</text>
+ <rect class="green" x="786" y="451" width="292" height="78" rx="14"/><text class="txt" x="809" y="483">Falling blade</text><text class="small" x="809" y="509">Profuse Bleeding trigger</text>
+ <path class="arrow" d="M334 490h72"/><path class="dash" d="M706 490h72"/>
+ <text class="small" x="42" y="570">Nét đứt: hiệu ứng Wounds của Godsent Unseen và trigger Ares Patch 2 là hai mốc khác nhau — cần xác minh compatibility hiện hành.</text>
+</svg>

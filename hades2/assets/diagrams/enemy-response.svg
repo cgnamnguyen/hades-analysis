@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+ <title id="title">Quy trình đọc đối thủ trong Hades II</title><desc id="desc">Xác định vai trò và telegraph, đánh giá vùng an toàn, chọn né hay đỡ theo đúng loại đòn, đánh vào cửa sổ, rồi kiểm tra trạng thái và cập nhật chiến thuật.</desc>
+ <defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c2a36b"/></marker><style>.bg{fill:#171820}.b{fill:#252833;stroke:#897650;stroke-width:2}.r{fill:#402b37;stroke:#df8b77;stroke-width:2}.h{font:700 21px system-ui,sans-serif;fill:#f4e7c7}.t{font:17px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#c2a36b;stroke-width:3;marker-end:url(#ar)}</style></defs>
+ <rect class="bg" width="1120" height="430" rx="24"/><text class="h" x="42" y="47">ĐỌC QUÁI THEO HÀNH VI · KHUNG RÀ SOÁT, KHÔNG PHẢI PHÂN LOẠI DATABASE</text>
+ <rect class="b" x="52" y="104" width="220" height="126" rx="16"/><text class="h" x="75" y="144">1 · NHẬN DIỆN</text><text class="t" x="75" y="177">melee · projectile</text><text class="t" x="75" y="205">hazard · add · boss</text>
+ <rect class="b" x="326" y="104" width="220" height="126" rx="16"/><text class="h" x="349" y="144">2 · ĐỌC TÍN HIỆU</text><text class="t" x="349" y="177">hướng · tell · vùng</text><text class="t" x="349" y="205">Armor · phase · add</text>
+ <rect class="r" x="600" y="104" width="220" height="126" rx="16"/><text class="h" x="623" y="144">3 · PHẢN ỨNG</text><text class="t" x="623" y="177">né / đổi góc / guard?</text><text class="t" x="623" y="205">block đúng loại đòn?</text>
+ <rect class="b" x="874" y="104" width="200" height="126" rx="16"/><text class="h" x="897" y="144">4 · PHẢN CÔNG</text><text class="t" x="897" y="177">đánh recovery</text><text class="t" x="897" y="205">dùng combo an toàn</text>
+ <path class="a" d="M274 166h45"/><path class="a" d="M548 166h45"/><path class="a" d="M822 166h45"/>
+ <rect class="b" x="282" y="292" width="556" height="91" rx="16"/><text class="h" x="309" y="330">5 · KIỂM TRA KẾT QUẢ / CẬP NHẬT HỒ SƠ</text><text class="t" x="309" y="361">Life · Armor · status · stagger · spawn · reward · version</text>
+ <path class="a" d="M974 234 C974 337 860 338 844 338"/><path class="a" d="M282 337C144 337 162 245 162 231"/>
+ <text class="s" x="52" y="412">“Không thấy bị ảnh hưởng” chưa đủ chứng minh miễn nhiễm; cần lặp thử cùng action trên đúng variant/build.</text>
+</svg>

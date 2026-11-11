@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 600" role="img" aria-labelledby="title desc">
+ <title id="title">Bản đồ hệ thống skill và build Hades II</title><desc id="desc">Moveset nối với weapon/aspect và boons, hammer, arcana, magick/omega/hex, familiar/keepsake; các trigger tạo damage, control, defense, resource.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c2a36b"/></marker><style>.bg{fill:#171820}.core{fill:#402b37;stroke:#df8b77;stroke-width:3}.system{fill:#252833;stroke:#897650;stroke-width:2}.out{fill:#26352e;stroke:#83a78a;stroke-width:2}.h{font:700 22px system-ui,sans-serif;fill:#f4e7c7}.t{font:17px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.l{stroke:#c2a36b;stroke-width:2.5;fill:none;marker-end:url(#a)}</style></defs>
+ <rect class="bg" width="1120" height="600" rx="24"/><text class="h" x="44" y="45">BUILD = ACTION × CÁC LỚP BIẾN ĐỔI × TRIGGER / KẾT QUẢ</text>
+ <rect class="core" x="415" y="86" width="290" height="102" rx="18"/><text class="h" x="448" y="127">MELINOË · ACTION</text><text class="t" x="449" y="158">Attack · Special · Cast · Sprint</text>
+ <rect class="system" x="58" y="240" width="230" height="100" rx="16"/><text class="h" x="82" y="279">WEAPON + ASPECT</text><text class="t" x="82" y="310">moveset · tầm · trigger</text>
+ <rect class="system" x="327" y="240" width="215" height="100" rx="16"/><text class="h" x="352" y="279">BOON</text><text class="t" x="352" y="310">slot · status · effect</text>
+ <rect class="system" x="578" y="240" width="215" height="100" rx="16"/><text class="h" x="602" y="279">HAMMER</text><text class="t" x="602" y="310">đổi move trong run</text>
+ <rect class="system" x="832" y="240" width="230" height="100" rx="16"/><text class="h" x="856" y="279">ARCANA</text><text class="t" x="856" y="310">hiệu ứng nền/loadout</text>
+ <path class="l" d="M480 190L230 236"/><path class="l" d="M510 190L433 236"/><path class="l" d="M610 190L685 236"/><path class="l" d="M645 190L934 236"/>
+ <rect class="system" x="58" y="405" width="280" height="100" rx="16"/><text class="h" x="82" y="444">MAGICK + OMEGA</text><text class="t" x="82" y="475">channel · tiêu resource</text>
+ <rect class="system" x="420" y="405" width="280" height="100" rx="16"/><text class="h" x="444" y="444">SELENE · HEX</text><text class="t" x="444" y="475">charge · Path of Stars</text>
+ <rect class="system" x="782" y="405" width="280" height="100" rx="16"/><text class="h" x="806" y="444">FAMILIAR / KEEPSAKE</text><text class="t" x="806" y="475">hỗ trợ chủ động/bị động</text>
+ <path class="l" d="M560 190L200 401"/><path class="l" d="M560 190L560 401"/><path class="l" d="M660 190L920 401"/>
+ <rect class="out" x="166" y="535" width="788" height="44" rx="12"/><text class="t" x="195" y="564">KẾT QUẢ: damage · control/status · phòng thủ · di chuyển · tài nguyên · charge Hex</text>
+ <path class="l" d="M198 507v24"/><path class="l" d="M560 507v24"/><path class="l" d="M922 507v24"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 650" role="img" aria-labelledby="title desc">
+ <title id="title">Bản đồ tổng quan hai tuyến Hades II</title><desc id="desc">Từ Crossroads rẽ vào Underworld hoặc Surface. Mỗi tuyến có bốn Region và Guardian mốc theo thứ tự tham khảo; sơ đồ tuyến, không phải bản đồ phòng.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.head{font:700 26px system-ui,sans-serif;fill:#f4e7c7}.label{font:700 18px system-ui,sans-serif;fill:#f4e7c7}.txt{font:16px system-ui,sans-serif;fill:#ddd5c5}.small{font:14px system-ui,sans-serif;fill:#b9af9d}.start{fill:#402b37;stroke:#df8b77;stroke-width:2}.uw{fill:#272639;stroke:#a98bc8;stroke-width:2}.sf{fill:#25363a;stroke:#78a9b0;stroke-width:2}.a{fill:none;stroke:#c5a064;stroke-width:3;marker-end:url(#a)}.d{fill:none;stroke:#99856b;stroke-width:2;stroke-dasharray:7 7}</style></defs>
+ <rect class="bg" width="1200" height="650" rx="24"/><text class="head" x="40" y="48">HADES II · BẢN ĐỒ TỔNG QUAN HAI TUYẾN</text>
+ <rect class="start" x="475" y="78" width="250" height="70" rx="16"/><text class="label" x="600" y="121" text-anchor="middle">CROSSROADS · chọn run</text>
+ <path class="a" d="M520 148L305 194"/><path class="a" d="M680 148L895 194"/>
+ <text class="label" x="45" y="181" fill="#cdb9e2">UNDERWORLD</text><text class="label" x="45" y="402" fill="#a8d2d6">SURFACE</text>
+ <g text-anchor="middle">
+  <rect class="uw" x="35" y="198" width="250" height="128" rx="16"/><text class="label" x="160" y="235">1 · EREBUS</text><text class="txt" x="160" y="270">Guardian · Hecate</text><text class="small" x="160" y="300">Region / gate</text>
+  <rect class="uw" x="335" y="198" width="250" height="128" rx="16"/><text class="label" x="460" y="235">2 · OCEANUS</text><text class="txt" x="460" y="270">Guardian · Scylla &amp; Sirens</text><text class="small" x="460" y="300">Region / gate</text>
+  <rect class="uw" x="635" y="198" width="250" height="128" rx="16"/><text class="label" x="760" y="235">3 · FIELDS OF MOURNING</text><text class="txt" x="760" y="270">Guardian · Infernal Cerberus</text><text class="small" x="760" y="300">Region / gate</text>
+  <rect class="uw" x="935" y="198" width="230" height="128" rx="16"/><text class="label" x="1050" y="235">4 · TARTARUS</text><text class="txt" x="1050" y="270">Final · Chronos</text><text class="small" x="1050" y="300">Route endpoint</text>
+  <rect class="sf" x="35" y="420" width="250" height="128" rx="16"/><text class="label" x="160" y="457">1 · CITY OF EPHYRA</text><text class="txt" x="160" y="492">Guardian · Polyphemus</text><text class="small" x="160" y="522">Region / gate</text>
+  <rect class="sf" x="335" y="420" width="250" height="128" rx="16"/><text class="label" x="460" y="457">2 · RIFT OF THESSALY</text><text class="txt" x="460" y="492">Guardian · Eris</text><text class="small" x="460" y="522">Region / gate</text>
+  <rect class="sf" x="635" y="420" width="250" height="128" rx="16"/><text class="label" x="760" y="457">3 · MOUNT OLYMPUS</text><text class="txt" x="760" y="492">Guardian · Prometheus</text><text class="small" x="760" y="522">Region / gate</text>
+  <rect class="sf" x="935" y="420" width="230" height="128" rx="16"/><text class="label" x="1050" y="457">4 · THE SUMMIT</text><text class="txt" x="1050" y="492">Final · Typhon</text><text class="small" x="1050" y="522">Route endpoint</text>
+ </g>
+ <path class="a" d="M287 262h40"/><path class="a" d="M587 262h40"/><path class="a" d="M887 262h40"/>
+ <path class="a" d="M287 484h40"/><path class="a" d="M587 484h40"/><path class="a" d="M887 484h40"/>
+ <path class="d" d="M1050 327v78"/>
+ <text class="small" x="40" y="585">Route-order reference, not a room-by-room map. Names/order still need confirmation against the local RUNE payload.</text><text class="small" x="40" y="612">Each Region contains multiple Locations; reward doors, events, shops, resources and optional branches are omitted here.</text>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 660" role="img" aria-labelledby="title desc">
+ <title id="title">Bản đồ từng pha chiến đấu Hades II</title><desc id="desc">Chuẩn bị trạng thái, vào Location, đọc telegraph, giữ vị trí an toàn, chọn action và mục tiêu, giải quyết hit/status/resource, dọn wave, nhận reward và chuyển màn.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.box{fill:#252833;stroke:#897650;stroke-width:2}.warn{fill:#392e23;stroke:#c69b5a;stroke-width:2}.hit{fill:#402b37;stroke:#df8b77;stroke-width:2}.done{fill:#26372f;stroke:#83a78a;stroke-width:2}.h{font:700 21px system-ui,sans-serif;fill:#f4e7c7}.t{font:16px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#c5a064;stroke-width:2.5;marker-end:url(#a)}.d{fill:none;stroke:#897650;stroke-width:2;stroke-dasharray:7 6}</style></defs>
+ <rect class="bg" width="1200" height="660" rx="24"/><text class="h" x="42" y="44">COMBAT MAP · TỪ CHUẨN BỊ ĐẾN CỬA ROOM TIẾP</text>
+ <rect class="box" x="38" y="94" width="240" height="106" rx="15"/><text class="h" x="60" y="132">0 · STATE ĐẦU VÀO</text><text class="t" x="60" y="161">Life/Armor · Magick · Hex</text><text class="s" x="60" y="184">vũ khí · action · boon · resource</text>
+ <rect class="warn" x="340" y="94" width="240" height="106" rx="15"/><text class="h" x="362" y="132">1 · ROOM START</text><text class="t" x="362" y="161">wave? event? Guardian?</text><text class="s" x="362" y="184">đọc cửa/hazard/địch hiện có</text>
+ <rect class="warn" x="642" y="94" width="240" height="106" rx="15"/><text class="h" x="664" y="132">2 · TELEGRAPH</text><text class="t" x="664" y="161">hướng · vùng · thời điểm</text><text class="s" x="664" y="184">đạn · melee · AoE · add</text>
+ <rect class="hit" x="944" y="94" width="218" height="106" rx="15"/><text class="h" x="966" y="132">3 · GIỮ AN TOÀN</text><text class="t" x="966" y="161">né / chạy / guard đúng loại?</text><text class="s" x="966" y="184">đừng giả định i-frame</text>
+ <path class="a" d="M280 147h52"/><path class="a" d="M582 147h52"/><path class="a" d="M884 147h52"/>
+ <rect class="box" x="822" y="282" width="340" height="118" rx="15"/><text class="h" x="846" y="321">4 · CHỌN ACTION + TARGET</text><text class="t" x="846" y="351">Attack / Special / Cast / Sprint</text><text class="t" x="846" y="377">Ω / Hex nếu cost và cửa sổ phù hợp</text>
+ <rect class="hit" x="420" y="282" width="340" height="118" rx="15"/><text class="h" x="444" y="321">5 · GIẢI QUYẾT TRÚNG ĐÒN</text><text class="t" x="444" y="351">Life/Armor · hit/stagger · status</text><text class="t" x="444" y="377">resource pickup · trigger chain</text>
+ <path class="a" d="M1050 202v74"/><path class="a" d="M820 341h-54"/>
+ <path class="d" d="M590 282v-32H760V202"/><text class="s" x="608" y="242">nếu địch còn áp lực: đọc nhịp tiếp</text>
+ <rect class="done" x="76" y="282" width="280" height="118" rx="15"/><text class="h" x="100" y="321">6 · WAVE / OBJECTIVE XONG</text><text class="t" x="100" y="351">xác nhận địch hết / event xong</text><text class="s" x="100" y="377">kiểm reward/pickup còn lại</text>
+ <path class="a" d="M418 341h-54"/><path class="a" d="M216 402v90"/>
+ <rect class="box" x="76" y="494" width="420" height="104" rx="15"/><text class="h" x="100" y="532">7 · CLAIM + KIỂM TRA BUILD</text><text class="t" x="100" y="561">Life/Magick/status/reward đã cập nhật?</text><text class="s" x="100" y="584">nếu chưa rõ, đừng rời room vội</text>
+ <rect class="done" x="690" y="494" width="420" height="104" rx="15"/><text class="h" x="714" y="532">8 · CHỌN EXIT / LOCATION KẾ</text><text class="t" x="714" y="561">so reward với nhu cầu run và route tới</text><text class="s" x="714" y="584">Location lặp; Guardian gate ở mốc Region</text>
+ <path class="a" d="M498 546h184"/><path class="d" d="M1100 548h55V42H160v48"/>
+ <text class="s" x="42" y="634">Đây là checklist trạng thái cho người chơi; hit resolution/state machine chưa được trích từ executable RUNE.</text>
+</svg>

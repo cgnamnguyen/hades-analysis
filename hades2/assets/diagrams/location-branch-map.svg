@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 620" role="img" aria-labelledby="title desc">
+ <title id="title">Bản đồ loại phòng và nhánh Location trong một Region</title><desc id="desc">Một Location có thể dẫn đến combat, shop, NPC/event, gathering hoặc Chaos khi xuất hiện; sau khi hoàn tất interaction hoặc encounter, claim reward và chọn hướng kế tiếp.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.core{fill:#402b37;stroke:#df8b77;stroke-width:2}.box{fill:#252833;stroke:#897650;stroke-width:2}.end{fill:#26372f;stroke:#83a78a;stroke-width:2}.h{font:700 21px system-ui,sans-serif;fill:#f4e7c7}.t{font:17px system-ui,sans-serif;fill:#ddd5c5}.s{font:14px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#c5a064;stroke-width:2.5;marker-end:url(#a)}.d{fill:none;stroke:#8b816f;stroke-width:2;stroke-dasharray:7 7}</style></defs>
+ <rect class="bg" width="1120" height="620" rx="24"/><text class="h" x="40" y="45">LOCATION MAP · CÁC LOẠI ĐIỂM CÓ THỂ GẶP TRONG RUN</text>
+ <rect class="core" x="410" y="85" width="300" height="88" rx="16"/><text class="h" x="560" y="121" text-anchor="middle">VÀO LOCATION</text><text class="s" x="560" y="150" text-anchor="middle">nhận diện objective / exits</text>
+ <g text-anchor="middle">
+  <rect class="box" x="35" y="250" width="205" height="95" rx="15"/><text class="h" x="137" y="288">COMBAT</text><text class="s" x="137" y="319">wave / elite / Guardian</text>
+  <rect class="box" x="260" y="250" width="205" height="95" rx="15"/><text class="h" x="362" y="288">SHOP</text><text class="s" x="362" y="319">mua nếu đủ currency</text>
+  <rect class="box" x="485" y="250" width="205" height="95" rx="15"/><text class="h" x="587" y="288">NPC / EVENT</text><text class="s" x="587" y="319">đối thoại / điều kiện</text>
+  <rect class="box" x="710" y="250" width="175" height="95" rx="15"/><text class="h" x="797" y="288">GATHER</text><text class="s" x="797" y="319">reagent / resource</text>
+  <rect class="box" x="905" y="250" width="180" height="95" rx="15"/><text class="h" x="995" y="288">CHAOS</text><text class="s" x="995" y="319">optional gate/event</text>
+ </g>
+ <path class="d" d="M560 173V215H137V248M560 215H362V248M560 215V248M560 215H797V248M560 215H995V248"/>
+ <rect class="end" x="280" y="430" width="260" height="92" rx="16"/><text class="h" x="410" y="468" text-anchor="middle">HOÀN TẤT</text><text class="s" x="410" y="498" text-anchor="middle">clear objective / claim reward</text>
+ <rect class="core" x="650" y="430" width="300" height="92" rx="16"/><text class="h" x="800" y="468" text-anchor="middle">CHỌN DOOR / LOCATION KẾ</text><text class="s" x="800" y="498" text-anchor="middle">xét build · Life · route · reward</text>
+ <path class="a" d="M137 346v38h273v44"/><path class="a" d="M362 346v78"/><path class="a" d="M587 346V385H410v43"/><path class="a" d="M797 346V385H540v43"/><path class="a" d="M995 346v38H540v44"/>
+ <path class="a" d="M542 476h100"/><path class="a" d="M800 524v50H150V347"/>
+ <text class="s" x="40" y="600">Nhánh nét đứt = loại Location ví dụ, không bảo đảm xuất hiện trong mọi run/Region. Chỉ Guardian gate gắn chặt với mốc chuyển Region.</text>
+</svg>

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" role="img" aria-labelledby="title desc">
+ <title id="title">Sơ đồ lựa chọn sau khi clear room</title>
+ <desc id="desc">Clear encounter, nhận reward, rồi kiểm tra theo thứ tự Life, action chủ lực và Magick nếu build dùng Omega. Các phương án phù hợp được thêm vào danh sách cân nhắc. Sau đó đọc cửa thật sự đang mở, so với thử thách kế và chọn Location hay Guardian. Framework chiến thuật, không phải thuật toán RNG.</desc>
+ <defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#bf9a5b"/></marker>
+  <style>
+   .bg{fill:#171820}.step{fill:#283342;stroke:#7f9cb7;stroke-width:2}.check{fill:#3a3024;stroke:#c6a05b;stroke-width:2}.option{fill:#26372f;stroke:#7eaa8a;stroke-width:2}.route{fill:#402b37;stroke:#d88c78;stroke-width:2}.h{font:700 20px system-ui,sans-serif;fill:#f4e7c7}.t{font:16px system-ui,sans-serif;fill:#ded7ca}.s{font:14px system-ui,sans-serif;fill:#bdb3a3}.line{fill:none;stroke:#bf9a5b;stroke-width:2.5;marker-end:url(#arrow)}.branch{fill:none;stroke:#8d816d;stroke-width:2;stroke-dasharray:7 6}.yn{font:700 14px system-ui,sans-serif;fill:#e1bc78}
+  </style>
+ </defs>
+ <rect class="bg" width="1400" height="1000" rx="24"/>
+ <text class="h" x="40" y="46">ROOM CLEAR → KIỂM TRA BUILD → CHỌN CỬA → MÀN KẾ</text>
+ <text class="s" x="40" y="73">Framework chiến thuật cho người chơi; không mô tả reward weights, RNG hay logic nội bộ.</text>
+
+ <rect class="step" x="70" y="110" width="280" height="100" rx="16"/>
+ <text class="h" x="94" y="148">1 · ENCOUNTER CLEAR</text><text class="t" x="94" y="177">Wave/objective đã hoàn tất?</text><text class="s" x="94" y="198">Kiểm tra add và điều kiện room</text>
+ <rect class="step" x="420" y="110" width="300" height="100" rx="16"/>
+ <text class="h" x="444" y="148">2 · CLAIM / CẬP NHẬT</text><text class="t" x="444" y="177">Nhận reward, đọc state mới</text><text class="s" x="444" y="198">Life · Armor · Magick · slot build</text>
+ <path class="line" d="M352 160h60"/>
+
+ <rect class="check" x="490" y="265" width="390" height="116" rx="16"/>
+ <text class="h" x="516" y="304">3A · LIFE CÓ ĐANG NGUY HIỂM?</text><text class="t" x="516" y="334">Có → thêm heal / protection vào shortlist</text><text class="s" x="516" y="359">Không → chuyển sang action chủ lực</text>
+ <path class="line" d="M570 212v45"/>
+ <rect class="option" x="970" y="265" width="360" height="116" rx="16"/>
+ <text class="h" x="994" y="304">ỨNG VIÊN: SINH TỒN</text><text class="t" x="994" y="334">Heal, protection, giảm rủi ro</text><text class="s" x="994" y="359">Chỉ dùng nếu cửa/reward có lựa chọn đó</text>
+ <path class="line" d="M882 323h80"/><text class="yn" x="914" y="312">CÓ</text>
+
+ <rect class="check" x="490" y="425" width="390" height="116" rx="16"/>
+ <text class="h" x="516" y="464">3B · ACTION CORE ĐÃ HOẠT ĐỘNG?</text><text class="t" x="516" y="494">Yếu/thiếu → boon đúng slot hoặc Hammer hợp</text><text class="s" x="516" y="519">Đọc tương thích weapon + Aspect + move</text>
+ <path class="line" d="M685 383v34"/><text class="yn" x="700" y="405">TIẾP TỤC</text>
+ <rect class="option" x="970" y="425" width="360" height="116" rx="16"/>
+ <text class="h" x="994" y="464">ỨNG VIÊN: ACTION / DAMAGE</text><text class="t" x="994" y="494">Boon đúng action · Hammer tương thích</text><text class="s" x="994" y="519">Đừng chọn chỉ vì rarity/con số nổi bật</text>
+ <path class="line" d="M882 483h80"/><text class="yn" x="914" y="472">THIẾU</text>
+
+ <rect class="check" x="490" y="585" width="390" height="116" rx="16"/>
+ <text class="h" x="516" y="624">3C · BUILD CÓ TIÊU Ω THƯỜNG?</text><text class="t" x="516" y="654">Magick thấp → xem hồi/tăng resource</text><text class="s" x="516" y="679">Không phụ thuộc Ω → bỏ qua nhánh này</text>
+ <path class="line" d="M685 543v34"/><text class="yn" x="700" y="565">TIẾP TỤC</text>
+ <rect class="option" x="970" y="585" width="360" height="116" rx="16"/>
+ <text class="h" x="994" y="624">ỨNG VIÊN: RESOURCE ENGINE</text><text class="t" x="994" y="654">Hồi Magick / tăng độ bền Ω</text><text class="s" x="994" y="679">Chỉ đáng lấy nếu build thực sự tiêu Magick</text>
+ <path class="line" d="M882 643h80"/><text class="yn" x="914" y="632">THIẾU</text>
+
+ <rect class="step" x="70" y="770" width="350" height="116" rx="16"/>
+ <text class="h" x="94" y="809">4 · ĐỌC CỬA ĐANG MỞ</text><text class="t" x="94" y="839">Reward · shop · event · reagent</text><text class="s" x="94" y="864">Chọn trong số lựa chọn nhìn thấy</text>
+ <path class="branch" d="M1150 381v360H245v21"/><path class="branch" d="M1150 541v200"/><path class="branch" d="M1150 701v40"/>
+ <path class="line" d="M422 828h74"/>
+
+ <rect class="route" x="505" y="770" width="390" height="116" rx="16"/>
+ <text class="h" x="529" y="809">5 · SO VỚI THỬ THÁCH KẾ</text><text class="t" x="529" y="839">Wave đông: AoE/control · Guardian: uptime</text><text class="s" x="529" y="864">Life/Armor yếu: cân sinh tồn trước</text>
+ <path class="line" d="M897 828h74"/>
+
+ <rect class="route" x="980" y="770" width="350" height="116" rx="16"/>
+ <text class="h" x="1004" y="809">6 · ĐI QUA CỬA</text><text class="t" x="1004" y="839">Location → lặp room/reward loop</text><text class="s" x="1004" y="864">Guardian → Region kế hoặc run end</text>
+
+ <text class="s" x="40" y="946">Không đảm bảo game sẽ sinh loại reward nào. Offer, cửa, route và điều kiện phụ thuộc phiên bản/tiến độ; sơ đồ không biểu diễn xác suất.</text>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc">
+ <title id="title">Sơ đồ tuyến Underworld Hades II</title><desc id="desc">Erebus đến Hecate, Oceanus đến Scylla and the Sirens, Fields of Mourning đến Infernal Cerberus, Tartarus đến Chronos.</desc>
+ <defs><marker id="a" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0 0L10 5L0 10z" fill="#c5a064"/></marker><style>.bg{fill:#171820}.box{fill:#292638;stroke:#a88bc2;stroke-width:2}.gate{fill:#3b2c34;stroke:#d98572;stroke-width:2}.h{font:700 26px system-ui,sans-serif;fill:#f4e7c7}.t{font:18px system-ui,sans-serif;fill:#e0d9cb}.s{font:15px system-ui,sans-serif;fill:#b9af9d}.a{fill:none;stroke:#c5a064;stroke-width:3;marker-end:url(#a)}.branch{fill:none;stroke:#8f83a2;stroke-width:2;stroke-dasharray:7 7}</style></defs>
+ <rect class="bg" width="1200" height="510" rx="24"/><text class="h" x="40" y="50">UNDERWORLD · REGION → GUARDIAN GATE</text>
+ <g text-anchor="middle">
+  <rect class="box" x="35" y="135" width="250" height="150" rx="18"/><text class="h" x="160" y="181">EREBUS</text><text class="t" x="160" y="222">Guardian · Hecate</text><text class="s" x="160" y="258">clear/choice → exit</text>
+  <rect class="box" x="335" y="135" width="250" height="150" rx="18"/><text class="h" x="460" y="181">OCEANUS</text><text class="t" x="460" y="222">Guardian · Scylla &amp; Sirens</text><text class="s" x="460" y="258">clear/choice → exit</text>
+  <rect class="box" x="635" y="135" width="250" height="150" rx="18"/><text class="h" x="760" y="181">FIELDS OF MOURNING</text><text class="t" x="760" y="222">Guardian · Infernal Cerberus</text><text class="s" x="760" y="258">optional branches may occur</text>
+  <rect class="gate" x="935" y="135" width="230" height="150" rx="18"/><text class="h" x="1050" y="181">TARTARUS</text><text class="t" x="1050" y="222">Final Guardian · Chronos</text><text class="s" x="1050" y="258">route endpoint</text>
+ </g>
+ <path class="a" d="M287 210h40"/><path class="a" d="M587 210h40"/><path class="a" d="M887 210h40"/>
+ <path class="branch" d="M460 287v78h-80"/><rect class="box" x="205" y="365" width="260" height="70" rx="14"/><text class="t" x="335" y="396" text-anchor="middle">Chaos / event / reward</text><text class="s" x="335" y="420" text-anchor="middle">if offered; not a fixed stop</text>
+ <path class="branch" d="M760 287v78h80"/><rect class="box" x="715" y="365" width="300" height="70" rx="14"/><text class="t" x="865" y="396" text-anchor="middle">NPC / gathering / side room</text><text class="s" x="865" y="420" text-anchor="middle">Location pool varies by run/version</text>
+ <text class="s" x="40" y="474">Schematic route only; not a floor plan. Guardian order and exact room count have not been read from ISO RUNE.</text>
+</svg>
