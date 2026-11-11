@@ -1,0 +1,23 @@
+{
+  "path_in_iso": "RUNE/Ship/Hades2.exe",
+  "analysis_copy": "[đường dẫn máy cá nhân đã ẩn]",
+  "size_bytes": 6406832,
+  "sha256": "0d95b21dc449ac4c8308cb94a613266d590e314bffee2b3fbc3176fc159479e5",
+  "format": "PE32+",
+  "machine": "AMD64 / x86_64",
+  "subsystem": "Windows GUI",
+  "sections": [
+    {"name":".text","virtual_size":3820603,"raw_size":3821056},
+    {"name":".rdata","virtual_size":1653356,"raw_size":1653760},
+    {"name":".data","virtual_size":101241692,"raw_size":154112},
+    {"name":".pdata","virtual_size":147888,"raw_size":147968},
+    {"name":"CPADinfo","virtual_size":56,"raw_size":512},
+    {"name":".rsrc","virtual_size":373824,"raw_size":374272},
+    {"name":".reloc","virtual_size":12912,"raw_size":13312},
+    {"name":".bind","virtual_size":230472,"raw_size":230472}
+  ],
+  "selected_import_names": ["SDL2.dll","fmodstudio.dll","fmod.dll","bink2w64.dll","amd_ags_x64.dll","GFSDK_Aftermath_Lib.x64.dll","granny2_x64.dll","d3d12.dll","dxgi.dll","dxcompiler.dll"],
+  "import_interpretation": "These names are static PE import evidence only; they do not establish which paths execute or how game features behave.",
+  "evidence_kind": "local PE parse plus REA open_binary identity",
+  "game_was_executed": false
+}

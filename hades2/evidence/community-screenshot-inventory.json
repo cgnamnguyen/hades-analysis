@@ -1,0 +1,48 @@
+{
+  "asset_type": "gameplay screenshots",
+  "verified_at": "2026-11-10",
+  "source_note": "The images are hosted by Cobalt Games in its Hades II weapon guides, which label them official publisher gameplay screenshots and credit Supergiant Games. Capture build is unspecified. Use as visual reference, not evidence for the local RUNE ISO.",
+  "render_policy": "1600x900 source files; render width responsive with height auto to preserve 16:9 aspect ratio.",
+  "assets": [
+    {
+      "file": "assets/screenshots/staff-screen-1.webp",
+      "source_page": "https://games.cobaltgraphics.eu/hades-ii/weapons/witchs-staff/",
+      "source_image": "https://games.cobaltgraphics.eu/assets/hades-ii/screen-1.webp",
+      "description": "Combat encounter with overlapping action effects",
+      "width": 1600,
+      "height": 900,
+      "bytes": 241414,
+      "sha256": "1bf433b3307f056ffa93414f77c3b1bb879b54206c2fee98d42cc93734b45673"
+    },
+    {
+      "file": "assets/screenshots/flames-screen-3.webp",
+      "source_page": "https://games.cobaltgraphics.eu/hades-ii/weapons/umbral-flames/",
+      "source_image": "https://games.cobaltgraphics.eu/assets/hades-ii/screen-3.webp",
+      "description": "Combat scene with cast-like area effects and enemies",
+      "width": 1600,
+      "height": 900,
+      "bytes": 324736,
+      "sha256": "b17ccea0a45a9a097e579a2876bdb2a338a1e28b1db7a8480c5bc6c861d27489"
+    },
+    {
+      "file": "assets/screenshots/axe-screen-4.webp",
+      "source_page": "https://games.cobaltgraphics.eu/hades-ii/weapons/moonstone-axe/",
+      "source_image": "https://games.cobaltgraphics.eu/assets/hades-ii/screen-4.webp",
+      "description": "Multi-enemy combat room",
+      "width": 1600,
+      "height": 900,
+      "bytes": 230838,
+      "sha256": "d9b62ced83b8969b4863b7774dd61f39a54024b8b6bda62ae9f7a52aae52fde3"
+    },
+    {
+      "file": "assets/screenshots/skull-screen-5.webp",
+      "source_page": "https://games.cobaltgraphics.eu/hades-ii/argent-skull/",
+      "source_image": "https://games.cobaltgraphics.eu/assets/hades-ii/screen-5.webp",
+      "description": "Combat hit effect in an encounter",
+      "width": 1600,
+      "height": 900,
+      "bytes": 195502,
+      "sha256": "91cabfaf693cbc37f1d6603b211a0e036322bd8d63236cea661144a488782226"
+    }
+  ]
+}

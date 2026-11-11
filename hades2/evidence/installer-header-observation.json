@@ -1,0 +1,63 @@
+{
+  "source_iso": "[đường dẫn máy cá nhân đã ẩn]",
+  "setup_exe": {
+    "path_in_iso": "setup.exe",
+    "size_bytes": 6206677,
+    "format": "PE32 x86",
+    "inno_setup_text_offset": 89692,
+    "observed_imports": [
+      "advapi32.dll",
+      "comctl32.dll",
+      "kernel32.dll",
+      "oleaut32.dll",
+      "user32.dll"
+    ],
+    "executed": false,
+    "inno_setup_data_marker": "Inno Setup Setup Data (5.5.0)",
+    "inno_setup_messages_marker": "Inno Setup Messages (5.5.0)"
+  },
+  "payload": {
+    "path_in_iso": "setup-1.bin",
+    "size_bytes": 8859324894,
+    "first_12_bytes_hex": "41 72 43 01 00 00 06 07 41 72 43 01",
+    "ascii_prefix": "ArC",
+    "format": "unknown; prefix alone does not identify the payload format",
+    "copied_from_iso_to": "[đường dẫn máy cá nhân đã ẩn]",
+    "copy_size_verified": true,
+    "iso_copy_result": "7-Zip reported Everything is Ok while copying the member out of the UDF ISO",
+    "archive_listing_attempt": {
+      "tool": "7-Zip 26.00",
+      "result": "Cannot open the file as archive",
+      "meaning": "This parser did not recognize the payload; this does not prove corruption or identify its format",
+      "additional_attempt": {
+        "tool": "unarc-windows built locally from source",
+        "result": "recognized ArC-like descriptor, then failed descriptor CRC check",
+        "source": "https://github.com/masterofobzene/unarc-windows",
+        "meaning": "The payload remains unreadable by this parser. The CRC failure does not by itself establish corruption, encryption, or the exact format."
+      }
+    },
+    "installer_executed": false,
+    "payload_archive_expanded": false
+  },
+  "limitations": [
+    "The Inno Setup marker is a literal string observation; setup behavior was not executed.",
+    "The ArC prefix and unarc descriptor CRC error are insufficient to identify the exact format or infer encryption or corruption.",
+    "The payload member was copied intact from the ISO, but 7-Zip and the locally built unarc parser could not list it; no game content was parsed from the 8.86 GB payload.",
+    "The installer and game were not executed."
+  ],
+  "embedded_extractor": {
+    "path_in_setup": "tmp/unarc.dll",
+    "extracted_to": "evidence/artifact/installer/unarc.dll",
+    "size_bytes": 376832,
+    "sha256": "461E262189717C32EF0D7B559137B4F37D0EEA1F7010A564ADB11A06927938C4",
+    "pe_exports": [
+      "FreeArcExtract",
+      "UnloadDLL"
+    ],
+    "static_strings": [
+      "ERROR: this is not FreeArc archive or this archive is corrupt",
+      "ERROR: archive structure corrupted (descriptor failed CRC check)"
+    ],
+    "extraction_method": "innoextract 1.9; read-only extraction from setup.exe; PE export table read with objdump; DLL was not loaded"
+  }
+}

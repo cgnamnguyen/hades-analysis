@@ -1,0 +1,75 @@
+{
+  "evidence_id": "ev_4032842475ea2e6b4bde73b5c9c1172dd6397d4ee664d52e074e7d1b3f57da57",
+  "operation": "REA inspect_pe_resources",
+  "target_sha256": "0d95b21dc449ac4c8308cb94a613266d590e314bffee2b3fbc3176fc159479e5",
+  "observed": {
+    "resource_count": 14,
+    "entries_examined": 34,
+    "icon_group_sizes": [
+      "16x16",
+      "24x24",
+      "32x32",
+      "48x48",
+      "64x64",
+      "96x96",
+      "128x128",
+      "256x256 PNG",
+      "512x512 PNG"
+    ],
+    "resource_relationship_sizes_matched": true,
+    "icon_images": [
+      {
+        "bytes": 905,
+        "id": 1,
+        "size": "16x16"
+      },
+      {
+        "bytes": 1705,
+        "id": 2,
+        "size": "24x24"
+      },
+      {
+        "bytes": 2736,
+        "id": 3,
+        "size": "32x32"
+      },
+      {
+        "bytes": 5418,
+        "id": 4,
+        "size": "48x48"
+      },
+      {
+        "bytes": 8882,
+        "id": 5,
+        "size": "64x64"
+      },
+      {
+        "bytes": 17774,
+        "id": 6,
+        "size": "96x96"
+      },
+      {
+        "bytes": 28435,
+        "id": 7,
+        "size": "128x128"
+      },
+      {
+        "bytes": 85106,
+        "id": 8,
+        "size": "256x256 PNG"
+      },
+      {
+        "bytes": 218917,
+        "id": 9,
+        "size": "512x512 PNG"
+      }
+    ],
+    "png_signature_verified": true,
+    "png_ihdr_dimensions_verified": true
+  },
+  "limitations": [
+    "Other payloads are opaque in this operation.",
+    "Icon language fallback, decoding and runtime window loading were not observed.",
+    "Resource presence does not establish in-game UI usage."
+  ]
+}

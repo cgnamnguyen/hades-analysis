@@ -1,0 +1,27 @@
+{
+  "artifact": "[đường dẫn máy cá nhân đã ẩn]",
+  "container": "UDF v1.02 (7-Zip identification)",
+  "size_bytes": 8880226304,
+  "inventory_source": "7-Zip ISO listing; setup-1.bin was later copied intact for a separate parser check, but not expanded",
+  "release_metadata_source": {
+    "file": "rune.nfo",
+    "claims": ["Hades II", "Supergiant Games", "release date 09/2025", "Steam protection"],
+    "confidence_note": "Claims from the package's own NFO; not independent authentication."
+  },
+  "members_observed": [
+    {"path":"RUNE/Ship/Hades2.exe","size_bytes":6406832,"extracted_for_static_analysis":true,"executed":false},
+    {"path":"RUNE/Ship/Hades2.rne","size_bytes":6406832,"extracted_for_static_analysis":false},
+    {"path":"RUNE/Ship/steam_api64.dll","size_bytes":980576,"extracted_for_static_analysis":false},
+    {"path":"RUNE/Ship/steam_api64.rne","size_bytes":301928,"extracted_for_static_analysis":false},
+    {"path":"RUNE/Ship/steam_emu.ini","size_bytes":2911,"extracted_for_static_analysis":false},
+    {"path":"autorun.inf","size_bytes":59,"extracted_for_static_analysis":false},
+    {"path":"setup-1.bin","size_bytes":8859324894,"extracted_for_static_analysis":false,"copy_path":"[đường dẫn máy cá nhân đã ẩn]","copy_verified_from_iso":true,"archive_listing_by_7zip_26":"failed: Cannot open the file as archive","note":"Member copied intact out of UDF ISO. Payload itself remains unexpanded; 7-Zip did not recognize it as a supported archive."},
+    {"path":"setup.exe","size_bytes":6206677,"extracted_for_static_analysis":true,"executed":false,"note":"7-Zip did not identify it as an archive."}
+  ],
+  "limitations": [
+    "ISO content listing is not a full payload inventory.",
+    "The payload copy is not a game-file inventory and has not been unpacked.",
+    "No installer or game execution was performed.",
+    "NFO metadata is self-reported by the package."
+  ]
+}

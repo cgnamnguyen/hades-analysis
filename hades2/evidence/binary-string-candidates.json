@@ -1,0 +1,307 @@
+{
+  "artifact": "RUNE/Ship/Hades2.exe",
+  "sha256": "0d95b21dc449ac4c8308cb94a613266d590e314bffee2b3fbc3176fc159479e5",
+  "method": "Local ASCII and UTF-16LE printable string scan; offset is file offset. These are identifiers/text only, not behavior proof.",
+  "groups": {
+    "biome_identifiers": {
+      "count": 19,
+      "entries": [
+        {
+          "offset": 5034612,
+          "encoding": "ascii",
+          "value": "BiomeB"
+        },
+        {
+          "offset": 5034652,
+          "encoding": "ascii",
+          "value": "BiomeI"
+        },
+        {
+          "offset": 5034664,
+          "encoding": "ascii",
+          "value": "BiomeIHouse"
+        },
+        {
+          "offset": 5034676,
+          "encoding": "ascii",
+          "value": "BiomeN"
+        },
+        {
+          "offset": 5034684,
+          "encoding": "ascii",
+          "value": "BiomeO"
+        },
+        {
+          "offset": 5034692,
+          "encoding": "ascii",
+          "value": "BiomeC"
+        },
+        {
+          "offset": 5034700,
+          "encoding": "ascii",
+          "value": "BiomeF"
+        },
+        {
+          "offset": 5034708,
+          "encoding": "ascii",
+          "value": "BiomeG"
+        },
+        {
+          "offset": 5034716,
+          "encoding": "ascii",
+          "value": "BiomeH"
+        },
+        {
+          "offset": 5034728,
+          "encoding": "ascii",
+          "value": "BiomeChaos"
+        },
+        {
+          "offset": 5034744,
+          "encoding": "ascii",
+          "value": "BiomeHub"
+        },
+        {
+          "offset": 5034760,
+          "encoding": "ascii",
+          "value": "BiomeMap"
+        },
+        {
+          "offset": 5034776,
+          "encoding": "ascii",
+          "value": "BiomeCredits"
+        },
+        {
+          "offset": 5034792,
+          "encoding": "ascii",
+          "value": "BiomeOBoss"
+        },
+        {
+          "offset": 5034804,
+          "encoding": "ascii",
+          "value": "BiomeP"
+        },
+        {
+          "offset": 5034812,
+          "encoding": "ascii",
+          "value": "BiomeQ"
+        },
+        {
+          "offset": 5034824,
+          "encoding": "ascii",
+          "value": "BiomeQEnding"
+        },
+        {
+          "offset": 5085120,
+          "encoding": "ascii",
+          "value": "BiomeTime"
+        },
+        {
+          "offset": 5095784,
+          "encoding": "ascii",
+          "value": "BiomeDepthCache"
+        }
+      ]
+    },
+    "route_counters": {
+      "count": 16,
+      "entries": [
+        {
+          "offset": 5135912,
+          "encoding": "ascii",
+          "value": "GameplayTime:Clear:Underworld"
+        },
+        {
+          "offset": 5135944,
+          "encoding": "ascii",
+          "value": "TotalTime:Clear:Underworld"
+        },
+        {
+          "offset": 5135976,
+          "encoding": "ascii",
+          "value": "GameplayTime:FirstClear:Surface"
+        },
+        {
+          "offset": 5136008,
+          "encoding": "ascii",
+          "value": "TotalTime:FirstClear:Surface"
+        },
+        {
+          "offset": 5136040,
+          "encoding": "ascii",
+          "value": "GameplayTime:FirstClear:Underworld"
+        },
+        {
+          "offset": 5136080,
+          "encoding": "ascii",
+          "value": "TotalTime:FirstClear:Underworld"
+        },
+        {
+          "offset": 5136112,
+          "encoding": "ascii",
+          "value": "GameplayTime:TenthClear:Underworld"
+        },
+        {
+          "offset": 5136152,
+          "encoding": "ascii",
+          "value": "TotalTime:TenthClear:Underworld"
+        },
+        {
+          "offset": 5136208,
+          "encoding": "ascii",
+          "value": "ClearedUnderworld"
+        },
+        {
+          "offset": 5136232,
+          "encoding": "ascii",
+          "value": "ClearedSurface"
+        },
+        {
+          "offset": 5136264,
+          "encoding": "ascii",
+          "value": "ClearedUnderworldRuns"
+        },
+        {
+          "offset": 5136288,
+          "encoding": "ascii",
+          "value": "ClearedSurfaceRuns"
+        },
+        {
+          "offset": 5136632,
+          "encoding": "ascii",
+          "value": "GameplayTime:TenthClear:Surface"
+        },
+        {
+          "offset": 5136664,
+          "encoding": "ascii",
+          "value": "TotalTime:TenthClear:Surface"
+        },
+        {
+          "offset": 5136696,
+          "encoding": "ascii",
+          "value": "GameplayTime:Clear:Surface"
+        },
+        {
+          "offset": 5136728,
+          "encoding": "ascii",
+          "value": "TotalTime:Clear:Surface"
+        }
+      ]
+    },
+    "named_game_systems": {
+      "count": 10,
+      "entries": [
+        {
+          "offset": 4985528,
+          "encoding": "ascii",
+          "value": "Keepsake"
+        },
+        {
+          "offset": 4994112,
+          "encoding": "ascii",
+          "value": "keepsake"
+        },
+        {
+          "offset": 5017184,
+          "encoding": "ascii",
+          "value": "BoneStart"
+        },
+        {
+          "offset": 5032728,
+          "encoding": "ascii",
+          "value": "DebugRNGSeed"
+        },
+        {
+          "offset": 5095896,
+          "encoding": "ascii",
+          "value": "LifetimeResourcesGained"
+        },
+        {
+          "offset": 5096048,
+          "encoding": "ascii",
+          "value": "SurfaceShop"
+        },
+        {
+          "offset": 5096080,
+          "encoding": "ascii",
+          "value": "UseableHarvestPoint"
+        },
+        {
+          "offset": 5096104,
+          "encoding": "ascii",
+          "value": "FishingPoint"
+        },
+        {
+          "offset": 5096120,
+          "encoding": "ascii",
+          "value": "UseableFishingPoint"
+        },
+        {
+          "offset": 5096560,
+          "encoding": "ascii",
+          "value": "HarvestPoint"
+        }
+      ]
+    },
+    "game_resource_refs": {
+      "count": 1,
+      "entries": [
+        {
+          "offset": 5082576,
+          "encoding": "ascii",
+          "value": "@Items/Resources/Alchemy/CosmeticsPointsPrestige_Text"
+        }
+      ]
+    },
+    "candidate_actor_names": {
+      "count": 9,
+      "entries": [
+        {
+          "offset": 4993712,
+          "encoding": "ascii",
+          "value": "MelinoeField"
+        },
+        {
+          "offset": 4993728,
+          "encoding": "ascii",
+          "value": "Melinoe"
+        },
+        {
+          "offset": 5035432,
+          "encoding": "ascii",
+          "value": "FrogFamiliar"
+        },
+        {
+          "offset": 5035448,
+          "encoding": "ascii",
+          "value": "HoundFamiliar"
+        },
+        {
+          "offset": 5035676,
+          "encoding": "ascii",
+          "value": "Charon"
+        },
+        {
+          "offset": 5035688,
+          "encoding": "ascii",
+          "value": "Chronos"
+        },
+        {
+          "offset": 5035764,
+          "encoding": "ascii",
+          "value": "Hecate"
+        },
+        {
+          "offset": 5035984,
+          "encoding": "ascii",
+          "value": "Nemesis"
+        },
+        {
+          "offset": 5036000,
+          "encoding": "ascii",
+          "value": "Odysseus"
+        }
+      ]
+    }
+  }
+}

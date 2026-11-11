@@ -1,0 +1,1137 @@
+{
+  "source": "Hades Wiki / Fandom image repository",
+  "license_note": "Hades Wiki / Fandom image files. Community wiki text may be CC BY-NC-SA unless otherwise stated; game artwork remains Supergiant Games property. Check each file page and permissions before public or commercial reuse; keep source attribution.",
+  "verified_at": "2026-11-10",
+  "assets": [
+    {
+      "file": "assets/icons/weapon-witch-staff.png",
+      "source_page": "https://hades.fandom.com/wiki/File:StaffIcon.png",
+      "role": "Nocturnal Arm: Witch Staff",
+      "width": 72,
+      "height": 72,
+      "bytes": 3022,
+      "sha256": "60D4FBEEB9C35618455FAA63E1F4FF7F5722FE3FD7E394C951E3A1223F71E93E",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/weapon-sister-blades.png",
+      "source_page": "https://hades.fandom.com/wiki/File:BladesIcon.png",
+      "role": "Nocturnal Arm: Sister Blades",
+      "width": 72,
+      "height": 72,
+      "bytes": 4182,
+      "sha256": "930220C2044D23351A00C115D389B196BC6E465A7C21E6B873807791767985D4",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/weapon-umbral-flames.png",
+      "source_page": "https://hades.fandom.com/wiki/File:TorchesIcon.png",
+      "role": "Nocturnal Arm: Umbral Flames",
+      "width": 72,
+      "height": 72,
+      "bytes": 3208,
+      "sha256": "4CAB97FA3371E4A63A8E1613CAC1168507183157DED5FBEA7D1F6310E9FBB5A3",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/weapon-moonstone-axe.png",
+      "source_page": "https://hades.fandom.com/wiki/File:AxeIcon.png",
+      "role": "Nocturnal Arm: Moonstone Axe",
+      "width": 72,
+      "height": 72,
+      "bytes": 3600,
+      "sha256": "FB6F0FA75C941DA80356E71231CF278BF8C4297EFB267FD5B07E0ACE97AA80AD",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/weapon-argent-skull.png",
+      "source_page": "https://hades.fandom.com/wiki/File:SkullIcon.png",
+      "role": "Nocturnal Arm: Argent Skull",
+      "width": 72,
+      "height": 72,
+      "bytes": 3908,
+      "sha256": "86E7D9FA507A5D47414207EA6849DDA01E0B90FCF7E78AC6F0EBA0586672E436",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/weapon-black-coat.png",
+      "source_page": "https://hades.fandom.com/wiki/File:CoatIcon.png",
+      "role": "Nocturnal Arm: Black Coat",
+      "width": 72,
+      "height": 69,
+      "bytes": 3334,
+      "sha256": "130511308C90F48FDD1F4587A017E411D8751005D910E832445E8DAE93F5B76D",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/tool-crescent-pick.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Crescent_Pick.png",
+      "role": "Gathering tool: mining",
+      "width": 70,
+      "height": 70,
+      "bytes": 2956,
+      "sha256": "58EB1BA18FB92582A5B104F10AE120EC9A3AC1D38008EED1AACB155C013C1431",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/tool-tablet-of-peace.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Tablet_of_Peace.png",
+      "role": "Gathering tool: shades",
+      "width": 70,
+      "height": 70,
+      "bytes": 2536,
+      "sha256": "6BAAEDB1739632D223E8F97CB60578B7564C8345E167C96FD49FD0B4246B4918",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/tool-silver-spade.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Silver_Spade.png",
+      "role": "Gathering tool: seeds",
+      "width": 70,
+      "height": 70,
+      "bytes": 2388,
+      "sha256": "E7E2DC6E5F5A6F7EC31917CED0B96FBF2C476D7FE21AF160DFBDDAA77076E998",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/tool-rod-of-fishing.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Rod_of_Fishing.png",
+      "role": "Gathering tool: fishing",
+      "width": 70,
+      "height": 70,
+      "bytes": 2516,
+      "sha256": "01D2F4F6BA07ABB785822A570144DAEB8AED8A1A4AB7D716409424B3954B6A2C",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-ashes.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Ashes.png",
+      "role": "Resource: Ashes",
+      "width": 64,
+      "height": 66,
+      "bytes": 3632,
+      "sha256": "CD2B76B8D0BC574D37CDBBC852C6876217CA767E38C13F3B05F3D865D3A97FA4",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-psyche.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Psyche.png",
+      "role": "Resource: Psyche",
+      "width": 56,
+      "height": 69,
+      "bytes": 4026,
+      "sha256": "9DEC634D76FE8953CAD848920C2D4A15C7AC42701B3FC909FEA25BC043BB698A",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-bones.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Bones.png",
+      "role": "Resource: Bones",
+      "width": 119,
+      "height": 110,
+      "bytes": 9672,
+      "sha256": "AC9A729084E9F651CE8214AA8706E2A4989F3731C8714AF333917F88D3C3EE42",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-fate-fabric.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Fate_Fabric.png",
+      "role": "Resource: Fate Fabric",
+      "width": 53,
+      "height": 62,
+      "bytes": 3274,
+      "sha256": "06B016D0F7F154EAB7304E4EB005F808AEA620374FE29C6A99A8BEBBC9CCF3B2",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-moon-dust.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Moon_Dust.png",
+      "role": "Resource: Moon Dust",
+      "width": 193,
+      "height": 237,
+      "bytes": 23312,
+      "sha256": "EDC17F6AE345A451BDADE54D6B6D1DB3A2B0E57B545CCFE4E37FA6513393290D",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/resource-grasp.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Grasp.png",
+      "role": "Arcana activation capacity",
+      "width": 52,
+      "height": 70,
+      "bytes": 3248,
+      "sha256": "14DB26BBA83FB15029CBB278DBC8FFE5267031C72200BE379496EB7C4B862093",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/familiar-frinos.png",
+      "source_page": "https://hades.fandom.com/wiki/File:FrinosIcon.png",
+      "role": "Familiar: Frinos",
+      "width": 66,
+      "height": 55,
+      "bytes": 2876,
+      "sha256": "76B64BBF77CAD3FE1823FE5EBC993DBC6DB126A7A3574DC20C0369D3321C7BBD",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/familiar-toula.png",
+      "source_page": "https://hades.fandom.com/wiki/File:ToulaIcon.png",
+      "role": "Familiar: Toula",
+      "width": 67,
+      "height": 70,
+      "bytes": 3404,
+      "sha256": "9CA7B77EDB92C7422791EEAC508CB00410BD3555EA891E698748867CB358B163",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/familiar-raki.png",
+      "source_page": "https://hades.fandom.com/wiki/File:RakiIcon.png",
+      "role": "Familiar: Raki",
+      "width": 70,
+      "height": 58,
+      "bytes": 2860,
+      "sha256": "82BB09236A7B14F939B8736B18C195E8AB23FC2E7E6EC827B8F144A9895E7834",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/familiar-hecuba.png",
+      "source_page": "https://hades.fandom.com/wiki/File:HecubaIcon.png",
+      "role": "Familiar: Hecuba",
+      "width": 63,
+      "height": 70,
+      "bytes": 2958,
+      "sha256": "2684C64212B83654F3356EF4811710A275D0955937D3548171F1BDFD8501367A",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/familiar-gale.png",
+      "source_page": "https://hades.fandom.com/wiki/File:GaleIcon.png",
+      "role": "Familiar: Gale",
+      "width": 67,
+      "height": 70,
+      "bytes": 3270,
+      "sha256": "9E5D1E172487B6BA7F7E1177E87688FB863EBDFD7C46DCD04D1B25B7DF70872E",
+      "media_type": null,
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-attack.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Attack_icon.png",
+      "role": "Hades II player action icon: Attack",
+      "width": 159,
+      "height": 165,
+      "bytes": 5330,
+      "sha256": "08a8ec4fc0eb081ff264682d828c11d9cf61cd21383b261199bb931942560056",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-special.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Special_icon.png",
+      "role": "Hades II player action icon: Special",
+      "width": 158,
+      "height": 158,
+      "bytes": 4788,
+      "sha256": "64d634eda2268d6151c766f1fd5343ea6dc73c435f1203144c130c77fd5911d0",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-cast.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Cast_icon.png",
+      "role": "Hades II player action icon: Cast",
+      "width": 160,
+      "height": 160,
+      "bytes": 4966,
+      "sha256": "dc9b38c94a5e1f439756c0e4199ba77ac528fd317adfb687b5514c6c5ed853cc",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-omega.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Omega.png",
+      "role": "Omega action symbol",
+      "width": 46,
+      "height": 47,
+      "bytes": 1120,
+      "sha256": "77270e19eefe8a57d1f7b92d1422be373cafee91e3f9dc51a4188190327b17e9",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-magick.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Magick.png",
+      "role": "Magick resource icon",
+      "width": 43,
+      "height": 44,
+      "bytes": 3108,
+      "sha256": "4397660b17dd2cf98df962a7845eff5245a6a6dc106b372bdd425a04cf288e97",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/action-magick-bar.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Magick_Bar.png",
+      "role": "HUD Magick meter",
+      "width": 617,
+      "height": 43,
+      "bytes": 6088,
+      "sha256": "2c840c41866ad0723eab83b4fe2c766e9f7dc1f1038330c81ea568968ec53f11",
+      "media_type": "image/png",
+      "alpha_channel": false,
+      "alpha_extrema": null
+    },
+    {
+      "file": "assets/icons/upgrade-path-of-stars.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Path_of_Stars.png",
+      "role": "Selene Hex upgrade system icon",
+      "width": 66,
+      "height": 68,
+      "bytes": 3488,
+      "sha256": "63024668e9c69239b43ac0ea4fa7e1814feb510fac031527eb4d4698a01c4f4e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/upgrade-daedalus-hammer.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Daedalus_Hammer.png",
+      "role": "Daedalus Hammer run upgrade icon",
+      "width": 130,
+      "height": 130,
+      "bytes": 6572,
+      "sha256": "70d4078d35f33a71b221376ca038c8bc2ce606756e988764d6629754e6b91877",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/upgrade-arcana-common.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Arcana_Card_Common.png",
+      "role": "Arcana Common rarity/upgrading icon",
+      "width": 36,
+      "height": 48,
+      "bytes": 1556,
+      "sha256": "80d5303aaa104fb75efee38f880d57742bff9da3014c29fa20df1aa2436af88f",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/upgrade-arcana-rare.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Arcana_Card_Rare.png",
+      "role": "Arcana Rare rarity/upgrading icon",
+      "width": 36,
+      "height": 48,
+      "bytes": 1524,
+      "sha256": "2e5b8295a6b8797ebb548fd54b74ef820a894931e795fb0d15b1792b424df965",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/upgrade-arcana-epic.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Arcana_Card_Epic.png",
+      "role": "Arcana Epic rarity/upgrading icon",
+      "width": 36,
+      "height": 48,
+      "bytes": 1480,
+      "sha256": "08f53774670ed7cc805914c1bb6320bb50c13b2d154539e774be9198ae87a24e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/upgrade-arcana-heroic.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Arcana_Card_Heroic.png",
+      "role": "Arcana Heroic rarity/upgrading icon",
+      "width": 36,
+      "height": 48,
+      "bytes": 1478,
+      "sha256": "4a1013ab7986258e7b7102d7db9ea1e7f301307022def95100a189c4b0d61346",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-phase-shift.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Phase_Shift_II.png",
+      "role": "Selene Hex: Phase Shift",
+      "width": 88,
+      "height": 88,
+      "bytes": 4350,
+      "sha256": "420ab2633c590cefed0f7da99251bf5068841d31cc49a55efdaa77a42053c6ff",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-twilight-curse.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Twilight_Curse_II.png",
+      "role": "Selene Hex: Twilight Curse",
+      "width": 88,
+      "height": 88,
+      "bytes": 4440,
+      "sha256": "8efbf395b94203d33a15f313eab961b58ade72501688ffd894688c890970be96",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-lunar-ray.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Lunar_Ray_II.png",
+      "role": "Selene Hex: Lunar Ray",
+      "width": 90,
+      "height": 88,
+      "bytes": 5124,
+      "sha256": "580b99808bf59ca5459ccb1b8e37a97479da0c4d22487015abaec043339d20b8",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-wolf-howl.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Wolf_Howl_II.png",
+      "role": "Selene Hex: Wolf Howl",
+      "width": 88,
+      "height": 88,
+      "bytes": 3922,
+      "sha256": "d9d2aa69c66fdf592a3c934d8f4313eb16d8a13798df9355a9bbfba94f7ba365",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-moon-water.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Moon_Water_II.png",
+      "role": "Selene Hex: Moon Water",
+      "width": 88,
+      "height": 88,
+      "bytes": 4096,
+      "sha256": "0dd5fad9859231accf9c26cbdf20417b342f417807b4687e08bddcfbc805f2c9",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-night-bloom.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Night_Bloom_II.png",
+      "role": "Selene Hex: Night Bloom",
+      "width": 88,
+      "height": 88,
+      "bytes": 4402,
+      "sha256": "27da4fcb99d30b8e55dcde51501130e4ae8148510b062de0df79cbe505133da7",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-total-eclipse.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Total_Eclipse_II.png",
+      "role": "Selene Hex: Total Eclipse",
+      "width": 88,
+      "height": 88,
+      "bytes": 4318,
+      "sha256": "18c124c759933eb9837df88dbc6f8ee06aa908d754a57a45728f4272c43d83d7",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-dark-side.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Dark_Side_II.png",
+      "role": "Selene Hex: Dark Side",
+      "width": 88,
+      "height": 88,
+      "bytes": 4486,
+      "sha256": "7d790749d4e5026e5043115e76783bddb74de86585152a8a7802bdab640be7c6",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/hex-sky-fall.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Sky_Fall_II.png",
+      "role": "Selene Hex: Sky Fall",
+      "width": 88,
+      "height": 88,
+      "bytes": 5086,
+      "sha256": "37d81fc8a6c0a86c1351ab54f19eaffb032d8a77ce7968bd45e1d3121209b64e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-01.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card01.png",
+      "role": "Arcana card artwork 01",
+      "width": 640,
+      "height": 1017,
+      "bytes": 178506,
+      "sha256": "a4448f2f671c6a213050813615adc20a5200fc259da500bc35b1b19c2045d718",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-02.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card02.png",
+      "role": "Arcana card artwork 02",
+      "width": 640,
+      "height": 1018,
+      "bytes": 186916,
+      "sha256": "a39159cc02f4fbeebc315c4a423e06c4ad43bc65a54b910c9060ba3c434815b1",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-03.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card03.png",
+      "role": "Arcana card artwork 03",
+      "width": 640,
+      "height": 1018,
+      "bytes": 144270,
+      "sha256": "cff50c62d03aca459d28145809c91e99ab7ac6d93c7b169d868d5432f6678be9",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-04.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card04.png",
+      "role": "Arcana card artwork 04",
+      "width": 640,
+      "height": 1018,
+      "bytes": 185430,
+      "sha256": "f1f09ed09110f0019d5b5351d60b7283b26fe4c2e5cf83bf6eea83422b3ac064",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-05.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card05.png",
+      "role": "Arcana card artwork 05",
+      "width": 640,
+      "height": 1018,
+      "bytes": 185482,
+      "sha256": "4ca8e4e79ea611108ad111dfcaa9274e9739b9839f46cc344e55f15c2800501a",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-06.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card06.png",
+      "role": "Arcana card artwork 06",
+      "width": 640,
+      "height": 1018,
+      "bytes": 181674,
+      "sha256": "d306b6cc36eea1e4e923cdc112f6e54744a3c2bf0bd9ef5814bbd78a6448dbf6",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-07.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card07.png",
+      "role": "Arcana card artwork 07",
+      "width": 640,
+      "height": 1018,
+      "bytes": 173968,
+      "sha256": "258d75e74c405ac457a70f9e5d9c0358c54e7f68346db1a52f707870a66e6839",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-08.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card08.png",
+      "role": "Arcana card artwork 08",
+      "width": 640,
+      "height": 1018,
+      "bytes": 192972,
+      "sha256": "8dc8d2abe81a71ce128d0fa02bd4831da7f53624878bdaac5b5ef99e5f735d04",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-09.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card09.png",
+      "role": "Arcana card artwork 09",
+      "width": 640,
+      "height": 1018,
+      "bytes": 194798,
+      "sha256": "29b6124a620f0378ddb0d71450f03289bf07944fc52754c8f41ea90eb707f84c",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-10.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card10.png",
+      "role": "Arcana card artwork 10",
+      "width": 640,
+      "height": 1018,
+      "bytes": 171314,
+      "sha256": "cec16de6028601ac1723a3751c5ea1f078c4200b9fbceba192b43c81a645718a",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-11.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card11.png",
+      "role": "Arcana card artwork 11",
+      "width": 640,
+      "height": 1018,
+      "bytes": 210500,
+      "sha256": "205337548b6982149401537c159940b9650efb79db7a4e1a82ca98111920c0cd",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-12.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card12.png",
+      "role": "Arcana card artwork 12",
+      "width": 640,
+      "height": 1018,
+      "bytes": 175730,
+      "sha256": "52faec3ce4153bbe538a6e54e86dbba767e1ad8662a4d8de99acb3749a9b1b0a",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-13.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card13.png",
+      "role": "Arcana card artwork 13",
+      "width": 640,
+      "height": 1018,
+      "bytes": 201488,
+      "sha256": "e021c63d6d30a342d3b7f4c691a4d6e7319ca92c98011f553f7b63c0e01a2575",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-14.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card14.png",
+      "role": "Arcana card artwork 14",
+      "width": 640,
+      "height": 1018,
+      "bytes": 213478,
+      "sha256": "3ae62543656b3beaa4cb2566100f00bb3fa5f02d1aeb1204c2685cf8e3f604f5",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-15.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card15.png",
+      "role": "Arcana card artwork 15",
+      "width": 640,
+      "height": 1018,
+      "bytes": 214076,
+      "sha256": "c4f4212274a4bb947dc9c5bea0054605f3ac27b7e88118cdd8c062785878314c",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-16.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card16.png",
+      "role": "Arcana card artwork 16",
+      "width": 640,
+      "height": 1018,
+      "bytes": 206464,
+      "sha256": "1d6643f6ee6b66996a9a031f50f5caf7f60b897778f52510e7a6086c46f5d784",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-17.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card17.png",
+      "role": "Arcana card artwork 17",
+      "width": 640,
+      "height": 1018,
+      "bytes": 157600,
+      "sha256": "ef787f6cf7e683a1e103be2cb867846a8abf6afed8d8d806d0ddaee3df5788dd",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-18.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card18.png",
+      "role": "Arcana card artwork 18",
+      "width": 640,
+      "height": 1018,
+      "bytes": 184866,
+      "sha256": "cd3f6929268550a70b8daa39dce170fda133246ab1548557fa42104835d8ade0",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        6,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-19.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card19.png",
+      "role": "Arcana card artwork 19",
+      "width": 640,
+      "height": 1018,
+      "bytes": 207028,
+      "sha256": "2ea3fde24faf3b4c7a87ec9d81adea8c48869a939cd07c7b1c16f167c26d7d59",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-20.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card20.png",
+      "role": "Arcana card artwork 20",
+      "width": 640,
+      "height": 1017,
+      "bytes": 209198,
+      "sha256": "91a34b67c8b8f2c37222139858753e951ad25bdd2c4932d180a94ae4ca1abe1e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        8,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-21.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card21.png",
+      "role": "Arcana card artwork 21",
+      "width": 640,
+      "height": 1016,
+      "bytes": 182680,
+      "sha256": "63894f36142c8d263fd148698d42e5a97cadb2e33bce52388cabb6af490d91ff",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        20,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-22.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card22.png",
+      "role": "Arcana card artwork 22",
+      "width": 640,
+      "height": 1018,
+      "bytes": 204790,
+      "sha256": "0ed8ebadd2c9df7ae0e757e46ea819a531eeba00d9d936a1b9d0d32d97ce4d31",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-23.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card23.png",
+      "role": "Arcana card artwork 23",
+      "width": 640,
+      "height": 1018,
+      "bytes": 177570,
+      "sha256": "3e08279c1b34f39a4277084df6437615959535ca5ec38718e8be19f5af844834",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-24.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card24.png",
+      "role": "Arcana card artwork 24",
+      "width": 640,
+      "height": 1022,
+      "bytes": 227780,
+      "sha256": "dab02f03b2494cbdfe06f81ae33c3c627c3a92c69cea068b5c1d69c4d6f93f68",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/arcana-card-25.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Card25.png",
+      "role": "Arcana card artwork 25",
+      "width": 640,
+      "height": 1018,
+      "bytes": 206366,
+      "sha256": "f927695bcb8f2ad853e8337084a826c351edd0b0a23f0682b531698dd69e7918",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "assets/icons/boon-arctic-ring.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Arctic_Ring_II.png",
+      "role": "Boon icon: Arctic Ring (Demeter, Cast)",
+      "width": 88,
+      "height": 88,
+      "bytes": 14808,
+      "sha256": "0569c9d1468ec88420eb4af3610c7591d4694582a65b85d2ea1a4677609b790b",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Demeter",
+      "slot": "Cast"
+    },
+    {
+      "file": "assets/icons/boon-divine-dash.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Divine_Dash_II.png",
+      "role": "Boon icon: Divine Dash (Athena, Dash)",
+      "width": 90,
+      "height": 90,
+      "bytes": 14849,
+      "sha256": "c156dfbe76176aaf89df2662fcce6cb39b252c2a97866ed39dc8157af6da0e3e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Athena",
+      "slot": "Dash"
+    },
+    {
+      "file": "assets/icons/boon-flame-strike.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Flame_Strike_II.png",
+      "role": "Boon icon: Flame Strike (Hestia, Attack)",
+      "width": 89,
+      "height": 88,
+      "bytes": 11167,
+      "sha256": "f028fdc26177ead18fe660ed36e07b7751758b7ee99b62badfe3983df367c7e8",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Hestia",
+      "slot": "Attack"
+    },
+    {
+      "file": "assets/icons/boon-flutter-strike.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Flutter_Strike_II.png",
+      "role": "Boon icon: Flutter Strike (Aphrodite, Attack)",
+      "width": 88,
+      "height": 88,
+      "bytes": 13964,
+      "sha256": "1933fc2cacbb8606efef8551dc88a5dfff85c23e501f0a5cfcfa73818c29a6df",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Aphrodite",
+      "slot": "Attack"
+    },
+    {
+      "file": "assets/icons/boon-sun-worshiper.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Sun_Worshiper_II.png",
+      "role": "Boon icon: Sun Worshiper (Hera + Apollo, Duo)",
+      "width": 90,
+      "height": 89,
+      "bytes": 16241,
+      "sha256": "0fc261d3e91081390cf39376d24a74c2d01fb4b41330dab59647d1edac590e7e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Hera + Apollo",
+      "slot": "Duo"
+    },
+    {
+      "file": "assets/icons/boon-sworn-strike.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Sworn_Strike_II.png",
+      "role": "Boon icon: Sworn Strike (Hera, Attack)",
+      "width": 89,
+      "height": 90,
+      "bytes": 13681,
+      "sha256": "2005d2a80fdc9a9fcbb1c1f81b6ae6f3bf72955f1e5d1d51697347553249df10",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Hera",
+      "slot": "Attack"
+    },
+    {
+      "file": "assets/icons/boon-wave-strike.png",
+      "source_page": "https://hades.fandom.com/wiki/File:Wave_Strike_II.png",
+      "role": "Boon icon: Wave Strike (Poseidon, Attack)",
+      "width": 89,
+      "height": 89,
+      "bytes": 11562,
+      "sha256": "286dd54a31314c5b915ec47aa460e322150e94aa787f3f8779422776cd5eab1e",
+      "media_type": "image/png",
+      "alpha_channel": true,
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_revision": "Hades Wiki file ending in II",
+      "god": "Poseidon",
+      "slot": "Attack"
+    }
+  ],
+  "total_local_icon_pngs": 81,
+  "render_policy": "Natural width/height; object-fit: contain; screenshots use separate inventory and responsive height:auto layout."
+}
