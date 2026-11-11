@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="100%" height="100%" style="background:#0d0e15; font-family:'Segoe UI', Roboto, sans-serif;">
+  <rect x="10" y="10" width="920" height="380" rx="16" fill="#13141f" stroke="#ef4444" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="35" y="45" fill="#f87171" font-size="16" font-weight="800" letter-spacing="1">CHIẾN LƯỢC 3 PHASE BOSS CHÚA TỂ HADES &amp; EXTREME MEASURES 4</text>
+  <text x="35" y="68" fill="#9ca3af" font-size="12">HadesBoss.lua &bull; Phân tích cơ chế sát thương, laze tử thần và bão tuyết bóng tối</text>
+
+  <!-- 3 Phases Grid -->
+  <g transform="translate(35, 95)">
+    <rect x="0" y="0" width="280" height="270" rx="12" fill="#1a1824" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#fbbf24" font-size="14" font-weight="800">PHASE 1: 17,000 HP</text>
+    <text x="20" y="52" fill="#fde68a" font-size="11">(EM4: 22,000 HP + Triệu Hồi)</text>
+    
+    <text x="20" y="85" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Đâm Giáo Bident Strike</text>
+    <text x="35" y="105" fill="#9ca3af" font-size="11">Tầm đâm xuyên cực xa, telegraph ngắn.</text>
+    
+    <text x="20" y="135" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Hades Cast (Huyết Thạch)</text>
+    <text x="35" y="155" fill="#9ca3af" font-size="11">Găm vào người chơi: +100% sát thương nhận vào.</text>
+    
+    <text x="20" y="185" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Tàng Hình Bão Tuyết</text>
+    <text x="35" y="205" fill="#9ca3af" font-size="11">Biến mất hoàn toàn, tấn công lén từ phía sau.</text>
+
+    <text x="20" y="235" fill="#f87171" font-size="11.5" font-weight="700">Chiến thuật: Bám sát chân, vòng ra sau lưng.</text>
+  </g>
+
+  <g transform="translate(330, 95)">
+    <rect x="0" y="0" width="280" height="270" rx="12" fill="#1c1628" stroke="#a855f7" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#c084fc" font-size="14" font-weight="800">PHASE 2: 17,000 HP</text>
+    <text x="20" y="52" fill="#e9d5ff" font-size="11">(EM4: 22,000 HP + Vòng Xoáy Laze)</text>
+    
+    <text x="20" y="85" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Laze Hủy Diệt 360 Độ</text>
+    <text x="35" y="105" fill="#9ca3af" font-size="11">Bắn 3-5 chùm tia xoay vòng toàn bản đồ.</text>
+    
+    <text x="20" y="135" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Quét Giáo 2 Tầng</text>
+    <text x="35" y="155" fill="#9ca3af" font-size="11">Vung giáo 2 nhịp liên tiếp phá vỡ i-frames.</text>
+    
+    <text x="20" y="185" fill="#e2e8f0" font-size="12" font-weight="700">&bull; Boiling Blood Pots</text>
+    <text x="35" y="205" fill="#9ca3af" font-size="11">Vại sọ nổ lan nếu bị dính đòn quét.</text>
+
+    <text x="20" y="235" fill="#c084fc" font-size="11.5" font-weight="700">Chiến thuật: Trốn sau 2 cột đá khi có laze.</text>
+  </g>
+
+  <g transform="translate(625, 95)">
+    <rect x="0" y="0" width="280" height="270" rx="12" fill="#241318" stroke="#ef4444" stroke-width="2"/>
+    <text x="20" y="32" fill="#f87171" font-size="14" font-weight="900">PHASE 3 ĐỘC QUYỀN EM4</text>
+    <text x="20" y="52" fill="#fca5a5" font-size="11">29,000 HP &bull; BẢN NHẠC ROCK BÙNG NỔ</text>
+    
+    <text x="20" y="85" fill="#fecdd3" font-size="12" font-weight="700">&bull; Đấu Trường Tối Đen Màn Hình</text>
+    <text x="35" y="105" fill="#fca5a5" font-size="11">Tầm nhìn thu hẹp bán kính 200px quanh Zagreus.</text>
+    
+    <text x="20" y="135" fill="#fecdd3" font-size="12" font-weight="700">&bull; Triệu Hồi Cerberus</text>
+    <text x="35" y="155" fill="#fca5a5" font-size="11">Chó 3 đầu dội mưa đá lửa xuống đầu liên tục.</text>
+    
+    <text x="20" y="185" fill="#fecdd3" font-size="12" font-weight="700">&bull; Tự Phục Hồi Máu</text>
+    <text x="35" y="205" fill="#fca5a5" font-size="11">Hades uống vại nước hồi máu nếu đánh chậm.</text>
+
+    <text x="20" y="235" fill="#f43f5e" font-size="11.5" font-weight="700">Chiến thuật: Dồn DPS tối đa, bật Call thần.</text>
+  </g>
+</svg>
