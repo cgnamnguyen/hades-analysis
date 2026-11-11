@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight-cyan {
+      background: #0f1c24;
+      border: 1.5px solid #06b6d4;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+    }
+    .flow-node.highlight-emerald {
+      background: #102219;
+      border: 1.5px solid #10b981;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          CHU TRÌNH SINH PHÒNG & QUA MÀN · ROOM PROGRESSION ENGINE
+        </h2>
+      </div>
+      <span class="text-xs text-emerald-300 bg-emerald-950/60 px-2.5 py-1 rounded border border-emerald-800/60 font-mono">
+        RoomManager.lua
+      </span>
+    </div>
+
+    <!-- 4 Top Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 relative mb-6">
+      <!-- Step 1 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-slate-400 tracking-wide mb-1 uppercase">1 · DỌN PHÒNG XONG</div>
+        <div class="text-[13px] font-semibold text-slate-100">Encounter Clear</div>
+        <div class="text-xs text-slate-400 mt-1">Gọi UnlockRoomExits · Xóa quái vật và đạn</div>
+      </div>
+
+      <!-- Arrow 1 -> 2 -->
+      <div class="hidden md:flex absolute top-1/2 left-[23.5%] -translate-y-1/2 z-10 pointer-events-none text-emerald-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 2 (Highlight Cyan) -->
+      <div class="flow-node highlight-cyan">
+        <div class="text-xs font-bold text-cyan-400 tracking-wide mb-1 uppercase flex items-center justify-between">
+          <span>2 · CÂN BẰNG TỈ LỆ</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-cyan-400"></span>
+        </div>
+        <div class="text-[13px] font-semibold text-cyan-100">ChooseNextRewardStore</div>
+        <div class="text-xs text-cyan-300/80 mt-1">RunProgress (Boon/Búa) vs MetaProgress (Đá/Bóng tối)</div>
+      </div>
+
+      <!-- Arrow 2 -> 3 -->
+      <div class="hidden md:flex absolute top-1/2 left-[48.5%] -translate-y-1/2 z-10 pointer-events-none text-emerald-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-amber-400 tracking-wide mb-1 uppercase">3 · LỌC 8 PHÒNG CŨ</div>
+        <div class="text-[13px] font-semibold text-slate-100">ChooseNextRoomData</div>
+        <div class="text-xs text-slate-400 mt-1">NeverRepeat 8 phòng gần nhất · Ép phòng Story/Boss</div>
+      </div>
+
+      <!-- Arrow 3 -> 4 -->
+      <div class="hidden md:flex absolute top-1/2 left-[73.5%] -translate-y-1/2 z-10 pointer-events-none text-emerald-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 4 (Highlight Emerald) -->
+      <div class="flow-node highlight-emerald">
+        <div class="text-xs font-bold text-emerald-400 tracking-wide mb-1 uppercase">4 · LƯU CHECKPOINT</div>
+        <div class="text-[13px] font-semibold text-emerald-100">AttemptUseDoor</div>
+        <div class="text-xs text-emerald-300/80 mt-1">Tự lưu Profile1.sav · Triệt tiêu Save Scumming</div>
+      </div>
+    </div>
+
+    <!-- Step 5 (Bottom Transition Card) -->
+    <div class="relative pt-2">
+      <div class="flex justify-center">
+        <div class="flow-node max-w-xl w-full border-emerald-900/60 bg-[#121c17]">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold text-emerald-400 tracking-wide uppercase">
+              5 · NẠP TRƯỚC VRAM & CHUYỂN MÀN MƯỢT MÀ (PRELOAD LZ4)
+            </div>
+            <span class="text-[11px] bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800">
+              Zero Loading Screen
+            </span>
+          </div>
+          <div class="text-[13px] text-slate-300 mt-1.5 leading-relaxed">
+            Engine C++ xả bộ nhớ cũ (<code class="text-emerald-300 font-mono text-xs">DestroyRoomObjects</code>) và giải nén dòng <span class="text-emerald-200 font-semibold">LZ4 Texture Atlas</span> của phòng mới trong vài mili-giây, duy trì <span class="text-emerald-300 font-bold">60 FPS tuyệt đối</span> mà không cần màn hình chờ tải game!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-5 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Dark Foresight giảm -20% Meta; Đền Styx túi Cerberus ra chắc chắn ở nhánh 4 (100%).</span>
+      <span class="font-mono text-slate-600">The Forge C++ Engine · RunManager</span>
+    </div>
+  </div>
+</body>
+</html>
