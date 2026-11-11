@@ -1,0 +1,263 @@
+{
+  "authority": "local-static-byte-verification; not a REA-produced Lua analysis",
+  "apk": "DontStarveTogether-v2.2.1-mod-menu-apkvision.apk",
+  "apk_sha256": "e1dad01a49604a0d09e5ed06948632423a96571d1eaada107e0764248efc7a4d",
+  "bundle_member": "assets/databundles/scripts.zip",
+  "bundle_sha256": "c81d74f79c483dcc0b4a4a4f3002b1d34e7963c59fe39ede9a29b1aa4f2fe57c",
+  "apk_executed": false,
+  "lua_executed": false,
+  "member_count": 4068,
+  "plain_lua_count": 4025,
+  "verified_selected_files": [
+    {
+      "path": "scripts/actions.lua",
+      "bytes": 281187,
+      "sha256": "b1d481bc9a2c4db0cd59c7d913c63e47a33655982e50137d39b5a05f5f1bce00",
+      "zip_crc32": "2f65b5bc",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 7143
+    },
+    {
+      "path": "scripts/behaviours/chaseandattack.lua",
+      "bytes": 5203,
+      "sha256": "e897d2c821c639641028f64dac45a4800261dc7875aa0ee044e0143ae4420b50",
+      "zip_crc32": "099c0574",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 120
+    },
+    {
+      "path": "scripts/brains/houndbrain.lua",
+      "bytes": 9461,
+      "sha256": "41ec8bc4dbd8cbe35fdf0250767dcb634ea49ed686c70bbd634483bb22deda44",
+      "zip_crc32": "bae258a4",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 245
+    },
+    {
+      "path": "scripts/components/armor.lua",
+      "bytes": 4618,
+      "sha256": "b131f91a8af150e3ab46cb1ccadd1b0a3b22656c873a69f30b8dcc71eb62ffdb",
+      "zip_crc32": "2c615cd7",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 177
+    },
+    {
+      "path": "scripts/components/burnable.lua",
+      "bytes": 20250,
+      "sha256": "2053b970e62a74f538b6514d92ee0d1f99b9246c01b70adebe9c860eaf6661ae",
+      "zip_crc32": "f8e34b84",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 606
+    },
+    {
+      "path": "scripts/components/combat.lua",
+      "bytes": 47678,
+      "sha256": "f773a071377694e672ca3a598994c9fceffe55503e0ff1bb7218df1cf584c6f2",
+      "zip_crc32": "05edb21c",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1349
+    },
+    {
+      "path": "scripts/components/growable.lua",
+      "bytes": 10019,
+      "sha256": "5c2fa50dfd0d56ecefa21879034623ecc278e8df132a55c79de600f5cd223784",
+      "zip_crc32": "1d55bf5e",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 369
+    },
+    {
+      "path": "scripts/components/health.lua",
+      "bytes": 22656,
+      "sha256": "0bb323cee7dd40cd7356e8405bc36ec31b618cb2f75e8be41d30634adced0e9c",
+      "zip_crc32": "d2748853",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 667
+    },
+    {
+      "path": "scripts/components/hounded.lua",
+      "bytes": 35321,
+      "sha256": "ce8c2079bb57fdd1ad8211f84a19b68f5fdaba0ddab17fbdbbd69e467aa62b09",
+      "zip_crc32": "78eba20c",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1152
+    },
+    {
+      "path": "scripts/components/hunger.lua",
+      "bytes": 5347,
+      "sha256": "6eb4e59a49fca0a8018c66497d0dfbab4ddcbd23ec2408aa7c8afcf29439a36f",
+      "zip_crc32": "6a69b799",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 210
+    },
+    {
+      "path": "scripts/components/inventory.lua",
+      "bytes": 95148,
+      "sha256": "841cef3884244b33a0d666328b1f62491857f50250394b60bd3090704e350ccb",
+      "zip_crc32": "03470551",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 2793
+    },
+    {
+      "path": "scripts/components/locomotor.lua",
+      "bytes": 70972,
+      "sha256": "75bf8fb23e5d546b1b8602a0e2633935e7e76c420cc60a580bc54f4fb898204b",
+      "zip_crc32": "e5bb8008",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1866
+    },
+    {
+      "path": "scripts/components/moisture.lua",
+      "bytes": 12473,
+      "sha256": "06046db4c227fe04e7af1f17add1827d1595eac0ba52fda548f4ba5ea4caede5",
+      "zip_crc32": "0007b0a0",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 397
+    },
+    {
+      "path": "scripts/components/pickable.lua",
+      "bytes": 18199,
+      "sha256": "59e58f8edfd10b9742aa85b2d722ee8f30854174eea7f7d7f73f4d9ee9449902",
+      "zip_crc32": "c0b7e322",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 603
+    },
+    {
+      "path": "scripts/components/playercontroller.lua",
+      "bytes": 293762,
+      "sha256": "fb7c9b9dee39cf991afa2df4e6056b4588c77a4f45737308d9075ecbee92a75c",
+      "zip_crc32": "adc49ed2",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 7196
+    },
+    {
+      "path": "scripts/components/propagator.lua",
+      "bytes": 9660,
+      "sha256": "5a087ab9ab71fbaf97b55b71807179a7807f28dce12839091cadb72e2bf0c11a",
+      "zip_crc32": "c290298e",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 255
+    },
+    {
+      "path": "scripts/components/sanity.lua",
+      "bytes": 21471,
+      "sha256": "a6d6e16fc9010ce316995f242ef67c92bec6c0df6023642314358ef1b84745cb",
+      "zip_crc32": "73802433",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 619
+    },
+    {
+      "path": "scripts/components/temperature.lua",
+      "bytes": 21777,
+      "sha256": "630be4b04b06c1e39123dcc56f77e0f262ce57cd49c7f482a1feff2152091741",
+      "zip_crc32": "793ab8b9",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 539
+    },
+    {
+      "path": "scripts/components/weapon.lua",
+      "bytes": 5049,
+      "sha256": "cc24bef87e58e7df066bc1fb5fc196825da1c76e243ad20c5dd138a574da5267",
+      "zip_crc32": "33f72a56",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 166
+    },
+    {
+      "path": "scripts/map/forest_map.lua",
+      "bytes": 40480,
+      "sha256": "1da147d3a5858b1d17089ca9ad6e8d7a2b3433328c512b042acdb8166ce3c47a",
+      "zip_crc32": "81f0859c",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1080
+    },
+    {
+      "path": "scripts/map/level.lua",
+      "bytes": 8285,
+      "sha256": "08ec29a7b0b0b1a11e0187f21e11db6a936947f9d859f048376d1ffe417304b4",
+      "zip_crc32": "5cff7729",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 245
+    },
+    {
+      "path": "scripts/prefabs/berrybush.lua",
+      "bytes": 12734,
+      "sha256": "ff28314089805a20a79386cfe3a97fc76c500db6d16bca073778cdbe0de73a45",
+      "zip_crc32": "700154b6",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 370
+    },
+    {
+      "path": "scripts/prefabs/evergreens.lua",
+      "bytes": 32056,
+      "sha256": "2e9b80e22ed3b1265f1f47ca39d06ee172e4e4bc2562d3a81068485d46bb606a",
+      "zip_crc32": "75cae511",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1007
+    },
+    {
+      "path": "scripts/prefabs/hound.lua",
+      "bytes": 29607,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1",
+      "zip_crc32": "f93e769c",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 928
+    },
+    {
+      "path": "scripts/stategraphs/SGhound.lua",
+      "bytes": 32528,
+      "sha256": "0409b9732e5d06778af2d86706ee3b27786f771b0a31b458f58867cef262a259",
+      "zip_crc32": "6f6c7b3b",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 1121
+    },
+    {
+      "path": "scripts/stategraphs/SGwilson.lua",
+      "bytes": 1001940,
+      "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69",
+      "zip_crc32": "4fbf9984",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 28601
+    },
+    {
+      "path": "scripts/tuning.lua",
+      "bytes": 337916,
+      "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf",
+      "zip_crc32": "bd2f37c6",
+      "extracted_matches_apk": true,
+      "previous_index_matches_apk": true,
+      "lines": 9594
+    }
+  ],
+  "missing_selected_files": [],
+  "mismatches": [],
+  "limitations": [
+    "Verifies bytes and source locations only, not runtime behavior.",
+    "Function inventory is syntactic, not a complete call graph.",
+    "Android/native mod hooks and actual world settings were not executed or measured."
+  ]
+}

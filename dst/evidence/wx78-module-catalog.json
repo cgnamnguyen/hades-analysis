@@ -1,0 +1,550 @@
+[
+  {
+    "id": "wx78module_maxhealth",
+    "name": "maxhealth",
+    "bar": "ALPHA",
+    "slots": 1,
+    "activatefn": "maxhealth_activate",
+    "deactivatefn": "maxhealth_deactivate",
+    "definition_start_line": 210,
+    "definition_end_line": 217,
+    "detail": "Tăng max health thêm 40. Khi lắp hoặc tháo bình thường, giữ tỷ lệ máu hiện tại; isloading bỏ bước SetPercent. Skill Alpha thêm hệ số giảm damage dựa tổng module health đang bật.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 180,
+        "end_line": 220,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_maxsanity1",
+    "name": "maxsanity1",
+    "bar": "ALPHA",
+    "slots": 1,
+    "activatefn": "maxsanity1_activate",
+    "deactivatefn": "maxsanity1_deactivate",
+    "definition_start_line": 293,
+    "definition_end_line": 300,
+    "detail": "Tăng max sanity thêm 40, giữ tỷ lệ khi không load. Skill Alpha đặt modifier aura âm và hệ số dapperness dương của trang bị; tháo gỡ modifier theo module.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 224,
+        "end_line": 304,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_maxsanity",
+    "name": "maxsanity",
+    "bar": "ALPHA",
+    "slots": 2,
+    "activatefn": "maxsanity_activate",
+    "deactivatefn": "maxsanity_deactivate",
+    "definition_start_line": 346,
+    "definition_end_line": 353,
+    "detail": "Tăng max sanity thêm 100 và dapperness thêm 100/(day_time×10). Tháo trừ lại cả hai; khi không load giữ tỷ lệ sanity. Các skill dùng cùng lớp xử lý aura/trang bị với bản 1 ô.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 308,
+        "end_line": 361,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 224,
+        "end_line": 344,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_movespeed",
+    "name": "movespeed",
+    "bar": "BETA",
+    "slots": 6,
+    "activatefn": "movespeed_activate",
+    "deactivatefn": "movespeed_deactivate",
+    "definition_start_line": 396,
+    "definition_end_line": 403,
+    "detail": "Tăng bộ đếm speed chip và chọn multiplier 1+{0;0,25;0,40;0,50}[count+1]. Bản này tốn 6 ô; playerspeedmult không cộng vào tốc độ thú cưỡi. Tháo giảm bộ đếm rồi tính lại.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 365,
+        "end_line": 406,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_movespeed2",
+    "name": "movespeed2",
+    "bar": "BETA",
+    "slots": 2,
+    "activatefn": "movespeed_activate",
+    "deactivatefn": "movespeed_deactivate",
+    "definition_start_line": 410,
+    "definition_end_line": 417,
+    "detail": "Dùng cùng callback và hiệu quả theo số chip như movespeed nhưng chỉ tốn 2 ô. Đây là khác biệt chi phí trực tiếp trong định nghĩa, không phải cộng thêm một công thức tốc độ khác.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 365,
+        "end_line": 422,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_heat",
+    "name": "heat",
+    "bar": "BETA",
+    "slots": 3,
+    "activatefn": "heat_activate",
+    "deactivatefn": "heat_deactivate",
+    "definition_start_line": 510,
+    "definition_end_line": 517,
+    "detail": "Mỗi module tăng heat_count, đẩy cả mintemp/maxtemp thêm 20 trong giới hạn MIN_TEMP..MAX_TEMP và cộng 0,1 vào base/max drying rate. Skill Beta cập nhật chống đóng băng; từ 2 module heat đặt redirect miễn đóng băng. Tháo trừ lại các lượng đã cộng.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 430,
+        "end_line": 522,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_nightvision",
+    "name": "nightvision",
+    "bar": "BETA",
+    "slots": 4,
+    "activatefn": "nightvision_common_activate",
+    "deactivatefn": "nightvision_common_deactivate",
+    "definition_start_line": 566,
+    "definition_end_line": 576,
+    "detail": "Bản Beta 4 ô có callback cả server/client. Module đầu đăng ký watcher đêm/trăng tròn và sự kiện skill; chỉ ép night vision khi đêm và không trăng tròn. Module cuối bị tháo gỡ watcher và hiệu ứng.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 526,
+        "end_line": 579,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_cold",
+    "name": "cold",
+    "bar": "BETA",
+    "slots": 3,
+    "activatefn": "cold_activate",
+    "deactivatefn": "cold_deactivate",
+    "definition_start_line": 623,
+    "definition_end_line": 630,
+    "detail": "Mỗi module tăng cold_count và đẩy cả hai giới hạn nhiệt xuống 20; skill Beta trừ fire_damage_scale theo tuning. Callback tháo giảm count, tính lại nhiệt/overlay và gỡ skill.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 430,
+        "end_line": 451,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 583,
+        "end_line": 634,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_taser",
+    "name": "taser",
+    "bar": "BETA",
+    "slots": 2,
+    "activatefn": "taser_activate",
+    "deactivatefn": "taser_deactivate",
+    "definition_start_line": 746,
+    "definition_end_line": 755,
+    "detail": "Nghe blocked/attacked, khóa lặp 0,1 giây trên từng module; loại damage redirect, attacker chết/cách điện và vũ khí projectile. Damage cơ sở 20 nhân electric/wet multiplier; gắn cách điện cho chủ. Skill Beta tạo/cập nhật taser buildup và xử lý ReleaseBuildup khi tháo.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 637,
+        "end_line": 758,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_light",
+    "name": "light",
+    "bar": "BETA",
+    "slots": 3,
+    "activatefn": "light_activate",
+    "deactivatefn": "light_deactivate",
+    "definition_start_line": 821,
+    "definition_end_line": 830,
+    "detail": "Cộng 1,25 vào tổng bán kính sáng, Light radius thực là tổng^0,8. Skill Beta quản lý wx78_lightbeam theo tổng này. Tổng về gần 0 thì tắt sáng và trả thuộc tính light mặc định; bản này tốn 3 ô.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 762,
+        "end_line": 833,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_maxhunger",
+    "name": "maxhunger",
+    "bar": "ALPHA",
+    "slots": 2,
+    "activatefn": "maxhunger_activate",
+    "deactivatefn": "maxhunger_deactivate",
+    "definition_start_line": 887,
+    "definition_end_line": 894,
+    "detail": "Tăng max hunger thêm 100 và đặt burn rate multiplier 0,80 theo module. Skill Alpha thay multiplier bằng mức skill tương ứng. Khi không load giữ tỷ lệ đói; tháo trừ max và đặt hệ số module về 1.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 837,
+        "end_line": 898,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_maxhunger1",
+    "name": "maxhunger1",
+    "bar": "ALPHA",
+    "slots": 1,
+    "activatefn": "maxhunger1_activate",
+    "deactivatefn": "maxhunger1_deactivate",
+    "definition_start_line": 914,
+    "definition_end_line": 921,
+    "detail": "Tăng max hunger thêm 40, tốn 1 ô; không tự có mức burn rate 0,80 của bản 2 ô. Skill Alpha có các hệ số riêng. Tháo trừ lại max và hủy callback skill.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 902,
+        "end_line": 924,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_music",
+    "name": "music",
+    "bar": "BETA",
+    "slots": 3,
+    "activatefn": "music_activate",
+    "deactivatefn": "music_deactivate",
+    "definition_start_line": 1076,
+    "definition_end_line": 1088,
+    "detail": "Tăng dapperness của chủ, tạo sanity aura và chăm cây farm trong bán kính 12×số module, chu kỳ 144×FRAMES. Skill Beta thay task chăm cây bằng leaderrollcall, cập nhật radius/max followers. Module cuối bị tháo hủy task, aura và âm nhạc.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 927,
+        "end_line": 1092,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_bee",
+    "name": "bee",
+    "bar": "ALPHA",
+    "slots": 3,
+    "activatefn": "bee_activate",
+    "deactivatefn": "bee_deactivate",
+    "definition_start_line": 1195,
+    "definition_end_line": 1212,
+    "detail": "Hồi 5 máu×số module mỗi seg_time nếu đang bị thương; đồng thời dùng hiệu quả maxsanity bản 100. Skill Alpha có đường tạo/giới hạn/nạp khiên và listener healthdelta. Tháo module cuối hủy regen; cleanup skill xử lý khiên và aura modifier.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1096,
+        "end_line": 1215,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 224,
+        "end_line": 344,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_maxhealth2",
+    "name": "maxhealth2",
+    "bar": "ALPHA",
+    "slots": 2,
+    "activatefn": "maxhealth2_activate",
+    "deactivatefn": "maxhealth2_deactivate",
+    "definition_start_line": 1233,
+    "definition_end_line": 1240,
+    "detail": "Tăng max health thêm 40×2,5 = 100; dùng cùng hàm đổi max và nhánh giữ tỷ lệ/isloading như maxhealth. Trọng số armor skill riêng lấy MAXHEALTH2_ARMOR_MULT.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1218,
+        "end_line": 1243,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 152,
+        "end_line": 192,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_radar",
+    "name": "radar",
+    "bar": "BETA",
+    "slots": 1,
+    "activatefn": "radar_activate",
+    "deactivatefn": "radar_deactivate",
+    "definition_start_line": 1267,
+    "definition_end_line": 1274,
+    "detail": "Tăng khoảng camera thêm 5 theo module, gỡ bằng RemoveCameraExtraDistance khi tháo. Skill Beta phát rangecircuitupdate cho drone. Nhánh scan chim đọc occupiable occupant hoặc lootprefabs đầu của trap, không chỉ prefab entity ngoài lồng.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1247,
+        "end_line": 1292,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_screech",
+    "name": "screech",
+    "bar": "GAMMA",
+    "slots": 3,
+    "activatefn": "screech_activate",
+    "deactivatefn": "screech_deactivate",
+    "definition_start_line": 1311,
+    "definition_end_line": 1318,
+    "detail": "Module Gamma 3 ô tăng bộ đếm; module đầu thêm inherent action TOGGLEWXSCREECH, module cuối tháo action. Hiệu ứng sợ hãi, thời gian và cooldown nằm ở stategraph được đối chiếu riêng bên dưới.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1297,
+        "end_line": 1321,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_stacksize",
+    "name": "stacksize",
+    "bar": "BETA",
+    "slots": 1,
+    "activatefn": "stacksize_activate",
+    "deactivatefn": "stacksize_deactivate",
+    "definition_start_line": 1412,
+    "definition_end_line": 1423,
+    "detail": "Khi gắn vào owner, dành ô inventory từ cuối và tạo wx78_inventorycontainer khóa ô. Nếu thiếu charge, vật cũ bị thả; đủ charge thì đưa vật cũ vào túi con. isloading chỉ tăng bộ đếm, bỏ tạo túi mới. Activate/deactivate bật/tắt nguồn túi; tháo gỡ khóa và thả túi, trừ nhánh đang chuyển backup body.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1325,
+        "end_line": 1426,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_light2",
+    "name": "light2",
+    "bar": "BETA",
+    "slots": 1,
+    "activatefn": "light2_activate",
+    "deactivatefn": "light2_deactivate",
+    "definition_start_line": 1440,
+    "definition_end_line": 1447,
+    "detail": "Cùng công thức cộng bán kính 1,25 và lightbeam như light nhưng chỉ tốn 1 ô; tháo trừ cùng lượng.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1430,
+        "end_line": 1452,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 762,
+        "end_line": 818,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_digestion",
+    "name": "digestion",
+    "bar": "GAMMA",
+    "slots": 2,
+    "activatefn": "digestion_activate",
+    "deactivatefn": "digestion_deactivate",
+    "definition_start_line": 1500,
+    "definition_end_line": 1509,
+    "detail": "Module Gamma 2 ô bật spoiled processor và listener oneat. Khi số món đạt 5−(số module−1), reset bộ đếm rồi queue state wx_bake; skill Gamma thay cấu hình processor. Tháo module cuối tắt processor/listener. Vật phẩm chỉ sinh tại frame 46 của wx_bake, không sinh ngay ở callback ăn.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1456,
+        "end_line": 1512,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "stategraphs/SGwx78_common.lua",
+        "start_line": 1126,
+        "end_line": 1174,
+        "sha256": "35aeca3b39b39506b7afbf6be00561745a85315c8a86db96eecd4601198f3d86"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_spin",
+    "name": "spin",
+    "bar": "GAMMA",
+    "slots": 3,
+    "activatefn": "spin_activate",
+    "deactivatefn": "spin_deactivate",
+    "definition_start_line": 1556,
+    "definition_end_line": 1563,
+    "detail": "Module Gamma 3 ô thêm efficientuser và aoediminishingreturns. Module đầu nghe equip/unequip và đổi attack range sang 3 khi công cụ có CHOP/MINE, nếu không trả DEFAULT_ATTACK_RANGE. Module cuối gỡ aoediminishingreturns/listeners và reset range; lệnh gỡ efficientuser đang là comment nên không được mô tả là có gỡ.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1516,
+        "end_line": 1566,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "prefabs/wx78_common.lua",
+        "start_line": 961,
+        "end_line": 974,
+        "sha256": "b2eb46dc151ea699670975255a9bae2b04ce813f90478a61400d09fb1a359835"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_shielding",
+    "name": "shielding",
+    "bar": "GAMMA",
+    "slots": 4,
+    "activatefn": "shielding_activate",
+    "deactivatefn": "shielding_deactivate",
+    "definition_start_line": 1588,
+    "definition_end_line": 1595,
+    "detail": "Module Gamma 4 ô thêm inherent action TOGGLEWXSHIELDING và skill callback refresh. Khi tháo, gỡ action rồi cleanup skill. Armor, taunt, giới hạn damage và cooldown do stategraph quyết định, đã nối riêng.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1570,
+        "end_line": 1600,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  },
+  {
+    "id": "wx78module_chess",
+    "name": "chess",
+    "bar": "GAMMA",
+    "slots": 1,
+    "activatefn": "chess_activate",
+    "deactivatefn": "chess_deactivate",
+    "definition_start_line": 1634,
+    "definition_end_line": 1641,
+    "detail": "Module Gamma 1 ô thêm clockworktracker nếu thiếu rồi SetBonus bằng số module; skill Gamma gắn chessbff. Tháo cập nhật bonus và gỡ tag khi không còn module/skill; đoạn này không tự RemoveComponent clockworktracker.",
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1604,
+        "end_line": 1646,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      }
+    ],
+    "doc": "wx78-modules.md",
+    "evidence_type": "local-static-source",
+    "target_executed": false
+  }
+]

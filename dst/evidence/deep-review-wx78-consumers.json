@@ -1,0 +1,429 @@
+[
+  {
+    "verified_flows": [
+      "SGwilson chuyển CHOP/MINE/REMOVELUNARBUILDUP sang wx_spin_start khi có spin module và chưa prespin. ATTACK còn đòi vũ khí có CHOP/MINE và target; PICK đòi cây thuộc HARVESTABLE_PLANT_TARGET_TAGS, không quickpick và có công cụ phù hợp. Các nhánh rider/farmplantfastpicker/noquickpick được xét trước nhánh spin trong PICK.",
+      "wx_spin_start dừng locomotor, phát chop_pre. Frame13 có thể quickstart hướng mục tiêu ATTACK của player nếu khoảng cách nằm trong min/max tính từ physics radius; frame14 chuyển wx_spin. Mỗi vòng spin tạo bảng targets/efficiency tại frame1, đóng cửa sổ tác động ở frame2 hoặc3 sau khi bảo đảm đã có ít nhất một lần update. Vì thế tác động được xử lý trong cửa sổ update, không gán thành một hit duy nhất đúng frame2.",
+      "Spin truy entity quanh SPIN_RADIUS+3 rồi lọc lại bằng SPIN_RADIUS+physics radius, valid/visible và bảng targets. Ưu tiên gỡ lunar buildup khi có MINE, rồi CHOP/MINE theo workable, sau đó combat với CanTarget/not Ally, cuối cùng pickable harvest plant. Gặp vật cần loại công cụ khác có thể recoil với WorkedBy(...,0). Entity đã hit được ghi vào targets để tránh đánh lại trong cửa sổ đó.",
+      "Hiệu suất CHOP/MINE/ATTACK có bảng riêng. Sau mỗi thành công, eff mới=(eff hoặc decay)×decay; decay=0,5 với một module, bằng0 với nhiều hơn một module. Vì vậy sau hit đầu, giá trị lưu kế tiếp là0,25 hoặc0. FiniteUses.OnUsedAsItem nhân consumption[action] với EfficientUser.GetMultiplier; đây là hao uses. AoeDiminishingReturns.mult phục vụ hành vi vũ khí riêng, comment của source nói không phải giảm damage chung. Sau lượt, các modifier tạm đều được gỡ.",
+      "Thu hoạch spin gọi Pick(TheWorld), không GiveItem cho nhân vật; loot được Launch về phía nhân vật và rơi ra thế giới. Nếu có loot, finiteuses của công cụ có thể bị trừ WX78_SPIN_PICK_EFFICIENCY=0,2 một lần trong vòng; fumaroletool có nhánh OnUsed riêng. Source có hai lời gọi OnUsed cho fumarole trong nhánh này, nên không áp quy tắc 0,2 của finiteuses cho mọi công cụ. Túi đầy không ngăn loot được tạo từ nhánh này.",
+      "Nhả phím gỡ busy/nopredict, nhưng chỉ về idle khi canrelease đã bật. Bộ đếm chóng mặt tăng theo dt, vượt CalcMaxDizzy thì vào wx_spin_dizzy; max là8 giây với một module,12 với nhiều module. Tích lũy phục hồi theo max(0,old−((now−last)/4)^2×max), nên nghỉ ngắn không nhất thiết xóa toàn bộ tích lũy. Spin loop chuyển tiếp vận tốc/hướng/numhits nhưng không chuyển các bảng targets/efficiency sang vòng mới.",
+      "Vận tốc tối đa spin là runspeed×0,6, quickstart có thể nhân tạm, bỏ bám target khi xa>=8. Unequip hoặc trượt chân thoát state; attacked cập nhật numhits giảm theo floor(elapsed/2), dưới3 thêm nostunlock. Khi thực sự rời spin, cleanup dừng motor, bỏ prespin/remote override, trả quyền thoại và xóa combat target. Không có save riêng cho cửa sổ hit, vận tốc hay dizzy trong các module đã đọc.",
+      "MAPSCOUT_MAP cần doer có classified/skill scoutdrone_1, target có GetDroneRange và action point. Nó clamp điểm chọn vào tầm đo từ vị trí doer, unwrap global icon, Stop chuyến cũ rồi SendToPoint. Tầm cơ sở200, skill extradrone cộng300, Beta1 có thể cộng theo số radar. Không dùng vị trí drone làm tâm clamp trong hàm này.",
+      "Drone scout dùng MapDeliverable, tốc độ tuning3; đoạn ngắn mất2 giây, dài hơn dùng 2+(distance−3)/3 với tăng/giảm tốc đầu/cuối. Khi đang bay, nó cập nhật vị trí rồi chỉ RevealArea nếu vùng cho phép bay, owner có player_classified và handshake READY; khoảng dịch chuyển bình phương>=16 mới reveal lần tiếp. Vùng cấm làm ẩn/ngừng quét, không có Stop tương tự delivery drone trong callback đã đọc.",
+      "StartTracking khiến scout persists=false và maprevealer riêng tư theo chủ, vì tracker chủ lưu từng drone GetSaveRecord theo shard ID. OnLoad chỉ SpawnSaveRecord cho shard hiện tại, giữ record shard khác trong self.data. Untracked trả persists=true; chủ bị remove hoặc ReleaseAllDrones phát despawn. Do đó persists=false không đủ để kết luận scout mất sau save.",
+      "TryFindTarget ưu tiên mục tiêu có công thức chủ chưa biết, kể cả dữ liệu đã cạn; nhóm thường phải còn GetData>0. Khi khóa mục tiêu, _scantime=0. Trong range hợp lệ, thời gian cộng dt cho tới >10 giây hoặc >20 nếu epic; ra range chỉ dừng FX, không tự reset _scantime trong nhánh này. Target invalid/dead/limbo, mất owner hoặc không còn lợi ích scan thì fail và trở lại proximity scan.",
+      "OnSuccessfulScan chỉ đặt _donescanning, recipe-to-teach và scanned_id rồi dừng quét. Brain ưu tiên bay về leader qua WALKTO; callback success mới phát scan_success, còn callback fail tương ứng đang comment. Nếu không có leader thì phát ngay. State scan_success gọi SpawnData tại frame21 rồi animover chuyển sang prefab succeeded; không coi quét đủ thời gian là dữ liệu đã vào túi.",
+      "SpawnData dùng DataAnalyzer.SpendData(scan_id), lấy floor dữ liệu hiện có rồi trừ đúng phần nguyên, giữ phần lẻ. Nếu amount>0 tạo scandata stack tại vị trí gần scanner và để nó rơi xuống đất, không GiveItem. DataAnalyzer hồi maxdata/16 mỗi SEG_TIME cho các mục đã có trong history; save giữ nguyên history. Hồi dữ liệu theo loại scan ID, không phải mỗi con vật được reset riêng.",
+      "Prefab succeeded lưu _module_recipe riêng. can_harvest đòi doer có upgrademoduleowner; recipe zap remote còn kiểm skill zapdrone_1. Khi thu, nó Teach công thức nếu có, Spawn scanner_item rồi Inventory.GiveItem và Remove succeeded. Nhánh GiveItem đã biết có fallback khi đầy, nên việc trả máy đi qua luật inventory; source không giữ succeeded chỉ vì túi đầy.",
+      "Succeeded timeout bằng total_day_time: xóa recipe và thay bằng scanner_item trên đất. Timer và module_recipe được lưu ở component/prefab riêng. Active scanner save chỉ có schematic, turned_off, scanned_id (load tương thích scanned_prefab); không ghi _scantime hay _donescanning. Vì vậy không khẳng định tải lại giữa quét/đang bay về sẽ tiếp tục đúng tiến độ; cần snapshot theo từng mốc.",
+      "Đổi leader tháo/gắn listener skill và rangecircuitupdate; mất leader khi chưa done thì fail và đổi về item. Scan distance/player proximity lấy radar đang hoạt động và skill extradrone từ net vars. Client hiển thị vòng quét không đủ để chứng minh server đã cộng thời gian; điều kiện noattack vẫn loại target, trừ tag state canwxscan.",
+      "Wx78_TaserBuildup nghe cả attacked và blocked, tăng theo gainratemultiplier×5 và clamp0..max100. Sau4 giây không tăng mới cộng drain_rate×dt; module consumer đặt drain_rate=-6+số module, gain multiplier=1+số module/3, blast_damage=50×số module và radius=2+số module. OnAttacked của component không dùng payload để lọc attacker như callback phản điện của từng module.",
+      "ReleaseBuildup chỉ hoạt động từ25% charge, mặc định hẹn nổ3 giây; nếu đã có lịch thì chỉ thay callback, không bắt đầu lại countdown. Đạt max từ dưới ngưỡng tự gọi Release. Nổ nhân cả damage và radius với phần trăm hiện tại, electrocute chủ rồi detach/spawn FX mới, reset charge0 và chạy callback. Chủ đang wxshielding/spinning không bật ForceNoInsulated cưỡng bức trong nhánh đã đọc.",
+      "OnSave chỉ lưu current; OnLoad SetCurrentBuildup, không khôi phục detonate_time, last_buildup_time hoặc effect cooldown cũ. Load tại max có thể kích hoạt lịch nổ mới qua setter; save ở mức khác khi đang countdown không giữ chính deadline đó trong component. Đây là hệ quả source có điều kiện, chưa quan sát snapshot.",
+      "Taser blast có cửa sổ hit18×FRAMES, bảng targets chặn lặp và đánh dấu owner trước nên không đánh owner qua vòng AoE này. Có owner thì dùng CanTarget/not Ally; mất owner dùng CanBeAttacked và lọc follower player khi non-PVP theo nhánh riêng. Damage nhân electric/wet multiplier, GetAttacked rồi electrocute; không mặc định tất cả creature trong vòng đều nhận hit.",
+      "ClockworkTracker theo dõi rook/knight/bishop bằng tag. CanAdd cho dưới max cơ sở; phần vượt vừa phải dưới ceil(total_bonus/3) cho từng loại, vừa chưa dùng hết bonus chung. Trong event YOTH, knight có max vô hạn, hai loại còn lại dùng ceil(bonus/2). Do đó bonus2 không có nghĩa mỗi loại được thêm2.",
+      "Giảm bonus/max gọi RevalidateFollowers theo thứ tự bishop→rook→knight, dùng next để chọn entity dư rồi SetLeader(nil), không mô tả được con cụ thể nào được giữ. Khi hết modifier, follower và max override, TryRemoveComponentIfClear tự RemoveComponent. Component không có OnSave/OnLoad; quota/nhóm theo dõi phải được dựng lại qua module/leader caller, chưa đọc hết đường follower load."
+    ],
+    "sources": [
+      {
+        "path": "stategraphs/SGwilson.lua",
+        "start_line": 852,
+        "end_line": 902,
+        "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69"
+      },
+      {
+        "path": "stategraphs/SGwilson.lua",
+        "start_line": 1043,
+        "end_line": 1067,
+        "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69"
+      },
+      {
+        "path": "stategraphs/SGwilson.lua",
+        "start_line": 1320,
+        "end_line": 1344,
+        "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69"
+      },
+      {
+        "path": "stategraphs/SGwx78_common.lua",
+        "start_line": 192,
+        "end_line": 887,
+        "sha256": "35aeca3b39b39506b7afbf6be00561745a85315c8a86db96eecd4601198f3d86"
+      },
+      {
+        "path": "components/efficientuser.lua",
+        "start_line": 1,
+        "end_line": 48,
+        "sha256": "a311c084fa4f3cfdb8929af95a87297a72e4eb7f16b463ec7ed8095b1f0714ab"
+      },
+      {
+        "path": "components/aoediminishingreturns.lua",
+        "start_line": 1,
+        "end_line": 12,
+        "sha256": "101c7c44c3e7ec4ca4b49c0dd681aa0b1b881434609b59aba3789aabc8094696"
+      },
+      {
+        "path": "components/finiteuses.lua",
+        "start_line": 85,
+        "end_line": 113,
+        "sha256": "db589f3ccc740d002c6106be914a1cde6375056262720359b2becdba25cec4b4"
+      },
+      {
+        "path": "util/sourcemodifierlist.lua",
+        "start_line": 1,
+        "end_line": 100,
+        "sha256": "98f6f66efd058defd7a87477556b7d042c51577f8f3e745d8008dc78afe0913b"
+      },
+      {
+        "path": "prefabs/wx78_common.lua",
+        "start_line": 253,
+        "end_line": 265,
+        "sha256": "b2eb46dc151ea699670975255a9bae2b04ce813f90478a61400d09fb1a359835"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 9429,
+        "end_line": 9439,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "actions.lua",
+        "start_line": 6821,
+        "end_line": 6884,
+        "sha256": "b1d481bc9a2c4db0cd59c7d913c63e47a33655982e50137d39b5a05f5f1bce00"
+      },
+      {
+        "path": "prefabs/wx78_drone_scout.lua",
+        "start_line": 107,
+        "end_line": 246,
+        "sha256": "a06315c6a33611b9059f1a83155efbf70d281fbc83f3ada3e121c7ad0effd7d3"
+      },
+      {
+        "path": "prefabs/wx78_drone_scout.lua",
+        "start_line": 308,
+        "end_line": 350,
+        "sha256": "a06315c6a33611b9059f1a83155efbf70d281fbc83f3ada3e121c7ad0effd7d3"
+      },
+      {
+        "path": "components/wx78_dronescouttracker.lua",
+        "start_line": 1,
+        "end_line": 93,
+        "sha256": "e53388baea73045f91188d08991591c7dab7eee7a4240c76d2923c1c0e3f0c37"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 7521,
+        "end_line": 7527,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "components/mapdeliverable.lua",
+        "start_line": 101,
+        "end_line": 206,
+        "sha256": "02a1a7541c0dd2aec5e9a063f5d6d85c0bce67eb041a3f1a55ea6da6aaeba384"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 34,
+        "end_line": 47,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 104,
+        "end_line": 174,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 184,
+        "end_line": 234,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 397,
+        "end_line": 550,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 573,
+        "end_line": 620,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 696,
+        "end_line": 727,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 730,
+        "end_line": 820,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "prefabs/wx78_scanner.lua",
+        "start_line": 1017,
+        "end_line": 1174,
+        "sha256": "2e8f39153be1162e9d0692f31d298c5c0553df3be46a5d69fdd64ccea76974b3"
+      },
+      {
+        "path": "brains/wx78_scannerbrain.lua",
+        "start_line": 1,
+        "end_line": 127,
+        "sha256": "c396bde9f44032f8a0cde8f94755a6871c936eb0522f95b4ea6be15e174c2906"
+      },
+      {
+        "path": "stategraphs/SGwx78_scanner.lua",
+        "start_line": 90,
+        "end_line": 224,
+        "sha256": "373d3045a52aa2338a8215d2d653d9bc5b3b27c10fb4ec2b57b7804fb84f51bf"
+      },
+      {
+        "path": "components/dataanalyzer.lua",
+        "start_line": 1,
+        "end_line": 79,
+        "sha256": "1ddafa81503bc88052cdfee78ceff45c21e1d5c95528cd9812e28bcce06b3c12"
+      },
+      {
+        "path": "prefabs/wx78.lua",
+        "start_line": 779,
+        "end_line": 780,
+        "sha256": "1e2536696d5042fee43546e50514aa257773f82e3c4d1ff56bdee88368ed59ac"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 6645,
+        "end_line": 6659,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "components/inventory.lua",
+        "start_line": 1177,
+        "end_line": 1220,
+        "sha256": "841cef3884244b33a0d666328b1f62491857f50250394b60bd3090704e350ccb"
+      },
+      {
+        "path": "components/wx78_taserbuildup.lua",
+        "start_line": 1,
+        "end_line": 245,
+        "sha256": "351e8f93f03fa014f6d27852f9417d55d4dae8c37e872e5d7532732d92a5aa95"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 670,
+        "end_line": 714,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "prefabs/wx78_taser_projectile.lua",
+        "start_line": 67,
+        "end_line": 185,
+        "sha256": "e21f601d272fbbf49e258cb20501fed7fd4d60b9b0320a0d8df83f34b9c58887"
+      },
+      {
+        "path": "prefabs/wx78_taser_projectile.lua",
+        "start_line": 257,
+        "end_line": 309,
+        "sha256": "e21f601d272fbbf49e258cb20501fed7fd4d60b9b0320a0d8df83f34b9c58887"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 7498,
+        "end_line": 7511,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "components/clockworktracker.lua",
+        "start_line": 1,
+        "end_line": 175,
+        "sha256": "0e5b830676b101fb9412a12d4be30bbb2d975310e2d140abc5949589c1616a58"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Đã đọc đủ 17 nhánh khởi tạo và callback lắp/tháo của cả 23 module WX78 trong định nghĩa này. Vẫn còn toàn bộ spin timeline, consumer drone/clockwork/buildup, backup body và các perk/minion/spell khác cần nối riêng.",
+        "Đã nối server spin timeline, scanner, scout/delivery drone, callback đổi thân và save/load backup/possessed body, taser buildup và quota Clockwork. Còn zap/shadow drone AI, thu phục và load follower Clockwork, client prediction, các snapshot chuyển trạng thái và perk/minion/spell của nhân vật khác."
+      ]
+    ],
+    "additional_unknowns": [],
+    "system_id": "characters-perks",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "topic_documents": [
+      "wx78-consumers.md"
+    ]
+  },
+  {
+    "verified_flows": [
+      "CanDoerActivate yêu cầu player có wx78_classified, owner userid khớp nếu đã liên kết; body chưa có owner phải TryToAttachToOwner thành công, nếu không trả TOOMANYBACKUPBODIES. TryToAttach từ chối owner nil/snapshot user session, body đã có userid và kiểm số body tự do, trừ chỗ cho build buffered. Không coi chỉ có nhãn WX78 là đủ quyền dùng body của người khác.",
+      "OnActivate bật _backupbody_transferring trên cả hai và tách shadow harvester/debuffer pet trước mọi chuyển đổi. Với inventory, nó ReturnActiveItem, thả đồ tag irreplaceable rồi SwapEquipment. Đồ container và inventory được tháo vào hai bảng theo slot, xóa prevcontainer/prevslot; túi wx78_inventorycontainer còn được gắn cờ riêng để callback tháo module không thả lại giữa chừng.",
+      "Chuyển đồ chỉ đi qua min(container.numslots,inventory.maxslots), GiveItem theo cùng slot. Nếu nhận thất bại, code đặt vị trí và OnDropped; slot dư cũng đi ra đất. Sau lượt trả silentfull/ignoresound về false. Đây là đường xử lý phần dư có trong source, chưa chứng minh mọi callback item hoặc thao tác chen ngang đều an toàn khi chạy.",
+      "Socket được UnsocketEverything cả hai phía rồi TryToSocket vào phía đối diện; vật không socket được hoặc nằm ngoài số socket chung được đặt xuống đất. Stats của doer được chụp trước đổi module; charge đổi chỗ rồi SwapUpgradeModules, sau đó mới ApplySavedStatsToDoer và ConfigureStats cho chassis. Cờ của túi mở rộng chỉ được gỡ sau khi module đã chuyển.",
+      "Stats chụp gồm current health/hunger/sanity, gears eaten, moisture, temperature, shield và grogginess. Health để lại tối thiểu1; khi áp lại, nhiệt quá lạnh/nóng có thể trở về STARTING_TEMP tùy nhiệt vùng, shield chỉ nhận giá trị đã lưu nếu hiện có charge source. Đổi thân không đơn thuần sao chép phần trăm health hay luôn giữ nguyên nhiệt độ/khiên.",
+      "Sau khi đổi đồ/module/stats, body và doer đổi vị trí/rotation rồi phát teleported. Pet cũ được gắn sang petleash phía đối diện; AttachPet thất bại thì phát despawn. Cuối hàm mới xóa _backupbody_transferring. Đây là chuỗi lệnh đồng bộ trong callback, chưa có bằng chứng cơ chế rollback toàn bộ nếu một callback giữa chuỗi lỗi.",
+      "Backup body có container thật lưu contents; body_inventory là entity con riêng với inventory.maxslots=0 chỉ để giữ equipment/skinner. Prefab.OnSave nhúng GetSaveRecord của entity con, maxcharge, possessed/planar và saved_stats. OnLoad xóa entity con mặc định, SpawnSaveRecord rồi gắn parent và đưa local position về0; LinkedItem.OnLoad đăng ký lại userid với world. Không coi thiếu itemslots trên entity con là body không lưu đồ.",
+      "Khi owner có skill bodycircuits, chassis gọi TryActivate từng module Beta; nếu không có hoặc owner bị gỡ thì deactivate. Constructor tắt automatic module activation, charge ban đầu3, nên không áp thẳng quy tắc mọi bar của nhân vật sống cho chassis đang đứng yên. Skill-tree initialized mới đăng ký body và cập nhật slots/socket; nhánh possessed có thể hẹn task0 để trở lại thân hoạt động.",
+      "Possessed body save riêng maxcharge, planar, gears và current stats; OnLoad áp current sau component load. OnLoadPostPass gọi TryToReplaceWithBackupBody(true): tạo chassis, chụp stats trước khi đặt charge hai phía về0, đổi dữ liệu qua DoActivate, ConfigurePossessed/saved_stats rồi Remove entity cũ. Cần kiểm chứng chuỗi tái sở hữu sau load, không mô tả là cứ nạp nguyên entity đang chạy tại state cũ.",
+      "Đổi thân trên bản đồ đòi skill remotebodyswap, tìm icon body gần điểm chọn trong radius20, chặn khác phía WagPunk arena barrier rồi CanActivate/DoActivate lại. SG wx_poweroff chỉ PerformBufferedAction tại frame60; bật invincible từ frame19, sau đó reboot kể cả action thất bại. Poweron mở điều khiển lại ở frame75 và bỏ invincible ở frame82. Đây là timeline riêng với việc đổi dữ liệu trong callback.",
+      "Đập hết work body thả equipment, contents container, socket và toàn bộ module rồi Remove. Haunt chỉ đăng ký hồi sinh khi có ghostrevive_1 và CanActivate; khi nhận ms_respawnedfromghost, charge body về0, đổi thân, skill ghostrevive_3 có thể SetPercent(1), rồi xóa chassis. Không suy rằng mọi lần haunt luôn hồi sinh ngay hoặc miễn mất charge.",
+      "Có drone nhỏ3×1 và lớn3×2, skill lần lượt deliverydrone_1/_2. Trước mở thao tác map, server chặn thiếu skill, đang _nointeract, đã khóa hoặc người khác đang mở container, và kho rỗng; trả NOSKILL_DRONE/INUSE/EMPTY. Khi nhận khóa, nó Close container và canbeopened=false; stopcontinuousaction của đúng user hoặc user remove sẽ mở khóa.",
+      "STARTMAPDELIVER kiểm vùng bay trước StartMapAction. MAPDELIVER_MAP kiểm tuyến ở maponly_checkvalidpos và fn, rồi MapDeliverable từ chối chuyến đang chạy hoặc buffered action thuộc người khác. OnStartDelivery đóng truy cập, tắt workable, đặt sender và bắt đầu takeoff. Hàng tiếp tục nằm trong container của drone, không được chuyển sang inventory người nhận qua callback này.",
+      "Thời gian delivery gồm cất cánh2,5 giây và đoạn bay tối thiểu2 giây, hoặc 2+(distance−speed)/speed với speed30. Mỗi update kiểm IsFlyingPermittedFromPointToPoint_BypassVault từ vị trí hiện tại tới vị trí mong muốn; không cho phép thì Stop và hạ cánh ở nơi hiện tại. Hạ cánh xong mới bật tương tác/workable và gỡ global tracking; có xử lý tránh mắc vật cản khi wake.",
+      "MapDeliverable.OnSave chỉ ghi khi đang bay: origin/dest làm tròn0,001, elapsed t làm tròn giây và len làm tròn0,1. OnLoad dựng lại cùng origin/dest và t=min(saved_t,len), chạy OnStartDelivery với doer=nil rồi StartUpdatingComponent. Container save/load riêng giữ hàng. Đây là khôi phục tiến độ đã lượng tử hóa, không phải lưu chính xác từng frame hoặc tự cộng thời gian offline.",
+      "Prefab delivery lưu sender.userid và sau component load chỉ tìm lại sender nếu IsDelivering; chưa online thì giữ senderid để thử lại trong progress. Khi không bay, OnLoadPostPass phát on_landed. Các khóa user đang chọn map không có trường lưu riêng trong code đọc, nên không đồng nhất khóa thao tác với hàng hay trạng thái chuyến đã gửi.",
+      "CanDismantle đòi kho rỗng, batteryuser và container có thể mở. Tuy vậy nhánh hammer/ChangeToItem vẫn DropEverything trước đổi sang kit và Remove drone. OnHit cũng DropEverything khi tương tác được. Vì vậy đồ còn trong kho đi ra đất trong các nhánh phá này; không tuyên bố kit giữ nguyên contents."
+    ],
+    "sources": [
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 31,
+        "end_line": 48,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 86,
+        "end_line": 240,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 243,
+        "end_line": 563,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 581,
+        "end_line": 674,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 736,
+        "end_line": 859,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 929,
+        "end_line": 980,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_backupbody.lua",
+        "start_line": 1018,
+        "end_line": 1065,
+        "sha256": "ecd80934caeec88fceba68ef5da9f202190f16a6fe1baea17002e0663574171e"
+      },
+      {
+        "path": "prefabs/wx78_possessedbody.lua",
+        "start_line": 181,
+        "end_line": 212,
+        "sha256": "872ff21c04d4a15d874a05d10abcaf1c55ab4a646c69e60f4946732f591d6e78"
+      },
+      {
+        "path": "prefabs/wx78_possessedbody.lua",
+        "start_line": 434,
+        "end_line": 493,
+        "sha256": "872ff21c04d4a15d874a05d10abcaf1c55ab4a646c69e60f4946732f591d6e78"
+      },
+      {
+        "path": "components/linkeditem.lua",
+        "start_line": 123,
+        "end_line": 144,
+        "sha256": "276b16be1504daacc7ec337232c1e7ab6b0348cc1af48c7f5500b5a9c9572ce9"
+      },
+      {
+        "path": "actions.lua",
+        "start_line": 6927,
+        "end_line": 6978,
+        "sha256": "b1d481bc9a2c4db0cd59c7d913c63e47a33655982e50137d39b5a05f5f1bce00"
+      },
+      {
+        "path": "stategraphs/SGwilson.lua",
+        "start_line": 27970,
+        "end_line": 28185,
+        "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 7515,
+        "end_line": 7519,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "prefabs/wx78_drone_delivery.lua",
+        "start_line": 1,
+        "end_line": 10,
+        "sha256": "11c6730b6ee2e4e35e8f2c2fb22693e781c4c4bdc1886a855cb0e92628b41c79"
+      },
+      {
+        "path": "prefabs/wx78_drone_delivery.lua",
+        "start_line": 108,
+        "end_line": 250,
+        "sha256": "11c6730b6ee2e4e35e8f2c2fb22693e781c4c4bdc1886a855cb0e92628b41c79"
+      },
+      {
+        "path": "prefabs/wx78_drone_delivery.lua",
+        "start_line": 250,
+        "end_line": 378,
+        "sha256": "11c6730b6ee2e4e35e8f2c2fb22693e781c4c4bdc1886a855cb0e92628b41c79"
+      },
+      {
+        "path": "prefabs/wx78_drone_delivery.lua",
+        "start_line": 435,
+        "end_line": 526,
+        "sha256": "11c6730b6ee2e4e35e8f2c2fb22693e781c4c4bdc1886a855cb0e92628b41c79"
+      },
+      {
+        "path": "prefabs/wx78_drone_delivery.lua",
+        "start_line": 600,
+        "end_line": 673,
+        "sha256": "11c6730b6ee2e4e35e8f2c2fb22693e781c4c4bdc1886a855cb0e92628b41c79"
+      },
+      {
+        "path": "components/mapdeliverable.lua",
+        "start_line": 1,
+        "end_line": 213,
+        "sha256": "02a1a7541c0dd2aec5e9a063f5d6d85c0bce67eb041a3f1a55ea6da6aaeba384"
+      },
+      {
+        "path": "actions.lua",
+        "start_line": 6886,
+        "end_line": 6925,
+        "sha256": "b1d481bc9a2c4db0cd59c7d913c63e47a33655982e50137d39b5a05f5f1bce00"
+      },
+      {
+        "path": "components/container.lua",
+        "start_line": 979,
+        "end_line": 1005,
+        "sha256": "d9fb013a6b38f245821ad28fdba6c5f587c84c74d324d7be5d2238eb36e176f2"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 7531,
+        "end_line": 7532,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Đã nối container_proxy, hai kho pocket dimension, save cũ Shadow Chester và túi module WX78. Việc mở đồng thời, xung đột hai người thao tác và đồng bộ qua shard cần kiểm chứng riêng.",
+        "Đã nối thêm đổi equipment/container/socket/module qua backup body và lưu tiến độ drone giao hàng. Vẫn cần thao tác đồng thời, callback trang bị đặc biệt, reconnect và snapshot chen giữa các bước để xác minh kết quả runtime."
+      ]
+    ],
+    "additional_unknowns": [],
+    "system_id": "inventory-containers",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "topic_documents": [
+      "wx78-consumers.md"
+    ]
+  }
+]

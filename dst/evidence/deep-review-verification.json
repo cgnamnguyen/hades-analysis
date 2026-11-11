@@ -1,0 +1,68 @@
+{
+  "review_date": "2026-11-08",
+  "source_apk_sha256": "e1dad01a49604a0d09e5ed06948632423a96571d1eaada107e0764248efc7a4d",
+  "system_groups_accounted_for": 88,
+  "functional_groups_with_source_traced_branches": 85,
+  "registration_core_buckets": 2,
+  "empty_inventory_buckets": 1,
+  "source_files_with_validated_read_ranges": 256,
+  "source_ranges": 515,
+  "unique_source_lines_in_read_ranges": 30708,
+  "documented_flows": 401,
+  "remaining_unknown_entries": 148,
+  "apk_hash_and_source_range_checks_passed": true,
+  "all_runtime_semantics_complete": false,
+  "target_executed": false,
+  "meaning": "Every taxonomy group received a bounded review. Source ranges and flows do not assert that every variant, prefab, action or engine behavior is complete.",
+  "final_package_validation": {
+    "original_script_members_rehashed": 4068,
+    "original_script_hash_mismatches": [],
+    "taxonomy_levels": {
+      "source-traced-partial": 85,
+      "registration-core-reviewed": 2,
+      "inventory-closure": 1
+    },
+    "markdown_documents_checked": 107,
+    "relative_markdown_links_checked": 26632,
+    "broken_relative_links": [],
+    "offline_viewer_dataset_count": 12,
+    "embedded_viewer_json_and_document_links": "passed",
+    "sqlite_integrity": "ok",
+    "sqlite_review_row_counts": {
+      "deep_reviews": 88,
+      "deep_review_sources": 515,
+      "deep_review_flows": 401,
+      "deep_review_unknowns": 148
+    },
+    "target_executed": false,
+    "browser_visual_validation_this_pass": false,
+    "wx78_module_catalog": {
+      "literal_module_definitions": 23,
+      "names_slots_bars_callbacks_match_source": true,
+      "catalog_sources_match_apk_hashes": true,
+      "catalog_details_match_document": true
+    },
+    "wx78_consumer_topics": {
+      "topics": 7,
+      "new_flows": 39,
+      "topic_flows_match_document_and_canonical_ledger": true,
+      "topic_sources_in_validated_ledger": true,
+      "viewer_data_matches_topic_catalog": true
+    }
+  },
+  "viewer_javascript_validation": {
+    "environment": "Node.js VM with minimal DOM mock, not a browser",
+    "result": "passed",
+    "dataset_count": 12,
+    "checks": [
+      "new datasets render",
+      "pagination forward and back",
+      "empty search resets pagination",
+      "search inside source flow descriptions",
+      "system document links",
+      "23 WX78 modules render and search by id",
+      "7 WX78 consumer topics render and search by source component"
+    ],
+    "browser_visual_validation": false
+  }
+}

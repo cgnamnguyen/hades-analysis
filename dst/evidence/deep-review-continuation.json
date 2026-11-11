@@ -1,0 +1,493 @@
+[
+  {
+    "system_id": "characters-perks",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "wx78module_maxhealth · ALPHA · 1 ô. Tăng max health thêm 40. Khi lắp hoặc tháo bình thường, giữ tỷ lệ máu hiện tại; isloading bỏ bước SetPercent. Skill Alpha thêm hệ số giảm damage dựa tổng module health đang bật.",
+      "wx78module_maxsanity1 · ALPHA · 1 ô. Tăng max sanity thêm 40, giữ tỷ lệ khi không load. Skill Alpha đặt modifier aura âm và hệ số dapperness dương của trang bị; tháo gỡ modifier theo module.",
+      "wx78module_maxsanity · ALPHA · 2 ô. Tăng max sanity thêm 100 và dapperness thêm 100/(day_time×10). Tháo trừ lại cả hai; khi không load giữ tỷ lệ sanity. Các skill dùng cùng lớp xử lý aura/trang bị với bản 1 ô.",
+      "wx78module_movespeed · BETA · 6 ô. Tăng bộ đếm speed chip và chọn multiplier 1+{0;0,25;0,40;0,50}[count+1]. Bản này tốn 6 ô; playerspeedmult không cộng vào tốc độ thú cưỡi. Tháo giảm bộ đếm rồi tính lại.",
+      "wx78module_movespeed2 · BETA · 2 ô. Dùng cùng callback và hiệu quả theo số chip như movespeed nhưng chỉ tốn 2 ô. Đây là khác biệt chi phí trực tiếp trong định nghĩa, không phải cộng thêm một công thức tốc độ khác.",
+      "wx78module_heat · BETA · 3 ô. Mỗi module tăng heat_count, đẩy cả mintemp/maxtemp thêm 20 trong giới hạn MIN_TEMP..MAX_TEMP và cộng 0,1 vào base/max drying rate. Skill Beta cập nhật chống đóng băng; từ 2 module heat đặt redirect miễn đóng băng. Tháo trừ lại các lượng đã cộng.",
+      "wx78module_nightvision · BETA · 4 ô. Bản Beta 4 ô có callback cả server/client. Module đầu đăng ký watcher đêm/trăng tròn và sự kiện skill; chỉ ép night vision khi đêm và không trăng tròn. Module cuối bị tháo gỡ watcher và hiệu ứng.",
+      "wx78module_cold · BETA · 3 ô. Mỗi module tăng cold_count và đẩy cả hai giới hạn nhiệt xuống 20; skill Beta trừ fire_damage_scale theo tuning. Callback tháo giảm count, tính lại nhiệt/overlay và gỡ skill.",
+      "wx78module_taser · BETA · 2 ô. Nghe blocked/attacked, khóa lặp 0,1 giây trên từng module; loại damage redirect, attacker chết/cách điện và vũ khí projectile. Damage cơ sở 20 nhân electric/wet multiplier; gắn cách điện cho chủ. Skill Beta tạo/cập nhật taser buildup và xử lý ReleaseBuildup khi tháo.",
+      "wx78module_light · BETA · 3 ô. Cộng 1,25 vào tổng bán kính sáng, Light radius thực là tổng^0,8. Skill Beta quản lý wx78_lightbeam theo tổng này. Tổng về gần 0 thì tắt sáng và trả thuộc tính light mặc định; bản này tốn 3 ô.",
+      "wx78module_maxhunger · ALPHA · 2 ô. Tăng max hunger thêm 100 và đặt burn rate multiplier 0,80 theo module. Skill Alpha thay multiplier bằng mức skill tương ứng. Khi không load giữ tỷ lệ đói; tháo trừ max và đặt hệ số module về 1.",
+      "wx78module_maxhunger1 · ALPHA · 1 ô. Tăng max hunger thêm 40, tốn 1 ô; không tự có mức burn rate 0,80 của bản 2 ô. Skill Alpha có các hệ số riêng. Tháo trừ lại max và hủy callback skill.",
+      "wx78module_music · BETA · 3 ô. Tăng dapperness của chủ, tạo sanity aura và chăm cây farm trong bán kính 12×số module, chu kỳ 144×FRAMES. Skill Beta thay task chăm cây bằng leaderrollcall, cập nhật radius/max followers. Module cuối bị tháo hủy task, aura và âm nhạc.",
+      "wx78module_bee · ALPHA · 3 ô. Hồi 5 máu×số module mỗi seg_time nếu đang bị thương; đồng thời dùng hiệu quả maxsanity bản 100. Skill Alpha có đường tạo/giới hạn/nạp khiên và listener healthdelta. Tháo module cuối hủy regen; cleanup skill xử lý khiên và aura modifier.",
+      "wx78module_maxhealth2 · ALPHA · 2 ô. Tăng max health thêm 40×2,5 = 100; dùng cùng hàm đổi max và nhánh giữ tỷ lệ/isloading như maxhealth. Trọng số armor skill riêng lấy MAXHEALTH2_ARMOR_MULT.",
+      "wx78module_radar · BETA · 1 ô. Tăng khoảng camera thêm 5 theo module, gỡ bằng RemoveCameraExtraDistance khi tháo. Skill Beta phát rangecircuitupdate cho drone. Nhánh scan chim đọc occupiable occupant hoặc lootprefabs đầu của trap, không chỉ prefab entity ngoài lồng.",
+      "wx78module_screech · GAMMA · 3 ô. Module Gamma 3 ô tăng bộ đếm; module đầu thêm inherent action TOGGLEWXSCREECH, module cuối tháo action. Hiệu ứng sợ hãi, thời gian và cooldown nằm ở stategraph được đối chiếu riêng bên dưới.",
+      "wx78module_stacksize · BETA · 1 ô. Khi gắn vào owner, dành ô inventory từ cuối và tạo wx78_inventorycontainer khóa ô. Nếu thiếu charge, vật cũ bị thả; đủ charge thì đưa vật cũ vào túi con. isloading chỉ tăng bộ đếm, bỏ tạo túi mới. Activate/deactivate bật/tắt nguồn túi; tháo gỡ khóa và thả túi, trừ nhánh đang chuyển backup body.",
+      "wx78module_light2 · BETA · 1 ô. Cùng công thức cộng bán kính 1,25 và lightbeam như light nhưng chỉ tốn 1 ô; tháo trừ cùng lượng.",
+      "wx78module_digestion · GAMMA · 2 ô. Module Gamma 2 ô bật spoiled processor và listener oneat. Khi số món đạt 5−(số module−1), reset bộ đếm rồi queue state wx_bake; skill Gamma thay cấu hình processor. Tháo module cuối tắt processor/listener. Vật phẩm chỉ sinh tại frame 46 của wx_bake, không sinh ngay ở callback ăn.",
+      "wx78module_spin · GAMMA · 3 ô. Module Gamma 3 ô thêm efficientuser và aoediminishingreturns. Module đầu nghe equip/unequip và đổi attack range sang 3 khi công cụ có CHOP/MINE, nếu không trả DEFAULT_ATTACK_RANGE. Module cuối gỡ aoediminishingreturns/listeners và reset range; lệnh gỡ efficientuser đang là comment nên không được mô tả là có gỡ.",
+      "wx78module_shielding · GAMMA · 4 ô. Module Gamma 4 ô thêm inherent action TOGGLEWXSHIELDING và skill callback refresh. Khi tháo, gỡ action rồi cleanup skill. Armor, taunt, giới hạn damage và cooldown do stategraph quyết định, đã nối riêng.",
+      "wx78module_chess · GAMMA · 1 ô. Module Gamma 1 ô thêm clockworktracker nếu thiếu rồi SetBonus bằng số module; skill Gamma gắn chessbff. Tháo cập nhật bonus và gỡ tag khi không còn module/skill; đoạn này không tự RemoveComponent clockworktracker.",
+      "ModuleOwner.UpdateActivatedModules cấp lại cùng charge_level từ đầu cho từng bar Alpha/Beta/Gamma, trừ slots theo thứ tự trong bar rồi bật/tắt module. Đây là ngân sách riêng mỗi bar; không cộng tổng chi phí của ba bar thành một hàng. SetChargeLevel clamp vào 0..max_charge và tính lại khi giá trị đổi.",
+      "WX78 prefab lưu riêng _wx78_health/_wx78_hunger/_wx78_sanity/_wx78_shield. Entity.OnLoad áp lại sau component.OnLoad, nhằm phục hồi current sau khi module đã thay max. Nhánh snapshot user session bỏ bước RefreshShadowSocketBuffs. ModuleOwner.OnLoad ưu tiên modules cũ, nếu không có mới dùng module_bars, gọi PushModule với isloading=true.",
+      "Prefab module được tạo từ từng định nghĩa, gắn finiteuses max/current=4. Gỡ module tiêu 1 use hoặc mức HALF_MODULE_CONSUMPTION nếu leader có betterunplug, trừ khi owner đang SwapUpgradeModules. Swap bật is_swapping cho cả hai owner trong lúc PopAll/Push, nên callback gỡ bỏ qua hao use trong nhánh này.",
+      "Circuit_SetUpSkillCb kiểm tra skill trên player hoặc leader của follower, áp callback ngay nếu đang có skill rồi nghe activate/deactivate và leaderchanged. Cleanup gọi deactivate cưỡng bức nếu đã active, sau đó tháo listeners. AddNewModuleDefinition chỉ cấp net ID với assert netid<64; định nghĩa đang có 23 mục literal, không khẳng định mọi mod đã được phân giải."
+    ],
+    "sources": [
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1,
+        "end_line": 1696,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "components/upgrademodule.lua",
+        "start_line": 1,
+        "end_line": 68,
+        "sha256": "a693d9fe5cc9f820501e9830036598312d05817323d494b6395f29d4b0f02598"
+      },
+      {
+        "path": "components/upgrademoduleowner.lua",
+        "start_line": 1,
+        "end_line": 474,
+        "sha256": "4871832cf2ffb4ecfde8cecacfedc994a9b082893421ed171067de8e281c0c92"
+      },
+      {
+        "path": "prefabs/wx78_modules.lua",
+        "start_line": 1,
+        "end_line": 105,
+        "sha256": "08be192204a4c90e5eb5949a13b37cf0b579018d68a09f359645552b8cf72656"
+      },
+      {
+        "path": "prefabs/wx78.lua",
+        "start_line": 181,
+        "end_line": 233,
+        "sha256": "1e2536696d5042fee43546e50514aa257773f82e3c4d1ff56bdee88368ed59ac"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 6578,
+        "end_line": 6634,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 9397,
+        "end_line": 9438,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "constants.lua",
+        "start_line": 3163,
+        "end_line": 3172,
+        "sha256": "7ba8a81e4cd61ed4dd3c37e83e57935b922a5a64d044c15eb3d57b3ca1b21ea7"
+      },
+      {
+        "path": "prefabs/wx78_common.lua",
+        "start_line": 961,
+        "end_line": 974,
+        "sha256": "b2eb46dc151ea699670975255a9bae2b04ce813f90478a61400d09fb1a359835"
+      },
+      {
+        "path": "stategraphs/SGwx78_common.lua",
+        "start_line": 1126,
+        "end_line": 1174,
+        "sha256": "35aeca3b39b39506b7afbf6be00561745a85315c8a86db96eecd4601198f3d86"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Đã đọc đủ17 nhánh khởi tạo nhưng chưa trace mọi perk/timeline, mọi WX78 module, minion, spell hoặc biến thể của từng nhân vật.",
+        "Đã đọc đủ 17 nhánh khởi tạo và callback lắp/tháo của cả 23 module WX78 trong định nghĩa này. Vẫn còn toàn bộ spin timeline, consumer drone/clockwork/buildup, backup body và các perk/minion/spell khác cần nối riêng."
+      ]
+    ],
+    "additional_unknowns": []
+  },
+  {
+    "system_id": "inventory-containers",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "ContainerProxy không giữ slots hoặc OnSave/OnLoad. SetMaster nối kho thật và nghe onopenother/onclose; mở một proxy phát onopenother khiến proxy cũ của cùng doer đóng, rồi chỉ tạo container_opener sau khi kho thật báo đã mở. Đây là đổi điểm truy cập cùng một kho, không sao chép contents giữa proxy.",
+      "Định nghĩa pocket dimension có hai kho shadow/rabbitkinghorn, mỗi kho WidgetSetup kiểu 3×4 và loại item có tag irreplaceable. AddWorldEntities chỉ chèn record (0,0) nếu save chưa có prefab tương ứng; gamelogic gọi nó trước spawn entity. Registry nằm trên từng TheWorld, không đủ để coi contents đồng bộ xuyên shard.",
+      "Pocket dimension prefab có Transform trên master để save, container thật và skipautoclose. OnSave của Container ghi item record theo slot và refs, OnLoad SpawnSaveRecord rồi GiveItem. Khi không ai mở, classified target là chính kho; một người thì người đó, nhiều người thì nil. Quy tắc network hiển thị này không đổi danh sách vật phẩm được lưu.",
+      "Magician chest nối shadow master tại OnLoadPostPass; khi không POPULATING nối ngay. Shadow Chester tải save cũ bằng container shadowchester trước, rồi OnLoadPostPass chuyển từng item sang master. Nếu GiveItem(item,i,nil,false) thất bại, Chester đặt phần dư tại vị trí mình và OnDropped thay vì dùng tọa độ (0,0) của kho ẩn.",
+      "Rabbitkinghorn chest chỉ là proxy tới kho rabbitkinghorn. Mở đầu tiên pause timer despawn; đóng cuối resume. Hết timer xóa proxy hoặc chạy animation despawn với persists=false; nhánh này không DropEverything/xóa contents kho chủ. Mũ shadow cũng có proxy riêng persists=false, không phải nơi giữ save record vật phẩm.",
+      "Module stacksize của WX78 bỏ tạo túi mới khi isloading; túi đã lưu qua inventory/container. wx78_inventorycontainer.OnLoad hẹn một PostUpdate để kiểm tra slot cuối tương ứng số module đã gắn/đang bật. Slot đúng thì tính lại canbeopened; slot sai thì mở khóa và DropItem. SetPowered(false) chỉ đóng truy cập, không xóa contents hoặc tắt infinitestacksize.",
+      "wx78_inventorycontainer bật infinite stack size trong constructor và giữ container save theo slot. Khi bị thả, nó DropEverything rồi Remove nếu dưới ngưỡng overstacks; nếu đạt ngưỡng thì DropEverythingUpToMaxStacks và giữ entity nếu còn đồ. OnPicked lấy ngẫu nhiên một item rồi GiveItem cho người nhặt hoặc thả ra đất. Không đồng nhất việc mất điện với việc rơi túi."
+    ],
+    "sources": [
+      {
+        "path": "components/container_proxy.lua",
+        "start_line": 1,
+        "end_line": 185,
+        "sha256": "eb9273270e54a68933606922d72f6fb4d9d1c6e2a355ccbccb1b75b014fa4262"
+      },
+      {
+        "path": "prefabs/pocketdimensioncontainer_defs.lua",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "4d790d8592d94240dafa7acfecf7f623bc2df701ff227076f1c8951d0951efb5"
+      },
+      {
+        "path": "prefabs/pocketdimensioncontainers.lua",
+        "start_line": 1,
+        "end_line": 83,
+        "sha256": "185d411b1745f15b93a19b9eeb8722d9d0e25d340e27c59ff40424a51271344a"
+      },
+      {
+        "path": "worldentities.lua",
+        "start_line": 1,
+        "end_line": 17,
+        "sha256": "4390316561dcc05c338b06b8f32f4e58e83ac47c76a1576d98a2941f109d4b22"
+      },
+      {
+        "path": "prefabs/world.lua",
+        "start_line": 387,
+        "end_line": 393,
+        "sha256": "089d49a83c0dc65643ddc59614e37606ed934a81c3e2fa09b49dcb467b6f128c"
+      },
+      {
+        "path": "prefabs/world.lua",
+        "start_line": 608,
+        "end_line": 610,
+        "sha256": "089d49a83c0dc65643ddc59614e37606ed934a81c3e2fa09b49dcb467b6f128c"
+      },
+      {
+        "path": "gamelogic.lua",
+        "start_line": 879,
+        "end_line": 885,
+        "sha256": "902c73803155c1e9a918ee64beaf9d32c10319053468252fd64a95037ae5c165"
+      },
+      {
+        "path": "containers.lua",
+        "start_line": 94,
+        "end_line": 130,
+        "sha256": "d7ba33aac5440b0232a421c8ebd74ff6d0cd6b84b530c8870bd11a932bd66e53"
+      },
+      {
+        "path": "components/container.lua",
+        "start_line": 979,
+        "end_line": 1005,
+        "sha256": "d9fb013a6b38f245821ad28fdba6c5f587c84c74d324d7be5d2238eb36e176f2"
+      },
+      {
+        "path": "prefabs/magician_chest.lua",
+        "start_line": 107,
+        "end_line": 120,
+        "sha256": "eb73acd44407f752908b8a37e360a5fdc829b160b0c40250559c8d40e4d0218c"
+      },
+      {
+        "path": "prefabs/magician_chest.lua",
+        "start_line": 165,
+        "end_line": 193,
+        "sha256": "eb73acd44407f752908b8a37e360a5fdc829b160b0c40250559c8d40e4d0218c"
+      },
+      {
+        "path": "prefabs/chester.lua",
+        "start_line": 382,
+        "end_line": 445,
+        "sha256": "bbd043351a01070880eda63176a050e1244ffdbca4ad178860df76063078be88"
+      },
+      {
+        "path": "prefabs/chester.lua",
+        "start_line": 578,
+        "end_line": 582,
+        "sha256": "bbd043351a01070880eda63176a050e1244ffdbca4ad178860df76063078be88"
+      },
+      {
+        "path": "prefabs/rabbitkinghorn_chest.lua",
+        "start_line": 33,
+        "end_line": 123,
+        "sha256": "02143121f8a0f43f2f2c24877420f8b65af8e45a8fc8541d8e88f9610cd9bf55"
+      },
+      {
+        "path": "prefabs/hats.lua",
+        "start_line": 7501,
+        "end_line": 7516,
+        "sha256": "397ddced5a047e962a9909dbe6cd2376c3d0158b68741e447526c1c32d674674"
+      },
+      {
+        "path": "wx78_moduledefs.lua",
+        "start_line": 1325,
+        "end_line": 1424,
+        "sha256": "39bd6b4b01d14a4b8437e1486f67ed101dffdc661c0e74fe63904378a1b8814f"
+      },
+      {
+        "path": "prefabs/wx78_inventorycontainer.lua",
+        "start_line": 1,
+        "end_line": 206,
+        "sha256": "5302daf312de96a923856617ac56fb15f96b0179568811e031e348102f184e69"
+      },
+      {
+        "path": "components/container.lua",
+        "start_line": 182,
+        "end_line": 218,
+        "sha256": "d9fb013a6b38f245821ad28fdba6c5f587c84c74d324d7be5d2238eb36e176f2"
+      },
+      {
+        "path": "components/container.lua",
+        "start_line": 1578,
+        "end_line": 1603,
+        "sha256": "d9fb013a6b38f245821ad28fdba6c5f587c84c74d324d7be5d2238eb36e176f2"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Đã đọc bundle/unwrappable tới đường save/load; container_proxy và các pocket dimension chuyên biệt vẫn cần truy từng consumer.",
+        "Đã nối container_proxy, hai kho pocket dimension, save cũ Shadow Chester và túi module WX78. Việc mở đồng thời, xung đột hai người thao tác và đồng bộ qua shard cần kiểm chứng riêng."
+      ]
+    ],
+    "additional_unknowns": []
+  },
+  {
+    "system_id": "skills-spells-magic",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "ACTIONS.TOGGLEWXSCREECH và TOGGLEWXSHIELDING có fn chỉ return true. Tác dụng thực do ActionHandler chọn state dựa tag. Bộ thu inherent action cho phép tắt ngay khi đang bật; khi bật mới, nó chặn cooldown, busy, inspectingupgrademodules và using_drone_remote. Do đó chỉ đọc fn của ACTIONS sẽ bỏ qua điều kiện và hiệu quả.",
+      "WX screech tìm mục tiêu trong 12×số module, đòi _combat/_health, loại epic/limbo, cần hauntable.panicable, CanTarget và không Ally. Nó gọi Panic(8), đánh thức có trì hoãn và ForceUpdate brain. Vòng loop gọi lại sau 15×FRAMES+random; không skill thì timeout 2+random×10×FRAMES, có Gamma1 thì không đặt timeout trong pre. Ra loop chỉ đặt cooldown 20 nếu đã thực hiện ít nhất một pulse.",
+      "WX shielding gắn damage-taken multiplier 0,2, mass 99999 nếu trước đó dương, thiefproof và taunt mỗi 2 giây trong radius16 với bộ lọc không player/companion/epic/notaunt. Cộng data.damage của các attacked event, đạt100 thì thoát; thiếu payload dùng50. Khi cleanup trả mass/gỡ modifiers/task và chỉ đặt cooldown20 nếu giữ>=5 giây hoặc từng vào shield_hit. State shield_hit quay idle sau4 frame.",
+      "wx78_abilitycooldowns lưu bảng lookup trong phiên, prefab cooldown persists=false và hai module không có OnSave/OnLoad. Length mã hóa phần mười giây, pct byte180; OnWallUpdate nhân TheSim:GetTimeScale và LongUpdate dùng cùng hàm. Vì vậy không coi chúng là deadline save. Các consumer có thể tạo lại cooldown theo trạng thái riêng, phải xét từng consumer.",
+      "Consumer shadow fuel bật overridefullcharge và dùng timer debuff, tạo lại chỉ báo shadow_energy khi Attached có duration hoặc Extended. Detached bỏ override, xóa cooldown và Remove buff. Prefab buff cũng persists=false. Callback Extended tính duration fallback cho timer nhưng vẫn truy data.duration khi dựng cooldown; đường caller truyền nil chưa được chứng minh. Không suy từ chỉ báo mạng rằng buff tồn tại qua world save."
+    ],
+    "sources": [
+      {
+        "path": "actions.lua",
+        "start_line": 6980,
+        "end_line": 6996,
+        "sha256": "b1d481bc9a2c4db0cd59c7d913c63e47a33655982e50137d39b5a05f5f1bce00"
+      },
+      {
+        "path": "stategraphs/SGwilson.lua",
+        "start_line": 1718,
+        "end_line": 1724,
+        "sha256": "59e79da363d3eb0310cdfd065c52d4c970fe1ac91b753222250a6000f8118b69"
+      },
+      {
+        "path": "prefabs/wx78_common.lua",
+        "start_line": 138,
+        "end_line": 163,
+        "sha256": "b2eb46dc151ea699670975255a9bae2b04ce813f90478a61400d09fb1a359835"
+      },
+      {
+        "path": "stategraphs/SGwx78_common.lua",
+        "start_line": 38,
+        "end_line": 187,
+        "sha256": "35aeca3b39b39506b7afbf6be00561745a85315c8a86db96eecd4601198f3d86"
+      },
+      {
+        "path": "stategraphs/SGwx78_common.lua",
+        "start_line": 889,
+        "end_line": 1124,
+        "sha256": "35aeca3b39b39506b7afbf6be00561745a85315c8a86db96eecd4601198f3d86"
+      },
+      {
+        "path": "tuning.lua",
+        "start_line": 9414,
+        "end_line": 9427,
+        "sha256": "4a23a3f737deffb29017de23dfa1896d8429a4913fa2a0a38d2982cf2a5d52bf"
+      },
+      {
+        "path": "components/wx78_abilitycooldowns.lua",
+        "start_line": 1,
+        "end_line": 89,
+        "sha256": "5011dcdf287b88a101fc9d28b6d4b65ed9cfa13b3d3d9a5b6b895450cf184d53"
+      },
+      {
+        "path": "prefabs/wx78_abilitycooldown.lua",
+        "start_line": 1,
+        "end_line": 126,
+        "sha256": "9cd7f5cb5a05b8a6092aa11aed5bc79fabfe57a16e5276e1d70d662eee02d66a"
+      },
+      {
+        "path": "prefabs/wx78_shadow_fuel_debuff.lua",
+        "start_line": 1,
+        "end_line": 90,
+        "sha256": "29566b778fff74f5321052c4c7c3187bb67ade667bebcdad513a6d2cc66359b8"
+      }
+    ],
+    "unknown_replacements": [],
+    "additional_unknowns": [
+      "WX78 screech/shielding đã nối ACTION→state→cooldown; khôi phục phiên, điều kiện module bị tháo giữa state và nil payload ở shadow fuel Extended vẫn cần caller/runtime."
+    ]
+  },
+  {
+    "system_id": "minigames-races-games",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "HideAndSeekGame dùng hiding_spots để xác định active/kết thúc; num_hiders_found chỉ ghi số do player tìm để tính thưởng. LoadPostPass nạp found rồi gọi RegisterHidingSpot cho từng GUID còn tồn tại, mà hàm này reset found=0. Theo riêng nhánh Lua, nếu ít nhất một spot được nối lại thì count thưởng bị reset; không đồng nghĩa tất cả mèo còn trốn bị xóa.",
+      "Kitcoonden.OnHideAndSeekOver đọc GetNumFound trước khi component reset cuối lượt. Nếu event YOT_CATCOON bật và found>0, nó chọn red pouch theo found và số seeker. Một người nhận [1,1] ở found1..4, [4] ở5..8, [4,4] ở>=9; nhiều người nhận [1], [1,1], [4] tương ứng. Nhánh found==0 nằm bên trong điều kiện found>0 nên không đi tới từ callback này.",
+      "Ngoài nhánh event có found>0, số lựa chọn loot là 1+ceil(found/2) rồi SpawnLootPrefab theo weighted choices. Hiding spot lưu GetSaveRecord của hider đang thật sự trốn và add_component_if_missing; OnLoad dựng lại và HideInSpot. Vì thế cần phân biệt count thưởng bị reset với dữ liệu mèo trốn được giữ trong component khác. Tác động trên một snapshot chạy thực vẫn chưa quan sát."
+    ],
+    "sources": [
+      {
+        "path": "components/hideandseekgame.lua",
+        "start_line": 3,
+        "end_line": 47,
+        "sha256": "e463a64ccc447b2ff91d9a2ece5b3386b4a314fb1ce38920469444c7571d8c2e"
+      },
+      {
+        "path": "components/hideandseekgame.lua",
+        "start_line": 67,
+        "end_line": 80,
+        "sha256": "e463a64ccc447b2ff91d9a2ece5b3386b4a314fb1ce38920469444c7571d8c2e"
+      },
+      {
+        "path": "components/hideandseekgame.lua",
+        "start_line": 112,
+        "end_line": 174,
+        "sha256": "e463a64ccc447b2ff91d9a2ece5b3386b4a314fb1ce38920469444c7571d8c2e"
+      },
+      {
+        "path": "prefabs/kitcoonden.lua",
+        "start_line": 244,
+        "end_line": 295,
+        "sha256": "9953182edf0b08ae64c759d9598bbd194db3b4a369675f2ce5858f0461d017a3"
+      },
+      {
+        "path": "components/hideandseekhidingspot.lua",
+        "start_line": 96,
+        "end_line": 115,
+        "sha256": "00f87193f989d5c7a257eaf1f9ff351b3f041ed99da4cf6c326fcd5d03895904"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "HideAndSeekGame.LoadPostPass nạp count trước các lần RegisterHidingSpot reset count, cần tái hiện để kết luận mất tiến độ thực tế.",
+        "Đã nối count found tới bảng thưởng Kitcoonden và dữ liệu hider riêng. Count thưởng reset theo nhánh Lua khi nối lại spot; cần snapshot để định lượng phần thưởng thay đổi trong một lượt thực."
+      ]
+    ],
+    "additional_unknowns": []
+  },
+  {
+    "system_id": "world-spawners-disasters",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "MeteorShower.OnSave version2 ghi mediumleft/largeleft, nhưng OnLoad trong nhánh interval~=nil chỉ đọc medium_remaining/large_remaining với fallback0. Với bảng do chính OnSave này trả về và không có bộ chuyển đổi chèn khóa, quota medium/large được phục hồi thành0 theo Lua. SpawnMeteor chỉ chọn hai cỡ đó nếu quota nil hoặc >=cost; khi cost dương, nhánh đó bị loại, vẫn có small và trường hợp rockmoonshell riêng.",
+      "meteorspawner thực sự AddComponent meteorshower trong prefab. OnLoad dựng lại periodic interval và deadline từ remainingtime×max duration/cooldown; không gọi StartShower để gieo quota lại. Chưa tìm hay chứng minh một bước migration ngoài component có sửa các khóa, cũng chưa chạy snapshot để xác nhận số meteor thực. Đây là hệ quả điều kiện của đường source đã đọc."
+    ],
+    "sources": [
+      {
+        "path": "components/meteorshower.lua",
+        "start_line": 152,
+        "end_line": 196,
+        "sha256": "bb78bf60c30de75bfa6fc762c629b359075c62968ef670a4fba9611eb26a81d3"
+      },
+      {
+        "path": "components/meteorshower.lua",
+        "start_line": 217,
+        "end_line": 249,
+        "sha256": "bb78bf60c30de75bfa6fc762c629b359075c62968ef670a4fba9611eb26a81d3"
+      },
+      {
+        "path": "components/meteorshower.lua",
+        "start_line": 278,
+        "end_line": 320,
+        "sha256": "bb78bf60c30de75bfa6fc762c629b359075c62968ef670a4fba9611eb26a81d3"
+      },
+      {
+        "path": "prefabs/meteorspawner.lua",
+        "start_line": 1,
+        "end_line": 14,
+        "sha256": "eb78e1aeefb4674d9ee5eed740330a768dde5d1dfc4caf20e0a30cc08005e801"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Trong MeteorShower, Save dùng mediumleft/largeleft còn nhánh Load đọc medium_remaining/large_remaining; cần kiểm chứng ảnh hưởng của khác tên này với snapshot đang chạy.",
+        "Đã nối khác khóa save/load tới quota và nhánh chọn cỡ meteor. Với save trực tiếp không được sửa khóa, quota về0; còn cần kiểm tra migration của save thực và kết quả lúc chạy."
+      ]
+    ],
+    "additional_unknowns": []
+  },
+  {
+    "system_id": "transform-entity-lifecycle-support",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "Đã tìm direct reference components.transformer và AddComponent(\"transformer\") trên toàn source/scripts Lua. Ngoài chính module, các match chỉ nằm trong comment của flower/flower_evil/mushrooms. GetObjectData ghi prefab_data còn Revert đọc item_data là khác khóa có thật, nhưng tìm kiếm này chưa cho thấy consumer trực tiếp đang bật. Không quy thành lỗi đang xảy ra với mọi hoa/nấm; dynamic component name, mod và native hook vẫn ngoài biên tìm kiếm."
+    ],
+    "sources": [
+      {
+        "path": "components/transformer.lua",
+        "start_line": 67,
+        "end_line": 89,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "start_line": 195,
+        "end_line": 214,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "start_line": 178,
+        "end_line": 182,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower_evil.lua",
+        "start_line": 76,
+        "end_line": 76,
+        "sha256": "ca4af4b63fe56845c105fd929c9c865dc87ab1715e079d8c760de23df6a1f629"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "start_line": 241,
+        "end_line": 245,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Chưa trace toàn bộ amorphous/decay/scaler/uniqueid và mọi prefab dùng Transformer.",
+        "Chưa trace toàn bộ amorphous/decay/scaler/uniqueid. Tìm direct Transformer consumer trong Lua chỉ thấy comment ngoài module; consumer tạo bằng tên động/mod/native chưa xác minh."
+      ],
+      [
+        "Khác khóa prefab_data/item_data cần tái hiện theo consumer, chưa sửa mã gốc hoặc kết luận lỗi runtime cho mọi loại biến đổi.",
+        "Khác khóa prefab_data/item_data đã xác minh ở mã nhưng chưa xác định consumer đang bật để tái hiện; chưa sửa mã gốc hoặc coi là lỗi runtime của mọi loại biến đổi."
+      ]
+    ],
+    "additional_unknowns": []
+  },
+  {
+    "system_id": "portals-migration-travel",
+    "review_date": "2026-11-08",
+    "evidence_type": "local-static-source",
+    "target_executed": false,
+    "verified_flows": [
+      "Teleporter.ReceiveItem giữ item làm child, RemoveFromScene và hẹn3,5 giây. OnSave chỉ gom item.persists, ghi bằng data.items[#data.items] vào bảng ban đầu rỗng. Theo quy tắc bảng Lua thông thường, lần đầu ghi khóa0, không thêm ô1; các lần sau vẫn ghi khóa0 nên đè record trước. Đây là suy luận từ câu lệnh, chưa phải quan sát mất đồ trên máy chạy.",
+      "Teleporter.OnLoad duyệt pairs nên record khóa0 nếu được serializer giữ vẫn có thể được nạp, SpawnSaveRecord rồi ReceiveItem lại từ đầu với thời gian3,5 giây. Không lưu deadline còn lại của chuyến item. Phân biệt hai rủi ro: chờ lại từ đầu và chỉ còn một record trong bảng khi nhiều item cùng in-flight. Còn phải đối chiếu serializer và snapshot trước khi kết luận kết quả cuối."
+    ],
+    "sources": [
+      {
+        "path": "components/teleporter.lua",
+        "start_line": 244,
+        "end_line": 299,
+        "sha256": "fec8be3bcd9b9216e9a2df12abee06d92bee8dad29bbdd91a51bf501a97101ef"
+      },
+      {
+        "path": "components/teleporter.lua",
+        "start_line": 373,
+        "end_line": 417,
+        "sha256": "fec8be3bcd9b9216e9a2df12abee06d92bee8dad29bbdd91a51bf501a97101ef"
+      }
+    ],
+    "unknown_replacements": [
+      [
+        "Teleporter.OnSave có phép gán data.items[#data.items] khi gom item đang chuyển; cần kiểm chứng Lua save thực tế trước khi bảo đảm mọi item in-flight được phục hồi.",
+        "Đã nối chỉ số #items không cộng1 tới khả năng đè record khóa0 và thời gian chờ lại3,5 giây khi tải. Cần serializer/snapshot để xác minh kết quả in-flight thực tế."
+      ]
+    ],
+    "additional_unknowns": []
+  }
+]

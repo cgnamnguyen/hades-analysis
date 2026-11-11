@@ -1,0 +1,264 @@
+{
+  "review_date": "2026-11-08",
+  "evidence_type": "local-static-source",
+  "target_executed": false,
+  "transformer_search": {
+    "directory": "source/scripts",
+    "lua_paths_searched": 4026,
+    "patterns": [
+      "components\\.transformer",
+      "AddComponent\\s*\\(\\s*[\\'\"]transformer[\\'\"]"
+    ],
+    "matches": [
+      {
+        "path": "components/transformer.lua",
+        "line": 2,
+        "text": "\tinst.components.transformer.queuedTransform = false",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 3,
+        "text": "\tinst.components.transformer:StartTransform()",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 7,
+        "text": "\tinst.components.transformer.queuedRevert = false",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 8,
+        "text": "\tinst.components.transformer:StartRevert()",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 155,
+        "text": "\t\tif transformedPrefab.components.transformer then",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 157,
+        "text": "\t\t\t\ttransformedPrefab.components.transformer:SetRevertEvent(self.revertEvent, self.revertEventTarget)",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 161,
+        "text": "\t\t\t\ttransformedPrefab.components.transformer:SetRevertWorldEvent(self.revertWorldEvent, self.revertWorldEventValue)",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 165,
+        "text": "\t\t\t\ttransformedPrefab.components.transformer:SetOnLoadCheck(self.onLoadCheck)",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 168,
+        "text": "\t\t\ttransformedPrefab.components.transformer:SetObjectData(self.objectData)",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 169,
+        "text": "\t\t\ttransformedPrefab.components.transformer.transformed = true",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 170,
+        "text": "\t\t\ttransformedPrefab.components.transformer.transformOffScreen = self.transformOffScreen",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 287,
+        "text": "\t\tif inst.components.transformer.onLoadCheck ~= nil then",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 288,
+        "text": "\t\t\tif inst.components.transformer.onLoadCheck(inst) and not inst.components.transformer.transformed then",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 289,
+        "text": "\t\t\t\tinst.components.transformer:GetObjectData()",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 290,
+        "text": "\t\t\t\tinst.components.transformer:Transform()",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 291,
+        "text": "\t\t\telseif not inst.components.transformer.onLoadCheck(inst) and inst.components.transformer.transformed then",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "components/transformer.lua",
+        "line": 292,
+        "text": "\t\t\t\tinst.components.transformer:Revert()",
+        "starts_with_line_comment": false,
+        "sha256": "6be1a0357051b2609cfa20212b7bbfa4f66ccffe3016616b4e08ac1b2c7f91ce"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "line": 178,
+        "text": "    --inst:AddComponent(\"transformer\")",
+        "starts_with_line_comment": true,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "line": 179,
+        "text": "    --inst.components.transformer:SetTransformWorldEvent(\"isfullmoon\", true)",
+        "starts_with_line_comment": true,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "line": 180,
+        "text": "    --inst.components.transformer:SetRevertWorldEvent(\"isfullmoon\", false)",
+        "starts_with_line_comment": true,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "line": 181,
+        "text": "    --inst.components.transformer:SetOnLoadCheck(testfortransformonload)",
+        "starts_with_line_comment": true,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower.lua",
+        "line": 182,
+        "text": "    --inst.components.transformer.transformPrefab = \"flower_evil\"",
+        "starts_with_line_comment": true,
+        "sha256": "deb0fcce54ab84d5bca453b20f981bb00657bdad73c5dae0aa9d9b4346a5cf08"
+      },
+      {
+        "path": "prefabs/flower_evil.lua",
+        "line": 76,
+        "text": "    --inst:AddComponent(\"transformer\")",
+        "starts_with_line_comment": true,
+        "sha256": "ca4af4b63fe56845c105fd929c9c865dc87ab1715e079d8c760de23df6a1f629"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "line": 241,
+        "text": "    --inst:AddComponent(\"transformer\")",
+        "starts_with_line_comment": true,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "line": 242,
+        "text": "    --inst.components.transformer:SetTransformWorldEvent(\"isfullmoon\", true)",
+        "starts_with_line_comment": true,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "line": 243,
+        "text": "    --inst.components.transformer:SetRevertWorldEvent(\"isfullmoon\", false)",
+        "starts_with_line_comment": true,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "line": 244,
+        "text": "    --inst.components.transformer:SetOnLoadCheck(testfortransformonload)",
+        "starts_with_line_comment": true,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      },
+      {
+        "path": "prefabs/mushrooms.lua",
+        "line": 245,
+        "text": "    --inst.components.transformer.transformPrefab = data.transform_prefab",
+        "starts_with_line_comment": true,
+        "sha256": "27174c4a7bc5ed3e61ff823370f7718c97709c857c77150c552ce81a276c7f0a"
+      }
+    ],
+    "external_matches": 11,
+    "external_non_comment_prefix_matches": 0,
+    "limit": "Literal/direct references only. This is not full Lua dataflow evaluation and does not cover dynamic names, external mods or native hooks."
+  },
+  "questions": [
+    {
+      "question": "All 23 literal WX78 module definitions and install/remove callbacks",
+      "status": "source-answered",
+      "document": "wx78-modules.md",
+      "limit": "Consumers listed in document remain partial; no runtime execution."
+    },
+    {
+      "question": "Pocket dimension contents and load/legacy proxy attachment",
+      "status": "source-answered-for-cited-paths",
+      "document": "systems/inventory-containers.md",
+      "limit": "Concurrent actions, reconnect and cross-shard behavior unverified."
+    },
+    {
+      "question": "WX78 inventory container powered state and load validation",
+      "status": "source-answered-for-cited-paths",
+      "document": "systems/inventory-containers.md",
+      "limit": "Backup body transfer lifecycle and runtime slot conflicts unverified."
+    },
+    {
+      "question": "Kitcoon found counter versus hidden entity persistence and rewards",
+      "status": "conditional-static-consequence",
+      "document": "systems/minigames-races-games.md",
+      "limit": "No observed snapshot/reward output."
+    },
+    {
+      "question": "Meteor quota mismatched save/load field names",
+      "status": "conditional-static-consequence",
+      "document": "systems/world-spawners-disasters.md",
+      "limit": "No proof of external save upgrades and no runtime snapshot."
+    },
+    {
+      "question": "Transformer mismatched field active consumer",
+      "status": "bounded-negative-search",
+      "document": "systems/transform-entity-lifecycle-support.md",
+      "limit": "Only direct-reference patterns in extracted Lua."
+    },
+    {
+      "question": "Teleporter multiple in-flight records and remaining delay",
+      "status": "conditional-static-consequence",
+      "document": "systems/portals-migration-travel.md",
+      "limit": "Lua table inference; serializer and running snapshot unverified."
+    },
+    {
+      "question": "WX78 screech/shielding action/state/cooldown",
+      "status": "source-answered-for-cited-paths",
+      "document": "systems/skills-spells-magic.md",
+      "limit": "Reconnect and removing modules during a state unverified."
+    }
+  ]
+}
