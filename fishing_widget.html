@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight-gold {
+      background: #241d0e;
+      border: 1.5px solid #fbbf24;
+      box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
+    }
+    .flow-node.highlight-cyan {
+      background: #0f1c24;
+      border: 1.5px solid #06b6d4;
+      box-shadow: 0 0 15px rgba(6, 182, 212, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          CỬA SỔ PHẢN XẠ MILI-GIÂY · MINI-GAME CÂU CÁ (FISHING REFLEX TIMELINE)
+        </h2>
+      </div>
+      <span class="text-xs text-cyan-300 bg-cyan-950/60 px-2.5 py-1 rounded border border-cyan-800/60 font-mono">
+        FishingData.lua
+      </span>
+    </div>
+
+    <!-- Timeline Progression Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 relative mb-6">
+      <!-- Step 1 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-slate-400 tracking-wide uppercase mb-1">GIAI ĐOẠN 1</div>
+        <div class="text-[13px] font-semibold text-slate-100">Phao Nhấp Nháy</div>
+        <div class="text-xs text-slate-400 mt-1">1 đến 3 lần nhử mồi giả (Fake Bobs) · Bấm phím = Hỏng mồi</div>
+      </div>
+
+      <!-- Arrow 1 -> 2 -->
+      <div class="hidden md:flex absolute top-1/2 left-[23.5%] -translate-y-1/2 z-10 pointer-events-none text-cyan-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="flow-node highlight-cyan">
+        <div class="text-xs font-bold text-cyan-400 tracking-wide uppercase mb-1">GIAI ĐOẠN 2 · TÍN HIỆU</div>
+        <div class="text-[13px] font-semibold text-cyan-100">Chìm Phao & Ding!</div>
+        <div class="text-xs text-cyan-300/80 mt-1">Cột sáng trắng bùng lên + Tiếng chuông chu kỳ thực</div>
+      </div>
+
+      <!-- Arrow 2 -> 3 -->
+      <div class="hidden md:flex absolute top-1/2 left-[48.5%] -translate-y-1/2 z-10 pointer-events-none text-cyan-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 3 (Perfect Catch) -->
+      <div class="flow-node highlight-gold">
+        <div class="text-xs font-bold text-yellow-400 tracking-wide uppercase mb-1 flex items-center justify-between">
+          <span>&lt; 0.34s (PERFECT)</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-yellow-400"></span>
+        </div>
+        <div class="text-[13px] font-semibold text-yellow-100">Bắt Hoàn Hảo!</div>
+        <div class="text-xs text-yellow-300/80 mt-1"><b>50% Cá Hiếm / 50% Cá Huyền Thoại</b> (Đổi Titan Blood/Ambrosia)</div>
+      </div>
+
+      <!-- Arrow 3 -> 4 -->
+      <div class="hidden md:flex absolute top-1/2 left-[73.5%] -translate-y-1/2 z-10 pointer-events-none text-cyan-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 4 (Good Catch) -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-slate-400 tracking-wide uppercase mb-1">0.34s - 0.68s</div>
+        <div class="text-[13px] font-semibold text-slate-200">Bắt Tốt (Good Catch)</div>
+        <div class="text-xs text-slate-400 mt-1">Chỉ ra Cá Thường hoặc tỉ lệ nhỏ Cá Hiếm (Đổi Đá Quý/Bóng Tối)</div>
+      </div>
+    </div>
+
+    <!-- Bottom Catch Loss Warning -->
+    <div class="flow-node border-rose-900/60 bg-[#1e1215]">
+      <div class="flex items-center justify-between">
+        <div class="text-xs font-bold text-rose-400 tracking-wide uppercase">
+          KẾT QUẢ QUÁ TRỄ: &gt; 0.68 GIÂY (WAY TOO LATE)
+        </div>
+        <span class="text-[11px] bg-rose-950 text-rose-300 px-2 py-0.5 rounded border border-rose-800 font-mono">
+          Hụt Cá (WayTooLate)
+        </span>
+      </div>
+      <div class="text-xs text-slate-300 mt-1.5 leading-relaxed">
+        Nếu người chơi bấm phím sau 0.68 giây: Cá quẫy đuôi bơi mất, tiêu tốn điểm câu cá của căn phòng mà không nhận được bất kỳ phần thưởng nào!
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-5 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Tỉ lệ sinh điểm câu cá trong phòng là 10% (100% nếu có Skeletal Lure từ Giếng Charon).</span>
+      <span class="font-mono text-slate-600">FishingData.lua · Supergiant Games</span>
+    </div>
+  </div>
+</body>
+</html>

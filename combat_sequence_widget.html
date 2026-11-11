@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hades - Dash to Dash-Strike Sequence Timeline</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0b0c10;
+      color: #e5e7eb;
+    }
+    .font-cinzel { font-family: 'Cinzel', serif; }
+    .font-mono-code { font-family: 'JetBrains Mono', monospace; }
+    .gold-glow {
+      box-shadow: 0 0 25px rgba(234, 179, 8, 0.15);
+    }
+    .gold-glow-strong {
+      box-shadow: 0 0 35px rgba(234, 179, 8, 0.3);
+    }
+    .crimson-glow {
+      box-shadow: 0 0 25px rgba(239, 68, 68, 0.2);
+    }
+    .custom-scroll::-webkit-scrollbar {
+      height: 6px;
+      width: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #111217;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #374151;
+      border-radius: 4px;
+    }
+    .step-card {
+      transition: all 0.25s ease-in-out;
+    }
+    .step-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(234, 179, 8, 0.2);
+    }
+  </style>
+</head>
+<body class="p-3 md:p-5 bg-[#0b0c10] text-gray-200">
+
+  <div class="w-full max-w-5xl mx-auto bg-[#12131a] border border-amber-500/35 rounded-2xl p-4 md:p-6 gold-glow shadow-2xl relative overflow-hidden">
+    
+    <!-- Background Watermark Glow -->
+    <div class="absolute -top-32 -left-32 w-80 h-80 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -right-32 w-80 h-80 bg-red-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+    <!-- Header Section -->
+    <div class="flex flex-col md:flex-row md:items-center justify-between pb-6 mb-6 border-b border-gray-800 gap-4">
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 tracking-wider uppercase">Engine Execution Flow</span>
+          <span class="px-2.5 py-0.5 rounded text-xs font-semibold bg-red-500/20 text-red-400 border border-red-500/30 font-mono-code">HeroData.lua &bull; Combat.lua</span>
+        </div>
+        <h1 class="text-xl md:text-2xl font-black text-amber-100 font-cinzel tracking-wide flex items-center gap-3">
+          <span>CHU TRÌNH LƯỚT & HỦY HOẠT ẢNH: DASH &rarr; DASH-STRIKE</span>
+        </h1>
+        <p class="text-sm text-gray-400 mt-1">
+          Sơ đồ đồng bộ chính xác giữa <span class="text-amber-400 font-medium">Input Buffer</span>, <span class="text-blue-400 font-medium">The Forge State Machine</span> và <span class="text-emerald-400 font-medium">Hitbox i-Frames</span>.
+        </p>
+      </div>
+
+      <!-- Quick Metrics -->
+      <div class="flex items-center gap-3 bg-[#181924] border border-gray-800 p-2.5 rounded-xl text-xs font-mono-code">
+        <div class="text-center px-2 border-r border-gray-700">
+          <div class="text-gray-400 text-[10px] uppercase">i-Frames</div>
+          <div class="text-amber-400 font-bold text-sm">15 Frames</div>
+          <div class="text-gray-500 text-[10px]">0.25s @ 60fps</div>
+        </div>
+        <div class="text-center px-2 border-r border-gray-700">
+          <div class="text-gray-400 text-[10px] uppercase">Dash Range</div>
+          <div class="text-blue-400 font-bold text-sm">400 px</div>
+          <div class="text-gray-500 text-[10px]">RushWeapon</div>
+        </div>
+        <div class="text-center px-2">
+          <div class="text-gray-400 text-[10px] uppercase">Anti-OneShot</div>
+          <div class="text-emerald-400 font-bold text-sm">1.3 Giây</div>
+          <div class="text-gray-500 text-[10px]">Thresh: 0.25s</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3 Participating Entities (Header Track) -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-3 mb-6">
+      
+      <!-- Actor 1: Player -->
+      <div class="bg-[#171822] border border-amber-500/30 rounded-xl p-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-amber-500/20 border border-amber-500/40 flex items-center justify-center text-amber-400 text-lg font-bold">
+          🎮
+        </div>
+        <div>
+          <div class="text-xs uppercase font-bold text-amber-400 tracking-wider font-cinzel">Người Chơi (Player)</div>
+          <div class="text-[12px] text-gray-300">Input Buffer: Spacebar / Gamepad A / Attack</div>
+        </div>
+      </div>
+
+      <!-- Actor 2: The Forge Engine -->
+      <div class="bg-[#171822] border border-blue-500/30 rounded-xl p-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-blue-500/20 border border-blue-500/40 flex items-center justify-center text-blue-400 text-lg font-bold">
+          ⚙️
+        </div>
+        <div>
+          <div class="text-xs uppercase font-bold text-blue-400 tracking-wider font-cinzel">The Forge Engine</div>
+          <div class="text-[12px] text-gray-300">Core Loop, Animation Cancel & State Machine</div>
+        </div>
+      </div>
+
+      <!-- Actor 3: Collision System -->
+      <div class="bg-[#171822] border border-emerald-500/30 rounded-xl p-3 flex items-center gap-3">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/20 border border-emerald-500/40 flex items-center justify-center text-emerald-400 text-lg font-bold">
+          🛡️
+        </div>
+        <div>
+          <div class="text-xs uppercase font-bold text-emerald-400 tracking-wider font-cinzel">Hệ Thống Va Chạm</div>
+          <div class="text-[12px] text-gray-300">Hitbox Quét, Hurtbox & Cờ Miễn Nhiễm i-Frames</div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- The 5 Steps: High-End Dark Card Sequence Flow -->
+    <div class="space-y-3.5 mb-6">
+
+      <!-- Step 1 -->
+      <div class="step-card bg-[#161722] border border-gray-800 hover:border-amber-500/40 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex items-start md:items-center gap-3.5">
+          <div class="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-amber-500 to-amber-700 text-black font-black flex items-center justify-center text-sm shadow-md">
+            1
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-amber-400 font-cinzel uppercase tracking-wider">LỆNH LƯỚT (DASH INPUT)</span>
+              <span class="text-[11px] font-mono-code text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-gray-700/50">Người Chơi &rarr; The Forge Engine</span>
+            </div>
+            <div class="text-sm font-semibold text-gray-200">
+              Nhấn phím Lướt (<span class="text-amber-300 font-mono-code">Space / Button A</span>)
+            </div>
+            <div class="text-xs text-gray-400 mt-0.5">
+              Input buffer đẩy tín hiệu yêu cầu di chuyển khẩn cấp vào hàng đợi khung hình tiếp theo.
+            </div>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+          <span class="px-2.5 py-1 rounded bg-amber-500/10 text-amber-300 border border-amber-500/20 text-xs font-mono-code">
+            Delay: 0 Frame (Tức thì)
+          </span>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="step-card bg-[#161722] border border-amber-500/30 hover:border-amber-400/60 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-amber-950/20 via-[#161722] to-emerald-950/20">
+        <div class="flex items-start md:items-center gap-3.5">
+          <div class="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-amber-400 to-yellow-600 text-black font-black flex items-center justify-center text-sm shadow-md">
+            2
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-amber-300 font-cinzel uppercase tracking-wider">KÍCH HOẠT VẬT LÝ & KHUNG BẤT TỬ (I-FRAMES)</span>
+              <span class="text-[11px] font-mono-code text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-gray-700/50">The Forge Engine &rarr; Hệ Thống Va Chạm</span>
+            </div>
+            <div class="text-sm font-semibold text-gray-100 flex items-center gap-2 flex-wrap">
+              Khởi chạy <span class="text-amber-400 font-mono-code">RushWeapon</span> (Tầm lướt 400px) & Cấp 15 Khung Bất Tử
+            </div>
+            <div class="text-xs text-amber-200/80 mt-1 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-amber-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+              <span><strong>Miễn nhiễm 100% sát thương</strong> trong 0.25 giây (vượt qua bẫy gai, đạn laze, nham thạch vô hại).</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+          <span class="px-2.5 py-1 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-xs font-mono-code font-bold">
+            15 Frames Bất Tử
+          </span>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="step-card bg-[#161722] border border-gray-800 hover:border-blue-500/40 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4">
+        <div class="flex items-start md:items-center gap-3.5">
+          <div class="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-blue-500 to-indigo-600 text-white font-black flex items-center justify-center text-sm shadow-md">
+            3
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-blue-400 font-cinzel uppercase tracking-wider">CAN THIỆP ĐÒN ĐÁNH (MID-DASH ATTACK)</span>
+              <span class="text-[11px] font-mono-code text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-gray-700/50">Người Chơi &rarr; The Forge Engine</span>
+            </div>
+            <div class="text-sm font-semibold text-gray-200">
+              Nhấn nút Tấn Công (<span class="text-blue-300 font-mono-code">Attack / Phím Trái Chuột / Nút X</span>) giữa cú lướt
+            </div>
+            <div class="text-xs text-gray-400 mt-0.5">
+              Người chơi chủ động chen ngang chu kỳ lướt để chuyển trạng thái sang thế công kích.
+            </div>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+          <span class="px-2.5 py-1 rounded bg-blue-500/10 text-blue-300 border border-blue-500/20 text-xs font-mono-code">
+            State: Queued
+          </span>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="step-card bg-[#161722] border border-purple-500/30 hover:border-purple-400/60 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-purple-950/20 via-[#161722] to-transparent">
+        <div class="flex items-start md:items-center gap-3.5">
+          <div class="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-purple-500 to-pink-600 text-white font-black flex items-center justify-center text-sm shadow-md">
+            4
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-purple-400 font-cinzel uppercase tracking-wider">HỦY HOẠT ẢNH LƯỚT (ANIMATION CANCEL)</span>
+              <span class="text-[11px] font-mono-code text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-gray-700/50">The Forge Engine (Nội bộ State Machine)</span>
+            </div>
+            <div class="text-sm font-semibold text-gray-200">
+              Ngắt bỏ toàn bộ Khung hồi chiêu (Recovery Frames) của cú Dash
+            </div>
+            <div class="text-xs text-purple-200/80 mt-0.5">
+              Cơ chế bí mật giúp nhịp game mượt mà: Nhân vật không bị khựng đơ cuối cú nhảy mà lập tức vung vũ khí.
+            </div>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+          <span class="px-2.5 py-1 rounded bg-purple-500/20 text-purple-300 border border-purple-500/30 text-xs font-mono-code font-bold">
+            Cancel Recovery
+          </span>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="step-card bg-[#161722] border border-red-500/30 hover:border-red-400/60 rounded-xl p-4 flex flex-col md:flex-row md:items-center justify-between gap-4 bg-gradient-to-r from-red-950/25 via-[#161722] to-amber-950/20">
+        <div class="flex items-start md:items-center gap-3.5">
+          <div class="w-9 h-9 shrink-0 rounded-full bg-gradient-to-br from-red-500 to-amber-600 text-white font-black flex items-center justify-center text-sm shadow-md">
+            5
+          </div>
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="text-xs font-bold text-red-400 font-cinzel uppercase tracking-wider">CHUYỂN HÓA THÀNH LƯỚT CHÉM (DASH-STRIKE)</span>
+              <span class="text-[11px] font-mono-code text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-gray-700/50">The Forge Engine &rarr; Hệ Thống Va Chạm</span>
+            </div>
+            <div class="text-sm font-semibold text-gray-100">
+              Kích hoạt Hitbox Dash-Strike: Mở rộng bán kính quét, tầm với xa hơn
+            </div>
+            <div class="text-xs text-red-300/80 mt-1 flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5 text-red-400 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path></svg>
+              <span><strong>Đánh đổi quan trọng:</strong> Khung bất tử (i-Frames) sẽ bị kết thúc sớm hơn ngay khi hitbox xuất chiêu!</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="shrink-0 flex items-center gap-2 self-end md:self-center">
+          <span class="px-2.5 py-1 rounded bg-red-500/20 text-red-300 border border-red-500/30 text-xs font-mono-code font-bold">
+            Wide Arc Hitbox
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Comparison Table: Pure Dash vs Dash-Strike -->
+    <div class="bg-[#181924] border border-amber-500/20 rounded-xl p-4 md:p-5">
+      <div class="text-xs font-bold text-amber-400 font-cinzel uppercase tracking-wider mb-3 flex items-center gap-2">
+        <span>⚔️ BẢNG SO SÁNH THÔNG SỐ VẬT LÝ VÀ ĐẶC TÍNH CHIẾN ĐẤU</span>
+      </div>
+      
+      <div class="overflow-x-auto custom-scroll">
+        <table class="w-full text-left text-xs border-collapse">
+          <thead>
+            <tr class="border-b border-gray-800 text-gray-400 font-mono-code">
+              <th class="py-2 px-3">TIÊU CHÍ ĐÁNH GIÁ</th>
+              <th class="py-2 px-3 text-amber-300 bg-amber-500/5">LƯỚT THUẦN TÚY (PURE DASH)</th>
+              <th class="py-2 px-3 text-red-300 bg-red-500/5">LƯỚT CHÉM (DASH-STRIKE)</th>
+              <th class="py-2 px-3">Ý NGHĨA CHIẾN THUẬT</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-800 text-gray-300">
+            <tr>
+              <td class="py-2.5 px-3 font-semibold text-gray-200">Thời gian Bất tử (i-Frames)</td>
+              <td class="py-2.5 px-3 text-emerald-400 font-mono-code font-bold bg-amber-500/5">Trọn vẹn 15 Frames (0.25s)</td>
+              <td class="py-2.5 px-3 text-amber-400 font-mono-code bg-red-500/5">Bị ngắt sớm (còn ~8-10 Frames)</td>
+              <td class="py-2.5 px-3 text-gray-400">Dash-Strike nguy hiểm hơn nếu lao thẳng vào bão đạn.</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-semibold text-gray-200">Tầm Với & Bán Kính Hitbox</td>
+              <td class="py-2.5 px-3 font-mono-code text-gray-400 bg-amber-500/5">Không có hitbox (trừ Boon Dash)</td>
+              <td class="py-2.5 px-3 text-blue-400 font-mono-code font-bold bg-red-500/5">+30% - 50% Tầm Quét Cung Tròn</td>
+              <td class="py-2.5 px-3 text-gray-400">Tối ưu để dọn dẹp đám đông quái nhỏ (Witches, Skulls).</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-semibold text-gray-200">Sát Thương Gốc (Base Damage)</td>
+              <td class="py-2.5 px-3 font-mono-code text-gray-400 bg-amber-500/5">Phụ thuộc Boon (Zeus/Ares 10-30)</td>
+              <td class="py-2.5 px-3 text-yellow-300 font-mono-code bg-red-500/5">Thường thấp hơn 10-20% Attack 3</td>
+              <td class="py-2.5 px-3 text-gray-400">Bù lại bằng tốc độ kích hoạt và khả năng áp sát liên tục.</td>
+            </tr>
+            <tr>
+              <td class="py-2.5 px-3 font-semibold text-gray-200">Tương Thích Búa Daedalus</td>
+              <td class="py-2.5 px-3 font-mono-code text-gray-400 bg-amber-500/5">Không ảnh hưởng</td>
+              <td class="py-2.5 px-3 text-red-400 font-mono-code bg-red-500/5">KHÔNG hưởng búa dành cho Attack</td>
+              <td class="py-2.5 px-3 text-gray-400">Cần phân biệt rõ Boon tăng Attack vs Boon tăng Dash-Strike.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Anti-One-Shot Protection Banner -->
+    <div class="mt-4 p-3.5 bg-gradient-to-r from-red-950/40 via-[#181924] to-amber-950/30 border border-red-500/30 rounded-xl flex items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <span class="text-2xl">🛡️</span>
+        <div>
+          <div class="text-xs font-bold text-red-300 font-cinzel uppercase tracking-wider">
+            BẢO HIỂM CHỐNG ĐỘT TỬ (ANTI-ONE-SHOT PROTECTION)
+          </div>
+          <div class="text-[12px] text-gray-400">
+            Nếu nhận sát thương dồn dập vượt ngưỡng trong <span class="text-amber-300 font-mono-code">0.6s</span>, hệ thống lập tức cấp <span class="text-emerald-300 font-mono-code font-bold">1.3s Bất Tử Tuyệt Đối</span>.
+          </div>
+        </div>
+      </div>
+      <span class="shrink-0 px-2.5 py-1 rounded bg-black/50 text-amber-400 font-mono-code text-xs border border-gray-700">
+        HeroData.lua: L265-268
+      </span>
+    </div>
+
+  </div>
+
+</body>
+</html>
