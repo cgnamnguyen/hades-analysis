@@ -748,6 +748,14 @@ body {
   color: var(--text-body);
   font-size: 15px;
 }
+/* Long KaTeX display formulas scroll inside the content column instead of overflowing */
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+  padding-bottom: 6px;
+  scrollbar-width: thin;
+}
 .chapter-body strong {
   color: #fff;
   font-weight: 600;
@@ -899,12 +907,12 @@ body {
   background: rgba(245, 158, 11, 0.05);
 }
 
-/* Portraits inside tables — fixed 68px box so mixed aspect ratios render evenly */
+/* Portraits inside tables — uniform 120px height so tall sprites are actually visible */
 .table-portrait-img {
-  width: 68px;
-  height: 68px;
-  max-width: 68px;
-  max-height: 68px;
+  height: 120px;
+  width: auto;
+  max-height: 120px;
+  max-width: 120px;
   object-fit: contain;
   border-radius: 8px;
   border: 1.5px solid #363d59;
