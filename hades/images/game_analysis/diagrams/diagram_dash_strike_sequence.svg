@@ -36,8 +36,8 @@
   <rect x="10" y="10" width="920" height="560" rx="16" fill="url(#bgGrad)" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.5"/>
   
   <!-- Header Title -->
-  <text x="35" y="45" fill="#fbbf24" font-size="16" font-weight="800" letter-spacing="1.5">SƠ ĐỒ TRÌNH TỰ VẬN HÀNH: LƯỚT &amp; HỦY HOẠT ẢNH (DASH &amp;rarr; DASH-STRIKE)</text>
-  <text x="35" y="68" fill="#9ca3af" font-size="12">Trích xuất từ mã nguồn The Forge Engine &amp;bull; HeroData.lua &amp;bull; Combat.lua</text>
+  <text x="35" y="45" fill="#fbbf24" font-size="16" font-weight="800" letter-spacing="1.5">SƠ ĐỒ TRÌNH TỰ VẬN HÀNH: LƯỚT &amp; HỦY HOẠT ẢNH (DASH → DASH-STRIKE)</text>
+  <text x="35" y="68" fill="#9ca3af" font-size="12">Trích xuất từ mã nguồn The Forge Engine • HeroData.lua • Combat.lua</text>
 
   <!-- Actors Header -->
   <!-- Actor 1: Player -->
@@ -141,6 +141,6 @@
   <!-- Bottom Formula Footer -->
   <rect x="35" y="525" width="870" height="26" rx="6" fill="#141520"/>
   <text x="50" y="542" fill="#9ca3af" font-size="10.5" font-family="Consolas, monospace">
-    HeroData.lua &amp;bull; RushWeaponMaxRange = 400 | InvulnerableFrameThreshold = 0.25 (15f @ 60fps) | Duration = 1.3s (Anti-One-Shot)
+    HeroData.lua • RushWeaponMaxRange = 400 | InvulnerableFrameThreshold = 0.25 (15f @ 60fps) | Duration = 1.3s (Anti-One-Shot)
   </text>
 </svg>
