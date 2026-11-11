@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hades II — danh mục tính năng và quan hệ giữa chúng | HADES II ARCHIVES</title>
+    <meta name="description" content="Hades II — danh mục tính năng và quan hệ giữa chúng">
+    <link rel="icon" type="image/png" href="./assets/portraits/codex-portrait-melinoe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="top">
+<header class="site-header">
+        <div class="header-left">
+            <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i> <span>Mục lục</span>
+            </button>
+            <a href="./index.html" class="brand-link">
+                <div class="brand-icon"><i class="fas fa-moon"></i></div>
+                <div class="brand-text">HADES II ARCHIVES</div>
+                <span class="brand-badge">v1.0</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm nhanh 28 chuyên đề, vũ khí, Boon, boss..." />
+                <span class="search-shortcut">Ctrl+K</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="nav-action-btn" onclick="window.print()" title="In hoặc lưu PDF">
+                <i class="fas fa-print"></i> <span>Lưu PDF</span>
+            </button>
+        </div>
+        <div class="reading-progress-bar" id="readingProgress"></div>
+    </header>
+    <div class="app-layout">
+<aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">MỤC LỤC 58 MỤC</div>
+                <a href="../index.html" class="sidebar-home-link"><i class="fas fa-home"></i> Về trang chủ GAME ARCHIVES</a>
+                <div class="sidebar-filters">
+                    <button class="filter-chip active" onclick="filterByCategory('all', this)">Tất cả (58)</button><button class="filter-chip" onclick="filterByCategory('home', this)">🏠 Trang chính</button><button class="filter-chip" onclick="filterByCategory('system', this)">⚔️ Hệ thống</button><button class="filter-chip" onclick="filterByCategory('docs', this)">📄 Tài liệu</button>
+                </div>
+            </div>
+            <ul class="sidebar-nav-list">
+    <li class="nav-item" data-cat="home">
+        <a href="./index.html" class="nav-link">
+            <span class="nav-num">01</span>
+            <span class="nav-title">TRANG CHỦ — HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#loop" class="nav-link">
+            <span class="nav-num">02</span>
+            <span class="nav-title">VÒNG CHIẾN ĐẤU, PHÒNG VÀ RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#combat" class="nav-link">
+            <span class="nav-num">03</span>
+            <span class="nav-title">CHIẾN ĐẤU, ĐỠ ĐÒN VÀ OMEGA</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#nocturnal-arms-vu-khi-aspects" class="nav-link">
+            <span class="nav-num">04</span>
+            <span class="nav-title">NOCTURNAL ARMS VŨ KHÍ ASPECTS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#boons-system" class="nav-link">
+            <span class="nav-num">05</span>
+            <span class="nav-title">BOONS THẦN LINH BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#phong-tuyen-region-guardian-underworld-surface" class="nav-link">
+            <span class="nav-num">06</span>
+            <span class="nav-title">PHÒNG TUYẾN REGION GUARDIAN UNDERWORLD SURFACE</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#arcana-altar-tien-trinh" class="nav-link">
+            <span class="nav-num">07</span>
+            <span class="nav-title">ARCANA ALTAR TIẾN TRÌNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#crossroads-hub" class="nav-link">
+            <span class="nav-num">08</span>
+            <span class="nav-title">CROSSROADS HUB</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#gathering-system" class="nav-link">
+            <span class="nav-num">09</span>
+            <span class="nav-title">GATHERING TOOLS REAGENTS THU THẬP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#cauldron-incantations-cong-thuc" class="nav-link">
+            <span class="nav-num">10</span>
+            <span class="nav-title">CAULDRON INCANTATIONS CÔNG THỨC</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#familiars-system" class="nav-link">
+            <span class="nav-num">11</span>
+            <span class="nav-title">ANIMAL FAMILIARS ĐỒNG HÀNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#character-system" class="nav-link">
+            <span class="nav-num">12</span>
+            <span class="nav-title">KEEPSAKES QUAN HỆ NHÂN VẬT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#oath-of-the-unseen-vows-god-mode-o-kho" class="nav-link">
+            <span class="nav-num">13</span>
+            <span class="nav-title">OATH OF THE UNSEEN VOWS GOD MODE ĐỘ KHÓ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#prophecies-fated-list-cau-chuyen" class="nav-link">
+            <span class="nav-num">14</span>
+            <span class="nav-title">PROPHECIES FATED LIST CÂU CHUYỆN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#save-load-luu-mo-lai-ong-bo" class="nav-link">
+            <span class="nav-num">15</span>
+            <span class="nav-title">SAVE LOAD LƯU MỞ LẠI ĐỒNG BỘ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#evidence" class="nav-link">
+            <span class="nav-num">16</span>
+            <span class="nav-title">ĐỘ PHỦ BẰNG CHỨNG PHẦN CHƯA XÁC MINH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#sources" class="nav-link">
+            <span class="nav-num">17</span>
+            <span class="nav-title">NGUỒN CHÍNH THỨC</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#ban-o-lien-ket-he-thong" class="nav-link">
+            <span class="nav-num">18</span>
+            <span class="nav-title">BẢN ĐỒ LIÊN KẾT HỆ THỐNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#moon-hex" class="nav-link">
+            <span class="nav-num">19</span>
+            <span class="nav-title">SELENE HEX VÀ PATH OF STARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#hammer-upgrades" class="nav-link">
+            <span class="nav-num">20</span>
+            <span class="nav-title">DAEDALUS HAMMER UPGRADE VŨ KHÍ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#economy-system" class="nav-link">
+            <span class="nav-num">21</span>
+            <span class="nav-title">PHẦN THƯỞNG TIỀN RUN SHOP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#garden-fishing" class="nav-link">
+            <span class="nav-num">22</span>
+            <span class="nav-title">VƯỜN HẠT GIỐNG CÂU CÁ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#chaos-trials" class="nav-link">
+            <span class="nav-num">23</span>
+            <span class="nav-title">CHAOS TRIALS CHALLENGE LOADOUT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#enemies-hazards" class="nav-link">
+            <span class="nav-num">24</span>
+            <span class="nav-title">QUÁI, GUARDIAN VÀ HAZARD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#version-scope" class="nav-link">
+            <span class="nav-num">25</span>
+            <span class="nav-title">MỐC PHIÊN BẢN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#route-system" class="nav-link">
+            <span class="nav-num">26</span>
+            <span class="nav-title">TUYẾN, PHÒNG, REGION VÀ GUARDIAN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#feature-catalog" class="nav-link">
+            <span class="nav-num">27</span>
+            <span class="nav-title">DANH MỤC ĐẦY ĐỦ TÍNH NĂNG VÀ QUAN HỆ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#character-skill-system" class="nav-link">
+            <span class="nav-num">28</span>
+            <span class="nav-title">KỸ NĂNG NHÂN VẬT VÀ HIỆP ĐỒNG BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#weapon-system" class="nav-link">
+            <span class="nav-num">29</span>
+            <span class="nav-title">VŨ KHÍ, ASPECT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/combat.html" class="nav-link">
+            <span class="nav-num">30</span>
+            <span class="nav-title">01 — HỆ THỐNG CHIẾN ĐẤU: HÀNH ĐỘNG, PHÒNG THỦ, MAGICK VÀ NHỊP GIAO TRANH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/weapons.html" class="nav-link">
+            <span class="nav-num">31</span>
+            <span class="nav-title">NOCTURNAL ARMS — HỆ THỐNG VŨ KHÍ, ASPECT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/boons.html" class="nav-link">
+            <span class="nav-num">32</span>
+            <span class="nav-title">03 — BOONS, THẦN LINH VÀ DỰNG BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/routes.html" class="nav-link">
+            <span class="nav-num">33</span>
+            <span class="nav-title">04 — PHÒNG, TUYẾN, REGION VÀ GUARDIAN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/progression.html" class="nav-link">
+            <span class="nav-num">34</span>
+            <span class="nav-title">05 — ARCANA VÀ TIẾN TRÌNH DÀI HẠN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/crossroads.html" class="nav-link">
+            <span class="nav-num">35</span>
+            <span class="nav-title">06 — CROSSROADS VÀ NHỊP GIỮA HAI RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/gathering.html" class="nav-link">
+            <span class="nav-num">36</span>
+            <span class="nav-title">07 — GATHERING TOOLS VÀ REAGENTS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/incantations.html" class="nav-link">
+            <span class="nav-num">37</span>
+            <span class="nav-title">08 — CAULDRON VÀ INCANTATIONS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/familiars.html" class="nav-link">
+            <span class="nav-num">38</span>
+            <span class="nav-title">09 — ANIMAL FAMILIARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/relationships.html" class="nav-link">
+            <span class="nav-num">39</span>
+            <span class="nav-title">10 — KEEPSAKES VÀ QUAN HỆ NHÂN VẬT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/difficulty.html" class="nav-link">
+            <span class="nav-num">40</span>
+            <span class="nav-title">11 — OATH OF THE UNSEEN, THỬ THÁCH VÀ GOD MODE</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/story.html" class="nav-link">
+            <span class="nav-num">41</span>
+            <span class="nav-title">12 — PROPHECIES, NHIỆM VỤ VÀ CỐT TRUYỆN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/saves.html" class="nav-link">
+            <span class="nav-num">42</span>
+            <span class="nav-title">13 — LƯU, MỞ LẠI VÀ ĐỒNG BỘ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/moon-hex.html" class="nav-link">
+            <span class="nav-num">43</span>
+            <span class="nav-title">14 — SELENE, HEX VÀ PATH OF STARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/hammer-upgrades.html" class="nav-link">
+            <span class="nav-num">44</span>
+            <span class="nav-title">15 — DAEDALUS HAMMER VÀ NÂNG VŨ KHÍ TRONG RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/rewards-economy.html" class="nav-link">
+            <span class="nav-num">45</span>
+            <span class="nav-title">16 — PHẦN THƯỞNG, TIỀN RUN VÀ CỬA HÀNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/garden-fishing.html" class="nav-link">
+            <span class="nav-num">46</span>
+            <span class="nav-title">17 — VƯỜN, HẠT GIỐNG, CÂU CÁ VÀ VẬT PHẨM THU HOẠCH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/chaos-trials.html" class="nav-link">
+            <span class="nav-num">47</span>
+            <span class="nav-title">18 — CHAOS, TRIALS VÀ LOADOUT THỬ THÁCH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/enemies-hazards.html" class="nav-link">
+            <span class="nav-num">48</span>
+            <span class="nav-title">19 — ĐỊCH, GUARDIAN, BẪY VÀ CÁCH XỬ LÝ ENCOUNTER</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/character-skill-system.html" class="nav-link">
+            <span class="nav-num">49</span>
+            <span class="nav-title">HỆ KHẢ NĂNG NHÂN VẬT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="features.html" class="nav-link">
+            <span class="nav-num">50</span>
+            <span class="nav-title">DANH MỤC HỆ THỐNG HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="feature-catalog.html" class="nav-link active">
+            <span class="nav-num">51</span>
+            <span class="nav-title">HADES II — DANH MỤC TÍNH NĂNG VÀ QUAN HỆ GIỮA CHÚNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="how-game-works.html" class="nav-link">
+            <span class="nav-num">52</span>
+            <span class="nav-title">HADES II — CÁCH GAME VẬN HÀNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="system-map.html" class="nav-link">
+            <span class="nav-num">53</span>
+            <span class="nav-title">BẢN ĐỒ QUAN HỆ HỆ THỐNG HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="system-coverage.html" class="nav-link">
+            <span class="nav-num">54</span>
+            <span class="nav-title">BẢNG PHỦ HỆ THỐNG — HIỆN BIẾT GÌ, CÒN THIẾU GÌ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="coverage.html" class="nav-link">
+            <span class="nav-num">55</span>
+            <span class="nav-title">ĐỘ PHỦ, BẰNG CHỨNG VÀ CÂU HỎI CÒN MỞ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="sources.html" class="nav-link">
+            <span class="nav-num">56</span>
+            <span class="nav-title">NGUỒN ĐỐI CHIẾU</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="version-scope.html" class="nav-link">
+            <span class="nav-num">57</span>
+            <span class="nav-title">MỐC PHIÊN BẢN — KHÔNG TRỘN LUẬT GIỮA CÁC BẢN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="README.html" class="nav-link">
+            <span class="nav-num">58</span>
+            <span class="nav-title">HADES II — THƯ VIỆN CƠ CHẾ THEO HỆ THỐNG</span>
+        </a>
+    </li>
+            </ul>
+        </aside>
+<main class="main-content">
+            <div class="content-container">
+                <nav class="home-breadcrumb" aria-label="Điều hướng">
+                    <a href="../index.html"><i class="fas fa-arrow-left"></i> Về trang chủ</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Hades II — danh mục tính năng và quan hệ giữa chúng</span>
+                </nav>
+                <div class="chapters-container">
+<section class="hades-chapter-card chapter" id="chapter-1" data-chapter="1" data-title="Hades II — danh mục tính năng và quan hệ giữa chúng" data-category="Hades II">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Tài liệu</span>
+            <span class="chapter-cat-badge"><i class="fas fa-gamepad"></i> Hades II</span>
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyPageLink()" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Chia sẻ</span>
+            </button>
+            <a href="./index.html#toc" class="chapter-back-toc" title="Về mục lục nhanh">
+                <i class="fas fa-list-ul"></i> <span>Mục lục</span>
+            </a>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="hades-ii-danh-muc-tinh-nang-va-quan-he-giua-chung">Hades II — danh mục tính năng và quan hệ giữa chúng</h2>
+    <div class="chapter-body">
+
+<h2 id="pham-vi">Phạm vi</h2>
+<p>Danh mục này liệt kê các cơ chế người chơi có thể vận hành, các thành phần bên trong từng hệ và đường nối giữa chúng. Đây là danh mục gameplay-level; không thay thế bảng từng Boon/recipe với mọi con số.</p>
+<ul>
+<li><strong>Gói đang rà:</strong> ISO RUNE tự ghi 09/2025; hash/giới hạn ở <a href="coverage.html">coverage</a>. Payload gameplay chưa đọc được và game chưa chạy.</li>
+<li><strong>Tham khảo hiện hành:</strong> tư liệu cộng đồng có thể đã cập nhật sau ISO. Ghi riêng để không gán nhầm patch 2026 cho package 2025.</li>
+<li><strong>Chưa xác minh trên ISO:</strong> điều kiện mở, trị số/rank, xác suất, ngoại lệ, save/load và runtime.</li>
+</ul>
+<h2 id="vong-choi">1. Vòng chơi</h2>
+<ol>
+<li>Ở Crossroads, chọn Night weapon/Aspect, Arcana theo Grasp, Keepsake và Familiar; chuẩn bị theo route/build muốn thử.</li>
+<li>Chọn Underworld hoặc Surface. Vào Location, đọc cửa thưởng, đánh địch, né hazard, lấy reward, tương tác shop/NPC/gathering/Chaos.</li>
+<li>Boon, Daedalus Hammer, Hex/Path of Stars, currency và hiệu ứng sinh tồn tạo build tạm trong run.</li>
+<li>Qua Guardian thì sang Region sau; chết/kết thúc run trở lại Crossroads.</li>
+<li>Dùng tài nguyên/tiến độ để mở Arcana, Incantation, Familiar, relationship, prophecy, route và late-game unlock.</li>
+<li>Lặp run để mở dần câu chuyện đến true ending/epilogue. v1.0 và patch sau bổ sung nhiều scene, prophecy và thoại.</li>
+</ol>
+<img class="system-diagram" style="display:block;width:100%;max-width:960px;height:auto;margin:20px auto" src="assets/diagrams/run-cycle.svg" alt="Sơ đồ vòng chơi và các nhánh tiến trình" loading="lazy">
+<h2 id="combat-tung-thanh-phan">2. Combat — từng thành phần</h2>
+<ul>
+<li><strong>Life/Health:</strong> thanh sinh lực; mất vì hit/hazard; hồi từ Fountain, Boon, Familiar, Keepsake, reward hoặc Hex.</li>
+<li><strong>Magick:</strong> resource gắn với các Omega actions và có thể tương tác với Hex; cost, hồi và charge rule cần xác nhận theo từng build.</li>
+<li><strong>Attack / Special / Cast / Sprint:</strong> hành động cơ bản; vũ khí định nghĩa move, Boon theo slot có thể đổi damage, vùng, tốc độ, curse, control hoặc resource.</li>
+<li><strong>Omega Attack / Ω Special / Ω Cast:</strong> channel/charged move tiêu Magick; khác move thường và tích Hex.</li>
+<li><strong>Hex:</strong> năng lực Selene; charge theo Magick tiêu qua Omega; Hex action có luật sử dụng riêng.</li>
+<li><strong>Hit / armor / damage / stagger / knockback:</strong> tấn công, lớp armor, phản ứng mục tiêu và interruption; Patch 10 từng đổi cách trừ temporary Armor và giảm stun-lock.</li>
+<li><strong>Curse/status:</strong> Weak, Blitz, Hitch, Slip, Daze, Freeze, Scorch, Shine, Morph, slow, mark/area effects; điều kiện tạo/kháng/thời lượng phụ thuộc nguồn.</li>
+<li><strong>Life protection:</strong> Life/Armor, healing, Death Defiance và effect cứu run; i-frame/invulnerability timing chưa xác minh ở runtime.</li>
+<li><strong>Enemy targeting:</strong> lock-on/aim, projectile, vùng Cast, summon, elite affix, boss phase và bẫy; AI/hitbox/i-frame/input buffer chưa xem ở runtime.</li>
+<li><strong>Synergy rules:</strong> curse count → Origination; element/Infusion threshold → bonus; boon prerequisite → Duo/Legendary eligibility; Omega spend → Hex charge.</li>
+</ul>
+<p>Chi tiết các nút hành động, lớp skill/build, nâng vĩnh viễn và nâng trong run: <a href="systems/character-skill-system.html">Hệ khả năng nhân vật và nâng cấp</a>. Kết luận rà soát: hệ cũ chưa đủ chi tiết; trang mới phân ranh rõ bộ chiêu nền với các hệ tạo build.</p>
+<h3 id="cach-choi-chien-au-va-lop-phong-thu">Cách chơi chiến đấu và lớp phòng thủ</h3>
+<p><img src="assets/diagrams/combat-decision-loop.svg" alt="Vòng đọc tín hiệu, né/đổi vị trí, chọn hành động, kiểm tra kết quả rồi tái định vị" /></p>
+<p>Attack/Special là action vũ khí; Cast kiểm soát/vận hành hiệu ứng trong vùng; Dash/Sprint đổi vị trí; Omega đổi channel/Magick lấy một move khác; Hex là phép riêng của Selene. Mỗi hành động thay đổi theo weapon/Aspect/Boon/Hammer/Path of Stars, vì vậy phải đọc đúng slot và trigger trước khi đánh giá damage.</p>
+<p><strong>Né, guard và riposte là các cơ chế khác nhau.</strong> Dash/Sprint không được xem là miễn sát thương nếu chưa đo i-frame. Không có bằng chứng về guard dùng chung: Black Coat có directional block; Sister Blades Aspect Artemis có Riposte; hành vi phòng thủ cũ của Axe cần kiểm tra lại. Early Access Patch 10 xác nhận temporary Armor bị trừ trước permanent Armor và giảm một số tình huống stun-lock; mốc đó không chứng minh bản ISO/v1.0 có cùng thông số.</p>
+<p><img src="assets/diagrams/defense-layers.svg" alt="Lớp phòng thủ: di chuyển, guard/riposte và armor cùng giới hạn xác minh" /></p>
+<p>Tương tác minh họa từ Post-Launch Patch 2 (04/2026): Pan Blades + Dancing Knives; Fire Away hoạt động với mọi Cast; Ares tạo vòng Weapon strike → Plasma → Magick, Profuse Bleeding kích hoạt theo Plasma/Wounds; Snow Queen barrier không bị hit zero-damage triệt tiêu. Đây là ví dụ sau mốc ISO RUNE, không phải xác nhận trực tiếp package đó. Chi tiết đã có bảng trigger và giới hạn tại <a href="systems/combat.html">trang chiến đấu</a> và <a href="systems/character-skill-system.html">trang kỹ năng/hiệp đồng</a>.</p>
+<h2 id="sau-night-arms-va-24-aspect">3. Sáu Night Arms và 24 Aspect</h2>
+<div class="table-responsive"><table>
+<thead>
+<tr>
+<th>Vũ khí</th>
+<th>Aspects (tham khảo build hiện hành)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Witch's Staff — Descura</td>
+<td>Melinoë · Circe · Momus · Anubis</td>
+</tr>
+<tr>
+<td>Sister Blades — Lim and Oros</td>
+<td>Melinoë · Artemis · Pan · Morrigan</td>
+</tr>
+<tr>
+<td>Moonstone Axe — Zorephet</td>
+<td>Melinoë · Charon · Thanatos · Nergal</td>
+</tr>
+<tr>
+<td>Umbral Flames — Ygnium</td>
+<td>Melinoë · Moros · Eos · Supay</td>
+</tr>
+<tr>
+<td>Argent Skull — Revaal</td>
+<td>Melinoë · Medea · Persephone · Hel</td>
+</tr>
+<tr>
+<td>Black Coat — Xinth</td>
+<td>Melinoë · Nyx · Selene · Shiva</td>
+</tr>
+</tbody>
+</table></div>
+<p>Weapon features: Attack/Special/Omega variants, range/speed/projectiles, Magick cost, Aspect unlock phrase, rank/materials, hidden Aspect, Hammer pool/choice, weapon-specific Testament. Aspect is persistent style; Daedalus Hammer is a run upgrade. Names/effects are reference data, chưa đối chiếu bundle ISO. <strong>Trang cũ chưa đủ</strong>: xem <a href="systems/weapons.html">hồ sơ sáu vũ khí, 24 Aspect và vòng nâng</a>.</p>
+<h3 id="hammer-loop">Hammer loop</h3>
+<p>Hammer door → offer pool for selected weapon → pick one move/stat modifier → run build changes → may interact with Aspect/Boon and affect later choices. Pool weight, exclusivity, stackability, number of appearances and exact values remain build-specific.</p>
+<h2 id="boons-va-build">4. Boons và build</h2>
+<ul>
+<li><strong>9 Olympian providers:</strong> Zeus, Poseidon, Apollo, Demeter, Aphrodite, Hephaestus, Hera, Hestia, Ares.</li>
+<li><strong>Special providers/events:</strong> Artemis, Hermes, Athena, Dionysus, Chaos, Selene, Heracles, Icarus, Narcissus, Echo và các encounter nhân vật.</li>
+<li><strong>Slots:</strong> Attack, Special, Cast, Sprint, Gain; core boon có thể thay đổi move hoặc tài nguyên chính.</li>
+<li><strong>Support boons:</strong> damage, area, critical, defense, healing, resource, movement, reward/economy, summon hoặc trigger.</li>
+<li><strong>Rarity / Pom / rank:</strong> tăng hiệu lực; không phải mọi boon có cùng scaling.</li>
+<li><strong>Duo / Legendary:</strong> ghép prerequisite từ hai nguồn hoặc yêu cầu điều kiện; offer pool bị lọc theo boon đã có.</li>
+<li><strong>Infusion / elemental:</strong> cộng affinity/element, đạt ngưỡng bật effect; nối Boon ↔ resource/Arcana.</li>
+<li><strong>Change of Fate / reroll:</strong> đổi offer trong giới hạn do Arcana/reward/effect cấp.</li>
+<li><strong>Catalogue hiện hành:</strong> Hades Wiki ghi 201 boon entries tại trang <a href="https://hades.wiki.gg/wiki/Hades_2:Boon_List">Boon List</a>; số này là tư liệu cộng đồng đang sống, không phải tổng được đếm trong ISO.</li>
+</ul>
+<h3 id="icon-boon-e-oc-lua-chon-theo-god-va-slot">Icon Boon để đọc lựa chọn theo god và slot</h3>
+<p>Đây là mẫu thị giác, không phải danh sách đầy đủ. Icon artwork không xác nhận offer pool, rarity hay phiên bản của ISO. Tên god/slot được đối chiếu với <a href="https://hades.wiki.gg/wiki/Hades_2:Boon_List">Hades 2 Boon List</a>.</p>
+<div class="table-responsive"><table>
+<thead>
+<tr>
+<th>Icon</th>
+<th>Boon</th>
+<th>Nguồn và vị trí</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><img src="assets/icons/Heaven_Strike_II.png" alt="Heaven Strike" /></td>
+<td>Heaven Strike</td>
+<td>Zeus · Attack</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-wave-strike.png" alt="Wave Strike" /></td>
+<td>Wave Strike</td>
+<td>Poseidon · Attack</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-flutter-strike.png" alt="Flutter Strike" /></td>
+<td>Flutter Strike</td>
+<td>Aphrodite · Attack</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-sworn-strike.png" alt="Sworn Strike" /></td>
+<td>Sworn Strike</td>
+<td>Hera · Attack</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-arctic-ring.png" alt="Arctic Ring" /></td>
+<td>Arctic Ring</td>
+<td>Demeter · Cast</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-flame-strike.png" alt="Flame Strike" /></td>
+<td>Flame Strike</td>
+<td>Hestia · Attack</td>
+</tr>
+<tr>
+<td><img src="assets/icons/Rapture_Ring_II.png" alt="Rapture Ring" /></td>
+<td>Rapture Ring</td>
+<td>Aphrodite · Cast</td>
+</tr>
+<tr>
+<td><img src="assets/icons/Glamour_Gain_II.png" alt="Glamour Gain" /></td>
+<td>Glamour Gain</td>
+<td>Aphrodite · Gain/Magick</td>
+</tr>
+<tr>
+<td><img src="assets/icons/Blinding_Rush_II.png" alt="Blinding Rush" /></td>
+<td>Blinding Rush</td>
+<td>Apollo · Sprint</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-divine-dash.png" alt="Divine Dash" /></td>
+<td>Divine Dash</td>
+<td>Athena · Dash</td>
+</tr>
+<tr>
+<td><img src="assets/icons/boon-sun-worshiper.png" alt="Sun Worshiper" /></td>
+<td>Sun Worshiper</td>
+<td>Hera + Apollo · Duo</td>
+</tr>
+<tr>
+<td><img src="assets/icons/Heaven_Flourish_II.png" alt="Heaven Flourish" /></td>
+<td>Heaven Flourish</td>
+<td>Zeus · Special</td>
+</tr>
+</tbody>
+</table></div>
+<p>Icon PNG gốc khoảng 88–90 px; khi thu nhỏ giữ <code>height:auto</code>/<code>object-fit:contain</code>. <a href="evidence/community-icon-inventory.json">Inventory nguồn, kích thước, alpha và hash</a>.</p>
+<div id="god-portraits"></div>
+<div class="portrait-grid deity-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:12px;margin:18px 0">
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-aphrodite.png" alt="Codex portrait Aphrodite" loading="lazy"><figcaption><strong>Aphrodite</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-apollo.png" alt="Codex portrait Apollo" loading="lazy"><figcaption><strong>Apollo</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-ares.png" alt="Codex portrait Ares" loading="lazy"><figcaption><strong>Ares</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-artemis.png" alt="Codex portrait Artemis" loading="lazy"><figcaption><strong>Artemis</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-athena.png" alt="Codex portrait Athena" loading="lazy"><figcaption><strong>Athena</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-demeter.png" alt="Codex portrait Demeter" loading="lazy"><figcaption><strong>Demeter</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-dionysus.png" alt="Codex portrait Dionysus" loading="lazy"><figcaption><strong>Dionysus</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-hephaestus.png" alt="Codex portrait Hephaestus" loading="lazy"><figcaption><strong>Hephaestus</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-hera.png" alt="Codex portrait Hera" loading="lazy"><figcaption><strong>Hera</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-hermes.png" alt="Codex portrait Hermes" loading="lazy"><figcaption><strong>Hermes</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-hestia.png" alt="Codex portrait Hestia" loading="lazy"><figcaption><strong>Hestia</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-poseidon.png" alt="Codex portrait Poseidon" loading="lazy"><figcaption><strong>Poseidon</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-zeus.png" alt="Codex portrait Zeus" loading="lazy"><figcaption><strong>Zeus</strong></figcaption></figure>
+</div>
+<h2 id="arcana-toan-bo-25-la-tham-khao">5. Arcana — toàn bộ 25 lá tham khảo</h2>
+<p>Altar of Ashes: Ashes mở lá; Grasp giới hạn lá bật; Awakening bật miễn phí theo bố trí; Card Upgrade Points và Moon Dust nối sang Consecration/rank. Một số rank/điều kiện có thể phụ thuộc boss/Incantation.</p>
+<p>I The Sorceress · II The Wayward Son · III The Huntress · IV Eternity · V The Moon
+VI The Furies · VII Persistence · VIII The Messenger · IX The Unseen · X Night
+XI The Swift Runner · XII Death · XIII The Centaur · XIV Origination · XV The Lovers
+XVI The Enchantress · XVII The Boatman · XVIII The Artificer · XIX Excellence · XX The Queen
+XXI The Fates · XXII The Champions · XXIII Strength · XXIV Divinity · XXV Judgement</p>
+<p>Cards influence attack/survival, Magick, reward/reroll, keepsake, encounter, curse/element and awakening conditions. Full effects/Grasp/unlock/rank must be read with version lock.</p>
+<h2 id="selene-9-hexes">6. Selene — 9 Hexes</h2>
+<p>Phase Shift · Twilight Curse · Lunar Ray · Wolf Howl · Moon Water · Night Bloom · Total Eclipse · Dark Side · Sky Fall.</p>
+<p>Selene offer → choose Hex → Magick spent on Omega charges it → use effect → Path of Stars spends upgrade points → Olympian-linked legendary talent may reshape effect. Charge thresholds, target eligibility and branch synergies need target-build verification.</p>
+<h2 id="hai-tuyen-tam-region-tam-guardian">7. Hai tuyến, tám Region, tám Guardian</h2>
+<div class="table-responsive"><table>
+<thead>
+<tr>
+<th>Tuyến</th>
+<th>Region theo thứ tự</th>
+<th>Guardian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Underworld</td>
+<td>Erebus → Oceanus → Fields of Mourning → Tartarus</td>
+<td>Hecate → Scylla and the Sirens → Infernal Cerberus → Chronos</td>
+</tr>
+<tr>
+<td>Surface</td>
+<td>City of Ephyra → Rift of Thessaly → Mount Olympus → The Summit</td>
+<td>Polyphemus → Eris → Prometheus → Typhon</td>
+</tr>
+</tbody>
+</table></div>
+<p>Room subfeatures: reward door, standard/elite/miniboss encounter, fountain, shop, Trove/Well, NPC scene, Chaos entrance, fishing/harvest/gathering point, trap/hazard, exit transition, clear state and Guardian gate. Surface has its own unlock/survival conditions. Route map and conditions: <a href="systems/routes.html">routes</a>.</p>
+<h2 id="ich-boss-va-moi-truong">8. Địch, boss và môi trường</h2>
+<p>Foe roles include melee/ranged/projectile, summoner, elite affix, armored target, miniboss and Guardian. Enemy features include telegraph, phase, target selection, spawn/support, vulnerability, armor/health, drop, codex kill counter. Hazards include floor/room traps, projectiles, danger zones, ship/weather/terrain constraints. Hecate, Scylla/Sirens, Cerberus, Chronos, Polyphemus, Eris, Prometheus and Typhon each close a Region/route step. Exact HP/damage/AI differs by version and is not asserted for ISO.</p>
+<p><img src="assets/diagrams/enemy-response.svg" alt="Quy trình đọc quái: nhận diện vai trò, đọc telegraph, chọn phản ứng, đánh recovery rồi ghi lại kết quả" /></p>
+<p>Các nhãn melee/projectile/support/hazard là nhóm phân tích để người đọc định hình counterplay, không phải taxonomy chính thức. Patch 2 ghi rõ Sorrow-Spiller (Fields) có tần suất xuất hiện giảm, Charybdis ở Thessaly được sửa spawn timing, và tentacles không còn susceptible to Morph. Đây là ghi chú hậu v1.0 (04/2026); không xác nhận các thông số đó trên ISO tự ghi 09/2025. <a href="systems/enemies-hazards.html">Bảng ví dụ, mẫu hồ sơ và phần chưa biết</a>.</p>
+<h2 id="reward-shop-currency-item-economy">9. Reward, shop, currency, item economy</h2>
+<ul>
+<li><strong>Reward types:</strong> boon, material, currency, max Life, healing, Hammer, Hex/upgrade, special encounter, story/event, resource point.</li>
+<li><strong>Charon shop / Well / Wretched Broker / Trove:</strong> spend run or meta currency for immediate item/benefit; offer pool depends on place/progression.</li>
+<li><strong>Currencies/materials:</strong> Obol, Bones, Ashes, Psyche, Fate Fabric, Nectar, Moon Dust, Zodiac Sand, Nightmare, Darkness, Shadow, Pearl, Marble, Iron, Bronze, Glassrock, Limestone, Driftwood, Lotus, Moly, Myrtle, Nightshade, Poppy, Garlic, Wheat, Cattail, Mandrake, Moss, Tears, Wool, Thalamus, Adamant and event resources.</li>
+<li><strong>Persistence classes:</strong> run-only boon/upgrade versus long-term material/unlock/story. Do not assume every currency survives death without target evidence.</li>
+</ul>
+<h2 id="gathering-garden-fishing">10. Gathering, garden, fishing</h2>
+<div class="table-responsive"><table>
+<thead>
+<tr>
+<th>Tool</th>
+<th>Main interaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Crescent Pick</td>
+<td>Silver/ore nodes</td>
+</tr>
+<tr>
+<td>Tablet of Peace</td>
+<td>soothe/consult Shades; Psyche</td>
+</tr>
+<tr>
+<td>Silver Spade</td>
+<td>dig seed/plant points</td>
+</tr>
+<tr>
+<td>Rod of Fishing</td>
+<td>Fishing Point timing minigame</td>
+</tr>
+</tbody>
+</table></div>
+<p>Gathering point → correct tool/availability → collect resource → run exit → spend at Cauldron/Altar/Incantation. Seeds → Crossroads plot → timer/ready state → harvest plant → ingredient. Fishing point → cast/timing result → fish → trade/prophecy/reward. Exact point rates/yields, growth/offline timer, catch window and tool appearance policy are not verified in ISO.</p>
+<img class="system-diagram" style="display:block;width:100%;max-width:960px;height:auto;margin:20px auto" src="assets/diagrams/gathering-loops.svg" alt="Sơ đồ luồng tool, seed point và fishing point" loading="lazy">
+<h2 id="cauldron-incantations-alchemy">11. Cauldron, Incantations, Alchemy</h2>
+<p>Recipe requirement + story flag + reagent → cast at Cauldron → unlock new location/route/room/NPC/tool/feature, grant resource, produce treat, or enable convenience. Incantations can gate Surface access, fountains, fishing/garden, Keepsake switch, Familiar recruitment, Crossroads amenities and late game. A community dataset lists 95 recipe entries for a 2026 build; do not treat as ISO count. Full reference: <a href="https://almanauts.com/hades2/incantations/">Incantations</a>.</p>
+<h2 id="familiars-nam-ong-hanh">12. Familiars — năm đồng hành</h2>
+<p>Frinos (frog) · Toula (cat) · Raki (raven) · Hecuba (dog) · Gale (polecat). Familiar incantation → Familiar Treat/recruit → choose a companion → passive/action in run → treat/bond/upgrade → combat, gathering or utility effect. One is selected for a run; exact current limits/effect/rank and post-launch alternate forms are version-bound. <a href="systems/familiars.html">Familiar system</a>.</p>
+<h2 id="keepsakes-gifts-relationships">13. Keepsakes, gifts, relationships</h2>
+<p>Nectar first gift → Keepsake unlock; choose in Training Grounds → item effect during run → rank by encounters → switch between Regions if unlocked. Bath Salts/Twin Lures/Ambrosia → character scene/bond → Keepsake or story flag. Bond/relationship can gate dialogue, prophecy, keepsake visual or later gift. Events are priority-scheduled; gift requirements do not guarantee an immediate scene. Post-Launch Patch 2 (04/2026) adds Forever Gifting, Going Steady and new dialogue/conclusion scenes — after the 2025 ISO.</p>
+<img class="system-diagram" style="display:block;width:100%;max-width:960px;height:auto;margin:20px auto" src="assets/diagrams/relationship-flow.svg" alt="Sơ đồ gặp nhân vật, quà, bond và Keepsake" loading="lazy">
+<div id="character-portraits"></div>
+<div class="portrait-grid character-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(96px,1fr));gap:12px;margin:18px 0">
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-arachne.png" alt="Codex portrait Arachne" loading="lazy"><figcaption><strong>Arachne</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-chronos.png" alt="Codex portrait Chronos" loading="lazy"><figcaption><strong>Chronos</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-circe.png" alt="Codex portrait Circe" loading="lazy"><figcaption><strong>Circe</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-dora.png" alt="Codex portrait Dora" loading="lazy"><figcaption><strong>Dora</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-echo.png" alt="Codex portrait Echo" loading="lazy"><figcaption><strong>Echo</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-hecate.png" alt="Codex portrait Hecate" loading="lazy"><figcaption><strong>Hecate</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-heracles.png" alt="Codex portrait Heracles" loading="lazy"><figcaption><strong>Heracles</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-icarus.png" alt="Codex portrait Icarus" loading="lazy"><figcaption><strong>Icarus</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-medea.png" alt="Codex portrait Medea" loading="lazy"><figcaption><strong>Medea</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-melinoe.png" alt="Codex portrait Melinoë" loading="lazy"><figcaption><strong>Melinoë</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-moros.png" alt="Codex portrait Moros" loading="lazy"><figcaption><strong>Moros</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-narcissus.png" alt="Codex portrait Narcissus" loading="lazy"><figcaption><strong>Narcissus</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-nemesis.png" alt="Codex portrait Nemesis" loading="lazy"><figcaption><strong>Nemesis</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-odysseus.png" alt="Codex portrait Odysseus" loading="lazy"><figcaption><strong>Odysseus</strong></figcaption></figure>
+<figure class="portrait-card" style="margin:0;display:flex;flex-direction:column;align-items:center;gap:6px;text-align:center"><img src="assets/portraits/codex-portrait-selene.png" alt="Codex portrait Selene" loading="lazy"><figcaption><strong>Selene</strong></figcaption></figure>
+</div>
+<h2 id="story-fated-list-codex-music">14. Story, Fated List, Codex, music</h2>
+<p>Main route/story flags → NPC dialogue → event/prophecy progress → conclusion/late unlock → true ending/epilogue. Fated List holds objectives/counters; Book of Shadows/Codex collects character, foe, region, weapon/resource info; songs, decoration and performance interactions unlock optional ambience/story. v1.0 added true ending, new voiced events, prophecies and late-game unlockables. Patch 2 later added narrated conclusions to some character prophecies.</p>
+<h2 id="challenge-va-difficulty">15. Challenge và difficulty</h2>
+<p>God Mode/accessibility setting; Oath of the Unseen and Vows; Fear value/threshold; Guardian/route modifiers; Testaments and Nightmare rewards; Chaos Trials preset weapon/Arcana/route constraints; trial completion records/prophecies. Fear raises challenge and reward tiers; it is separate from ordinary per-run boon choice. Exact vow list, threshold and reward pool require version-specific data.</p>
+<h2 id="crossroads-va-hub">16. Crossroads và hub</h2>
+<p>Altar of Ashes/Arcana · Cauldron/Incantations · Training Grounds/weapon selection · Keepsake display · familiar interaction · garden plots · fishing point · Wretched Broker/exchange · NPC/story locations · decorative/music/chorus objects. Hub is the consumer of run materials and the source of long-term unlock; not all interactions are always available because flags/time/story gate them.</p>
+<h2 id="save-options-accessibility-platform">17. Save, options, accessibility, platform</h2>
+<p>Local save, backup/recovery, cloud/cross-save by platform, controller/options, audio/display/language/accessibility/God Mode and achievement/account layer. Meta inventory/story/prophecy/relationship, settings and any interrupted run state are separate persistence questions. Save structure, write boundary, cloud merge/rollback and resume behavior of the ISO have not been observed.</p>
+<h2 id="quan-he-au-cuoi">18. Quan hệ đầu-cuối</h2>
+<pre><code class="language-text">Crossroads → choose route/weapon/Aspect/Arcana/Keepsake/Familiar
+  → Region rooms → combat + shop/NPC/gathering/Chaos/reward doors
+  → Boons + Hammer + Hex/Stars + health/currency build
+  → Guardian → next Region or death/end-run
+  → meta resource + story/event flags → Crossroads
+       ├─ reagent → Cauldron → route/tool/farm/familiar/convenience unlock
+       ├─ Ashes/Psyche/Moon Dust → Arcana/Grasp/rank
+       ├─ gifts/encounters → bond/Keepsake/dialogue/prophecy
+       └─ two route histories + event/prophecy gates → true ending/epilogue
+</code></pre>
+<p>Đây là quan hệ gameplay tổng hợp; không phải call graph từ executable.</p>
+<h2 id="hinh-trong-game-e-oi-chieu-nhanh">Hình trong game để đối chiếu nhanh</h2>
+<p>Các icon dưới đây là file PNG Hades II lưu cục bộ, giữ nguyên tỉ lệ và nền trong suốt. Chúng dùng nhận diện đại diện cho từng hệ; không khẳng định đã trích từ đúng ISO RUNE. Bấm tên hệ để mở chương cơ chế.</p>
+<h3 id="sau-vu-khi">Sáu vũ khí</h3>
+<div class="icon-grid">
+<figure class="icon-card"><img src="assets/icons/weapon-witch-staff.png" width="72" height="72" alt="Witch's Staff" loading="lazy"><figcaption><strong>Witch's Staff</strong><span>Attack / Special / Omega</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/weapon-sister-blades.png" width="72" height="72" alt="Sister Blades" loading="lazy"><figcaption><strong>Sister Blades</strong><span>cận chiến / ném</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/weapon-umbral-flames.png" width="72" height="72" alt="Umbral Flames" loading="lazy"><figcaption><strong>Umbral Flames</strong><span>projectile / orbit</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/weapon-moonstone-axe.png" width="72" height="72" alt="Moonstone Axe" loading="lazy"><figcaption><strong>Moonstone Axe</strong><span>đòn nặng / vùng</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/weapon-argent-skull.png" width="72" height="72" alt="Argent Skull" loading="lazy"><figcaption><strong>Argent Skull</strong><span>Shells / hồi đạn</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/weapon-black-coat.png" width="72" height="69" alt="Black Coat" loading="lazy"><figcaption><strong>Black Coat</strong><span>rocket / movement</span></figcaption></figure>
+</div>
+<h3 id="cong-cu-thu-thap">Công cụ thu thập</h3>
+<div class="icon-grid">
+<figure class="icon-card"><img src="assets/icons/tool-crescent-pick.png" width="70" height="70" alt="Crescent Pick" loading="lazy"><figcaption><strong>Crescent Pick</strong><span>đào khoáng</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/tool-tablet-of-peace.png" width="70" height="70" alt="Tablet of Peace" loading="lazy"><figcaption><strong>Tablet of Peace</strong><span>Shade / Psyche</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/tool-silver-spade.png" width="70" height="70" alt="Silver Spade" loading="lazy"><figcaption><strong>Silver Spade</strong><span>hạt giống</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/tool-rod-of-fishing.png" width="70" height="70" alt="Rod of Fishing" loading="lazy"><figcaption><strong>Rod of Fishing</strong><span>câu cá</span></figcaption></figure>
+</div>
+<h3 id="familiars">Familiars</h3>
+<div class="icon-grid">
+<figure class="icon-card"><img src="assets/icons/familiar-frinos.png" width="66" height="55" alt="Frinos" loading="lazy"><figcaption><strong>Frinos</strong><span>ếch</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/familiar-toula.png" width="67" height="70" alt="Toula" loading="lazy"><figcaption><strong>Toula</strong><span>mèo</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/familiar-raki.png" width="70" height="58" alt="Raki" loading="lazy"><figcaption><strong>Raki</strong><span>quạ</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/familiar-hecuba.png" width="63" height="70" alt="Hecuba" loading="lazy"><figcaption><strong>Hecuba</strong><span>chó</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/familiar-gale.png" width="67" height="70" alt="Gale" loading="lazy"><figcaption><strong>Gale</strong><span>chồn</span></figcaption></figure>
+</div>
+<h3 id="tai-nguyen-meta">Tài nguyên meta</h3>
+<div class="icon-grid">
+<figure class="icon-card"><img src="assets/icons/resource-ashes.png" width="64" height="66" alt="Ashes" loading="lazy"><figcaption><strong>Ashes</strong><span>mở Arcana</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/resource-psyche.png" width="56" height="69" alt="Psyche" loading="lazy"><figcaption><strong>Psyche</strong><span>Grasp / tiến triển</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/resource-moon-dust.png" width="193" height="237" alt="Moon Dust" loading="lazy"><figcaption><strong>Moon Dust</strong><span>nâng Arcana</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/resource-fate-fabric.png" width="53" height="62" alt="Fate Fabric" loading="lazy"><figcaption><strong>Fate Fabric</strong><span>Incantation</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/resource-bones.png" width="119" height="110" alt="Bones" loading="lazy"><figcaption><strong>Bones</strong><span>broker / exchange</span></figcaption></figure>
+<figure class="icon-card"><img src="assets/icons/resource-grasp.png" width="52" height="70" alt="Grasp" loading="lazy"><figcaption><strong>Grasp</strong><span>giới hạn Arcana đang bật</span></figcaption></figure>
+</div>
+<p>Nguồn icon: <a href="https://hades.fandom.com/wiki/Category:Hades_II_Boon_Icons">Hades Wiki</a>, đối chiếu trong <a href="evidence/community-icon-inventory.json">inventory asset + hash</a>. Hades Wiki là nguồn cộng đồng; icon chưa pixel-compare với resource bundle ISO.</p>
+<h2 id="nguon">Nguồn</h2>
+<ul>
+<li><a href="index.html">Index offline</a> · <a href="system-map.html">Bản đồ hệ</a> · <a href="system-coverage.html">Coverage</a> · <a href="version-scope.html">Version scope</a>.</li>
+<li><a href="https://www.supergiantgames.com/blog/hades2-now-available/">Supergiant — v1.0</a> · <a href="https://www.supergiantgames.com/blog/">Supergiant — 2026 console/bonus update</a>.</li>
+<li><a href="https://store.steampowered.com/news/posts/?enddate=1776182833&amp;feed=steam_community_announcements">Steam — Post-Launch Patch 2</a>.</li>
+<li>Tham khảo cộng đồng theo build: <a href="https://justgameguides.com/game/hades-II/arcana-cards">25 Arcana</a>, <a href="https://justgameguides.com/game/hades-II/hexes">9 Hexes</a>, <a href="https://brokenbuilds.gg/hades-ii/guides/hidden-aspects-guide">Aspects</a>, <a href="https://hades.wiki.gg/wiki/Hades_2:Boon_List">Boon list</a>, <a href="https://almanauts.com/hades2/incantations/">95 Incantations</a>. Nội dung/đếm chưa xác minh từ gói RUNE.</li>
+<li>Ảnh icon địa phương: <a href="evidence/community-icon-inventory.json">inventory và hash</a>; nguồn hình Hades Wiki theo CC BY-SA, ghi ở <a href="sources.html">sources</a>.</li>
+</ul>
+
+    </div>
+</section>
+                </div>
+                <footer class="site-footer">
+                    <p><strong>HADES II ARCHIVES</strong> — Hades II © Supergiant Games. <a href="../index.html">← Về trang chủ GAME ARCHIVES</a> · <a href="./index.html">Hades II — Cách game vận hành</a></p>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <div class="floating-actions">
+        <a href="#top" class="float-btn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></a>
+        <button class="float-btn" onclick="toggleSidebar()" title="Đóng/Mở Mục lục"><i class="fas fa-list"></i></button>
+    </div>
+    <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeLightbox()">&times;</button>
+            <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+            <div style="display:flex; gap:10px; margin-top:12px;">
+                <button class="nav-action-btn" onclick="zoomLightbox(0.2)"><i class="fas fa-search-plus"></i> Phóng to</button>
+                <button class="nav-action-btn" onclick="zoomLightbox(-0.2)"><i class="fas fa-search-minus"></i> Thu nhỏ</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>

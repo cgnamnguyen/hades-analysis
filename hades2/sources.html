@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguồn đối chiếu | HADES II ARCHIVES</title>
+    <meta name="description" content="Nguồn đối chiếu">
+    <link rel="icon" type="image/png" href="./assets/portraits/codex-portrait-melinoe.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body id="top">
+<header class="site-header">
+        <div class="header-left">
+            <button class="sidebar-toggle-btn" onclick="toggleSidebar()" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i> <span>Mục lục</span>
+            </button>
+            <a href="./index.html" class="brand-link">
+                <div class="brand-icon"><i class="fas fa-moon"></i></div>
+                <div class="brand-text">HADES II ARCHIVES</div>
+                <span class="brand-badge">v1.0</span>
+            </a>
+        </div>
+        <div class="header-center">
+            <div class="search-wrapper">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm nhanh 28 chuyên đề, vũ khí, Boon, boss..." />
+                <span class="search-shortcut">Ctrl+K</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <button class="nav-action-btn" onclick="window.print()" title="In hoặc lưu PDF">
+                <i class="fas fa-print"></i> <span>Lưu PDF</span>
+            </button>
+        </div>
+        <div class="reading-progress-bar" id="readingProgress"></div>
+    </header>
+    <div class="app-layout">
+<aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">MỤC LỤC 58 MỤC</div>
+                <a href="../index.html" class="sidebar-home-link"><i class="fas fa-home"></i> Về trang chủ GAME ARCHIVES</a>
+                <div class="sidebar-filters">
+                    <button class="filter-chip active" onclick="filterByCategory('all', this)">Tất cả (58)</button><button class="filter-chip" onclick="filterByCategory('home', this)">🏠 Trang chính</button><button class="filter-chip" onclick="filterByCategory('system', this)">⚔️ Hệ thống</button><button class="filter-chip" onclick="filterByCategory('docs', this)">📄 Tài liệu</button>
+                </div>
+            </div>
+            <ul class="sidebar-nav-list">
+    <li class="nav-item" data-cat="home">
+        <a href="./index.html" class="nav-link">
+            <span class="nav-num">01</span>
+            <span class="nav-title">TRANG CHỦ — HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#loop" class="nav-link">
+            <span class="nav-num">02</span>
+            <span class="nav-title">VÒNG CHIẾN ĐẤU, PHÒNG VÀ RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#combat" class="nav-link">
+            <span class="nav-num">03</span>
+            <span class="nav-title">CHIẾN ĐẤU, ĐỠ ĐÒN VÀ OMEGA</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#nocturnal-arms-vu-khi-aspects" class="nav-link">
+            <span class="nav-num">04</span>
+            <span class="nav-title">NOCTURNAL ARMS VŨ KHÍ ASPECTS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#boons-system" class="nav-link">
+            <span class="nav-num">05</span>
+            <span class="nav-title">BOONS THẦN LINH BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#phong-tuyen-region-guardian-underworld-surface" class="nav-link">
+            <span class="nav-num">06</span>
+            <span class="nav-title">PHÒNG TUYẾN REGION GUARDIAN UNDERWORLD SURFACE</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#arcana-altar-tien-trinh" class="nav-link">
+            <span class="nav-num">07</span>
+            <span class="nav-title">ARCANA ALTAR TIẾN TRÌNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#crossroads-hub" class="nav-link">
+            <span class="nav-num">08</span>
+            <span class="nav-title">CROSSROADS HUB</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#gathering-system" class="nav-link">
+            <span class="nav-num">09</span>
+            <span class="nav-title">GATHERING TOOLS REAGENTS THU THẬP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#cauldron-incantations-cong-thuc" class="nav-link">
+            <span class="nav-num">10</span>
+            <span class="nav-title">CAULDRON INCANTATIONS CÔNG THỨC</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#familiars-system" class="nav-link">
+            <span class="nav-num">11</span>
+            <span class="nav-title">ANIMAL FAMILIARS ĐỒNG HÀNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#character-system" class="nav-link">
+            <span class="nav-num">12</span>
+            <span class="nav-title">KEEPSAKES QUAN HỆ NHÂN VẬT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#oath-of-the-unseen-vows-god-mode-o-kho" class="nav-link">
+            <span class="nav-num">13</span>
+            <span class="nav-title">OATH OF THE UNSEEN VOWS GOD MODE ĐỘ KHÓ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#prophecies-fated-list-cau-chuyen" class="nav-link">
+            <span class="nav-num">14</span>
+            <span class="nav-title">PROPHECIES FATED LIST CÂU CHUYỆN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#save-load-luu-mo-lai-ong-bo" class="nav-link">
+            <span class="nav-num">15</span>
+            <span class="nav-title">SAVE LOAD LƯU MỞ LẠI ĐỒNG BỘ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#evidence" class="nav-link">
+            <span class="nav-num">16</span>
+            <span class="nav-title">ĐỘ PHỦ BẰNG CHỨNG PHẦN CHƯA XÁC MINH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#sources" class="nav-link">
+            <span class="nav-num">17</span>
+            <span class="nav-title">NGUỒN CHÍNH THỨC</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#ban-o-lien-ket-he-thong" class="nav-link">
+            <span class="nav-num">18</span>
+            <span class="nav-title">BẢN ĐỒ LIÊN KẾT HỆ THỐNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#moon-hex" class="nav-link">
+            <span class="nav-num">19</span>
+            <span class="nav-title">SELENE HEX VÀ PATH OF STARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#hammer-upgrades" class="nav-link">
+            <span class="nav-num">20</span>
+            <span class="nav-title">DAEDALUS HAMMER UPGRADE VŨ KHÍ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#economy-system" class="nav-link">
+            <span class="nav-num">21</span>
+            <span class="nav-title">PHẦN THƯỞNG TIỀN RUN SHOP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#garden-fishing" class="nav-link">
+            <span class="nav-num">22</span>
+            <span class="nav-title">VƯỜN HẠT GIỐNG CÂU CÁ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#chaos-trials" class="nav-link">
+            <span class="nav-num">23</span>
+            <span class="nav-title">CHAOS TRIALS CHALLENGE LOADOUT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#enemies-hazards" class="nav-link">
+            <span class="nav-num">24</span>
+            <span class="nav-title">QUÁI, GUARDIAN VÀ HAZARD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#version-scope" class="nav-link">
+            <span class="nav-num">25</span>
+            <span class="nav-title">MỐC PHIÊN BẢN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#route-system" class="nav-link">
+            <span class="nav-num">26</span>
+            <span class="nav-title">TUYẾN, PHÒNG, REGION VÀ GUARDIAN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#feature-catalog" class="nav-link">
+            <span class="nav-num">27</span>
+            <span class="nav-title">DANH MỤC ĐẦY ĐỦ TÍNH NĂNG VÀ QUAN HỆ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#character-skill-system" class="nav-link">
+            <span class="nav-num">28</span>
+            <span class="nav-title">KỸ NĂNG NHÂN VẬT VÀ HIỆP ĐỒNG BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="home">
+        <a href="index.html#weapon-system" class="nav-link">
+            <span class="nav-num">29</span>
+            <span class="nav-title">VŨ KHÍ, ASPECT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/combat.html" class="nav-link">
+            <span class="nav-num">30</span>
+            <span class="nav-title">01 — HỆ THỐNG CHIẾN ĐẤU: HÀNH ĐỘNG, PHÒNG THỦ, MAGICK VÀ NHỊP GIAO TRANH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/weapons.html" class="nav-link">
+            <span class="nav-num">31</span>
+            <span class="nav-title">NOCTURNAL ARMS — HỆ THỐNG VŨ KHÍ, ASPECT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/boons.html" class="nav-link">
+            <span class="nav-num">32</span>
+            <span class="nav-title">03 — BOONS, THẦN LINH VÀ DỰNG BUILD</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/routes.html" class="nav-link">
+            <span class="nav-num">33</span>
+            <span class="nav-title">04 — PHÒNG, TUYẾN, REGION VÀ GUARDIAN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/progression.html" class="nav-link">
+            <span class="nav-num">34</span>
+            <span class="nav-title">05 — ARCANA VÀ TIẾN TRÌNH DÀI HẠN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/crossroads.html" class="nav-link">
+            <span class="nav-num">35</span>
+            <span class="nav-title">06 — CROSSROADS VÀ NHỊP GIỮA HAI RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/gathering.html" class="nav-link">
+            <span class="nav-num">36</span>
+            <span class="nav-title">07 — GATHERING TOOLS VÀ REAGENTS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/incantations.html" class="nav-link">
+            <span class="nav-num">37</span>
+            <span class="nav-title">08 — CAULDRON VÀ INCANTATIONS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/familiars.html" class="nav-link">
+            <span class="nav-num">38</span>
+            <span class="nav-title">09 — ANIMAL FAMILIARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/relationships.html" class="nav-link">
+            <span class="nav-num">39</span>
+            <span class="nav-title">10 — KEEPSAKES VÀ QUAN HỆ NHÂN VẬT</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/difficulty.html" class="nav-link">
+            <span class="nav-num">40</span>
+            <span class="nav-title">11 — OATH OF THE UNSEEN, THỬ THÁCH VÀ GOD MODE</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/story.html" class="nav-link">
+            <span class="nav-num">41</span>
+            <span class="nav-title">12 — PROPHECIES, NHIỆM VỤ VÀ CỐT TRUYỆN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/saves.html" class="nav-link">
+            <span class="nav-num">42</span>
+            <span class="nav-title">13 — LƯU, MỞ LẠI VÀ ĐỒNG BỘ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/moon-hex.html" class="nav-link">
+            <span class="nav-num">43</span>
+            <span class="nav-title">14 — SELENE, HEX VÀ PATH OF STARS</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/hammer-upgrades.html" class="nav-link">
+            <span class="nav-num">44</span>
+            <span class="nav-title">15 — DAEDALUS HAMMER VÀ NÂNG VŨ KHÍ TRONG RUN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/rewards-economy.html" class="nav-link">
+            <span class="nav-num">45</span>
+            <span class="nav-title">16 — PHẦN THƯỞNG, TIỀN RUN VÀ CỬA HÀNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/garden-fishing.html" class="nav-link">
+            <span class="nav-num">46</span>
+            <span class="nav-title">17 — VƯỜN, HẠT GIỐNG, CÂU CÁ VÀ VẬT PHẨM THU HOẠCH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/chaos-trials.html" class="nav-link">
+            <span class="nav-num">47</span>
+            <span class="nav-title">18 — CHAOS, TRIALS VÀ LOADOUT THỬ THÁCH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/enemies-hazards.html" class="nav-link">
+            <span class="nav-num">48</span>
+            <span class="nav-title">19 — ĐỊCH, GUARDIAN, BẪY VÀ CÁCH XỬ LÝ ENCOUNTER</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="system">
+        <a href="systems/character-skill-system.html" class="nav-link">
+            <span class="nav-num">49</span>
+            <span class="nav-title">HỆ KHẢ NĂNG NHÂN VẬT VÀ NÂNG CẤP</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="features.html" class="nav-link">
+            <span class="nav-num">50</span>
+            <span class="nav-title">DANH MỤC HỆ THỐNG HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="feature-catalog.html" class="nav-link">
+            <span class="nav-num">51</span>
+            <span class="nav-title">HADES II — DANH MỤC TÍNH NĂNG VÀ QUAN HỆ GIỮA CHÚNG</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="how-game-works.html" class="nav-link">
+            <span class="nav-num">52</span>
+            <span class="nav-title">HADES II — CÁCH GAME VẬN HÀNH</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="system-map.html" class="nav-link">
+            <span class="nav-num">53</span>
+            <span class="nav-title">BẢN ĐỒ QUAN HỆ HỆ THỐNG HADES II</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="system-coverage.html" class="nav-link">
+            <span class="nav-num">54</span>
+            <span class="nav-title">BẢNG PHỦ HỆ THỐNG — HIỆN BIẾT GÌ, CÒN THIẾU GÌ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="coverage.html" class="nav-link">
+            <span class="nav-num">55</span>
+            <span class="nav-title">ĐỘ PHỦ, BẰNG CHỨNG VÀ CÂU HỎI CÒN MỞ</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="sources.html" class="nav-link active">
+            <span class="nav-num">56</span>
+            <span class="nav-title">NGUỒN ĐỐI CHIẾU</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="version-scope.html" class="nav-link">
+            <span class="nav-num">57</span>
+            <span class="nav-title">MỐC PHIÊN BẢN — KHÔNG TRỘN LUẬT GIỮA CÁC BẢN</span>
+        </a>
+    </li>
+    <li class="nav-item" data-cat="docs">
+        <a href="README.html" class="nav-link">
+            <span class="nav-num">58</span>
+            <span class="nav-title">HADES II — THƯ VIỆN CƠ CHẾ THEO HỆ THỐNG</span>
+        </a>
+    </li>
+            </ul>
+        </aside>
+<main class="main-content">
+            <div class="content-container">
+                <nav class="home-breadcrumb" aria-label="Điều hướng">
+                    <a href="../index.html"><i class="fas fa-arrow-left"></i> Về trang chủ</a>
+                    <span class="breadcrumb-sep">/</span>
+                    <span class="breadcrumb-current">Nguồn đối chiếu</span>
+                </nav>
+                <div class="chapters-container">
+<section class="hades-chapter-card chapter" id="chapter-1" data-chapter="1" data-title="Nguồn đối chiếu" data-category="Hades II">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Tài liệu</span>
+            <span class="chapter-cat-badge"><i class="fas fa-gamepad"></i> Hades II</span>
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyPageLink()" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Chia sẻ</span>
+            </button>
+            <a href="./index.html#toc" class="chapter-back-toc" title="Về mục lục nhanh">
+                <i class="fas fa-list-ul"></i> <span>Mục lục</span>
+            </a>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="nguon-oi-chieu">Nguồn đối chiếu</h2>
+    <div class="chapter-body">
+
+<h2 id="nguon-chinh-thuc-cua-game">Nguồn chính thức của game</h2>
+<ol>
+<li><strong>Supergiant Games — Hades II v1.0 Now Available!</strong> (25/09/2025): xác nhận mốc phát hành v1.0, true ending, sự kiện nhân vật, prophecies, late-game unlockables và mô tả game. <a href="https://www.supergiantgames.com/blog/hades2-now-available/">https://www.supergiantgames.com/blog/hades2-now-available/</a></li>
+<li><strong>Supergiant Games — Hades II FAQ</strong> (cập nhật 22/10/2026): nhân vật, thế giới, một người chơi, nền tảng, phát hành, cross-save. <a href="https://www.supergiantgames.com/blog/hades2-faq/">https://www.supergiantgames.com/blog/hades2-faq/</a></li>
+<li><strong>Steam — Hades II, About This Game</strong>: roguelike, weapons of Night, Boons, Altar of Ashes, familiars, Tools of the Unseen, upgrades, God Mode và challenge scale. <a href="https://store.steampowered.com/app/1145350/HADES_II/">https://store.steampowered.com/app/1145350/HADES_II/</a></li>
+<li><strong>Supergiant — The Unseen Update</strong> (17/06/2025): Hidden Aspects, Oath of the Unseen/Vow of Rivals, Godsent Hexes, quan hệ, điều chỉnh Umbral Flames. <a href="https://www.supergiantgames.com/blog/hades2-unseen-update/">https://www.supergiantgames.com/blog/hades2-unseen-update/</a></li>
+<li><strong>Supergiant — The Olympic Update</strong> (16/10/2024): tuyến Surface/Region, Black Coat, Allies/Keepsakes, familiars, challenges và Crossroads customization. <a href="https://www.supergiantgames.com/blog/hades2-olympic-update/">https://www.supergiantgames.com/blog/hades2-olympic-update/</a></li>
+<li><strong>Steam — Early Access Patch 3 Notes</strong> (26/06/2024): ví dụ cho việc Boons, Arcana, gathering tool và các hành động vũ khí đã thay đổi trong Early Access; dùng để nhấn mạnh phụ thuộc phiên bản, không làm bằng chứng cho release RUNE. <a href="https://store.steampowered.com/news/posts/?enddate=1719422194&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1719422194&amp;feed=steam_community_announcements</a></li>
+<li><strong>Supergiant — Technical Support Guide</strong>: Windows save path <code>%USERPROFILE%\Saved Games\Hades II</code>, recovery filenames, cross-save notes và settings. <a href="https://www.supergiantgames.com/faqs/hades-ii/">https://www.supergiantgames.com/faqs/hades-ii/</a></li>
+<li><strong>Steam — Early Access Patch 1 Notes</strong> (05/2024): thay đổi quy tắc mở tool, thu tài nguyên và ưu tiên ở Training Grounds. <a href="https://store.steampowered.com/news/posts/?enddate=1715878834&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1715878834&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Warsong Update Patch Notes</strong> (19/02/2025): thay đổi tool ưu tiên, tài nguyên, Familiar và các hệ đi kèm. <a href="https://store.steampowered.com/news/posts/?enddate=1739987665&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1739987665&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Unseen Update Patch Notes</strong> (17/06/2025): chi tiết Hidden Aspects, Vow of Rivals, Boons, Arcana, Familiar. <a href="https://store.steampowered.com/news/posts/?enddate=1750179634&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1750179634&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Early Access Patch 10 Notes</strong> (02/07/2025): thay đổi Familiar/gathering và hiệu ứng trước v1.0. <a href="https://store.steampowered.com/news/posts/?enddate=1751478509&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1751478509&amp;feed=steam_community_announcements</a></li>
+<li><strong>Supergiant — Hades II: Now on Xbox &amp; PlayStation</strong> (14/04/2026): hãng cho biết bonus/QOL cùng patch được đưa vào tất cả phiên bản. <a href="https://www.supergiantgames.com/blog/hades-ii-now-on-xbox-and-playstation/">https://www.supergiantgames.com/blog/hades-ii-now-on-xbox-and-playstation/</a></li>
+<li><strong>Steam — Post-Launch Patch 2 Notes</strong> (14/04/2026): narrated Fated Prophecies, gift lặp sau bond, relationship/Going Steady, thoại, art/animation và sửa lỗi. Nguồn hậu v1.0; không dùng làm bằng chứng cho ISO 09/2025. <a href="https://store.steampowered.com/news/posts/?enddate=1776182833&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1776182833&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Post-Launch Patch 2 Notes (đối chiếu combat/enemies)</strong>: điều chỉnh Aspect Artemis/Pan/Hel; tương thích Fire Away với mọi Cast; chỉnh Tidal Ring, Snow Queen, chuỗi Ares Plasma/Wounds; Sorrow-Spiller, Charybdis và tentacles/Morph. Các dòng này là thay đổi tháng 04/2026, chỉ dùng làm ví dụ hãng ghi nhận tương tác/hành vi ở patch đó; không gán sang ISO RUNE tự ghi 09/2025. <a href="https://store.steampowered.com/news/posts/?enddate=1776182833&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1776182833&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Early Access Patch 10 Notes (combat/defense)</strong>: một số hit liên tiếp gây stun-lock giảm; temporary Armor bị trừ trước Armor bền; Sister Blades Omega Attack, Umbral Flames Omega Special, Argent Skull Omega Special và Black Coat block được chỉnh. Mốc 02/07/2025 trước v1.0, không xác nhận bản ISO. <a href="https://store.steampowered.com/news/posts/?enddate=1751478276&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1751478276&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Early Access Patch 2 Notes (weapon defense examples)</strong>: Artemis Blades Block có thể tái hoạt động khi hồi trong lúc channel, Block ưu tiên hơn Dodge/effect tương tự; Moonstone Axe Special được đổi thành barrier tồn tại trong thời gian ngắn; cũng có thay đổi weapon-specific khác. Mốc 06/2024, chỉ dùng làm lịch sử phát triển. <a href="https://store.steampowered.com/news/posts/?enddate=1717526393&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1717526393&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Early Access Patch 3 Notes (Aspect/foe interaction)</strong>: Artemis Riposte kháng hit-stun ở mốc đó; Circe Serenity nhận indirect Omega damage; Persephone Omega Special được kéo dài bởi Cast damage; Warding Circles làm stagger foe chạm vào. Cùng patch có tuning Cerberus/Charybdis/Hippo/Harpy Talon. Đây là mốc 06/2024, không xác nhận luật hiện hành. <a href="https://store.steampowered.com/news/posts/?enddate=1719422194&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1719422194&amp;feed=steam_community_announcements</a></li>
+<li><strong>Steam — Early Access Patch 4 Notes (Boon/trigger examples)</strong>: Spirit Surge lightning khi dùng Magick; Engagement Ring/Hera có Hitch và AoE khi foe bị hạ trong circle, đồng thời Rousing Reception Cast đánh địch khi bước vào encounter. Đây là mốc 07/2024; các boon đã có thể bị rework/cắt. <a href="https://store.steampowered.com/news/posts/?enddate=1721155405&amp;feed=steam_community_announcements">https://store.steampowered.com/news/posts/?enddate=1721155405&amp;feed=steam_community_announcements</a></li>
+</ol>
+<h2 id="tham-khao-cong-ong-cho-danh-muc-hien-hanh">Tham khảo cộng đồng cho danh mục hiện hành</h2>
+<ul>
+<li><strong>Hades Wiki — Hades 2 Boon List</strong>: danh sách boon có tên/slot/category; database sống, không chốt số cho ISO. <a href="https://hades.wiki.gg/wiki/Hades_2:Boon_List">https://hades.wiki.gg/wiki/Hades_2:Boon_List</a></li>
+<li><strong>JustGameGuides — Arcana/Hexes</strong> (build 23661331, cập nhật 11/2026): dùng mở rộng tên 25 card và 9 Hex; hiệu ứng/số liệu cần khóa theo build. <a href="https://justgameguides.com/game/hades-II/arcana-cards">https://justgameguides.com/game/hades-II/arcana-cards</a> · <a href="https://justgameguides.com/game/hades-II/hexes">https://justgameguides.com/game/hades-II/hexes</a></li>
+<li><strong>BrokenBuilds — Hidden Aspects</strong>: dùng đối chiếu tên 6 hidden Aspect. <a href="https://brokenbuilds.gg/hades-ii/guides/hidden-aspects-guide">https://brokenbuilds.gg/hades-ii/guides/hidden-aspects-guide</a></li>
+<li><strong>Cobalt Games — 24 Aspect + sáu hồ sơ vũ khí</strong> (nguồn cộng đồng, rà nguồn 03/11/2026): dùng đối chiếu moveset/nhịp hiện hành và phân biệt hướng dẫn cũ đã bị rework; build suggestions là diễn giải biên tập, không phải luật từ Supergiant hay playtest của báo cáo. <a href="https://games.cobaltgraphics.eu/hades-ii/aspects/">https://games.cobaltgraphics.eu/hades-ii/aspects/</a> · <a href="https://games.cobaltgraphics.eu/hades-ii/">https://games.cobaltgraphics.eu/hades-ii/</a></li>
+<li><strong>Hades Wiki — Gameplay mechanics</strong>: dùng tham khảo Attack/Special/Cast/Sprint, Magick và Omega; wiki cộng đồng, chưa xác minh input/frame của ISO. <a href="https://hades.fandom.com/wiki/Gameplay_mechanics/Hades_II">https://hades.fandom.com/wiki/Gameplay_mechanics/Hades_II</a></li>
+<li><strong>Almanauts — Incantations</strong>: database recipe hiện hành; chỉ dùng làm mục lục, không xác nhận recipe trong ISO. <a href="https://almanauts.com/hades2/incantations/">https://almanauts.com/hades2/incantations/</a></li>
+</ul>
+<h2 id="nguon-icon-cong-ong">Nguồn icon cộng đồng</h2>
+<ul>
+<li><strong>Hades Wiki — icon và chân dung Codex:</strong> thư mục local hiện có 81 PNG icon và 28 PNG chân dung nhân vật/thần. Tỉ lệ gốc được giữ trong gallery; kích thước, alpha, SHA-256 và trang nguồn lần lượt ghi tại <a href="evidence/community-icon-inventory.json">community-icon-inventory.json</a> và <a href="evidence/community-portrait-inventory.json">community-portrait-inventory.json</a>. Chưa pixel-compare với GUI.pkg trong ISO RUNE. Theo ghi chú giấy phép của wiki, nội dung cộng đồng thường theo CC BY-NC-SA trừ khi trang file ghi khác; hình game vẫn thuộc Supergiant Games. Kiểm tra quyền từng file trước khi đưa lên website công khai/thương mại, đồng thời giữ attribution. <a href="https://hades.wiki.gg/wiki/Hades_2:Boon_List">https://hades.wiki.gg/wiki/Hades_2:Boon_List</a> · <a href="https://hades.fandom.com/wiki/Category:Hades_II_Boon_Icons">https://hades.fandom.com/wiki/Category:Hades_II_Boon_Icons</a> · <a href="https://hades.fandom.com/wiki/Arcana_Cards">https://hades.fandom.com/wiki/Arcana_Cards</a></li>
+</ul>
+<h2 id="screenshot-gameplay">Screenshot gameplay</h2>
+<ul>
+<li><strong>Cobalt Games weapon guides:</strong> 4 ảnh WebP 1600×900 lưu tại <code>assets/screenshots/</code> để trang offline có hình minh họa combat/Cast. Trang nguồn ghi là screenshot gameplay của Supergiant Games, nhưng không nêu build/capture; không coi ảnh là bằng chứng hệ skill hoặc weapon cụ thể của ISO. Nguồn URL, SHA-256 và caption: <a href="evidence/community-screenshot-inventory.json">community-screenshot-inventory.json</a>. Screenshot giữ nguyên ratio 16:9 và render bằng chiều cao tự động. <a href="https://games.cobaltgraphics.eu/hades-ii/">https://games.cobaltgraphics.eu/hades-ii/</a></li>
+</ul>
+<h2 id="goi-cuc-bo-a-nhan">Gói cục bộ đã nhận</h2>
+<ul>
+<li><code>Hades.II-RUNE (file ISO)</code> và <code>rune.nfo</code>; thông tin release trong NFO là tự khai.</li>
+<li>ISO listing từ 7-Zip, executable PE parse, REA resource inventory và lần sao chép/thử liệt kê payload được ghi trong thư mục <a href="evidence/">evidence</a>. Payload chưa bung thành file game.</li>
+</ul>
+<h2 id="tai-lieu-nguoi-dung-gui-e-tham-khao">Tài liệu người dùng gửi để tham khảo</h2>
+<ul>
+<li><code>hades_game_analysis.html</code> tự ghi phạm vi <strong>Hades (v1.38290)</strong>, dùng Zagreus, Mirror of Night, Infernal Arms, Styx và Pact of Punishment. Đây là game Hades đầu tiên, không phải Hades II; các cơ chế trong đó không được nhập vào tài liệu này. Có thể tham khảo cách chia chương hệ thống và trình bày hình ảnh, nhưng từng con số/claim kỹ thuật vẫn phải kiểm tra với file gốc hoặc runtime của game tương ứng.</li>
+<li>Hình trong báo cáo Gemini trỏ tới thư mục tuyệt đối dưới <code>.gemini\...\images\game_analysis\</code>, nên link đó không portable cho website. Chưa sao chép các hình Hades I sang gallery Hades II để tránh gắn nhầm artwork/game.</li>
+</ul>
+<h2 id="cach-gan-nguon-cho-tung-ket-luan">Cách gắn nguồn cho từng kết luận</h2>
+<ul>
+<li><strong>Tài liệu hãng:</strong> xác nhận tính năng ở cấp trò chơi/phiên bản chính thức.</li>
+<li><strong>Artifact-local:</strong> xác nhận byte, tên file, cấu trúc PE, resource hoặc dữ liệu trực tiếp trong gói.</li>
+<li><strong>Runtime:</strong> cần quan sát game thực thi trong một tình huống xác định; hiện chưa có.</li>
+<li><strong>Inference:</strong> nối các dữ kiện thành mô hình vòng chơi; phải ghi nhãn, không nâng lên thành sự thật đã quan sát.</li>
+</ul>
+
+    </div>
+</section>
+                </div>
+                <footer class="site-footer">
+                    <p><strong>HADES II ARCHIVES</strong> — Hades II © Supergiant Games. <a href="../index.html">← Về trang chủ GAME ARCHIVES</a> · <a href="./index.html">Hades II — Cách game vận hành</a></p>
+                </footer>
+            </div>
+        </main>
+    </div>
+    <div class="floating-actions">
+        <a href="#top" class="float-btn" title="Lên đầu trang"><i class="fas fa-arrow-up"></i></a>
+        <button class="float-btn" onclick="toggleSidebar()" title="Đóng/Mở Mục lục"><i class="fas fa-list"></i></button>
+    </div>
+    <div class="modal-overlay" id="lightboxModal" onclick="closeLightbox()">
+        <div class="lightbox-content" onclick="event.stopPropagation()">
+            <button class="modal-close-btn" onclick="closeLightbox()">&times;</button>
+            <img src="" alt="" id="lightboxImg" class="lightbox-img" />
+            <div id="lightboxCaption" class="lightbox-caption"></div>
+            <div style="display:flex; gap:10px; margin-top:12px;">
+                <button class="nav-action-btn" onclick="zoomLightbox(0.2)"><i class="fas fa-search-plus"></i> Phóng to</button>
+                <button class="nav-action-btn" onclick="zoomLightbox(-0.2)"><i class="fas fa-search-minus"></i> Thu nhỏ</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
