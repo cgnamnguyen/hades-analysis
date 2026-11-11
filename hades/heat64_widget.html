@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight-red {
+      background: #241113;
+      border: 1.5px solid #ef4444;
+      box-shadow: 0 0 15px rgba(239, 68, 68, 0.25);
+    }
+    .flow-node.highlight-blue {
+      background: #0f1c28;
+      border: 1.5px solid #38bdf8;
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.25);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          GIẢI MÃ KỶ LỤC CỰC HẠN · CHIẾN THUẬT PHÁ VỠ HEAT 64 UNSEEDED
+        </h2>
+      </div>
+      <span class="text-xs text-red-300 bg-red-950/60 px-2.5 py-1 rounded border border-red-800/60 font-mono">
+        Pact of Punishment Max
+      </span>
+    </div>
+
+    <!-- 2 Columns: The Impossible vs The Solution -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+      <!-- Left: The 4 Deadliest Pacts -->
+      <div class="flow-node highlight-red">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-red-400 tracking-wide uppercase">4 RÀO CẢN BẤT KHẢ THI (HEAT 64)</span>
+          <span class="text-[10.5px] bg-red-950 text-red-300 px-2 py-0.5 rounded border border-red-800 font-mono">Pact Level 64</span>
+        </div>
+        <div class="text-xs text-slate-300 space-y-2 mt-2">
+          <div class="p-2 rounded bg-[#1b1214] border border-red-900/60">
+            <b class="text-red-300">1. Lasting Consequences 4:</b> <span class="text-red-200 font-bold">0% Hồi Máu Tuyệt Đối</span>. Mất 1 giọt máu là mất vĩnh viễn suốt run!
+          </div>
+          <div class="p-2 rounded bg-[#1b1214] border border-red-900/60">
+            <b class="text-red-300">2. Routine Inspection 4:</b> <span class="text-red-200 font-bold">Tắt 100% Gương Bóng Đêm</span>. 0 Death Defiance, 0 Reroll, 50 HP gốc.
+          </div>
+          <div class="p-2 rounded bg-[#1b1214] border border-red-900/60">
+            <b class="text-red-300">3. Damage Control 2:</b> Quái & Boss có <span class="text-red-200 font-bold">2 Khiên Xanh chặn đòn</span> hoàn toàn.
+          </div>
+          <div class="p-2 rounded bg-[#1b1214] border border-red-900/60">
+            <b class="text-red-300">4. Forced Overtime 2:</b> Tốc độ quái & boss tăng <span class="text-red-200 font-bold">+40%</span>.
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: The Zeus Shield Solution -->
+      <div class="flow-node highlight-blue">
+        <div class="flex items-center justify-between mb-2">
+          <span class="text-xs font-bold text-sky-400 tracking-wide uppercase">LỐI THOÁT DUY NHẤT: KHIÊN ZEUS</span>
+          <span class="text-[10.5px] bg-sky-950 text-sky-300 px-2 py-0.5 rounded border border-sky-800 font-mono">Aspect of Zeus</span>
+        </div>
+        <div class="text-xs text-slate-300 space-y-2 mt-2">
+          <div class="p-2 rounded bg-[#0d1822] border border-sky-900/60">
+            <b class="text-sky-300">Đĩa Sét Blitz Disc:</b> Special ném đĩa xoay tròn đa nhịp (Multi-hit ticks), <span class="text-sky-200 font-bold">xé nát 2 khiên xanh trong 0.2s</span>!
+          </div>
+          <div class="p-2 rounded bg-[#0d1822] border border-sky-900/60">
+            <b class="text-sky-300">Phòng Thủ Tuyệt Đối:</b> Trong khi đĩa sét đang tự động cào máu quái ở xa, Zagreus <span class="text-sky-200 font-bold">Giơ Khiên Bull Rush CHẶN 100% ĐÒN MẶT TRƯỚC</span>!
+          </div>
+          <div class="p-2 rounded bg-[#0d1822] border border-sky-900/60">
+            <b class="text-sky-300">Boon Kích Sét Zeus:</b> <i>Thunder Flourish</i> giáng sét liên tục theo từng nhịp xoay của chiếc đĩa.
+          </div>
+          <div class="p-2 rounded bg-[#0d1822] border border-sky-900/60">
+            <b class="text-sky-300">Độ Nhẫn Nại Phi Thường:</b> Dọn phòng chậm rãi, né tránh tuyệt đối, hoàn thành trong mốc 5:00 mỗi tầng ngục.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-2 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Kỷ lục thế giới Unseeded Heat 64 được thiết lập bởi game thủ Jade sau hơn 3 năm nghiên cứu toán học vật lý.</span>
+      <span class="font-mono text-slate-600">Aegis Shield · HeroData.lua</span>
+    </div>
+  </div>
+</body>
+</html>

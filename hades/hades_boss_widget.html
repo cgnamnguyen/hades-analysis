@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight-p1 {
+      background: #121d18;
+      border: 1.5px solid #10b981;
+      box-shadow: 0 0 15px rgba(16, 185, 129, 0.2);
+    }
+    .flow-node.highlight-p2 {
+      background: #231710;
+      border: 1.5px solid #f97316;
+      box-shadow: 0 0 15px rgba(249, 115, 22, 0.2);
+    }
+    .flow-node.highlight-p3 {
+      background: #241118;
+      border: 1.5px solid #f43f5e;
+      box-shadow: 0 0 18px rgba(244, 63, 94, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-rose-500 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          CHIẾN LƯỢC TRÙM CUỐI · 3 GIAI ĐOẠN ĐẤU CHÚA TỂ HADES & EM4
+        </h2>
+      </div>
+      <span class="text-xs text-rose-300 bg-rose-950/60 px-2.5 py-1 rounded border border-rose-800/60 font-mono">
+        Final Boss AI Progression
+      </span>
+    </div>
+
+    <!-- 3 Phase Cards Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative mb-6">
+      <!-- Phase 1 -->
+      <div class="flow-node highlight-p1">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-xs font-bold text-emerald-400 tracking-wide uppercase">PHASE 1 · 17,000 HP</span>
+          <span class="text-[10.5px] bg-emerald-950 text-emerald-300 px-2 py-0.5 rounded border border-emerald-800 font-mono">EM4: 22k</span>
+        </div>
+        <div class="text-[13px] font-semibold text-emerald-100">Đâm Giáo & Găm Huyết Thạch</div>
+        <div class="text-xs text-slate-300 mt-2 space-y-1">
+          <div>• <b class="text-emerald-300">HadesCast</b>: Dính ngọc nhận <span class="text-rose-400 font-bold">+100% sát thương</span>!</div>
+          <div>• <b class="text-emerald-300">Tàng hình</b>: Ẩn mình trong bão tuyết (dấu chân mờ).</div>
+          <div>• <b class="text-emerald-300">Triệu hồi</b>: Gọi linh hồn bọc giáp dày (Heavy Melee).</div>
+        </div>
+      </div>
+
+      <!-- Arrow P1 -> P2 -->
+      <div class="hidden md:flex absolute top-1/2 left-[31.8%] -translate-y-1/2 z-10 pointer-events-none text-orange-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Phase 2 -->
+      <div class="flow-node highlight-p2">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-xs font-bold text-orange-400 tracking-wide uppercase">PHASE 2 · 17,000 HP</span>
+          <span class="text-[10.5px] bg-orange-950 text-orange-300 px-2 py-0.5 rounded border border-orange-800 font-mono">Hồi Sinh Đầy Máu</span>
+        </div>
+        <div class="text-[13px] font-semibold text-orange-100">Laze 360° & Quét Bão Lửa</div>
+        <div class="text-xs text-slate-300 mt-2 space-y-1">
+          <div>• <b class="text-orange-300">HadesFlameAura</b>: Bùng cháy hào quang âm ti.</div>
+          <div>• <b class="text-orange-300">Laze 360°</b>: 3-8 tia quét toàn map (nấp sau đá/chân).</div>
+          <div>• <b class="text-orange-300">Bình sọ Tombstone</b>: Nổ sóng chấn động xanh lục.</div>
+          <div>• <b class="text-orange-300">Xoay giáo 350px</b>: Kèm hiệu ứng khựng đòn Hit-Stop.</div>
+        </div>
+      </div>
+
+      <!-- Arrow P2 -> P3 -->
+      <div class="hidden md:flex absolute top-1/2 left-[65.2%] -translate-y-1/2 z-10 pointer-events-none text-rose-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Phase 3 (EM4) -->
+      <div class="flow-node highlight-p3">
+        <div class="flex items-center justify-between mb-1.5">
+          <span class="text-xs font-bold text-rose-400 tracking-wide uppercase">PHASE 3 · EXTREME MEASURES 4</span>
+          <span class="text-[10.5px] bg-rose-950 text-rose-300 px-2 py-0.5 rounded border border-rose-800 font-mono">22,000 HP</span>
+        </div>
+        <div class="text-[13px] font-semibold text-rose-100">Bóng Tối & Thần Thú Cerberus</div>
+        <div class="text-xs text-slate-300 mt-2 space-y-1">
+          <div>• <b class="text-rose-300">Màn đêm Darkness</b>: Che khuất tầm nhìn & thanh máu.</div>
+          <div>• <b class="text-rose-300">Cerberus Rain</b>: Chó 3 đầu dội mưa đá lửa cắn xé.</div>
+          <div>• <b class="text-rose-300">Sóng xung kích đôi</b>: Mọi cú đâm giáo sinh 2 làn sóng.</div>
+          <div>• <b class="text-rose-300">Nhạc nền</b>: Metal dồn dập "The Unseen Ones".</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Counter-Strategy Card -->
+    <div class="flow-node border-slate-700/80 bg-[#161720]">
+      <div class="flex items-center justify-between">
+        <div class="text-xs font-bold text-amber-400 tracking-wide uppercase">
+          CHIẾN THUẬT KHẮC CHẾ TỐI ƯU (COUNTER-STRATEGY)
+        </div>
+        <span class="text-[11px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded font-mono">
+          Tổng Máu EM4: 66,000 HP
+        </span>
+      </div>
+      <div class="text-xs text-slate-300 mt-2 leading-relaxed grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div>
+          <span class="text-sky-300 font-semibold">• Né Laze:</span> Lướt áp sát chân Hades đâm lén sau lưng (Backstab) hoặc nấp sau cột đá vỡ.
+        </div>
+        <div>
+          <span class="text-amber-300 font-semibold">• Trị Găm Ngọc Cast:</span> Khi dính ngọc, ưu tiên Dash liên tục câu giờ chờ ngọc rơi ra, cấm giao tranh giáp lá cà.
+        </div>
+        <div>
+          <span class="text-emerald-300 font-semibold">• Phá Bình Sọ:</span> Dùng đạn nảy hoặc vũ khí đánh xa phá hủy lọ sọ trước khi chúng tự nổ sóng chấn động.
+        </div>
+        <div>
+          <span class="text-rose-300 font-semibold">• Vượt Qua Phase 3:</span> Giữ lại Thần Lực Tối Thượng (Greater Call) và Trợ Thủ Companion (Battie/Mort) để dồn sát thương kết liễu.
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-5 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Hades sở hữu khả năng làm chậm thời gian HitSimSlowParameters = { Fraction = 0.01 } khi chém trúng người chơi.</span>
+      <span class="font-mono text-slate-600">EnemyData.lua · BossAI</span>
+    </div>
+  </div>
+</body>
+</html>

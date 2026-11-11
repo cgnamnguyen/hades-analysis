@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight-gold {
+      background: #241d0e;
+      border: 1.5px solid #fbbf24;
+      box-shadow: 0 0 15px rgba(251, 191, 36, 0.2);
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          LỘ TRÌNH THỨC TỈNH · 6 VŨ KHÍ ẨN THẦN THOẠI (HIDDEN ASPECTS)
+        </h2>
+      </div>
+      <span class="text-xs text-amber-300 bg-amber-950/60 px-2.5 py-1 rounded border border-amber-800/60 font-mono">
+        WeaponUpgradeData.lua
+      </span>
+    </div>
+
+    <!-- 3 Stage Linear Progression -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 relative mb-6">
+      <!-- Step 1 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-slate-400 tracking-wide uppercase mb-1">BƯỚC 1 · ĐIỀU KIỆN TIÊN QUYẾT</div>
+        <div class="text-[13px] font-semibold text-slate-100">Đầu Tư 5 Máu Titan</div>
+        <div class="text-xs text-slate-400 mt-2 space-y-1">
+          <div>• Nâng cấp tối thiểu 5 Titan Blood vào các aspect khác.</div>
+          <div>• Mở khóa bách khoa toàn thư Codex Achilles.</div>
+          <div>• Mở khóa danh sách 5 vũ khí cơ bản.</div>
+        </div>
+      </div>
+
+      <!-- Arrow 1 -> 2 -->
+      <div class="hidden md:flex absolute top-1/2 left-[31.8%] -translate-y-1/2 z-10 pointer-events-none text-amber-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 2 (Master Key) -->
+      <div class="flow-node highlight-gold">
+        <div class="text-xs font-bold text-yellow-400 tracking-wide uppercase mb-1">BƯỚC 2 · KHÓA MẸ QUAN VŨ</div>
+        <div class="text-[13px] font-semibold text-yellow-100">Achilles Thần Chú Quan Vũ</div>
+        <div class="text-xs text-yellow-300/80 mt-2 space-y-1">
+          <div>• Achilles trao thần chú: <i>"Crimson eyes of the titan-slayer"</i>.</div>
+          <div>• Mở khóa <b>Guan Yu (Thương)</b> đầu tiên.</div>
+          <div>• <b>Bắt buộc phải có Guan Yu</b> mới mở được 5 vũ khí còn lại!</div>
+        </div>
+      </div>
+
+      <!-- Arrow 2 -> 3 -->
+      <div class="hidden md:flex absolute top-1/2 left-[65.2%] -translate-y-1/2 z-10 pointer-events-none text-amber-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-sky-400 tracking-wide uppercase mb-1">BƯỚC 3 · 5 CÂU THẦN CHÚ ĐÁNH THỨC</div>
+        <div class="text-[13px] font-semibold text-slate-100">Trò Chuyện Với Các Vị Thần</div>
+        <div class="text-xs text-slate-300 mt-2 space-y-1">
+          <div>• <b>Nyx</b> $\to$ Arthur (Kiếm Thánh Địa)</div>
+          <div>• <b>Chaos</b> $\to$ Beowulf (Khiên Rồng Nhồi Cast)</div>
+          <div>• <b>Artemis</b> $\to$ Rama (Cung Shared Suffering)</div>
+          <div>• <b>Asterius</b> $\to$ Gilgamesh (Vuốt Nổ Maim)</div>
+          <div>• <b>Zeus</b> $\to$ Lucifer (Súng Laze Igneus Eden)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 Weapons Detailed Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-6 gap-2">
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-amber-400">ARTHUR</div>
+        <div class="text-[10px] text-slate-400">Hallowed Ground</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">-80% Đạn / +50 HP</div>
+      </div>
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-rose-400">GUAN YU</div>
+        <div class="text-[10px] text-slate-400">Frost Fair Blade</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">Hút Máu / -50% Max HP</div>
+      </div>
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-sky-400">BEOWULF</div>
+        <div class="text-[10px] text-slate-400">Naegling's Board</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">Dragon Rush Cast</div>
+      </div>
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-emerald-400">RAMA</div>
+        <div class="text-[10px] text-slate-400">Celestial Sharanga</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">Shared 60% Dmg</div>
+      </div>
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-purple-400">GILGAMESH</div>
+        <div class="text-[10px] text-slate-400">Claws of Enkidu</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">Maim Nổ 400 Dmg</div>
+      </div>
+      <div class="bg-[#15161f] p-2.5 rounded-lg border border-slate-800 text-center">
+        <div class="text-[11px] font-bold text-cyan-400">LUCIFER</div>
+        <div class="text-[10px] text-slate-400">Igneus Eden</div>
+        <div class="text-[10px] text-emerald-400 font-mono mt-1">Laze + Hellfire 100</div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-5 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Cần mang vũ khí đó đi gặp NPC hoặc tương tác tại phòng tập luyện Skelly để kích hoạt câu thần chú.</span>
+      <span class="font-mono text-slate-600">WeaponUpgradeData.lua · SGG</span>
+    </div>
+  </div>
+</body>
+</html>

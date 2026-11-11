@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: transparent;
+      color: #e2e8f0;
+    }
+    .diagram-container {
+      background: #111217;
+      border: 1px solid #232634;
+      border-radius: 14px;
+      padding: 24px;
+      box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.7);
+      max-width: 920px;
+      margin: 0 auto;
+    }
+    .flow-node {
+      background: #181922;
+      border: 1px solid #2e3245;
+      border-radius: 10px;
+      padding: 14px 16px;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+    .flow-node:hover {
+      border-color: #4f5678;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+    .flow-node.highlight {
+      background: #23161c;
+      border: 1.5px solid #d9536f;
+      box-shadow: 0 0 15px rgba(217, 83, 111, 0.25);
+    }
+    .flow-node.cyan {
+      border-color: #38bdf8;
+      background: #0f1c28;
+    }
+    .flow-node.gold {
+      border-color: #fbbf24;
+      background: #241d0e;
+    }
+    .arrow-svg {
+      color: #796846;
+      stroke-width: 2.5;
+    }
+  </style>
+</head>
+<body class="bg-transparent text-slate-200 antialiased">
+  <div class="diagram-container">
+    <!-- Title -->
+    <div class="flex items-center justify-between border-b border-slate-800 pb-3 mb-6">
+      <div class="flex items-center gap-2">
+        <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+        <h2 class="text-sm font-bold tracking-wider text-slate-100 uppercase">
+          MỘT NHỊP GIAO TRANH · SƠ ĐỒ HỌC CHƠI (GAMEPLAY CADENCE)
+        </h2>
+      </div>
+      <span class="text-xs text-slate-400 bg-slate-900 px-2.5 py-1 rounded border border-slate-800 font-mono">
+        Hades Core Combat Loop
+      </span>
+    </div>
+
+    <!-- 4 Top Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-3 relative mb-6">
+      <!-- Node 1 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-amber-400 tracking-wide mb-1 uppercase">1 · ĐỌC ĐỊNH HƯỚNG</div>
+        <div class="text-[13px] font-semibold text-slate-100">Telegraph · Hướng Địch</div>
+        <div class="text-xs text-slate-400 mt-1">Hazard bẫy · Góc tường · Lối thoát an toàn</div>
+      </div>
+
+      <!-- Arrow 1 -> 2 -->
+      <div class="hidden md:flex absolute top-1/2 left-[23.5%] -translate-y-1/2 z-10 pointer-events-none text-amber-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Node 2 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-sky-400 tracking-wide mb-1 uppercase">2 · GIỮ AN TOÀN</div>
+        <div class="text-[13px] font-semibold text-slate-100">Dash (15 i-Frames)</div>
+        <div class="text-xs text-slate-400 mt-1">Hủy đòn cũ · Lướt đổi góc · Giữ khoảng cách</div>
+      </div>
+
+      <!-- Arrow 2 -> 3 -->
+      <div class="hidden md:flex absolute top-1/2 left-[48.5%] -translate-y-1/2 z-10 pointer-events-none text-amber-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Node 3 (Highlight) -->
+      <div class="flow-node highlight">
+        <div class="text-xs font-bold text-rose-400 tracking-wide mb-1 uppercase flex items-center justify-between">
+          <span>3 · CHỌN ĐÒN</span>
+          <span class="w-1.5 h-1.5 rounded-full bg-rose-400"></span>
+        </div>
+        <div class="text-[13px] font-semibold text-rose-200">Attack / Special / Cast</div>
+        <div class="text-xs text-rose-300/80 mt-1">Dash-Strike · Găm ngọc · Húc khiên Bull Rush</div>
+      </div>
+
+      <!-- Arrow 3 -> 4 -->
+      <div class="hidden md:flex absolute top-1/2 left-[73.5%] -translate-y-1/2 z-10 pointer-events-none text-amber-500">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </div>
+
+      <!-- Node 4 -->
+      <div class="flow-node">
+        <div class="text-xs font-bold text-emerald-400 tracking-wide mb-1 uppercase">4 · KIỂM TRA PHẢN HỒI</div>
+        <div class="text-[13px] font-semibold text-slate-100">Hit · Status Curse · Armor</div>
+        <div class="text-xs text-slate-400 mt-1">Vỡ Giáp ảo · Tích 2 Curse kích Privileged Status</div>
+      </div>
+    </div>
+
+    <!-- Node 5 (Bottom Loop Node) -->
+    <div class="relative pt-2">
+      <!-- Connecting Arc from 4 down to 5 -->
+      <div class="flex justify-center">
+        <div class="flow-node max-w-xl w-full border-amber-900/60 bg-[#161720]">
+          <div class="flex items-center justify-between">
+            <div class="text-xs font-bold text-amber-400 tracking-wide uppercase">
+              5 · TÁI ĐỊNH VỊ / CHỌN NHỊP TIẾP THEO (RESET CADENCE)
+            </div>
+            <span class="text-[11px] bg-amber-950/70 text-amber-300 px-2 py-0.5 rounded border border-amber-800/60">
+              Vòng Lặp Phản Xạ
+            </span>
+          </div>
+          <div class="text-[13px] text-slate-300 mt-1.5 leading-relaxed">
+            Tận dụng <span class="text-amber-200 font-semibold">Recovery frames</span> của địch để bồi thêm sát thương, hoặc lập tức <span class="text-sky-300 font-semibold">Dash thoát ly</span> khi đòn đánh chưa đảm bảo an toàn.
+          </div>
+        </div>
+      </div>
+
+      <!-- Loop Back Arrows SVG -->
+      <div class="flex justify-between items-center text-amber-700/80 text-xs px-6 pt-3">
+        <div class="flex items-center gap-1.5">
+          <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24"><path d="M7 16l-4-4m0 0l4-4m-4 4h18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Quay lại Bước 1: Tiếp tục đọc động tác quái</span>
+        </div>
+        <div class="flex items-center gap-1.5">
+          <span>Kích hoạt vòng lặp tiếp theo</span>
+          <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24"><path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Note -->
+    <div class="border-t border-slate-800/80 mt-5 pt-3 text-[11.5px] text-slate-500 flex items-center justify-between">
+      <span>* Dash cơ bản có 15 i-frames (0.25s); Dash-Strike mất i-frame sớm hơn; Khiên Aegis chặn 100% đòn mặt trước.</span>
+      <span class="font-mono text-slate-600">The Forge Engine · Combat AI</span>
+    </div>
+  </div>
+</body>
+</html>
