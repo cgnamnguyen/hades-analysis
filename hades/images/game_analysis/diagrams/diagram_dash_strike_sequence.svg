@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 580" width="100%" height="100%" style="background:#0d0e15; font-family:'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12131d"/>
+      <stop offset="100%" stop-color="#0a0a10"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <linearGradient id="redGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <!-- Markers -->
+    <marker id="arrowGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f43f5e"/>
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c084fc"/>
+    </marker>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Card -->
+  <rect x="10" y="10" width="920" height="560" rx="16" fill="url(#bgGrad)" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.5"/>
+  
+  <!-- Header Title -->
+  <text x="35" y="45" fill="#fbbf24" font-size="16" font-weight="800" letter-spacing="1.5">SƠ ĐỒ TRÌNH TỰ VẬN HÀNH: LƯỚT &amp; HỦY HOẠT ẢNH (DASH &amp;rarr; DASH-STRIKE)</text>
+  <text x="35" y="68" fill="#9ca3af" font-size="12">Trích xuất từ mã nguồn The Forge Engine &amp;bull; HeroData.lua &amp;bull; Combat.lua</text>
+
+  <!-- Actors Header -->
+  <!-- Actor 1: Player -->
+  <g transform="translate(70, 90)">
+    <rect x="0" y="0" width="180" height="50" rx="10" fill="#171926" stroke="#f59e0b" stroke-width="1.5"/>
+    <circle cx="28" cy="25" r="14" fill="#f59e0b" fill-opacity="0.2"/>
+    <text x="28" y="30" font-size="15" text-anchor="middle" fill="#f59e0b">🎮</text>
+    <text x="52" y="24" fill="#fef3c7" font-size="13" font-weight="700">Người Chơi</text>
+    <text x="52" y="39" fill="#9ca3af" font-size="10.5">Input Buffer: Space / A</text>
+  </g>
+
+  <!-- Actor 2: The Forge Engine -->
+  <g transform="translate(380, 90)">
+    <rect x="0" y="0" width="190" height="50" rx="10" fill="#171926" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="28" cy="25" r="14" fill="#38bdf8" fill-opacity="0.2"/>
+    <text x="28" y="30" font-size="15" text-anchor="middle" fill="#38bdf8">⚙️</text>
+    <text x="52" y="24" fill="#e0f2fe" font-size="13" font-weight="700">The Forge Engine</text>
+    <text x="52" y="39" fill="#9ca3af" font-size="10.5">Logic &amp; State Machine</text>
+  </g>
+
+  <!-- Actor 3: Hitbox System -->
+  <g transform="translate(690, 90)">
+    <rect x="0" y="0" width="180" height="50" rx="10" fill="#171926" stroke="#34d399" stroke-width="1.5"/>
+    <circle cx="28" cy="25" r="14" fill="#34d399" fill-opacity="0.2"/>
+    <text x="28" y="30" font-size="15" text-anchor="middle" fill="#34d399">🛡️</text>
+    <text x="52" y="24" fill="#d1fae5" font-size="13" font-weight="700">Hệ Thống Va Chạm</text>
+    <text x="52" y="39" fill="#9ca3af" font-size="10.5">Hitbox &amp; Hurtbox Physics</text>
+  </g>
+
+  <!-- Vertical Lifelines -->
+  <line x1="160" y1="145" x2="160" y2="520" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="4,4" stroke-opacity="0.4"/>
+  <line x1="475" y1="145" x2="475" y2="520" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4,4" stroke-opacity="0.4"/>
+  <line x1="780" y1="145" x2="780" y2="520" stroke="#34d399" stroke-width="1.5" stroke-dasharray="4,4" stroke-opacity="0.4"/>
+
+  <!-- Step 1: Player -> Engine (Y = 180) -->
+  <g>
+    <!-- Step Badge -->
+    <circle cx="160" cy="180" r="11" fill="#f59e0b"/>
+    <text x="160" y="184" font-size="11" font-weight="900" fill="#000" text-anchor="middle">1</text>
+    <!-- Arrow -->
+    <line x1="172" y1="180" x2="465" y2="180" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowGold)"/>
+    <!-- Label -->
+    <text x="318" y="172" fill="#fef08a" font-size="12" font-weight="700" text-anchor="middle">Nhấn Nút Dash (Phím Space / Gamepad A)</text>
+  </g>
+
+  <!-- Step 2: Engine -> Hitbox (Y = 230) -->
+  <g>
+    <!-- Step Badge -->
+    <circle cx="475" cy="230" r="11" fill="#38bdf8"/>
+    <text x="475" y="234" font-size="11" font-weight="900" fill="#000" text-anchor="middle">2</text>
+    <!-- Arrow -->
+    <line x1="487" y1="230" x2="770" y2="230" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowBlue)"/>
+    <!-- Label -->
+    <text x="628" y="222" fill="#7dd3fc" font-size="12" font-weight="700" text-anchor="middle">Kích hoạt RushWeapon (Tầm di chuyển 400px)</text>
+    
+    <!-- Note Box: 15 Frames i-Frames -->
+    <rect x="420" y="245" width="410" height="42" rx="8" fill="#13231e" stroke="#34d399" stroke-width="1.2"/>
+    <text x="435" y="262" fill="#34d399" font-size="11" font-weight="800">KHUNG BẤT TỬ (i-Frames): 15 Frames (0.25 giây ở 60 FPS)</text>
+    <text x="435" y="278" fill="#a7f3d0" font-size="10.5">Miễn nhiễm 100% sát thương bão đạn, nham thạch &amp; bẫy ngầm.</text>
+  </g>
+
+  <!-- Step 3: Player -> Engine (Y = 325) -->
+  <g>
+    <!-- Step Badge -->
+    <circle cx="160" cy="325" r="11" fill="#f43f5e"/>
+    <text x="160" y="329" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">3</text>
+    <!-- Arrow -->
+    <line x1="172" y1="325" x2="465" y2="325" stroke="#f43f5e" stroke-width="2" marker-end="url(#arrowRed)"/>
+    <!-- Label -->
+    <text x="318" y="317" fill="#fda4af" font-size="12" font-weight="700" text-anchor="middle">Nhấn Nút Tấn Công (Attack) Trong Lúc Đang Lướt</text>
+  </g>
+
+  <!-- Step 4: Engine Self Call (Animation Cancel) (Y = 370) -->
+  <g>
+    <!-- Step Badge -->
+    <circle cx="475" cy="370" r="11" fill="#c084fc"/>
+    <text x="475" y="374" font-size="11" font-weight="900" fill="#000" text-anchor="middle">4</text>
+    <!-- Curved Self Arrow -->
+    <path d="M 475,370 C 530,370 530,405 485,405" fill="none" stroke="#c084fc" stroke-width="2" marker-end="url(#arrowPurple)"/>
+    <!-- Label Box -->
+    <rect x="535" y="375" width="220" height="28" rx="6" fill="#20152b" stroke="#c084fc" stroke-width="1"/>
+    <text x="645" y="393" fill="#e9d5ff" font-size="11" font-weight="800" text-anchor="middle">HỦY HOẠT ẢNH LƯỚT (Cancel Recovery)</text>
+  </g>
+
+  <!-- Step 5: Engine -> Hitbox (Y = 445) -->
+  <g>
+    <!-- Step Badge -->
+    <circle cx="475" cy="445" r="11" fill="#f87171"/>
+    <text x="475" y="449" font-size="11" font-weight="900" fill="#fff" text-anchor="middle">5</text>
+    <!-- Arrow -->
+    <line x1="487" y1="445" x2="770" y2="445" stroke="#f87171" stroke-width="2" marker-end="url(#arrowRed)"/>
+    <!-- Label -->
+    <text x="628" y="437" fill="#fca5a5" font-size="12" font-weight="700" text-anchor="middle">Chuyển hóa thành Đòn Lướt Chém (Dash-Strike)</text>
+    
+    <!-- Note Box: Trade-off Warning -->
+    <rect x="490" y="460" width="360" height="42" rx="8" fill="#251216" stroke="#f43f5e" stroke-width="1.2"/>
+    <text x="505" y="477" fill="#f43f5e" font-size="11" font-weight="800">ĐÁNH ĐỔI: Hitbox mở rộng +30-50% tầm quét</text>
+    <text x="505" y="493" fill="#fecdd3" font-size="10.5">Mất khung i-Frames sớm hơn (chỉ còn ~8-10f an toàn khi vung kiếm).</text>
+  </g>
+
+  <!-- Bottom Formula Footer -->
+  <rect x="35" y="525" width="870" height="26" rx="6" fill="#141520"/>
+  <text x="50" y="542" fill="#9ca3af" font-size="10.5" font-family="Consolas, monospace">
+    HeroData.lua &amp;bull; RushWeaponMaxRange = 400 | InvulnerableFrameThreshold = 0.25 (15f @ 60fps) | Duration = 1.3s (Anti-One-Shot)
+  </text>
+</svg>

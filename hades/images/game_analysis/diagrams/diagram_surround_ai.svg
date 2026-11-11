@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 380" width="100%" height="100%" style="background:#0d0e15; font-family:'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <marker id="arrAI" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+  </defs>
+
+  <rect x="10" y="10" width="920" height="360" rx="16" fill="#12131d" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.4"/>
+  <text x="35" y="45" fill="#fbbf24" font-size="16" font-weight="800" letter-spacing="1">THUẬT TOÁN BIÊN ĐẠO CHIẾN ĐẤU: SURROUNDAI (ENEMYAI.LUA)</text>
+  <text x="35" y="68" fill="#9ca3af" font-size="12">Cơ chế cấp phát Token tấn công chống dồn ép oan uổng trong phòng quái đông</text>
+
+  <!-- 3 Boxes Flow -->
+  <g transform="translate(35, 95)">
+    <rect x="0" y="0" width="240" height="150" rx="12" fill="#181a26" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#fef3c7" font-size="14" font-weight="800">1 &amp;bull; ĐÀN QUÁI VẬY QUANH</text>
+    <text x="20" y="60" fill="#cbd5e1" font-size="12" font-weight="700">20-30 Kẻ Địch Cùng Phòng</text>
+    <text x="20" y="85" fill="#9ca3af" font-size="11.5">Tất cả quái đều định vị được</text>
+    <text x="20" y="105" fill="#9ca3af" font-size="11.5">Zagreus nhưng bị cấm tự ý</text>
+    <text x="20" y="125" fill="#9ca3af" font-size="11.5">lao vào tấn công bừa bãi.</text>
+  </g>
+
+  <line x1="285" y1="170" x2="320" y2="170" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrAI)"/>
+
+  <g transform="translate(330, 95)">
+    <rect x="0" y="0" width="280" height="150" rx="12" fill="#241419" stroke="#f43f5e" stroke-width="2"/>
+    <text x="20" y="32" fill="#fda4af" font-size="14" font-weight="900">2 &amp;bull; HÀNG ĐỢI MAXATTACKERS</text>
+    <text x="20" y="60" fill="#fecdd3" font-size="12" font-weight="700">TableLength &lt; 2-3 Slot</text>
+    <text x="20" y="85" fill="#fca5a5" font-size="11.5">Engine chỉ cấp 2-3 cờ tấn công</text>
+    <text x="20" y="105" fill="#fca5a5" font-size="11.5">(AttackOnce) trong cùng một nhịp.</text>
+    <text x="20" y="125" fill="#fca5a5" font-size="11.5">Quái có cờ mới được áp sát.</text>
+  </g>
+
+  <line x1="620" y1="170" x2="655" y2="170" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrAI)"/>
+
+  <g transform="translate(665, 95)">
+    <rect x="0" y="0" width="240" height="150" rx="12" fill="#131e19" stroke="#10b981" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#34d399" font-size="14" font-weight="800">3 &amp;bull; GIỮ CỰ LY ĐIỆN ẢNH</text>
+    <text x="20" y="60" fill="#a7f3d0" font-size="12" font-weight="700">SurroundDistance 250-350px</text>
+    <text x="20" y="85" fill="#9ca3af" font-size="11.5">Quái chưa có token phải đi vòng,</text>
+    <text x="20" y="105" fill="#9ca3af" font-size="11.5">chờ StandOffTime (1.0-2.0s),</text>
+    <text x="20" y="125" fill="#9ca3af" font-size="11.5">tạo cảm giác bị bao vây chân thực.</text>
+  </g>
+
+  <!-- Bottom Result Banner -->
+  <rect x="35" y="275" width="870" height="65" rx="10" fill="#161824" stroke="#f59e0b" stroke-width="1"/>
+  <text x="55" y="302" fill="#fde68a" font-size="13" font-weight="700">KẾT QUẢ GAMEPLAY: TRÁNH CÁI CHẾT BẤT CÔNG (CHEAP DEATHS)</text>
+  <text x="55" y="324" fill="#9ca3af" font-size="11.5">Người chơi luôn có không gian và thời gian phản xạ (Telegraph Window) để xử lý từng kẻ địch thay vì bị 20 đòn đánh chạm cùng 1 frame.</text>
+</svg>
