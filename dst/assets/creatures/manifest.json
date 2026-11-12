@@ -1,0 +1,3305 @@
+{
+  "source_table_sha256": "46a6c321fc292294f93dc920bab3f170fe1d60d4cbd09e847017d3edd250f29c",
+  "icons": [
+    {
+      "element": "oceanfish_small_1_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        4,
+        140,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gnarwail.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        4,
+        356,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "sharkboi.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        4,
+        788,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "robin.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        4,
+        1004,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "twinofterror2.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        4,
+        1076,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_6_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        4,
+        1148,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "tentacle.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        4,
+        1220,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gestalt.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        4,
+        1508,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rabbit.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1516,
+        4,
+        1580,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "deer_red.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        4,
+        1724,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lordfruitfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        4,
+        1868,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bishop_nightmare.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        4,
+        1940,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "robin_winter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        4,
+        2012,
+        68
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bird_mutant.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        76,
+        68,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_hider.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        76,
+        284,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "itemmimic_revealed.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        76,
+        1076,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_8_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        76,
+        1292,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "fused_shadeling_bomb.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        76,
+        1364,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "vault_pillar_guard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1516,
+        76,
+        1580,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "cookiecutter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        76,
+        1724,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "twinofterror1.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        76,
+        1796,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "alterguardian_phase4_lunarrift.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        76,
+        1868,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "deerclops.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        76,
+        1940,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bird_mutant_spitter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        76,
+        2012,
+        140
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        148,
+        68,
+        212
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "warg.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        148,
+        644,
+        212
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "beefalo.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        148,
+        860,
+        212
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_hands.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        220,
+        68,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "krampus.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        220,
+        284,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_9_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        220,
+        356,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "killerbee.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        220,
+        428,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gelblob.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        220,
+        500,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_horns.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        508,
+        220,
+        572,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutatedhound.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        220,
+        788,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "puffin.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        868,
+        220,
+        932,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rabbitking_aggressive.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        220,
+        1076,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "deer_blue.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        220,
+        1508,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "worm.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        220,
+        1868,
+        284
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "salty_dog.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        292,
+        284,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rabbitkingminion_bunnyman.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        292,
+        356,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "deer.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        292,
+        500,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "minotaur.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        292,
+        860,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "babybeefalo.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        292,
+        1148,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lightcrab.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        292,
+        1364,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crabking_mob.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        292,
+        1436,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowhand.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        292,
+        1508,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stalker_forest.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        292,
+        1652,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadow_rook.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        292,
+        1724,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "archive_centipede.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        292,
+        1796,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "dragonfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        292,
+        1940,
+        356
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "waterplant.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        364,
+        284,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stagehand.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        364,
+        428,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "daywalker2.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        364,
+        860,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_7_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        868,
+        364,
+        932,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crawlinghorror.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        364,
+        1292,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "friendlyfruitfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        364,
+        1436,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanhorror.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        364,
+        1508,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spiderqueen.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1516,
+        364,
+        1580,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "chester.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        364,
+        1652,
+        428
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crabking_mob_knight.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        436,
+        68,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lunarthrall_plant.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        436,
+        140,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lavae_pet.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        436,
+        212,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lureplant.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        436,
+        356,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "glommer.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        508,
+        436,
+        572,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "hutch.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        436,
+        1652,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rabbitking_lucky.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        436,
+        1796,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutated_penguin.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        436,
+        2012,
+        500
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "squid.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        508,
+        212,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mermking.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        508,
+        284,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "eyeplant.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        508,
+        788,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stalker_minion.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        508,
+        1004,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crabking_claw.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        508,
+        1076,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mosquito.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        508,
+        1292,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "ruinsnightmare.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1516,
+        508,
+        1580,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_2_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        508,
+        2012,
+        572
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wagdrone_flying.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        580,
+        212,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "leif.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        580,
+        356,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "chest_mimic_revealed.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        580,
+        500,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_warrior.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        580,
+        1148,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shark.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        580,
+        1292,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "slurper.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        580,
+        1364,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_5_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        580,
+        1796,
+        644
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutatedbearger.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        652,
+        140,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "toadstool.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        652,
+        284,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stalker.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        652,
+        356,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "butterfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        652,
+        428,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_3_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        652,
+        500,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "klaus.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        652,
+        644,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "snurtle.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        652,
+        788,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bunnyman.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        652,
+        1436,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "alterguardian_phase1.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        652,
+        1796,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "buzzard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        652,
+        1940,
+        716
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_centipede_head.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        724,
+        68,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "smallbird.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        724,
+        140,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "antlion.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        724,
+        212,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_4_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        724,
+        356,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gestalt_guard_evolved.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        724,
+        500,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadow_leech.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        724,
+        788,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "eyeofterror.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        724,
+        1004,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadow_bishop.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        724,
+        1652,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "abigail.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        724,
+        1724,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wobybig.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        724,
+        1796,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mermguard_shadow.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        724,
+        1868,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutatedbuzzard_gestalt.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        724,
+        2012,
+        788
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bee.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        796,
+        500,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rook.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        796,
+        788,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bernie_big.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        796,
+        860,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "ghost.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        796,
+        1364,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_dropper.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        796,
+        1508,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "knight.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        796,
+        1796,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rook_nightmare.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        796,
+        1868,
+        860
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crow.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        868,
+        68,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_8_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        868,
+        428,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "fused_shadeling.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        868,
+        500,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "grassgekko.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        868,
+        788,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "firehound.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        868,
+        1004,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mossling.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        868,
+        1220,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lunar_grazer.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        868,
+        1292,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "penguin.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        868,
+        1508,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "ruins_shadeling.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        868,
+        1652,
+        932
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "beequeen.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        940,
+        212,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "prime_mate.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        940,
+        356,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "merm_shadow.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        940,
+        788,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gingerbreadpig.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        940,
+        860,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "vault_crawler.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        940,
+        1220,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wobster_moonglass_land.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        940,
+        1436,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutatedwarg.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        940,
+        1508,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "carrat.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        940,
+        1652,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "waveyjones.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        940,
+        1724,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "koalefant_winter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        940,
+        1940,
+        1004
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "little_walrus.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        1012,
+        212,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_1_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        1012,
+        356,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "fruitdragon.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        1012,
+        428,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadow_knight.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        1012,
+        500,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "canary.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        508,
+        1012,
+        572,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wobster_sheller_land.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1012,
+        644,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_parasite.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        1012,
+        1076,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "grassgator.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        1012,
+        1220,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stalker_atrium.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        1012,
+        1292,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bearger.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        1012,
+        1436,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bishop.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        1012,
+        1652,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_6_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        1012,
+        1868,
+        1076
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "icehound.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        1084,
+        140,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "knight_nightmare.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        1084,
+        212,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rocky.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        1084,
+        788,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lightninggoat.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        1084,
+        860,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bernie_active.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        1084,
+        1292,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "eyeofterror_mini.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        1084,
+        1508,
+        1148
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "frog.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        1156,
+        140,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lavae.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        1156,
+        428,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "merm_lunar.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        1156,
+        500,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "teenbird.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        1156,
+        860,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "pigguard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        868,
+        1156,
+        932,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mole.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        1156,
+        1148,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_water.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        1156,
+        1220,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "catcoon.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        1156,
+        1364,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_7_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1876,
+        1156,
+        1940,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "hedgehound.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        1156,
+        2012,
+        1220
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mushgnome.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        1228,
+        140,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "pigman.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        1228,
+        284,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "daywalker.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        1228,
+        428,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_spitter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1228,
+        644,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crabking_cannontower.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        1228,
+        788,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_9_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        1228,
+        860,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_mouth.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        1228,
+        1076,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lunarthrall_plant_gestalt.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        1228,
+        1364,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "dustmoth.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        1228,
+        2012,
+        1292
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "molebat.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        1300,
+        284,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowtentacle.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        364,
+        1300,
+        428,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "stageusher.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1300,
+        644,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "monkey.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        652,
+        1300,
+        716,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "crabking.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        1300,
+        1148,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_2_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1372,
+        1300,
+        1436,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "worm_boss.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        1300,
+        1508,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "graveguard_ghost.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        1300,
+        1724,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "toadstool_dark.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        1300,
+        2012,
+        1364
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "bat.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        1372,
+        68,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "tallbird.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        220,
+        1372,
+        284,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_5_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        1372,
+        500,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spat.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1372,
+        644,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mermguard_lunar.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        652,
+        1372,
+        716,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "tentacle_pillar_arm.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        724,
+        1372,
+        788,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "merm.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        1372,
+        1148,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mermguard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        1372,
+        1364,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutateddeerclops.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1588,
+        1372,
+        1652,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "tentacle_pillar.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        1372,
+        1868,
+        1436
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "warglet.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        76,
+        1444,
+        140,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lunarfrog.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        1444,
+        500,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mutatedbird.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1444,
+        644,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "slurtle.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        868,
+        1444,
+        932,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_moon.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        1444,
+        1004,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "moose.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        1444,
+        1076,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wobysmall.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        1444,
+        1724,
+        1508
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "mandrake_active.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        1516,
+        68,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "fruitfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        1516,
+        212,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "rabbitking_passive.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        580,
+        1516,
+        644,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "spider_healer.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        652,
+        1516,
+        716,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "otter.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1012,
+        1516,
+        1076,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "koalefant_summer.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        1516,
+        1148,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "moonbutterfly.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1156,
+        1516,
+        1220,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gingerbreadwarg.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        1516,
+        1508,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "powder_monkey.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        1516,
+        1724,
+        1580
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "terrorbeak.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        1588,
+        68,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "lightflier.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        148,
+        1588,
+        212,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "polly_rogers.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        1588,
+        356,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "malbatross.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        868,
+        1588,
+        932,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wagdrone_rolling.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1300,
+        1588,
+        1364,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "beeguard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1444,
+        1588,
+        1508,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_medium_3_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        1588,
+        1724,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "alterguardian_phase1_lunarrift.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1948,
+        1588,
+        2012,
+        1652
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "gestalt_guard.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        4,
+        1660,
+        68,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "smallghost.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        292,
+        1660,
+        356,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "cave_vent_mite.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        436,
+        1660,
+        500,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "walrus.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        940,
+        1660,
+        1004,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "birchnutdrake.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1084,
+        1660,
+        1148,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "perd.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1228,
+        1660,
+        1292,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "shadowthrall_wings.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1660,
+        1660,
+        1724,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "oceanfish_small_4_inv.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1732,
+        1660,
+        1796,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "hound.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        1804,
+        1660,
+        1868,
+        1724
+      ],
+      "size": [
+        64,
+        64
+      ]
+    },
+    {
+      "element": "wagboss_robot.tex",
+      "atlas": "outputs\\DontStarveTogether-v2.2.1\\decoded-bundles\\assets\\databundles\\images.zip.contents\\images\\scrapbook_icons1.tex",
+      "atlas_sha256": "589827117606096710da3a855421a3c47ec58902403de1d27a970b27fb8dd8e6",
+      "crop": [
+        796,
+        1732,
+        860,
+        1796
+      ],
+      "size": [
+        64,
+        64
+      ]
+    }
+  ]
+}
