@@ -1,0 +1,267 @@
+{
+  "date": "2026-11-12",
+  "runtime_verified": false,
+  "catalog_scope": "220 literal creature/giant scrapbook entries, including variants, boss parts/phases and inventory fish forms",
+  "reviewed_entries": [
+    "rabbit",
+    "beefalo",
+    "spider",
+    "bee",
+    "killerbee",
+    "frog",
+    "hound",
+    "firehound",
+    "icehound",
+    "deerclops",
+    "bearger",
+    "dragonfly"
+  ],
+  "source_ranges": [
+    {
+      "creature": "rabbit",
+      "file": "brains/rabbitbrain.lua",
+      "start": 1,
+      "end": 70,
+      "sha256": "279194ebca126064a59a14d15886f05a551c23692d82fcaa28d81090c2607546"
+    },
+    {
+      "creature": "rabbit",
+      "file": "prefabs/rabbit.lua",
+      "start": 44,
+      "end": 110,
+      "sha256": "4fb148e39defded5d29fcc33ddca85737a85d253672abe41fedd946ce65fd9f0"
+    },
+    {
+      "creature": "rabbit",
+      "file": "prefabs/rabbit.lua",
+      "start": 345,
+      "end": 355,
+      "sha256": "4fb148e39defded5d29fcc33ddca85737a85d253672abe41fedd946ce65fd9f0"
+    },
+    {
+      "creature": "rabbit",
+      "file": "prefabs/rabbithole.lua",
+      "start": 260,
+      "end": 268,
+      "sha256": "9e78f3cac3597b6d47d1631438b7a9a08ed654dbb82794fbdc213915c43c26c9"
+    },
+    {
+      "creature": "beefalo",
+      "file": "prefabs/beefalo.lua",
+      "start": 315,
+      "end": 373,
+      "sha256": "4b544779355cdc86511ea6a8c2eabc09636e4f3c8dcae86d27b84d90ae2eeffa"
+    },
+    {
+      "creature": "beefalo",
+      "file": "prefabs/beefalo.lua",
+      "start": 49,
+      "end": 61,
+      "sha256": "4b544779355cdc86511ea6a8c2eabc09636e4f3c8dcae86d27b84d90ae2eeffa"
+    },
+    {
+      "creature": "beefalo",
+      "file": "prefabs/beefalo.lua",
+      "start": 1158,
+      "end": 1185,
+      "sha256": "4b544779355cdc86511ea6a8c2eabc09636e4f3c8dcae86d27b84d90ae2eeffa"
+    },
+    {
+      "creature": "bee",
+      "file": "prefabs/bee.lua",
+      "start": 48,
+      "end": 58,
+      "sha256": "962168ad3edb222006338e9ee712c491642a5baa481567038049b895d6411614"
+    },
+    {
+      "creature": "bee",
+      "file": "prefabs/bee.lua",
+      "start": 115,
+      "end": 138,
+      "sha256": "962168ad3edb222006338e9ee712c491642a5baa481567038049b895d6411614"
+    },
+    {
+      "creature": "bee",
+      "file": "prefabs/bee.lua",
+      "start": 194,
+      "end": 197,
+      "sha256": "962168ad3edb222006338e9ee712c491642a5baa481567038049b895d6411614"
+    },
+    {
+      "creature": "bee",
+      "file": "prefabs/beehive.lua",
+      "start": 84,
+      "end": 93,
+      "sha256": "fd77ecd0058891997ae163aea4520a90f254e37a9a244748e1625e76f3ab80fd"
+    },
+    {
+      "creature": "bee",
+      "file": "prefabs/beehive.lua",
+      "start": 184,
+      "end": 192,
+      "sha256": "fd77ecd0058891997ae163aea4520a90f254e37a9a244748e1625e76f3ab80fd"
+    },
+    {
+      "creature": "killerbee",
+      "file": "prefabs/bee.lua",
+      "start": 115,
+      "end": 138,
+      "sha256": "962168ad3edb222006338e9ee712c491642a5baa481567038049b895d6411614"
+    },
+    {
+      "creature": "killerbee",
+      "file": "prefabs/bee.lua",
+      "start": 300,
+      "end": 307,
+      "sha256": "962168ad3edb222006338e9ee712c491642a5baa481567038049b895d6411614"
+    },
+    {
+      "creature": "killerbee",
+      "file": "prefabs/beehive.lua",
+      "start": 84,
+      "end": 93,
+      "sha256": "fd77ecd0058891997ae163aea4520a90f254e37a9a244748e1625e76f3ab80fd"
+    },
+    {
+      "creature": "frog",
+      "file": "prefabs/frog.lua",
+      "start": 48,
+      "end": 77,
+      "sha256": "ea87d584a298ee23d4b4c3f4448fcbee1a8ff80b9e98d57adc3a6ef6ae788f85"
+    },
+    {
+      "creature": "frog",
+      "file": "prefabs/frog.lua",
+      "start": 87,
+      "end": 124,
+      "sha256": "ea87d584a298ee23d4b4c3f4448fcbee1a8ff80b9e98d57adc3a6ef6ae788f85"
+    },
+    {
+      "creature": "frog",
+      "file": "prefabs/frog.lua",
+      "start": 170,
+      "end": 181,
+      "sha256": "ea87d584a298ee23d4b4c3f4448fcbee1a8ff80b9e98d57adc3a6ef6ae788f85"
+    },
+    {
+      "creature": "spider",
+      "file": "prefabs/spider.lua",
+      "start": 198,
+      "end": 240,
+      "sha256": "ad5c57bc5ebb52efe6fc5a61dafe0cc38dddede80de980927c918d74b1e7d90c"
+    },
+    {
+      "creature": "spider",
+      "file": "prefabs/spider.lua",
+      "start": 306,
+      "end": 329,
+      "sha256": "ad5c57bc5ebb52efe6fc5a61dafe0cc38dddede80de980927c918d74b1e7d90c"
+    },
+    {
+      "creature": "spider",
+      "file": "prefabs/spider.lua",
+      "start": 644,
+      "end": 650,
+      "sha256": "ad5c57bc5ebb52efe6fc5a61dafe0cc38dddede80de980927c918d74b1e7d90c"
+    },
+    {
+      "creature": "spider",
+      "file": "prefabs/spiderden.lua",
+      "start": 728,
+      "end": 751,
+      "sha256": "e3cc0cf5462c9cbf5314ab30cbfd93ff5d33310c40a5a7e1bce2033b55a192ac"
+    },
+    {
+      "creature": "hound",
+      "file": "brains/houndbrain.lua",
+      "start": 217,
+      "end": 226,
+      "sha256": "41ec8bc4dbd8cbe35fdf0250767dcb634ea49ed686c70bbd634483bb22deda44"
+    },
+    {
+      "creature": "hound",
+      "file": "prefabs/hound.lua",
+      "start": 110,
+      "end": 129,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "hound",
+      "file": "prefabs/hound.lua",
+      "start": 554,
+      "end": 563,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "firehound",
+      "file": "prefabs/hound.lua",
+      "start": 116,
+      "end": 121,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "firehound",
+      "file": "prefabs/hound.lua",
+      "start": 651,
+      "end": 662,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "icehound",
+      "file": "prefabs/hound.lua",
+      "start": 123,
+      "end": 129,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "icehound",
+      "file": "prefabs/hound.lua",
+      "start": 695,
+      "end": 706,
+      "sha256": "5500b710e633d6c5e089334d0a502a6eafa8d052c3f4e472801c491d6d9741f1"
+    },
+    {
+      "creature": "deerclops",
+      "file": "prefabs/deerclops.lua",
+      "start": 329,
+      "end": 341,
+      "sha256": "5d1d5e4d12644738e16f1672f05ba74e697d06f441234411b9afe89fa2eba419"
+    },
+    {
+      "creature": "deerclops",
+      "file": "prefabs/deerclops.lua",
+      "start": 505,
+      "end": 514,
+      "sha256": "5d1d5e4d12644738e16f1672f05ba74e697d06f441234411b9afe89fa2eba419"
+    },
+    {
+      "creature": "bearger",
+      "file": "prefabs/bearger.lua",
+      "start": 76,
+      "end": 89,
+      "sha256": "75e65d7c8379b6125d5af06bb5b8ee64d25e4c58119ed4efe22eeba5303d7572"
+    },
+    {
+      "creature": "bearger",
+      "file": "prefabs/bearger.lua",
+      "start": 575,
+      "end": 584,
+      "sha256": "75e65d7c8379b6125d5af06bb5b8ee64d25e4c58119ed4efe22eeba5303d7572"
+    },
+    {
+      "creature": "dragonfly",
+      "file": "prefabs/dragonfly.lua",
+      "start": 38,
+      "end": 80,
+      "sha256": "6ca4de73ac4c010af054d603f100b01972c327251ba46c1d5b98267bf3338821"
+    },
+    {
+      "creature": "dragonfly",
+      "file": "prefabs/dragonfly.lua",
+      "start": 555,
+      "end": 565,
+      "sha256": "6ca4de73ac4c010af054d603f100b01972c327251ba46c1d5b98267bf3338821"
+    }
+  ],
+  "loot_method": "Literal named SetSharedLootTable plus assignment checked in prefab; source chances retained, no runtime guarantee."
+}

@@ -1,0 +1,91 @@
+{
+  "date": "2026-11-12",
+  "kind": "static-source-followup",
+  "runtime_verified": false,
+  "scope": "Shadow harvester assist/pickup/deposit and debuffer target selection/retention; excludes complete animation/debuff effect/leader restoration across save.",
+  "files": [
+    {
+      "file": "brains/wx78_shadowdrone_harvesterbrain.lua",
+      "sha256": "4db05a88da4352d8846959a2bc3187c56705f766a76cc438b6f4e1efc4a029c8",
+      "ranges": [
+        [
+          1,
+          41
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "brains/wx78_shadowdrone_debufferbrain.lua",
+      "sha256": "bc7a2210a43f24eaf515ba244fb7805bf000293417eb09a8b44c93d1b74ce1f9",
+      "ranges": [
+        [
+          1,
+          163
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "brains/wx78_shadowdrone_braincommon.lua",
+      "sha256": "e09da8b684209f64038f194a363a503627eb02c34fa0be086831d97682d6319c",
+      "ranges": [
+        [
+          1,
+          59
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "brains/braincommon.lua",
+      "sha256": "aeade18f154e4d2638bb79f0866010a8dc2fe21d8ea8f1a224156f26f142f3ce",
+      "ranges": [
+        [
+          448,
+          615
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "components/socket_shadow_harvester.lua",
+      "sha256": "7b1dce22c43be938eed5590f6ed7fbdabb944f1e84816d8fc659669fd15c5ba2",
+      "ranges": [
+        [
+          1,
+          250
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "prefabs/wx78_shadowdrone_harvester.lua",
+      "sha256": "b4a1aeeb95df10395100ffbee3a54fd4e7f3595b2bdeeccc8aaad43cd23ec0e8",
+      "ranges": [
+        [
+          74,
+          92
+        ]
+      ],
+      "same_as_reference_copy": true
+    },
+    {
+      "file": "prefabs/wx78_shadowdrone_debuffer.lua",
+      "sha256": "fee14853af82ddeed3879a238e4092a377c53c0d301af5c7b68fdafbc3c8beab",
+      "ranges": [
+        [
+          38,
+          174
+        ]
+      ],
+      "same_as_reference_copy": true
+    }
+  ],
+  "observations": [
+    "Harvester prioritizes assigned pickup assist, then formation, then wander; player owners trigger work from pickup/harvest events while non-player hosts have periodic ticks.",
+    "GiveAction rejects capacity<=0 and helper then attempts DropAction; sleeping simulation drops all held contents if deposit action fails.",
+    "Debuffer reads leader target, checks leader-to-target range 16, can keep last target under the 3-second grace or while it is fighting an ally in the in-range branch.",
+    "Prefab OnSave for both drones records despawn only; this does not establish full save behavior of components, pets or leader callers."
+  ]
+}
