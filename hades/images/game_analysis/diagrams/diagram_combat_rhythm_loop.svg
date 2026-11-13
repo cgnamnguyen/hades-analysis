@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="100%" height="100%" style="background:#0f1015; font-family:'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181a24"/>
+      <stop offset="100%" stop-color="#12131a"/>
+    </linearGradient>
+    <linearGradient id="centerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24151b"/>
+      <stop offset="100%" stop-color="#181116"/>
+    </linearGradient>
+    <marker id="arrowLoop" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#d97706"/>
+    </marker>
+  </defs>
+
+  <!-- Title Header (Exact text from Image 1) -->
+  <text x="40" y="45" fill="#fef3c7" font-size="17" font-weight="900" letter-spacing="1">MỘT NHỊP GIAO TRANH • SƠ ĐỒ HỌC CHƠI, KHÔNG PHẢI CALL GRAPH</text>
+
+  <!-- Card 1: ĐỌC -->
+  <g transform="translate(40, 85)">
+    <rect x="0" y="0" width="195" height="115" rx="14" fill="url(#cardGrad)" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="20" y="38" fill="#fef3c7" font-size="16" font-weight="800">1 • ĐỌC</text>
+    <text x="20" y="66" fill="#cbd5e1" font-size="12.5">Telegraph • hướng</text>
+    <text x="20" y="88" fill="#9ca3af" font-size="12.5">địch • hazard • lối thoát</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="240" y1="142" x2="265" y2="142" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowLoop)"/>
+
+  <!-- Card 2: GIỮ AN TOÀN -->
+  <g transform="translate(275, 85)">
+    <rect x="0" y="0" width="205" height="115" rx="14" fill="url(#cardGrad)" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="20" y="38" fill="#fef3c7" font-size="16" font-weight="800">2 • GIỮ AN TOÀN</text>
+    <text x="20" y="66" fill="#cbd5e1" font-size="12.5">Dash/Sprint • đổi góc</text>
+    <text x="20" y="88" fill="#9ca3af" font-size="12.5">Guard chỉ khi có cơ chế</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="485" y1="142" x2="510" y2="142" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowLoop)"/>
+
+  <!-- Card 3: CHỌN ĐÒN (Highlighted Rose/Red Border as Image 1) -->
+  <g transform="translate(520, 85)">
+    <rect x="0" y="0" width="205" height="115" rx="14" fill="url(#centerGrad)" stroke="#f43f5e" stroke-width="2"/>
+    <text x="20" y="38" fill="#fda4af" font-size="16" font-weight="900">3 • CHỌN ĐÒN</text>
+    <text x="20" y="66" fill="#fecdd3" font-size="12.5">Attack / Special / Cast</text>
+    <text x="20" y="88" fill="#fb7185" font-size="12.5">&amp;Omega; / Hex nếu an toàn</text>
+  </g>
+
+  <!-- Arrow 3 -> 4 -->
+  <line x1="730" y1="142" x2="755" y2="142" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowLoop)"/>
+
+  <!-- Card 4: KIỂM TRA -->
+  <g transform="translate(765, 85)">
+    <rect x="0" y="0" width="165" height="115" rx="14" fill="url(#cardGrad)" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="20" y="38" fill="#fef3c7" font-size="16" font-weight="800">4 • KIỂM TRA</text>
+    <text x="20" y="66" fill="#cbd5e1" font-size="12.5">Hit • status • Armor</text>
+    <text x="20" y="88" fill="#9ca3af" font-size="12.5">Magick • Hex charge</text>
+  </g>
+
+  <!-- Curved Arrow from Card 4 down to Card 5 -->
+  <path d="M 855,205 C 855,260 770,270 710,270" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowLoop)"/>
+
+  <!-- Card 5: TÁI ĐỊNH VỊ (Center Wide Card as Image 1) -->
+  <g transform="translate(275, 235)">
+    <rect x="0" y="0" width="425" height="95" rx="14" fill="url(#cardGrad)" stroke="#4b5563" stroke-width="1.5"/>
+    <text x="25" y="38" fill="#fef3c7" font-size="16" font-weight="800">5 • TÁI ĐỊNH VỊ / CHỌN NHỊP TIẾP</text>
+    <text x="25" y="68" fill="#9ca3af" font-size="13">Dùng recovery của địch, hoặc rút khi đòn chưa an toàn.</text>
+  </g>
+
+  <!-- Curved Arrow from Card 5 back up to Card 1 -->
+  <path d="M 270,285 C 130,285 130,240 130,205" fill="none" stroke="#d97706" stroke-width="2.5" marker-end="url(#arrowLoop)"/>
+
+  <!-- Bottom Disclaimer (Exact footer from Image 1) -->
+  <text x="40" y="395" fill="#6b7280" font-size="11.5">
+    Không giả định né có i-frame; không có block chung cho mọi vũ khí; &amp;Omega;/Hex và input cần kiểm tra theo bản.
+  </text>
+</svg>

@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 480" width="100%" height="100%" style="background:#0d0e15; font-family:'Segoe UI', Roboto, sans-serif;">
+  <defs>
+    <linearGradient id="bgGradDAG" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141522"/>
+      <stop offset="100%" stop-color="#0a0a10"/>
+    </linearGradient>
+    <marker id="arrDAGGold" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrDAGPurple" markerWidth="10" markerHeight="10" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#c084fc"/>
+    </marker>
+  </defs>
+
+  <!-- Border Card -->
+  <rect x="10" y="10" width="940" height="460" rx="16" fill="url(#bgGradDAG)" stroke="#d97706" stroke-width="1.5" stroke-opacity="0.5"/>
+  
+  <!-- Header -->
+  <text x="35" y="45" fill="#fbbf24" font-size="16" font-weight="900" letter-spacing="1">ĐỒ THỊ ĐIỀU KIỆN TIÊN QUYẾT (PREREQUISITES DAG) • MỞ KHÓA LEGENDARY &amp; DUO BOONS</text>
+  <text x="35" y="68" fill="#9ca3af" font-size="12">Thuật toán SetTraitsOnLoot • Cấu trúc OneOf &amp; OneFromEachSet trong LootData.lua</text>
+
+  <!-- 3 Stages: Tier 1 -> Tier 2 -> Legendary / Duo -->
+  <!-- Tier 1: Core Boons -->
+  <g transform="translate(35, 95)">
+    <rect x="0" y="0" width="260" height="300" rx="12" fill="#181a28" stroke="#3b82f6" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#93c5fd" font-size="14" font-weight="800">BƯỚC 1: CORE BOONS (TIER 1)</text>
+    <text x="20" y="55" fill="#cbd5e1" font-size="11.5">5 Khe Kỹ Năng Nền Tảng:</text>
+    
+    <rect x="15" y="70" width="230" height="35" rx="6" fill="#131e2b"/>
+    <text x="25" y="92" fill="#60a5fa" font-size="11.5" font-weight="700">• Attack (Đòn đánh thường)</text>
+
+    <rect x="15" y="115" width="230" height="35" rx="6" fill="#131e2b"/>
+    <text x="25" y="137" fill="#60a5fa" font-size="11.5" font-weight="700">• Special (Đòn đặc biệt)</text>
+
+    <rect x="15" y="160" width="230" height="35" rx="6" fill="#131e2b"/>
+    <text x="25" y="182" fill="#60a5fa" font-size="11.5" font-weight="700">• Cast (Bắn huyết thạch)</text>
+
+    <rect x="15" y="205" width="230" height="35" rx="6" fill="#131e2b"/>
+    <text x="25" y="227" fill="#60a5fa" font-size="11.5" font-weight="700">• Dash (Lướt có hiệu ứng)</text>
+
+    <rect x="15" y="250" width="230" height="35" rx="6" fill="#131e2b"/>
+    <text x="25" y="272" fill="#60a5fa" font-size="11.5" font-weight="700">• Aid / Call (Chiêu triệu hồi Thần)</text>
+  </g>
+
+  <!-- Arrow T1 -> T2 -->
+  <line x1="305" y1="245" x2="340" y2="245" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrDAGGold)"/>
+
+  <!-- Tier 2: Enablers / Secondary -->
+  <g transform="translate(350, 95)">
+    <rect x="0" y="0" width="260" height="300" rx="12" fill="#1f1b2b" stroke="#f59e0b" stroke-width="1.5"/>
+    <text x="20" y="32" fill="#fbbf24" font-size="14" font-weight="800">BƯỚC 2: TIER 2 ENABLERS</text>
+    <text x="20" y="55" fill="#fde68a" font-size="11.5">Kích hoạt điều kiện OneOf:</text>
+    
+    <rect x="15" y="70" width="230" height="65" rx="6" fill="#241b18" stroke="#f59e0b" stroke-width="1"/>
+    <text x="25" y="90" fill="#fef08a" font-size="11.5" font-weight="700">Zeus Enablers:</text>
+    <text x="25" y="108" fill="#d1d5db" font-size="10.5">Storm Lightning / High Voltage</text>
+    <text x="25" y="124" fill="#d1d5db" font-size="10.5">hoặc Double Strike</text>
+
+    <rect x="15" y="145" width="230" height="65" rx="6" fill="#241b18" stroke="#f59e0b" stroke-width="1"/>
+    <text x="25" y="165" fill="#fef08a" font-size="11.5" font-weight="700">Artemis Enablers:</text>
+    <text x="25" y="183" fill="#d1d5db" font-size="10.5">Support Fire / Clean Kill</text>
+    <text x="25" y="199" fill="#d1d5db" font-size="10.5">hoặc Hunter Instinct</text>
+
+    <rect x="15" y="220" width="230" height="65" rx="6" fill="#241b18" stroke="#f59e0b" stroke-width="1"/>
+    <text x="25" y="240" fill="#fef08a" font-size="11.5" font-weight="700">Demeter Enablers:</text>
+    <text x="25" y="258" fill="#d1d5db" font-size="10.5">Arctic Blast / Killing Freeze</text>
+    <text x="25" y="274" fill="#d1d5db" font-size="10.5">hoặc Ravenous Will</text>
+  </g>
+
+  <!-- Arrow T2 -> T3 -->
+  <line x1="620" y1="245" x2="655" y2="245" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrDAGGold)"/>
+
+  <!-- Tier 3: Legendary &amp; Duo Pinnacle -->
+  <g transform="translate(665, 95)">
+    <rect x="0" y="0" width="260" height="300" rx="12" fill="#23141f" stroke="#f43f5e" stroke-width="2"/>
+    <text x="20" y="32" fill="#fda4af" font-size="14" font-weight="900">BƯỚC 3: ĐỈNH CAO SỨC MẠNH</text>
+    <text x="20" y="55" fill="#fecdd3" font-size="11.5">Tỉ lệ xuất hiện cơ bản: ~10-12%</text>
+    
+    <rect x="15" y="70" width="230" height="95" rx="6" fill="#1b1218" stroke="#f59e0b" stroke-width="1.2"/>
+    <text x="25" y="92" fill="#fbbf24" font-size="12" font-weight="800">👑 LEGENDARY BOONS</text>
+    <text x="25" y="112" fill="#d1d5db" font-size="11">• Splitting Bolt (+40 Spark)</text>
+    <text x="25" y="130" fill="#d1d5db" font-size="11">• Fully Loaded (+2 Huyết Thạch)</text>
+    <text x="25" y="148" fill="#d1d5db" font-size="11">• Winter Harvest (Trảm sát &lt;10%)</text>
+
+    <rect x="15" y="180" width="230" height="105" rx="6" fill="#201224" stroke="#c084fc" stroke-width="1.2"/>
+    <text x="25" y="202" fill="#c084fc" font-size="12" font-weight="800">✨ DUO BOONS (28 CẶP)</text>
+    <text x="25" y="222" fill="#e9d5ff" font-size="11">• Hunting Blades (Ares x Artemis)</text>
+    <text x="25" y="240" fill="#e9d5ff" font-size="11">• Sea Storm (Poseidon x Zeus)</text>
+    <text x="25" y="258" fill="#e9d5ff" font-size="11">• Merciful End (Ares x Athena)</text>
+    <text x="25" y="276" fill="#e9d5ff" font-size="11">• Crystal Sunrise (Demeter x Artemis)</text>
+  </g>
+
+  <!-- Bottom Strategy Tip -->
+  <rect x="35" y="410" width="890" height="48" rx="8" fill="#171824" stroke="#4b5563" stroke-width="1"/>
+  <text x="50" y="432" fill="#fbbf24" font-size="12" font-weight="700">MẸO BUILD CHUYÊN NGHIỆP: Nâng Gương 'God's Legacy' (+10% Duo/Legendary) &amp; Giữ Tín Vật thần ở Asphodel để ép 100% ra Duo ở Tartarus/Asphodel!</text>
+  <text x="50" y="448" fill="#9ca3af" font-size="11">Reroll (Fated Persuasion) CHỈ NÊN DÙNG khi đã có đủ Core + Enabler để tỉ lệ xoay ra Duo/Legendary đạt mức tối đa.</text>
+</svg>
