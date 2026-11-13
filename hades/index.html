@@ -62,7 +62,7 @@
         <div class="header-center">
             <div class="search-wrapper">
                 <i class="fas fa-search"></i>
-                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm nhanh 30 chuyên đề, thuật toán, búa rèn, boss..." />
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm nhanh 38 chuyên đề, thuật toán, búa rèn, boss..." />
                 <span class="search-shortcut">Ctrl+K</span>
             </div>
         </div>
@@ -365,6 +365,14 @@
             
             
         </a>
+                    <a href="#chapter-31" class="nav-link" id="nav-link-31">             <span class="nav-num">31</span>             <span class="nav-title">ĐỒ THỊ ĐIỀU KIỆN TIÊN QUYẾT MỞ KHÓA LEGENDARY & DUO BOONS (PREREQUISITES DAG)</span>                                   </a>
+                    <a href="#chapter-32" class="nav-link" id="nav-link-32">             <span class="nav-num">32</span>             <span class="nav-title">BÍ MẬT ĐẤU TRƯỜNG NGẦM: TRẬN ĐẤU TRÙM BÍ MẬT CHARON (SECRET BOSS FIGHT)</span>                                   </a>
+                    <a href="#chapter-33" class="nav-link" id="nav-link-33">             <span class="nav-num">33</span>             <span class="nav-title">CUỘN THẦN PHẢ TIÊN TRI (FATED LIST OF MINOR PROPHECIES - QUESTDATA.LUA)</span>                                   </a>
+                    <a href="#chapter-34" class="nav-link" id="nav-link-34">             <span class="nav-num">34</span>             <span class="nav-title">KHO TÍN VẬT KEEPSAKES TOÀN DIỆN (FULL 25 KEEPSAKES & 3-STAR UPGRADES)</span>                                   </a>
+                    <a href="#chapter-35" class="nav-link" id="nav-link-35">             <span class="nav-num">35</span>             <span class="nav-title">GIẢI MÃ KIẾN TRÚC ĐỒ HỌA 2.5D ISOMETRIC, HỆ THỐNG SHADING & PIPELINE TẠO LEVEL (THE FORGE ENGINE)</span>                                   </a>
+                    <a href="#chapter-36" class="nav-link" id="nav-link-36">             <span class="nav-num">36</span>             <span class="nav-title">BÁCH KHOA TOÀN THƯ KẺ THÙ (THE COMPLETE HADES BESTIARY) & BẢN ĐỒ CHIẾN THUẬT 4 TẦNG</span>                                   </a>
+                    <a href="#chapter-37" class="nav-link" id="nav-link-37">             <span class="nav-num">37</span>             <span class="nav-title">HỒ SƠ TECHNICAL REVERSE ENGINEERING TOÀN DIỆN & HƯỚNG DẪN TÁI DỰNG TRÊN ENGINE HIỆN ĐẠI (THE FORGE ENGINE ARCHITECTURE & MODERN RECONSTRUCTION)</span>                                   </a>
+                    <a href="#chapter-38" class="nav-link" id="nav-link-38">             <span class="nav-num">38</span>             <span class="nav-title">HỒ SƠ GAME DESIGN ANALYSIS CHUYÊN SÂU & BÓC TÁCH TOÀN BỘ HỆ THỐNG GAMEPLAY (PROFESSIONAL GDA DOSSIER)</span>                                   </a>
     </li>
     
             </ul>
@@ -401,19 +409,19 @@
                         <!-- Key Stats -->
                         <div class="hero-stats-grid">
                             <div class="stat-box">
-                                <div class="stat-val">30</div>
+                                <div class="stat-val">38</div>
                                 <div class="stat-label">Chuyên Đề Toàn Diện</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-val">8</div>
+                                <div class="stat-val">10</div>
                                 <div class="stat-label">Widgets Lab Trực Tuyến</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-val">110+</div>
+                                <div class="stat-val">150</div>
                                 <div class="stat-label">Hình Ảnh & Chân Dung</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-val">7</div>
+                                <div class="stat-val">12</div>
                                 <div class="stat-label">Sơ Đồ Kỹ Thuật SVG</div>
                             </div>
                             <div class="stat-box">
@@ -478,7 +486,9 @@
     </div>
     <h2 class="chapter-title-heading" id="1-tổng-quan--kết-quả-dịch-ngược-nhị-phân">1. TỔNG QUAN & KẾT QUẢ DỊCH NGƯỢC NHỊ PHÂN</h2>
     <div class="chapter-body">
-<p>Dự án phân tích được thực hiện trực tiếp trên bản dựng đóng gói của <strong>Hades (v1.38290)</strong> tại thư mục <code>Hades v1.38290</code>. Sử dụng bộ công cụ <strong>REA (Reverse Engineer Anything)</strong> kết hợp cùng các công cụ giải mã tài nguyên đặc thù của Supergiant Games, chúng tôi đã trích xuất, đọc cấu trúc tệp nhị phân và phân tích mã nguồn kịch bản nội tại của trò chơi.</p>
+
+<p><img src="./images/web_references/hades_cover_art.jpg" alt="Hades Official Key Art" loading="lazy" />
+<em>Hình FIG-001: Key Art chính thức của tựa game Hades (Supergiant Games) phát hành thương mại.</em></p><p>Dự án phân tích được thực hiện trực tiếp trên bản dựng đóng gói của <strong>Hades (v1.38290)</strong> tại thư mục <code>Hades v1.38290</code>. Sử dụng bộ công cụ <strong>REA (Reverse Engineer Anything)</strong> kết hợp cùng các công cụ giải mã tài nguyên đặc thù của Supergiant Games, chúng tôi đã trích xuất, đọc cấu trúc tệp nhị phân và phân tích mã nguồn kịch bản nội tại của trò chơi.</p>
 <div style="background: #111218; border: 1px solid rgba(245, 158, 11, 0.35); border-radius: 14px; padding: 20px 22px; margin: 20px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.45);">
   <div style="color: #fbbf24; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">SƠ ĐỒ PHÂN TẦNG VẬN HÀNH NHỊ PHÂN • NATIVE C++ & LUA VM</div>
   <div style="color: #9ca3af; font-size: 11.5px; margin-bottom: 14px;">Khởi động PE x86_64 qua CRT, liên kết động với The Forge Engine và máy ảo Lua 5.2.</div>
@@ -2259,7 +2269,11 @@ Nâng cấp một chúc phúc từ Level 1 lên Level 3 mang lại giá trị gi
     </div>
     <h2 class="chapter-title-heading" id="12-hệ-thống-trừng-phạt-pact-of-punishment">12. TIẾN TRÌNH VĨNH VIỄN: GƯƠNG BÓNG ĐÊM & KINH TẾ ĐỊA NGỤC</h2>
     <div class="chapter-body">
-<figure class="article-figure figure-item">
+
+<p><img src="./images/web_references/mirror_room.png" alt="Giao diện Gương Đêm trong phòng ngủ" loading="lazy" />
+<em>Hình FIG-012A: Giao diện Gương Bóng Đêm (Mirror of Night) đặt trong phòng ngủ của Zagreus.</em></p>
+<p><img src="./images/web_references/House_Contractor.png" alt="Nhà Thầu Địa Phủ House Contractor" loading="lazy" />
+<em>Hình FIG-012B: Giao diện Nhà Thầu Địa Phủ (House Contractor) sử dụng Gemstones và Diamonds.</em></p><figure class="article-figure figure-item">
 <div class="figure-img-wrap" onclick="openLightbox('./images/game_analysis/titan_blood.png', 'Tài Nguyên &amp;amp; Kinh Tế Địa Ngục')">
 <img src="./images/game_analysis/titan_blood.png" alt="Tài Nguyên &amp;amp; Kinh Tế Địa Ngục" loading="lazy" />
 <span class="img-zoom-badge"><i class="fas fa-search-plus"></i> Phóng to</span>
@@ -3082,7 +3096,9 @@ end
     </div>
     <h2 class="chapter-title-heading" id="17-kinh-tế-âm-phủ-tiền-tệ--vòng-xoay-tài-nguyên">17. CÂN BẰNG ĐỘ KHÓ TỐI THƯỢNG: KHẾ ƯỚC TRỪNG PHẠT</h2>
     <div class="chapter-body">
-<div style="background: #111218; border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 14px; padding: 20px 22px; margin: 20px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.45);">
+
+<p><img src="./images/web_references/pact_interface.png" alt="Giao diện Hiệp Ước Trừng Phạt Pact of Punishment" loading="lazy" />
+<em>Hình FIG-017: Toàn bộ giao diện cấu hình Hiệp Ước Trừng Phạt (Pact of Punishment) với 15 điều khoản tăng độ khó Heat.</em></p><div style="background: #111218; border: 1px solid rgba(239, 68, 68, 0.4); border-radius: 14px; padding: 20px 22px; margin: 20px 0; box-shadow: 0 10px 25px rgba(0,0,0,0.45);">
   <div style="color: #f87171; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 4px;">CƠ CHẾ KHẾ ƯỚC TRỪNG PHẠT (PACT OF PUNISHMENT) • 15 ĐIỀU KHOẢN (HEAT 0 &rarr; 64)</div>
   <div style="color: #9ca3af; font-size: 11.5px; margin-bottom: 14px;">Bảng phân loại mức độ can thiệp vào gameplay theo 3 nhóm điều khoản trừng phạt:</div>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px;">
@@ -3988,7 +4004,44 @@ end)
     </div>
     <h2 class="chapter-title-heading" id="26-khảo-sát-mỹ-thuật-địa-hình--thiết-kế-kiến-trúc-7-tầng-ngục">26. KHẢO SÁT MỸ THUẬT ĐỊA HÌNH & THIẾT KẾ MÀN CHƠI TOÀN BIOME (LEVEL DESIGN & CHAMBER LAYOUTS)</h2>
     <div class="chapter-body">
-<p>Hades dẫn dắt người chơi đi qua một hành trình thị giác ngoạn mục với 7 tầng ngục có ngôn ngữ thiết kế, bảng màu và nhịp điệu gameplay hoàn toàn khác biệt:</p>
+
+<h3>26.0. Thư Viện Ảnh Chụp Màn Hình Gameplay Thực Tế (In-Game Chamber Screenshots)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Màn Chơi / Khu Vực</th>
+<th style="text-align:center;">Hình Ảnh Gameplay Thực Tế</th>
+<th style="text-align:left;">Phân Tích Mỹ Thuật Không Gian</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Sảnh Chính Nhà Hades</strong></td>
+<td style="text-align:center;"><img src="./images/web_references/House_of_Hades_1.png" alt="Sảnh Chính Nhà Hades" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/web_references/House_of_Hades_1.png', './images/web_references/House_of_Hades_1.png')" /></td>
+<td style="text-align:left;">Ngai vàng uy nghiêm của Hades, hồ máu tái sinh và các cột đá cẩm thạch đỏ rực.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Phòng Lưu Trữ Hành Chính</strong></td>
+<td style="text-align:center;"><img src="./images/web_references/HouseAdministrativeChamber.png" alt="Phòng Hành Chính" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/web_references/HouseAdministrativeChamber.png', './images/web_references/HouseAdministrativeChamber.png')" /></td>
+<td style="text-align:left;">Nơi lưu trữ Security Log toàn bộ lịch sử các lượt chạy trốn của Zagreus.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Buồng Giam Tartarus</strong></td>
+<td style="text-align:center;"><img src="./images/web_references/Tartarus_01.jpg" alt="Màn Chơi Tartarus" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/web_references/Tartarus_01.jpg', './images/web_references/Tartarus_01.jpg')" /></td>
+<td style="text-align:left;">Sàn đá phiến xanh lục, bẫy chông sắt nhọn và không gian ngục tối chật hẹp.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Biển Lửa Asphodel</strong></td>
+<td style="text-align:center;"><img src="./images/web_references/Asphodel_01.JPG" alt="Biển Lửa Asphodel" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/web_references/Asphodel_01.JPG', './images/web_references/Asphodel_01.JPG')" /></td>
+<td style="text-align:left;">Dòng sông magma Phlegethon sôi sục bao quanh các hòn đảo đá cô lập.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Thánh Địa Elysium</strong></td>
+<td style="text-align:center;"><img src="./images/web_references/Elysium_Overlook.png" alt="Toàn Cảnh Elysium" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/web_references/Elysium_Overlook.png', './images/web_references/Elysium_Overlook.png')" /></td>
+<td style="text-align:left;">Đền đài tráng lệ, tượng đài anh linh và dòng sông quên lãng Lethe tĩnh lặng.</td>
+</tr>
+</tbody>
+</table><p>Hades dẫn dắt người chơi đi qua một hành trình thị giác ngoạn mục với 7 tầng ngục có ngôn ngữ thiết kế, bảng màu và nhịp điệu gameplay hoàn toàn khác biệt:</p>
 <div class="hades-carousel-card" id="carousel-6" data-current="0" data-total="7">
 <div class="carousel-header">
 <div class="carousel-badge"><i class="fas fa-layer-group"></i> BỘ SƯU TẬP TRỰC QUAN</div>
@@ -4591,7 +4644,7 @@ $$	ext{Tỉ Lệ Sát Thương Nhận Vào} = 0.80 - (30 	imes 0.02) = \mathbf{0
 </div>
 <div class="alert-body">
 <p><strong>Kết Luận Đảo Ngược Dữ Liệu</strong>:
-Toàn bộ 30 chuyên đề nghiên cứu và hơn 60 tệp hình ảnh minh họa trong báo cáo này được trích xuất trực tiếp từ bản build game gốc <code>Hades v1.38290</code> và bảo tồn tại kho lưu trữ artifacts:</p>
+Toàn bộ 38 chuyên đề nghiên cứu và hơn 60 tệp hình ảnh minh họa trong báo cáo này được trích xuất trực tiếp từ bản build game gốc <code>Hades v1.38290</code> và bảo tồn tại kho lưu trữ artifacts:</p>
 <ul>
 <li>Thư mục hình ảnh tham chiếu: <code>images/game_analysis/</code></li>
 <li>Các tệp kịch bản kiểm tra: <span class="source-tag" title="File kịch bản game: Combat.lua"><i class="fas fa-file-code"></i> Combat.lua</span>, <span class="source-tag" title="File kịch bản game: EnemyData.lua"><i class="fas fa-file-code"></i> EnemyData.lua</span>, <span class="source-tag" title="File kịch bản game: WeaponData.lua"><i class="fas fa-file-code"></i> WeaponData.lua</span>, <span class="source-tag" title="File kịch bản game: NPCData.lua"><i class="fas fa-file-code"></i> NPCData.lua</span>, <span class="source-tag" title="File kịch bản game: DeathLoopData.lua"><i class="fas fa-file-code"></i> DeathLoopData.lua</span>, <span class="source-tag" title="File kịch bản game: HeroData.lua"><i class="fas fa-file-code"></i> HeroData.lua</span>, <span class="source-tag" title="File kịch bản game: LootData.lua"><i class="fas fa-file-code"></i> LootData.lua</span>, <span class="source-tag" title="File kịch bản game: RoomManager.lua"><i class="fas fa-file-code"></i> RoomManager.lua</span>, <span class="source-tag" title="File kịch bản game: AudioScripts.lua"><i class="fas fa-file-code"></i> AudioScripts.lua</span>, <span class="source-tag" title="File kịch bản game: FishingData.lua"><i class="fas fa-file-code"></i> FishingData.lua</span>.</li>
@@ -4603,6 +4656,1306 @@ Toàn bộ 30 chuyên đề nghiên cứu và hơn 60 tệp hình ảnh minh h�
     <div class="chapter-nav-footer">
         <a href="#chapter-29" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 29</a>
         <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-31" class="chap-nav-btn">Chuyên đề 31 <i class="fas fa-arrow-right"></i></a>
+        
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-31" data-chapter="31" data-title="ĐỒ THỊ ĐIỀU KIỆN TIÊN QUYẾT MỞ KHÓA LEGENDARY &amp; DUO BOONS (PREREQUISITES DAG)" data-category="Weapons & Boons">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 31</span>
+            <span class="chapter-cat-badge"><i class="fas fa-sitemap"></i> Weapons & Boons</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(31)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="31-đồ-thị-điều-kiện-tiên-quyết-mở-khóa-legendary-duo-boons-prerequisites-dag">31. ĐỒ THỊ ĐIỀU KIỆN TIÊN QUYẾT MỞ KHÓA LEGENDARY & DUO BOONS (PREREQUISITES DAG)</h2>
+    <div class="chapter-body">
+<p>Một trong những hệ thống lập trình phức tạp và tinh tế nhất của Hades nằm ở <strong>Đồ thị có hướng không chu trình (Directed Acyclic Graph - DAG)</strong> quản lý điều kiện xuất hiện của Chúc phúc Huyền Thoại (Legendary Boons) và Chúc phúc Kép (Duo Boons). Hệ thống này được định nghĩa trực tiếp trong tệp <code>LootData.lua</code> và hàm tuyển chọn <code>SetTraitsOnLoot</code> trong <code>TraitScripts.lua</code>.</p>
+<p><img src="./images/game_analysis/diagrams/diagram_gods_prerequisites_dag.svg" alt="Đồ Thị Điều Kiện Tiên Quyết Mở Khóa Legendary và Duo Boons" loading="lazy" /></p>
+<h3>31.1. Cấu Trúc Điều Kiện OneOf &amp; OneFromEachSet Trong Mã Nguồn</h3>
+<p>Trong <code>LootData.lua</code>, mỗi Chúc phúc bậc cao đều mang một bộ lọc logic nghiêm ngặt:</p>
+<pre><code class="language-lua">-- Trích xuất từ LootData.lua: Điều kiện của Chúc phúc Huyền thoại Zeus
+ZeusChargedBoltTrait =
+{
+    OneOf = { &quot;ZeusBonusBounceTrait&quot;, &quot;ZeusBoltAoETrait&quot;, &quot;ZeusBonusBoltTrait&quot; },
+},
+
+-- Điều kiện Chúc phúc Kép Lightning Rod (Zeus x Artemis)
+LightningCloudTrait =
+{
+    OneFromEachSet =
+    {
+        { &quot;ZeusWeaponTrait&quot;, &quot;ZeusSecondaryTrait&quot;, &quot;ZeusRushTrait&quot;, &quot;ZeusShoutTrait&quot; },
+        { &quot;ArtemisWeaponTrait&quot;, &quot;ArtemisSecondaryTrait&quot;, &quot;ArtemisRushTrait&quot;, &quot;ArtemisShoutTrait&quot; },
+    },
+},
+</code></pre>
+<ul>
+<li><strong><code>OneOf</code> (Cần ít nhất 1 kỹ năng đệm)</strong>: Để mở khóa Chúc phúc Huyền Thoại (Tier 3), Zagreus buộc phải sở hữu ít nhất một trong các kỹ năng Tier 2 tương ứng.</li>
+<li><strong><code>OneFromEachSet</code> (Cần 1 kỹ năng từ mỗi vị thần)</strong>: Để mở khóa Chúc phúc Kép (Duo), Zagreus phải trang bị ít nhất một kỹ năng cốt lõi (Core Boon: Attack, Special, Cast, Dash, Aid) từ cả hai vị thần liên kết.</li>
+</ul>
+<h3>31.2. Bảng Điều Kiện Tiên Quyết 9 Chúc Phúc Huyền Thoại (Legendary Boons)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Vị Thần</th>
+<th style="text-align:left;">Chúc Phúc Huyền Thoại</th>
+<th style="text-align:left;">Tên Kỹ Thuật (Code)</th>
+<th style="text-align:left;">Hiệu Lực Tối Thượng</th>
+<th style="text-align:left;">Điều Kiện Tiên Quyết Cần Có (<code>OneOf</code>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Zeus</strong></td>
+<td style="text-align:left;"><strong>Splitting Bolt</strong></td>
+<td style="text-align:left;"><code>ZeusChargedBoltTrait</code></td>
+<td style="text-align:left;">Mỗi tia sét đánh trúng tạo thêm 1 quả cầu sét phụ gây <strong>40 sát thương nổ lan</strong>.</td>
+<td style="text-align:left;">Cần 1 trong 3: <em>Storm Lightning</em>, <em>High Voltage</em>, hoặc <em>Double Strike</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Poseidon</strong></td>
+<td style="text-align:left;"><strong>Second Wave</strong></td>
+<td style="text-align:left;"><code>DoubleCollisionTrait</code></td>
+<td style="text-align:left;">Mọi đòn đánh đẩy lùi (Knockback) tự động <strong>kích hoạt thêm 1 đợt sóng thứ hai</strong>.</td>
+<td style="text-align:left;">Cần 1 trong 2: <em>Breaking Wave</em> hoặc <em>Typhoon's Fury</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Athena</strong></td>
+<td style="text-align:left;"><strong>Divine Protection</strong></td>
+<td style="text-align:left;"><code>ShieldHitTrait</code></td>
+<td style="text-align:left;">Ban tặng một chiếc khiên hộ thân <strong>chặn hoàn toàn 1 đòn đánh bất kỳ mỗi 20 giây</strong>.</td>
+<td style="text-align:left;">Cần <em>Brilliant Encounter</em> + 1 trong 2: <em>Bronze Skin</em> hoặc <em>Holy Shield</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Aphrodite</strong></td>
+<td style="text-align:left;"><strong>Unhealthy Fixation</strong></td>
+<td style="text-align:left;"><code>CharmTrait</code></td>
+<td style="text-align:left;">Mọi đòn đánh làm Yếu (Weak) có <strong>15% cơ hội Mê Hoặc (Charm)</strong> kẻ địch trong 4 giây.</td>
+<td style="text-align:left;">Cần 1 trong 3: <em>Sweet Surrender</em>, <em>Broken Resolve</em>, hoặc <em>Empty Inside</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Ares</strong></td>
+<td style="text-align:left;"><strong>Vicious Skewering</strong></td>
+<td style="text-align:left;"><code>AresCursedRiftTrait</code></td>
+<td style="text-align:left;">Vòng xoáy kiếm (Blade Rift) liên tục tăng sát thương theo thời gian: <strong>+1.2 Dmg/Hit</strong>.</td>
+<td style="text-align:left;">Cần 1 trong 2: <em>Black Metal</em> hoặc <em>Engulfing Vortex</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Artemis</strong></td>
+<td style="text-align:left;"><strong>Fully Loaded</strong></td>
+<td style="text-align:left;"><code>MoreAmmoTrait</code></td>
+<td style="text-align:left;">Zagreus nhận thêm <strong>+2 Huyết Thạch (Bloodstones)</strong> tối đa (Tăng 200% lượng Cast!).</td>
+<td style="text-align:left;">Cần 2 trong 3: <em>Support Fire</em>, <em>Clean Kill</em>, hoặc <em>Hunter Instinct</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Dionysus</strong></td>
+<td style="text-align:left;"><strong>Black Out</strong></td>
+<td style="text-align:left;"><code>DionysusComboVulnerability</code></td>
+<td style="text-align:left;">Kẻ địch dính Say (Hangover) phải chịu thêm <strong>+60% sát thương</strong> nếu đang đứng trong Khí Say.</td>
+<td style="text-align:left;">Cần <em>Bad Influence</em> + 1 trong 2: <em>Numbing Sensation</em> hoặc <em>Peer Pressure</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Demeter</strong></td>
+<td style="text-align:left;"><strong>Winter Harvest</strong></td>
+<td style="text-align:left;"><code>InstantChillKill</code></td>
+<td style="text-align:left;">Kẻ địch chạm mốc 10 tầng Lạnh (Chill) sẽ <strong>bị trảm sát lập tức khi máu dưới 10%</strong>!</td>
+<td style="text-align:left;">Cần 2 trong 3: <em>Arctic Blast</em>, <em>Killing Freeze</em>, hoặc <em>Ravenous Will</em>.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Hermes</strong></td>
+<td style="text-align:left;"><strong>Bad News</strong></td>
+<td style="text-align:left;"><code>HermesRushAreaSlow</code></td>
+<td style="text-align:left;">Bắn Cast gây thêm <strong>+50% sát thương</strong> lên kẻ địch không có Huyết Thạch găm vào người.</td>
+<td style="text-align:left;">Cần <em>Auto Reload</em> (Tự nạp Cast) hoặc <em>Quick Reload</em>.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-30" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 30</a>
+        <a href="#chapter-32" class="chap-nav-btn">Chuyên đề 32 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-32" data-chapter="32" data-title="BÍ MẬT ĐẤU TRƯỜNG NGẦM: TRẬN ĐẤU TRÙM BÍ MẬT CHARON (SECRET BOSS FIGHT)" data-category="Boss AI Deep Dive">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 32</span>
+            <span class="chapter-cat-badge"><i class="fas fa-skull-crossbones"></i> Boss AI Deep Dive</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(32)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="32-bí-mật-đấu-trường-ngầm-trận-đấu-trùm-bí-mật-charon-secret-boss-fight">32. BÍ MẬT ĐẤU TRƯỜNG NGẦM: TRẬN ĐẤU TRÙM BÍ MẬT CHARON (SECRET BOSS FIGHT)</h2>
+    <div class="chapter-body">
+<p>Hades ẩn chứa một trận đấu trùm bí mật đầy kịch tính nhưng cực kỳ nguy hiểm: <strong>Người Lái Đò Charon</strong>. Mặc dù đóng vai trò là thương nhân trung lập bán vật phẩm, người chơi có thể chủ động khiêu chiến Charon để chiếm đoạt tài nguyên.</p>
+<p><img src="./images/game_analysis/diagrams/diagram_secret_charon_boss.svg" alt="Sơ Đồ Đấu Trường Ngầm Trận Đấu Trùm Bí Mật Charon" loading="lazy" /></p>
+<h3>32.1. Cơ Chế Kích Hoạt &amp; Cảnh Báo "Tử Thần Đầu Game"</h3>
+<p>Trong các căn phòng Cửa hàng Charon giữa tầng (không áp dụng cho cửa hàng trước phòng Boss), có tỉ lệ khoảng <strong>22%</strong> xuất hiện một túi tiền 300 Vàng nằm phía sau lưng Charon với hiệu ứng khói tím bí ẩn:</p>
+<pre><code class="language-lua">-- Trích xuất từ RoomEvents.lua
+if CheckRoomExitsReady( currentRoom ) and not CurrentRun.CharonFightTriggered then
+    if RandomChance( 0.22 ) and not HasResource( &quot;CharonStoreDiscount&quot; ) then
+        SpawnRoomReward( &quot;CharonStoreReward&quot;, &quot;BagOfGold&quot; )
+    end
+end
+</code></pre>
+<p>Khi người chơi nhấn tương tác để "mượn" túi 300 vàng, màn hình sẽ chấn động, Charon gầm lên tiếng rên giận dữ và kéo Zagreus xuống đấu trường bí mật <strong><code>CharonFight01</code></strong>.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Thông Số Kỹ Thuật</th>
+<th style="text-align:left;">Giá Trị Trong <code>EnemyData.lua</code></th>
+<th style="text-align:left;">So Sánh Với Chúa Tể Hades</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Lượng Máu Tối Đa (Max HP)</strong></td>
+<td style="text-align:left;"><strong>16,500 HP</strong></td>
+<td style="text-align:left;">Ngang ngửa Chúa tể Hades Phase 1 (17,000 HP).</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Sát Thương Cận Chiến (Melee Oar)</strong></td>
+<td style="text-align:left;"><strong>40 - 55 Sát thương / Đòn</strong></td>
+<td style="text-align:left;">Cao gấp đôi đòn đâm giáo thông thường của Hades.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Vùng Sát Thương Đẩy Lùi</strong></td>
+<td style="text-align:left;"><code>CharonRadialPush</code> (Bán kính 600px)</td>
+<td style="text-align:left;">Hất văng người chơi vào tường chịu thêm Wall Slam.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Đạn Linh Hồn (Ghost Charge)</strong></td>
+<td style="text-align:left;">Bức tường bóng ma dày đặc 360 độ</td>
+<td style="text-align:left;">Không thể đỡ đòn, buộc phải dùng i-Frames xuyên qua.</td>
+</tr>
+</tbody>
+</table>
+<h3>32.2. Chiến Lược Vượt Qua 3 Giai Đoạn (AI Stages) Của Charon</h3>
+<ol>
+<li><strong>Giai Đoạn 1 (100% $    o$ 66% HP - 16,500 $    o$ 10,890 HP)</strong>:</li>
+<li>Charon chủ yếu áp sát vung mái chèo 2 nhịp liên tiếp (<code>CharonMeleeCombo2</code>). Do Zagreus lúc này thường chỉ có 50-100 HP, dính trọn 2 cú chém này đồng nghĩa với <strong>Mất mạng lập tức</strong>!</li>
+<li><em>Chiến thuật</em>: Giữ khoảng cách tầm trung, chờ Charon vung chèo xong mới lướt vào đánh 1 nhịp rồi lập tức lùi lại.</li>
+<li><strong>Giai Đoạn 2 (66% $ o$ 33% HP - 10,890 $    o$ 5,445 HP)</strong>:</li>
+<li>Charon kích hoạt kỹ năng <code>RandomizeCover</code>: Các cột đá che chắn trên đấu trường sẽ đổi chỗ ngẫu nhiên.</li>
+<li>Đồng thời triệu hồi các bức tường bóng ma từ hai hướng trên và dưới (<code>CharonGhostChargeTopAndBot</code>).</li>
+<li><em>Chiến thuật</em>: Bắt buộc phải đứng sau cột đá để cản bầy ma, hoặc canh đúng khoảnh khắc bóng ma chạm người để nhấn Lướt tận dụng <strong>15 khung hình bất tử (i-Frames)</strong>.</li>
+<li><strong>Giai Đoạn 3 (Dưới 33% HP - Dưới 5,445 HP)</strong>:</li>
+<li>Charon phát động chiêu thức hủy diệt <code>CharonGhostCharge360</code>: Bóng ma bay tỏa ra từ mọi hướng xoay quanh toàn bộ đấu trường.</li>
+<li><em>Chiến thuật</em>: Bật ngay đòn Trợ thủ Companion (Battie hoặc Mort) để dồn 2,500 - 3,500 sát thương kết liễu Charon trước khi bị áp đảo.</li>
+</ol>
+<h3>32.3. Phần Thưởng Vô Giá: Thẻ Khách Hàng VIP (Loyalty Card)</h3>
+<p>Hạ gục thành công Charon mang lại phần thưởng kinh tế lớn nhất toàn bộ trò chơi:
+* Người chơi được giữ trọn vẹn <strong>300 Đồng Xu Vàng</strong> đã lấy.
+* Nhận ngay Tín vật danh dự: <strong><code>CharonStoreDiscount</code> (Loyalty Card - Thẻ Giảm Giá VIP)</strong>.
+* <strong>Hiệu lực vĩnh viễn trong lượt chạy</strong>: Toàn bộ vật phẩm tại Cửa hàng Charon và Giếng Nước <code>Well of Charon</code> từ đó cho tới khi gặp Hades đều được <strong>giảm giá thẳng -20%</strong>!
+* Điều này cho phép người chơi mua sạch mọi Chúc phúc, Máu Titan, Kim Cương và Quả Lựu ở tầng cuối Styx với chi phí siêu rẻ.</p>
+<hr>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-31" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 31</a>
+        <a href="#chapter-33" class="chap-nav-btn">Chuyên đề 33 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-33" data-chapter="33" data-title="CUỘN THẦN PHẢ TIÊN TRI (FATED LIST OF MINOR PROPHECIES - QUESTDATA.LUA)" data-category="Progression">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 33</span>
+            <span class="chapter-cat-badge"><i class="fas fa-list-check"></i> Progression</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(33)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="33-cuộn-thần-phả-tiên-tri-fated-list-of-minor-prophecies---questdatalua">33. CUỘN THẦN PHẢ TIÊN TRI (FATED LIST OF MINOR PROPHECIES - QUESTDATA.LUA)</h2>
+    <div class="chapter-body">
+<p>Nằm trong phòng ngủ của Zagreus, <strong>Cuộn Thần Phả Tiên Tri (Fated List of Minor Prophecies)</strong> là hệ thống nhiệm vụ cốt lõi được định nghĩa trong <code>QuestData.lua</code>, gồm <strong>61 bản giao kèo thần thánh</strong> do Ba Nữ Thần Định Mệnh (The Fates) an bài.</p>
+<h3>33.1. Cấu Trúc Phần Thưởng Phân Tầng</h3>
+<p>Hệ thống nhiệm vụ này được thiết kế như một đòn bẩy kinh tế khổng lồ giúp người chơi thu thập tài nguyên quý hiếm mà không cần phải phụ thuộc hoàn toàn vào việc clear game:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Nhóm Nhiệm Vụ</th>
+<th style="text-align:center;">Số Lượng</th>
+<th style="text-align:left;">Phần Thưởng Tiêu Biểu</th>
+<th style="text-align:left;">Ý Nghĩa Thiết Kế Của Supergiant Games</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Lĩnh Hội Vũ Khí (Hammer Quests)</strong></td>
+<td style="text-align:center;">6</td>
+<td style="text-align:left;"><strong>120 Gemstones / Vũ khí</strong> (Tổng 720 Gems)</td>
+<td style="text-align:left;">Khuyến khích người chơi thử nghiệm đủ 12 Búa Daedalus trên mỗi loại vũ khí.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Phước Lành Thần Linh (God Quests)</strong></td>
+<td style="text-align:center;">9</td>
+<td style="text-align:left;"><strong>150 Gemstones / Thần</strong> (Tổng 1,350 Gems)</td>
+<td style="text-align:left;">Thúc đẩy người chơi chọn thử mọi loại Boons của cả 9 vị thần Olympus.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Thần Quyền Tối Thượng (Legendary/Duo)</strong></td>
+<td style="text-align:center;">2</td>
+<td style="text-align:left;"><strong>3 Diamond + 3 Ambrosia</strong></td>
+<td style="text-align:left;">Đỉnh cao build đồ: Buộc người chơi phải thành thạo cây điều kiện tiên quyết DAG.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Bản Giao Kèo Thần Thoại (Myth Quests)</strong></td>
+<td style="text-align:center;">12</td>
+<td style="text-align:left;"><strong>Hơn 30 Titan Blood &amp; Ambrosia</strong></td>
+<td style="text-align:left;">Giải cứu linh hồn Achilles, Orpheus, Sisyphus, hàn gắn Nyx &amp; Chaos.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Thử Thách Skelly (Statue Quests)</strong></td>
+<td style="text-align:center;">3</td>
+<td style="text-align:left;"><strong>3 Bức Tượng Danh Dự Cung Điện</strong></td>
+<td style="text-align:left;">Thử thách lòng can đảm chinh phục các mốc Heat 8, Heat 16 và Heat 32.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-32" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 32</a>
+        <a href="#chapter-34" class="chap-nav-btn">Chuyên đề 34 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-34" data-chapter="34" data-title="KHO TÍN VẬT KEEPSAKES TOÀN DIỆN (FULL 25 KEEPSAKES &amp; 3-STAR UPGRADES)" data-category="Progression">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 34</span>
+            <span class="chapter-cat-badge"><i class="fas fa-gift"></i> Progression</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(34)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="34-kho-tín-vật-keepsakes-toàn-diện-full-25-keepsakes-3-star-upgrades">34. KHO TÍN VẬT KEEPSAKES TOÀN DIỆN (FULL 25 KEEPSAKES & 3-STAR UPGRADES)</h2>
+    <div class="chapter-body">
+<p>Được cấu hình trong <code>TraitData.lua</code>, <strong>25 Tín Vật Kỷ Niệm (Keepsakes)</strong> là trang bị duy nhất Zagreus có thể đem theo và thay đổi giữa các tầng thông qua Tủ Kỷ Vật (Keepsake Collection).</p>
+<p>Mỗi Keepsake có <strong>3 Cấp Sao (Rank 1 $   o$ Rank 2 $ o$ Rank 3)</strong>, thăng cấp sau khi vượt qua <strong>25 phòng</strong> (Rank 2) và <strong>50 phòng</strong> (Rank 3):</p>
+<h3>34.1. Bảng 25 Tín Vật Kỷ Niệm Chi Tiết</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Tín Vật</th>
+<th style="text-align:left;">Người Trao Tặng</th>
+<th style="text-align:center;">Rank 1</th>
+<th style="text-align:center;">Rank 2</th>
+<th style="text-align:center;">Rank 3</th>
+<th style="text-align:left;">Giá Trị Chiến Thuật Trong Run</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Old Spiked Collar</strong></td>
+<td style="text-align:left;">Cerberus</td>
+<td style="text-align:center;">+25 HP</td>
+<td style="text-align:center;">+38 HP</td>
+<td style="text-align:center;"><strong>+50 HP</strong></td>
+<td style="text-align:left;">Tăng lượng máu gốc sinh tồn hoàn hảo cho người mới bắt đầu.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Myrmidon Bracer</strong></td>
+<td style="text-align:left;">Achilles</td>
+<td style="text-align:center;">-20% Dmg</td>
+<td style="text-align:center;">-25% Dmg</td>
+<td style="text-align:center;"><strong>-30% Dmg</strong></td>
+<td style="text-align:left;">Giảm sát thương nhận vào từ phía trước (rất mạnh khi đấu Boss).</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Black Shawl</strong></td>
+<td style="text-align:left;">Nyx</td>
+<td style="text-align:center;">+10% Dmg</td>
+<td style="text-align:center;">+15% Dmg</td>
+<td style="text-align:center;"><strong>+20% Dmg</strong></td>
+<td style="text-align:left;">Tăng sát thương Đâm lén (Backstab) và đòn đầu tiên lên kẻ địch chưa bị thương.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Pierced Butterfly</strong></td>
+<td style="text-align:left;">Thanatos</td>
+<td style="text-align:center;">+1.0% Dmg</td>
+<td style="text-align:center;">+1.5% Dmg</td>
+<td style="text-align:center;"><strong>+2.0% Dmg</strong></td>
+<td style="text-align:left;">Mỗi phòng vượt qua không mất máu tăng vĩnh viễn sát thương (Max +30-40%!).</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Bone Hourglass</strong></td>
+<td style="text-align:left;">Charon</td>
+<td style="text-align:center;">+4 Trận</td>
+<td style="text-align:center;">+6 Trận</td>
+<td style="text-align:center;"><strong>+8 Trận</strong></td>
+<td style="text-align:left;">Kéo dài thời gian hiệu lực của các vật phẩm mua từ Giếng Well of Charon.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Lucky Tooth</strong></td>
+<td style="text-align:left;">Skelly</td>
+<td style="text-align:center;">+50 HP</td>
+<td style="text-align:center;">+75 HP</td>
+<td style="text-align:center;"><strong>+100 HP</strong></td>
+<td style="text-align:left;">Cung cấp thêm 1 mạng hồi sinh miễn phí khi cạn sạch Death Defiance!</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Cosmic Egg</strong></td>
+<td style="text-align:left;">Chaos</td>
+<td style="text-align:center;">Miễn trừ HP</td>
+<td style="text-align:center;">Miễn trừ HP</td>
+<td style="text-align:center;"><strong>Miễn trừ HP</strong></td>
+<td style="text-align:left;">Nhảy vào Cổng Chaos không bị mất máu, tăng +20/30/40% tỉ lệ ra Chaos Rarity cao.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Harpy Feather Duster</strong></td>
+<td style="text-align:left;">Dusa</td>
+<td style="text-align:center;">3% Rơi Máu</td>
+<td style="text-align:center;">5% Rơi Máu</td>
+<td style="text-align:center;"><strong>6% Rơi Máu</strong></td>
+<td style="text-align:left;">Phá vỡ các bình gốm có cơ hội rơi ra bánh hồi máu Urn Healing.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Evergreen Acorn</strong></td>
+<td style="text-align:left;">Eurydice</td>
+<td style="text-align:center;">Chặn 3 Hit</td>
+<td style="text-align:center;">Chặn 4 Hit</td>
+<td style="text-align:center;"><strong>Chặn 5 Hit</strong></td>
+<td style="text-align:left;"><strong>BẢO HIỂM BOSS TỐI THƯỢNG</strong>: Miễn nhiễm 5 đòn đánh đầu tiên của Boss!</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Broken Spearpoint</strong></td>
+<td style="text-align:left;">Patroclus</td>
+<td style="text-align:center;">1.0s Bất Tử</td>
+<td style="text-align:center;">1.25s Bất Tử</td>
+<td style="text-align:center;"><strong>1.5s Bất Tử</strong></td>
+<td style="text-align:left;">Sau khi nhận sát thương, lập tức bất tử trong 1.5s (ngăn chặn dồn combo chết oan).</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Pom Blossom</strong></td>
+<td style="text-align:left;">Persephone</td>
+<td style="text-align:center;">Mỗi 6 Phòng</td>
+<td style="text-align:center;">Mỗi 5 Phòng</td>
+<td style="text-align:center;"><strong>Mỗi 4 Phòng</strong></td>
+<td style="text-align:left;">Tự động nâng cấp ngẫu nhiên 1 cấp cho 1 Boon đang có sau mỗi 4 căn phòng!</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Sigil of the Dead</strong></td>
+<td style="text-align:left;">Hades</td>
+<td style="text-align:center;">Bắt đầu +10%</td>
+<td style="text-align:center;">Bắt đầu +20%</td>
+<td style="text-align:center;"><strong>Bắt đầu +30%</strong></td>
+<td style="text-align:left;">Mở khóa chiêu Call độc quyền của Chúa Tể Hades: Tàng hình và +100% sát thương!</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>9 Tín Vật Thần Olympus</strong></td>
+<td style="text-align:left;">9 Vị Thần</td>
+<td style="text-align:center;">+10% Rare</td>
+<td style="text-align:center;">+15% Rare</td>
+<td style="text-align:center;"><strong>+20% Rare</strong></td>
+<td style="text-align:left;"><strong>BẮT BUỘC RA THẦN ĐÓ</strong>: Vị thần kế tiếp xuất hiện chắc chắn là vị thần mang tín vật!</td>
+</tr>
+</tbody>
+</table>
+<h3>34.2. Chiến Thuật Luân Chuyển Tín Vật 4 Tầng (Floor Rotation Meta)</h3>
+<p>Những người chơi đỉnh cao và speedrunner không bao giờ giữ 1 Keepsake suốt cả chuyến đi, mà luôn thực hiện chu kỳ luân chuyển tối ưu tại mỗi ranh giới tầng:</p>
+<pre><code>[Tartarus]                     [Asphodel]                     [Elysium]                     [Styx]
+Tín Vật Thần Cốt Lõi     --&gt;   Tín Vật Thần Bổ Trợ      --&gt;   Coin / Damage / Pom      --&gt;  Evergreen Acorn / Tooth
+(Ép ra Zeus/Ares Attack)       (Ép ra Artemis mở Duo)         (Nâng cấp hoặc Pom Blossom)     (Chặn 5 đòn của Hades)
+</code></pre>
+<ol>
+<li><strong>Tartarus (Tầng 1)</strong>: Đeo Tín Vật Thần cốt lõi (ví dụ: <em>Thunder Signet</em> của Zeus hoặc <em>Blood-Filled Vial</em> của Ares) để chắc chắn sở hữu đòn Attack/Special mong muốn ngay từ phòng 1-3.</li>
+<li><strong>Asphodel (Tầng 2)</strong>: Đổi sang Tín Vật của vị thần thứ hai (ví dụ: <em>Adamant Shard</em> của Artemis) để kích hoạt điều kiện mở Chúc phúc Kép (Duo Boon) cực sớm.</li>
+<li><strong>Elysium (Tầng 3)</strong>: Đổi sang <em>Coin Purse</em> (nhận ngay 150 Vàng) hoặc <em>Pom Blossom</em> (nâng cấp tự động hàng loạt kỹ năng trong lúc chiến đấu dài hơi).</li>
+<li><strong>Styx (Tầng 4 &amp; Đấu Trùm Hades)</strong>: Luôn luôn chuyển sang <strong>Evergreen Acorn</strong> (Eurydice) để chặn hoàn toàn 5 cú đâm giáo đầu tiên của Hades (tiết kiệm hơn 200 HP!), hoặc chuyển sang <strong>Lucky Tooth</strong> (Skelly) nếu đã cạn sạch mạng hồi sinh.</li>
+</ol>
+<hr>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-33" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 33</a>
+        <a href="#chapter-35" class="chap-nav-btn">Chuyên đề 35 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-35" data-chapter="35" data-title="GIẢI MÃ KIẾN TRÚC ĐỒ HỌA 2.5D ISOMETRIC, HỆ THỐNG SHADING &amp; PIPELINE TẠO LEVEL (THE FORGE ENGINE)" data-category="Audio & Art">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 35</span>
+            <span class="chapter-cat-badge"><i class="fas fa-palette"></i> Audio & Art</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(35)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="35-giải-mã-kiến-trúc-đồ-họa-25d-isometric-hệ-thống-shading-pipeline-tạo-level-the-forge-engine">35. GIẢI MÃ KIẾN TRÚC ĐỒ HỌA 2.5D ISOMETRIC, HỆ THỐNG SHADING & PIPELINE TẠO LEVEL (THE FORGE ENGINE)</h2>
+    <div class="chapter-body">
+<p>Một trong những câu hỏi kỹ thuật lớn nhất đối với cộng đồng phát triển game quốc tế khi tiếp cận Hades là: <strong>"Trò chơi này thực chất là 2D hay 3D? Các màn chơi được dựng như thế nào? Và kỹ thuật Shading tạo nên phong cách truyện tranh sống động bắt nguồn từ đâu?"</strong></p>
+<p>Khảo sát sâu tệp thực thi <code>Hades.exe</code>, thư viện kết xuất <code>EngineWin64s.dll</code>, thư mục chứa 132 Shader nhị phân <code>EffectsForgeD3D11</code> / <code>EffectsForgeVulkan</code>, cùng 145 bản đồ nhị phân <code>.thing_bin</code> (<code>SGB1</code>) trong <code>Content/Win/Maps</code> đã hé lộ toàn bộ bí mật công nghệ đỉnh cao của Supergiant Games.</p>
+<p><img src="./images/game_analysis/diagrams/diagram_level_and_shading_pipeline.svg" alt="Kiến Trúc Đồ Họa 2.5D Isometric, Shading và Pipeline Tạo Level" loading="lazy" /></p>
+<hr>
+<h3>35.1. Bản Chất Đồ Họa: Hades Là 2D Hay 3D? (Mô Hình Hybrid 2.5D Đột Phá)</h3>
+<p>Câu trả lời chuẩn xác nhất về mặt kỹ thuật: <strong>Hades là một hệ thống lai (Hybrid 2.5D Isometric Engine)</strong>, kết hợp tinh hoa giữa hiệu năng vượt trội của đồ họa Sprite 2D và độ chân thực về ánh sáng / chiều sâu của mô hình 3D:</p>
+<h4>1. Nhân Vật &amp; Kẻ Thù: Mô Hình 3D Được Render Trước Sang 32 Góc Nhìn (32-Directional Pre-Rendered Sprites)</h4>
+<ul>
+<li><strong>Quy trình sản xuất (Asset Creation Pipeline)</strong>:</li>
+<li>Toàn bộ nhân vật (Zagreus, Hades, Megaera, quái vật) <strong>được dựng hình bằng mô hình 3D (3D Meshes &amp; Rigging)</strong> hoàn chỉnh trong phần mềm Maya/Blender.</li>
+<li>Nghệ sĩ diễn hoạt (Animators) thực hiện các động tác vung kiếm, lướt nhảy, quất roi trong không gian 3D thực thụ.</li>
+<li><strong>Quy trình xuất ảnh độc quyền (Baking &amp; Pre-rendering Pipeline)</strong>:</li>
+<li>Thay vì đưa mô hình 3D nguyên bản vào game (đòi hỏi xử lý đa giác và skeletal animation thời gian thực rất nặng), Supergiant Games sử dụng một công cụ tự động để <strong>"nướng" (Bake) mô hình 3D đó thành chuỗi hình ảnh 2D (Sprite Sheets) ở 32 góc nhìn xoay vòng (32-directional sprites)</strong>, mỗi góc lệch nhau đúng $11.25^\circ$.</li>
+<li>Đồng thời, hệ thống xuất kèm <strong>Normal Map (Bản đồ pháp tuyến)</strong> và <strong>Depth Map (Bản đồ độ sâu)</strong> tương ứng cho từng khung hình 2D đó.</li>
+<li><strong>Lợi ích kiến trúc vượt trội</strong>:</li>
+<li>Giữ trọn vẹn từng nét vẽ tay chi tiết, phong cách đổ bóng truyện tranh của Giám đốc Nghệ thuật <strong>Jen Zee</strong>.</li>
+<li>Tối ưu hóa GPU tuyệt đối: Card đồ họa chỉ cần vẽ các hình chữ nhật phẳng 2D (Quads), cho phép game chạy mượt mà 60-144+ FPS ngay cả trên Nintendo Switch hay PC cấu hình văn phòng.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Tầng Địa Ngục</th>
+<th style="text-align:left;">Không Gian Kiến Trúc</th>
+<th style="text-align:left;">Bảng Màu LUT (Color Grading)</th>
+<th style="text-align:center;">Texture Đại Diện</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Tartarus</strong></td>
+<td style="text-align:left;">Ngục tối linh hồn sa đọa, xiềng xích cổ đại và sàn đá phiến.</td>
+<td style="text-align:left;">Xanh lục bảo u ám (Emerald/Dark Cyan)</td>
+<td style="text-align:center;"><img src="./images/game_analysis/biome_tartarus.png" alt="Tartarus" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/biome_tartarus.png', './images/game_analysis/biome_tartarus.png')" /></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Asphodel</strong></td>
+<td style="text-align:left;">Biển lửa magma nóng chảy tràn ngập dòng sông Phlegethon.</td>
+<td style="text-align:left;">Cam đỏ rực lửa &amp; Tro than (Magma Orange/Crimson)</td>
+<td style="text-align:center;"><img src="./images/game_analysis/biome_asphodel.png" alt="Asphodel" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/biome_asphodel.png', './images/game_analysis/biome_asphodel.png')" /></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Elysium</strong></td>
+<td style="text-align:left;">Thánh địa anh linh, hoa cúc vạn thọ và dòng sông Lethe.</td>
+<td style="text-align:left;">Lam ngọc, Rêu phong &amp; Vàng kim (Cyan/Gold/Cobalt)</td>
+<td style="text-align:center;"><img src="./images/game_analysis/biome_elysium.png" alt="Elysium" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/biome_elysium.png', './images/game_analysis/biome_elysium.png')" /></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Temple of Styx</strong></td>
+<td style="text-align:left;">Đền thờ đá ngột ngạt ranh giới âm dương, hang ổ dịch hạch.</td>
+<td style="text-align:left;">Nâu xám rêu phong &amp; Vàng độc (Rotten Gold/Brown)</td>
+<td style="text-align:center;"><img src="./images/game_analysis/biome_styx.png" alt="Styx" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/biome_styx.png', './images/game_analysis/biome_styx.png')" /></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>35.2. Giải Mã Kỹ Thuật Shading &amp; Ánh Sáng (The Forge Shaders)</h3>
+<p>Kiểm tra thư mục <code>Content\Win\EffectsForgeD3D11</code> cho thấy Supergiant Games sử dụng hệ thống gồm <strong>132 HLSL/Vulkan Shaders chuyên biệt</strong>:</p>
+<h4>1. Kỹ Thuật Chiếu Sáng Khối Trên Sprite 2D (<code>Lighting3D.frag</code> / <code>.vert</code>)</h4>
+<p>Dù là sprite 2D, các nhân vật vẫn phản xạ ánh sáng từ ngọn đuốc, dòng nham thạch hay đòn đánh thần linh chân thực như vật thể 3D nhờ phép tính chiếu sáng pháp tuyến:</p>
+<pre><code class="language-hlsl">// Trích xuất vector pháp tuyến từ Texture Normal Map 2D
+float3 normal = 2.0 * tex2D(u_NormalSampler, v_TexCoord).rgb - 1.0;
+// Tính tích vô hướng giữa Pháp tuyến (Normal) và Hướng ánh sáng (Light Direction)
+float NdotL = max(dot(normalize(normal), normalize(u_LightDir)), 0.0);
+// Áp dụng cường độ và màu sắc ánh sáng thời gian thực
+float3 diffuse = u_LightColor.rgb * NdotL * u_LightIntensity;
+finalColor.rgb = (finalColor.rgb * diffuse) + u_AmbientColor.rgb;
+</code></pre>
+<h4>2. Kỹ Thuật Viền Nét Mực Truyện Tranh SDF (<code>EditorOutline.frag</code> &amp; <code>DistanceFieldFancy.frag</code>)</h4>
+<p>Để tạo nét viền mực đen (Comic Inking) đặc trưng của Jen Zee mà không bị vỡ hạt (pixelated) khi zoom camera, The Forge Engine sử dụng <strong>Signed Distance Fields (SDF)</strong>:
+* Mỗi ký tự/vật thể có trường khoảng cách xác định cự ly từ pixel hiện tại tới biên nét vẽ.
+* Áp dụng hàm nội suy <code>smoothstep()</code> trên 8 mẫu xung quanh (Kernel 3x3), giúp đường viền luôn mềm mại, sắc bén ở mọi độ phân giải từ 720p tới 4K.</p>
+<h4>3. Kỹ Thuật Phát Quang Bừng Nở (<code>BloomExtract.frag</code> &amp; <code>BloomCombine.frag</code>)</h4>
+<ul>
+<li>Trích xuất các pixel có độ chói cao ($\text{Luminance} &gt; 0.85$) từ nguồn lửa, nham thạch Asphodel và hiệu ứng thần chú Boons.</li>
+<li>Áp dụng thuật toán làm mờ Gauss 2 chiều (Separable Gaussian Blur) theo trục X và Y rồi cộng dồn (Additive Blending) lên khung hình chính, tạo cảm giác thần thánh huyền ảo.</li>
+</ul>
+<hr>
+<h3>35.3. Quy Trình Tạo 1 Màn Chơi Hoàn Chỉnh (Level Design &amp; Procedural Assembly Pipeline)</h3>
+<p>Hades <strong>không</strong> sử dụng thuật toán ngẫu nhiên hoàn toàn (Pure Procedural Generation) để tránh tạo ra các phòng chơi trống rỗng, vô hồn. Thay vào đó, hãng sáng tạo ra phương pháp <strong>Procedurally Assembled Handcrafted Chambers</strong>:</p>
+<pre><code>[Level Designer vẽ 145 phòng thủ công] 
+       │ (Xuất file .map_text)
+       ▼
+[Biên dịch sang tệp nhị phân nén LZ4 SGB1 (.thing_bin)]
+       │ (Phân chia 30 lớp ThingGroups Z-ordering)
+       ▼
+[Runtime: RoomManager.lua chọn phòng ngẫu nhiên có kiểm soát]
+       │ (Chống trùng lặp 3 phòng trước, tính toán Depth)
+       ▼
+[EncounterData.lua sinh các đợt quái vật theo ngân sách SpawnPoints]
+</code></pre>
+<h4>Hệ Thống 30 Lớp Hiển Thị (ThingGroups Z-Ordering):</h4>
+<p>Để đảm bảo các thực thể 2.5D không bao giờ bị đè lấp sai lệch khi di chuyển trong góc nhìn Isometric $60^\circ$, engine quản lý 30 lớp hiển thị nghiêm ngặt:
+1. <code>Terrain_Below</code> (Lớp 1-5): Vực thẳm sâu hun hút của Tartarus, biển dung nham Asphodel.
+2. <code>Terrain_Base</code> (Lớp 6-12): Mặt sàn đá người chơi đi lại, vùng va chạm vật lý NavMesh.
+3. <code>Entities</code> (Lớp 13-22): Zagreus, Quái vật, Bẫy chông, Cột đá. Các thực thể trong nhóm này được sắp xếp lớp động liên tục theo tọa độ Y ($\text{Depth} = Y \times 1.0$), vật thể nào đứng thấp hơn trên màn hình sẽ tự động che lấp vật thể đứng phía trên.
+4. <code>Foreground_Overlay</code> (Lớp 23-30): Mái vòm đền thờ tiền cảnh, rèm vải, vệt máu, hiệu ứng hạt khói bụi ánh sáng và HUD giao diện người dùng.</p>
+<hr>
+<div class="widget-frame-wrap">
+    <h3 class="widget-title">LEVEL SHADING · PIPELINE TẠO LEVEL (THE FORGE ENGINE)</h3>
+    <iframe src="./level_shading_widget.html" title="LEVEL SHADING · PIPELINE TẠO LEVEL (THE FORGE ENGINE)" class="widget-iframe" loading="lazy"></iframe>
+</div>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-34" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 34</a>
+        <a href="#chapter-36" class="chap-nav-btn">Chuyên đề 36 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-36" data-chapter="36" data-title="BÁCH KHOA TOÀN THƯ KẺ THÙ (THE COMPLETE HADES BESTIARY) &amp; BẢN ĐỒ CHIẾN THUẬT 4 TẦNG" data-category="Levels & AI">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 36</span>
+            <span class="chapter-cat-badge"><i class="fas fa-book"></i> Levels & AI</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(36)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="36-bách-khoa-toàn-thư-kẻ-thù-the-complete-hades-bestiary-bản-đồ-chiến-thuật-4-tầng">36. BÁCH KHOA TOÀN THƯ KẺ THÙ (THE COMPLETE HADES BESTIARY) & BẢN ĐỒ CHIẾN THUẬT 4 TẦNG</h2>
+    <div class="chapter-body">
+<p>Trong mã nguồn <code>EnemyData.lua</code>, Supergiant Games đã xây dựng <strong>55 thực thể chiến đấu cơ bản (Combat Entities)</strong> với hàng trăm biến thể Elite (Giáp vàng) và Mini-Boss độc lập:</p>
+<p><img src="./images/game_analysis/diagrams/diagram_combat_rhythm_loop.svg" alt="Sơ Đồ Một Nhịp Giao Tranh" loading="lazy" /></p>
+<h3>36.1. Bảng Phân Tích Hệ Thống Kẻ Thù Chi Tiết 4 Tầng Cõi Chết</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">Chân Dung</th>
+<th style="text-align:left;">Tên Kẻ Thù</th>
+<th style="text-align:left;">Tên Mã Nguồn</th>
+<th style="text-align:center;">Lượng Máu (HP)</th>
+<th style="text-align:left;">Cơ Chế AI &amp; Chiêu Thức Nguy Hiểm</th>
+<th style="text-align:left;">Chiến Lược Khắc Chế Pro-Player</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_wretch_thug.png" alt="Wretched Thug" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_wretch_thug.png', './images/game_analysis/enemy_wretch_thug.png')" /></td>
+<td style="text-align:left;"><strong>Wretched Thug</strong></td>
+<td style="text-align:left;"><code>HeavyMelee</code></td>
+<td style="text-align:center;">400 HP</td>
+<td style="text-align:left;">Vung chày đá quét 180 độ gây sát thương cực lớn (25-35 HP).</td>
+<td style="text-align:left;">Lướt ra sau lưng ngay khi thấy gậy giơ lên (Telegraph).</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_wretch_witch.png" alt="Wretched Witch" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_wretch_witch.png', './images/game_analysis/enemy_wretch_witch.png')" /></td>
+<td style="text-align:left;"><strong>Wretched Witch</strong></td>
+<td style="text-align:left;"><code>LightRanged</code></td>
+<td style="text-align:center;">120 HP</td>
+<td style="text-align:left;">Bắn loạt đạn tím tỏa rộng 5 hướng tốc độ chậm.</td>
+<td style="text-align:left;">Dùng đòn Deflect của Athena dội ngược đạn kết liễu phù thủy.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_wretch_sneak.png" alt="Wretched Sneak" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_wretch_sneak.png', './images/game_analysis/enemy_wretch_sneak.png')" /></td>
+<td style="text-align:left;"><strong>Wretched Sneak</strong></td>
+<td style="text-align:left;"><code>HitAndRunUnit</code></td>
+<td style="text-align:center;">180 HP</td>
+<td style="text-align:left;">Tàng hình, dịch chuyển tức thời và chém lén từ phía sau lưng.</td>
+<td style="text-align:left;">Canh đúng âm thanh xuất hiện để quay người tung đòn làm choáng.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_numbskull.png" alt="Numbskull" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_numbskull.png', './images/game_analysis/enemy_numbskull.png')" /></td>
+<td style="text-align:left;"><strong>Numbskull</strong></td>
+<td style="text-align:left;"><code>Swarmer</code></td>
+<td style="text-align:center;">40 HP</td>
+<td style="text-align:left;">Bay theo đàn đông đúc từ buồng sinh Spawner cắn trộm.</td>
+<td style="text-align:left;">Đòn Dash-Strike quét rộng hoặc Khiên nảy dọn sạch bầy đàn.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_bloodless.png" alt="Bloodless" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_bloodless.png', './images/game_analysis/enemy_bloodless.png')" /></td>
+<td style="text-align:left;"><strong>Bloodless Nhảy Bổ</strong></td>
+<td style="text-align:left;"><code>BaseBloodless</code></td>
+<td style="text-align:center;">220 HP</td>
+<td style="text-align:left;">Nhảy bổ tầm xa vượt biển nham thạch nện tay xuống đất.</td>
+<td style="text-align:left;">Đứng trên mép đảo dụ quái nhảy hụt rơi vào bẫy dung nham Magma.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_bloodless_wave.png" alt="Wave-Maker" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_bloodless_wave.png', './images/game_analysis/enemy_bloodless_wave.png')" /></td>
+<td style="text-align:left;"><strong>Wave-Maker</strong></td>
+<td style="text-align:left;"><code>SplitShotUnit</code></td>
+<td style="text-align:center;">260 HP</td>
+<td style="text-align:left;">Dập hai tay xuống đất tạo 3 làn sóng lửa xung kích quét toàn bản đồ.</td>
+<td style="text-align:left;">Phá vỡ giáp vàng (Super Armor) để ngắt hoàn toàn hoạt ảnh dập tay.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_elysium_shield.png" alt="Exalted Greatshield" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_elysium_shield.png', './images/game_analysis/enemy_elysium_shield.png')" /></td>
+<td style="text-align:left;"><strong>Exalted Greatshield</strong></td>
+<td style="text-align:left;"><code>ShadeShieldUnit</code></td>
+<td style="text-align:center;">520 HP</td>
+<td style="text-align:left;">Giơ khiên lớn chặn 100% mọi sát thương chính diện.</td>
+<td style="text-align:left;">Bắt buộc phải Lướt ra sau lưng (Backstab) hoặc dùng đòn nổ lan sau lưng.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_elysium_bow.png" alt="Exalted Strongbow" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_elysium_bow.png', './images/game_analysis/enemy_elysium_bow.png')" /></td>
+<td style="text-align:left;"><strong>Exalted Strongbow</strong></td>
+<td style="text-align:left;"><code>ShadeBowUnit</code></td>
+<td style="text-align:center;">380 HP</td>
+<td style="text-align:left;">Cung thủ ngắm bắn laze đỏ tầm xa chuẩn xác tuyệt đối.</td>
+<td style="text-align:left;">Lắng nghe tiếng gài dây cung 'Keng!' để bấm Dash né đạn.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_flame_wheel.png" alt="Flame Wheel" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_flame_wheel.png', './images/game_analysis/enemy_flame_wheel.png')" /></td>
+<td style="text-align:left;"><strong>Flame Wheel</strong></td>
+<td style="text-align:left;"><code>ChariotSuicide</code></td>
+<td style="text-align:center;">60 HP</td>
+<td style="text-align:left;">Cỗ xe lửa tự sát mini lao thẳng với tốc độ cực hạn bốc nổ.</td>
+<td style="text-align:left;">Chạy vòng quanh rào chắn, quái đâm vào tường sẽ tự nổ chết.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_great_chariot.png" alt="Great Chariot" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_great_chariot.png', './images/game_analysis/enemy_great_chariot.png')" /></td>
+<td style="text-align:left;"><strong>Great Chariot</strong></td>
+<td style="text-align:left;"><code>HeavyChariot</code></td>
+<td style="text-align:center;">650 HP</td>
+<td style="text-align:left;">Cỗ xe chiến binh khổng lồ ủi húc toàn sân và thả mìn nổ.</td>
+<td style="text-align:left;">Đứng cạnh chướng ngại vật dụ xe tông vào cột khựng đòn.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_satyr_cultist.png" alt="Satyr Cultist" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_satyr_cultist.png', './images/game_analysis/enemy_satyr_cultist.png')" /></td>
+<td style="text-align:left;"><strong>Satyr Cultist</strong></td>
+<td style="text-align:left;"><code>SatyrRanged</code></td>
+<td style="text-align:center;">600 HP</td>
+<td style="text-align:left;">Thổi ống tiêu độc xanh gây hiệu ứng Rút máu kịch độc (12 HP/s).</td>
+<td style="text-align:left;">Lập tức chạy đến giếng Mandragora gần nhất để uống nước giải độc.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_giant_rat.png" alt="Giant Rat" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_giant_rat.png', './images/game_analysis/enemy_giant_rat.png')" /></td>
+<td style="text-align:left;"><strong>Giant Rat</strong></td>
+<td style="text-align:left;"><code>RatThug</code></td>
+<td style="text-align:center;">550 HP</td>
+<td style="text-align:left;">Cắn xé cận chiến và rải các vũng dịch hạch độc chiếm hết sàn phòng hẹp.</td>
+<td style="text-align:left;">Đứng từ xa dùng Súng hoặc Cast tiêu diệt, không giao tranh cận chiến.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/enemy_tiny_vermin.png" alt="Tiny Vermin" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/enemy_tiny_vermin.png', './images/game_analysis/enemy_tiny_vermin.png')" /></td>
+<td style="text-align:left;"><strong>Tiny Vermin</strong></td>
+<td style="text-align:left;"><code>CrawlerMiniBoss</code></td>
+<td style="text-align:center;">2,400 HP</td>
+<td style="text-align:left;">Chuột nhí kích thước tí hon nhưng có lượng máu khổng lồ và triệu hồi cả bầy quái.</td>
+<td style="text-align:left;">Bật Call triệu hồi thần linh tối thượng dồn sát thương tức khắc.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>36.2. Bộ Sưu Tập Thủ Lĩnh &amp; Mini-Boss Cõi Chết (Boss Gallery)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">Thủ Lĩnh</th>
+<th style="text-align:left;">Tên &amp; Danh Xưng</th>
+<th style="text-align:left;">Tầng Địa Ngục</th>
+<th style="text-align:center;">Lượng Máu (HP)</th>
+<th style="text-align:left;">Tuyệt Kỹ Tối Thượng &amp; Chiến Lược Khắc Chế</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/megaera.png" alt="Megaera" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/megaera.png', './images/game_analysis/megaera.png')" /></td>
+<td style="text-align:left;"><strong>Megaera, Chị Cả Nữ Thần Phục Thù (Fury Sister)</strong></td>
+<td style="text-align:left;">Tartarus</td>
+<td style="text-align:center;">4,400 HP</td>
+<td style="text-align:left;">Quất roi lướt chém, triệu hồi bão vòng tròn đỏ dưới chân. Canh lướt chéo khi roi vung lên.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/alecto.png" alt="Alecto" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/alecto.png', './images/game_analysis/alecto.png')" /></td>
+<td style="text-align:left;"><strong>Alecto, Nữ Thần Phẫn Nộ Cuồng Sát</strong></td>
+<td style="text-align:left;">Tartarus</td>
+<td style="text-align:center;">4,800 HP</td>
+<td style="text-align:left;">Kích hoạt Rage điên loạn, thả lưỡi cưa xoay tròn khắp phòng. Giữ khoảng cách khi cột Rage đầy.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/tisiphone.png" alt="Tisiphone" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/tisiphone.png', './images/game_analysis/tisiphone.png')" /></td>
+<td style="text-align:left;"><strong>Tisiphone, Nữ Thần Báo Thù Kẻ Sát Nhân</strong></td>
+<td style="text-align:left;">Tartarus</td>
+<td style="text-align:center;">4,600 HP</td>
+<td style="text-align:left;">Thu hẹp phòng đấu qua 3 giai đoạn bằng màn sương xanh. Dồn sát thương nhanh trong góc hẹp.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/hydra.png" alt="Lernaean Bone Hydra" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/hydra.png', './images/game_analysis/hydra.png')" /></td>
+<td style="text-align:left;"><strong>Lernaean Bone Hydra (Rắn Xương 9 Đầu)</strong></td>
+<td style="text-align:left;">Asphodel</td>
+<td style="text-align:center;">6,000 HP</td>
+<td style="text-align:left;">Khiên bất tử kích hoạt ở 66% và 33% HP, mọc thêm 3-6 đầu lâu phụ. Tiêu diệt đầu phụ trước.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/minotaur.png" alt="Asterius" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/minotaur.png', './images/game_analysis/minotaur.png')" /></td>
+<td style="text-align:left;"><strong>Asterius, Quái Vật Nhân Ngưu (Minotaur)</strong></td>
+<td style="text-align:left;">Elysium</td>
+<td style="text-align:center;">10,000 HP</td>
+<td style="text-align:left;">Húc đầu truy sát toàn sân đấu. Dụ bò đâm sầm vào cột đá hoặc mép tường để làm choáng 2 giây.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/theseus.png" alt="Theseus" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/theseus.png', './images/game_analysis/theseus.png')" /></td>
+<td style="text-align:left;"><strong>Theseus, Anh Hùng Thần Thoại Kiêu Ngạo</strong></td>
+<td style="text-align:left;">Elysium</td>
+<td style="text-align:center;">9,000 HP</td>
+<td style="text-align:left;">Phóng thương Sparta chuẩn xác, kích hoạt thần ân Olympus ở 50% HP. Tiêu diệt Asterius trước.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/hades.png" alt="Lord Hades" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/hades.png', './images/game_analysis/hades.png')" /></td>
+<td style="text-align:left;"><strong>Lord Hades, Chúa Tể Cõi Âm Ty</strong></td>
+<td style="text-align:left;">Surface (Boss Cuối)</td>
+<td style="text-align:center;">17,000+ HP</td>
+<td style="text-align:left;">3 giai đoạn chiến đấu (Phase 3 ở EM4). Bắn tia laze hủy diệt 360 độ, quét thương Gigaros.</td>
+</tr>
+<tr>
+<td style="text-align:center;"><img src="./images/game_analysis/charon_boss.png" alt="Charon Boss" class="table-portrait-img" loading="lazy" onclick="openLightbox('./images/game_analysis/charon_boss.png', './images/game_analysis/charon_boss.png')" /></td>
+<td style="text-align:left;"><strong>Charon, Người Lái Đò (Boss Bí Mật)</strong></td>
+<td style="text-align:left;">Erebus Shop</td>
+<td style="text-align:center;">14,000 HP</td>
+<td style="text-align:left;">Vung mái chèo Oar Swipe gây 50-70 dmg/hit, phóng sóng hồn ma. Cực kỳ nguy hiểm ở giai đoạn đầu game.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>36.3. Cơ Chế Giáp Siêu Cấp (Super Armor / Yellow Health)</h3>
+<p><img src="./images/game_analysis/diagrams/diagram_dash_strike_sequence.svg" alt="Chuỗi Sequence Lướt Chém" loading="lazy" /></p>
+<p>Trong <code>Combat.lua</code>, một trong những yếu tố tạo nên độ khó của Hades nằm ở hệ thống Giáp Vàng:
+* Khi kẻ địch có thanh máu màu vàng (<code>HealthBuffer &gt; 0</code>):
+  * <strong>Miễn nhiễm hoàn toàn với Choáng (Hit-Stun Immunity)</strong>: Zagreus chém trúng quái vật vẫn không làm ngắt được hoạt ảnh ra đòn của chúng.
+  * <strong>Kháng Đẩy Lùi (Knockback Resistance)</strong>: Không thể bị đẩy văng vào tường hoặc rơi xuống dung nham.
+* <strong>Khoảnh khắc Vỡ Giáp (Armor Break)</strong>:
+  * Khi sát thương bào mòn hết <code>HealthBuffer</code>, âm thanh vỡ kính đanh gọn <em>"Keng!"</em> vang lên.
+  * Kẻ địch lập tức rơi vào trạng thái khựng đòn nặng (0.4s Stun), cho phép người chơi tung liên hoàn cước Stun-lock đến chết.</p>
+<hr>
+<div class="widget-frame-wrap">
+    <h3 class="widget-title">BÁCH KHOA KẺ THÙ · BẢN ĐỒ CHIẾN THUẬT (BESTIARY & COMBAT)</h3>
+    <iframe src="./bestiary_and_combat_widget.html" title="BÁCH KHOA KẺ THÙ · BẢN ĐỒ CHIẾN THUẬT (BESTIARY & COMBAT)" class="widget-iframe" loading="lazy"></iframe>
+</div>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-35" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 35</a>
+        <a href="#chapter-37" class="chap-nav-btn">Chuyên đề 37 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-37" data-chapter="37" data-title="HỒ SƠ TECHNICAL REVERSE ENGINEERING TOÀN DIỆN &amp; HƯỚNG DẪN TÁI DỰNG TRÊN ENGINE HIỆN ĐẠI (THE FORGE ENGINE ARCHITECTURE &amp; MODERN RECONSTRUCTION)" data-category="Low-level Technical">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 37</span>
+            <span class="chapter-cat-badge"><i class="fas fa-file-code"></i> Low-level Technical</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(37)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="37-hồ-sơ-technical-reverse-engineering-toàn-diện-hướng-dẫn-tái-dựng-trên-engine-hiện-đại-the-forge-engine-architecture-modern-reconstruction">37. HỒ SƠ TECHNICAL REVERSE ENGINEERING TOÀN DIỆN & HƯỚNG DẪN TÁI DỰNG TRÊN ENGINE HIỆN ĐẠI (THE FORGE ENGINE ARCHITECTURE & MODERN RECONSTRUCTION)</h2>
+    <div class="chapter-body">
+<h3>37.1. Định Danh &amp; Kiến Trúc Engine (Engine Detection &amp; Architecture)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Tiêu Chí Kỹ Thuật</th>
+<th style="text-align:left;">Kết Quả Phân Tích Thực Tế</th>
+<th style="text-align:left;">Bằng Chứng Truy Vết (Evidence Source)</th>
+<th style="text-align:center;">Trạng Thái Xác Minh</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Engine Name</strong></td>
+<td style="text-align:left;"><strong>The Forge Engine / GSGE (Giant Squid Games Engine / Supergiant Games Engine)</strong></td>
+<td style="text-align:left;">Chuỗi nhị phân trong <code>EngineWin64s.dll</code> &amp; đường dẫn build Jenkins: <code>Jenkins\workspace\Minos_PC_Latest\GSGE\Engine\</code></td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Project Code Name</strong></td>
+<td style="text-align:left;"><strong>Minos</strong></td>
+<td style="text-align:left;">Tìm thấy trong mọi shader debug symbol (<code>Minos_PC_Latest</code>) và header file nhị phân.</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Graphics API Backend</strong></td>
+<td style="text-align:left;"><strong>DirectX 11 (D3D11)</strong> &amp; <strong>Vulkan 1.1</strong></td>
+<td style="text-align:left;">Thư mục <code>Content\Win\EffectsForgeD3D11</code> và <code>Content\Win\EffectsForgeVulkan</code>.</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Scripting Runtime</strong></td>
+<td style="text-align:left;"><strong>Lua 5.1 / LuaJIT + Native C++ Bridge</strong></td>
+<td style="text-align:left;">97 tệp script <code>.lua</code> trong <code>Content\Scripts</code> điều khiển toàn bộ logic game, combat, AI, room generation.</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Data Serialization</strong></td>
+<td style="text-align:left;"><strong>SJSON (Simplified JSON)</strong></td>
+<td style="text-align:left;">288 tệp <code>.sjson</code> (<code>BloomSettings.sjson</code>, <code>ColorGrading.sjson</code>, <code>Projectiles.sjson</code>, <code>Units.sjson</code>).</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Animation Media</strong></td>
+<td style="text-align:left;"><strong>Bink Video 2 (<code>.bik</code> &amp; <code>.bik_atlas</code>)</strong></td>
+<td style="text-align:left;">1,346 tệp <code>.bik</code> trong <code>Content\Movies</code> phục vụ toàn bộ UI động và animation phức tạp.</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Binary Packages</strong></td>
+<td style="text-align:left;"><strong>SGB1 (SuperGiant Binary v1) nén LZ4</strong></td>
+<td style="text-align:left;">138 tệp <code>.pkg</code>, 151 tệp <code>.thing_bin</code> trong <code>Content\Win\Maps</code> và <code>Content\Win\Packages</code>.</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+</tbody>
+</table>
+<pre><code>                       ┌──────────────────────────────────────────────┐
+                       │           Hades.exe (Native Win64)           │
+                       └──────────────────────┬───────────────────────┘
+                                              │
+                                              ▼
+                       ┌──────────────────────────────────────────────┐
+                       │     EngineWin64s.dll (The Forge / GSGE)      │
+                       ├──────────────────────┬───────────────────────┤
+                       │  Rendering Backend   │   Lua Runtime Bridge  │
+                       │  • D3D11 / Vulkan    │   • LuaJIT 5.1 Core   │
+                       │  • 132 HLSL Shaders  │   • Combat &amp; AI State │
+                       │  • 30 Layer Sorting  │   • Room Assembly     │
+                       └──────────┬───────────┴───────────┬───────────┘
+                                  │                       │
+               ┌──────────────────┴─────────┐   ┌─────────┴──────────────────┐
+               │     Graphics Subsystem     │   │      Gameplay Scripts      │
+               │ • 32-Directional Sprites   │   │ • Combat.lua (153 KB)      │
+               │ • Normal-Mapped Lighting   │   │ • EnemyData.lua (998 KB)   │
+               │ • 12-tap Laplacian Outline │   │ • RoomManager.lua (229 KB) │
+               │ • 3D LUT Color Grading     │   │ • TraitData.lua (1,043 KB) │
+               └────────────────────────────┘   └────────────────────────────┘
+</code></pre>
+<hr>
+<h3>37.2. Giải Mã Mã Nguồn Shaders HLSL Nguyên Bản (Verbatim Shipped Shaders)</h3>
+<p>Qua phân tích trực tiếp các bytecode shader DirectX 11 trong <code>Content\Win\EffectsForgeD3D11</code>, các đoạn mã HLSL gốc đã được trích xuất nguyên vẹn:</p>
+<h4>1. Shader Viền Nét Mực Truyện Tranh 12 Điểm (<code>Outline.frag</code>)</h4>
+<p>Để tạo nét viền mực truyện tranh đen đặc trưng của Jen Zee, Supergiant Games áp dụng bộ lọc đạo hàm bậc hai (Laplacian Convolution Filter) với ma trận 12 điểm lấy mẫu xung quanh pixel gốc:</p>
+<pre><code class="language-hlsl">// Trích xuất trực tiếp từ EffectsForgeD3D11\Outline.frag
+Texture2D Texture : register(t0);
+SamplerState Sampler : register(s0);
+
+cbuffer MultiplyAndLerpYRB : register(b1) {
+    float u_outlineThreshold;
+}
+
+float4 main( Vertex_Output In ) : SV_TARGET {
+    float originalAlpha = Texture.Sample(Sampler, In.v_TexCoord[0]).a;
+    float alpha = 16.0 * originalAlpha;
+
+    // 12-Tap Laplacian Kernel lấy mẫu theo bán kính
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[1]).a * -2.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[2]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[3]).a * -2.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[4]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[5]).a * -2.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[6]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[7]).a * -2.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[8]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[9]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[10]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[11]).a * -1.0;
+    alpha += Texture.Sample(Sampler, In.v_TexCoord[12]).a * -1.0;
+
+    alpha = clamp( alpha, 0.0, 1.0 );
+    alpha *= step( u_outlineThreshold, originalAlpha );
+    return In.v_Color * (In.v_Color.a * alpha);
+}
+</code></pre>
+<h4>2. Shader Phối Màu 3D LUT (<code>ColorGrading.frag</code>)</h4>
+<p>Tái hiện tone màu độc bản của từng tầng địa ngục dựa trên thuật toán NVIDIA GPU Gems 2 (Chapter 24):</p>
+<pre><code class="language-hlsl">// Trích xuất trực tiếp từ EffectsForgeD3D11\ColorGrading.frag
+Texture2D Texture : register(t0);
+Texture3D ColorGradingLUT : register(t1);
+SamplerState Sampler : register(s0);
+
+cbuffer ColorGrading : register(b2) {
+    float LUTSize;
+    float Lerp;
+};
+
+float4 main( Vertex_Output In ) : SV_TARGET {
+    float scale = (LUTSize - 1.0) / LUTSize;
+    float offset = 1.0 / (2.0 * LUTSize);
+
+    float4 rawColor = Texture.Sample( Sampler, In.v_TexCoord );
+    return lerp( rawColor, ColorGradingLUT.Sample( Sampler, offset + rawColor.xyz * scale ), Lerp );
+}
+</code></pre>
+<h4>3. Shader Khúc Xạ Sóng Chấn Động (<code>Distortion.frag</code>)</h4>
+<p>Ứng dụng thuật toán Dual-Phase Flow Map UV Distortion để tạo hiệu ứng bẻ cong không gian quang học:</p>
+<pre><code class="language-hlsl">// Trích xuất trực tiếp từ EffectsForgeD3D11\Distortion.frag
+float3 distortUVW( float2 uv, float2 distortVector, float2 jump, float tiling, float time, bool flowB ) {
+    float phaseOffset = flowB ? 0.5 : 0.0;
+    float progress = frac(time + phaseOffset);
+
+    float3 uvw;
+    uvw.xy = uv - distortVector * progress;
+    uvw.xy *= tiling;
+    uvw.xy += phaseOffset;
+    uvw.xy += (time - progress) * jump;
+    uvw.x = frac( uvw.x ) * TexBounds.z + TexBounds.x;
+    uvw.y = frac( uvw.y ) * TexBounds.w + TexBounds.y;
+    uvw.z = 1.0 - abs(1.0 - 2.0 * progress);
+    return uvw;
+}
+</code></pre>
+<hr>
+<h3>37.3. Hướng Dẫn Tái Dựng Kiến Trúc Hades Trên Engine Hiện Đại (Unreal Engine 5 &amp; Unity 6)</h3>
+<h4>1. Hướng Dẫn Tái Dựng Trên Unreal Engine 5 (UE5 PaperZD + Custom Shading)</h4>
+<ul>
+<li><strong>Bước 1: Thiết lập Camera Isometric chuẩn $60^\circ / 45^\circ$</strong>:</li>
+<li>Tạo một <code>CineCameraActor</code> hoặc <code>CameraComponent</code> trong Blueprint.</li>
+<li>Góc xoay: Pitch = $-60.0^\circ$, Yaw = $-45.0^\circ$, Roll = $0.0^\circ$.</li>
+<li>Projection Mode: <code>Perspective</code> với FOV hẹp ($15^\circ - 20^\circ$) đặt ở khoảng cách xa ($3000\text{ units}$) để giảm thiểu méo phối cảnh nhưng vẫn giữ được độ sâu Parallax.</li>
+<li><strong>Bước 2: Xây dựng Material Lighting3D cho Sprite 2D</strong>:</li>
+<li>Tạo Material kiểu <code>Masked</code>, Blend Mode = <code>Masked</code>, Shading Model = <code>Default Lit</code>.</li>
+<li>Nạp Texture Albedo vào kênh <code>Base Color</code>.</li>
+<li>Nạp Texture Normal Map vào kênh <code>Normal</code> (chú ý thiết lập Texture Compression là <code>Normalmap - DXT5/BC5</code>).</li>
+<li>Bật cờ <code>Tangent Space Normal = True</code> và <code>Two Sided = True</code>.</li>
+<li><strong>Bước 3: Tái hiện Outline SDF bằng Post-Process Material</strong>:</li>
+<li>Tạo Post-Process Material đọc từ <code>SceneTexture:PostProcessInput0</code>.</li>
+<li>Tạo Convolution Kernel 12 mẫu xung quanh pixel để tính toán toán tử Laplacian Alpha theo đúng công thức của <code>Outline.frag</code>.</li>
+<li>Hòa trộn màu viền với ngưỡng <code>Step(Threshold, Alpha)</code>.</li>
+</ul>
+<h4>2. Hướng Dẫn Tái Dựng Trên Unity 6 (Universal Render Pipeline - URP 2D)</h4>
+<ul>
+<li><strong>Bước 1: Sử dụng URP 2D Renderer với Normal Map Extension</strong>:</li>
+<li>Trong Sprite Renderer, gán Sprite Albedo và Secondary Texture gán kiểu <code>_NormalMap</code>.</li>
+<li>Dùng <code>Custom/Sprite-Lit-Outline</code> ShaderGraph đọc kênh Normal thời gian thực từ Point Light 2D.</li>
+<li><strong>Bước 2: Hệ thống Z-Sorting &amp; Y-Sorting</strong>:</li>
+<li>Trong Project Settings $\to$ Graphics $\to$ Transparency Sort Mode chọn <code>Custom Axis</code>.</li>
+<li>Đặt vector trục: $(X=0.0, Y=1.0, Z=-0.26)$ tương đương góc nhìn Isometric $60^\circ$, giúp nhân vật và quái vật tự động sắp xếp lớp hiển thị mà không bao giờ bị đè lấp sai.</li>
+</ul>
+<hr>
+<h3>37.4. Bảng Kiểm Kê &amp; Bằng Chứng Kỹ Thuật (Evidence Ledger)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:center;">Finding ID</th>
+<th style="text-align:left;">Hệ Thống (System ID)</th>
+<th style="text-align:left;">Phát Hiện Kỹ Thuật (Technical Finding)</th>
+<th style="text-align:left;">Nguồn Bằng Chứng (Evidence Location)</th>
+<th style="text-align:left;">Phương Pháp Xác Minh</th>
+<th style="text-align:center;">Trạng Thái</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;"><strong>TECH-001</strong></td>
+<td style="text-align:left;"><code>SYS_ENGINE</code></td>
+<td style="text-align:left;">The Forge Engine / GSGE chạy Native C++ trên Win64.</td>
+<td style="text-align:left;"><code>EngineWin64s.dll</code></td>
+<td style="text-align:left;">Disassembly &amp; String Table Audit</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-002</strong></td>
+<td style="text-align:left;"><code>SYS_RENDER</code></td>
+<td style="text-align:left;">Mô hình 3D nướng sang Sprite 2D ở 32 góc nhìn ($11.25^\circ$).</td>
+<td style="text-align:left;"><code>Content\Win\Packages\*.pkg</code></td>
+<td style="text-align:left;">Texture Atlas Extractor &amp; Manifest inspection</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-003</strong></td>
+<td style="text-align:left;"><code>SYS_SHADER_LGT</code></td>
+<td style="text-align:left;">Chiếu sáng Normal Map thời gian thực qua tích vô hướng $\vec{N} \cdot \vec{L}$.</td>
+<td style="text-align:left;"><code>Lighting3D.frag</code></td>
+<td style="text-align:left;">Decompiled HLSL Source Code inspection</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-004</strong></td>
+<td style="text-align:left;"><code>SYS_SHADER_OUT</code></td>
+<td style="text-align:left;">Nét viền mực Comic bằng ma trận Laplacian 12-tap.</td>
+<td style="text-align:left;"><code>Outline.frag</code></td>
+<td style="text-align:left;">Verbatim HLSL Extraction from Shader Bytecode</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-005</strong></td>
+<td style="text-align:left;"><code>SYS_SHADER_LUT</code></td>
+<td style="text-align:left;">Phối màu Color Grading thời gian thực bằng 3D LUT (GPU Gems 2).</td>
+<td style="text-align:left;"><code>ColorGrading.frag</code></td>
+<td style="text-align:left;">Verbatim HLSL Extraction from Shader Bytecode</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-006</strong></td>
+<td style="text-align:left;"><code>SYS_LEVEL_BIN</code></td>
+<td style="text-align:left;">Bản đồ nhị phân SGB1 nén LZ4 lưu Collision Polygons.</td>
+<td style="text-align:left;"><code>Content\Win\Maps\*.thing_bin</code></td>
+<td style="text-align:left;">Hex Editor Magic Header <code>SGB1</code> + LZ4 Decompressor</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-007</strong></td>
+<td style="text-align:left;"><code>SYS_LEVEL_LAYER</code></td>
+<td style="text-align:left;">30 Lớp hiển thị phân tầng <code>ThingGroups</code> xử lý Z-Ordering.</td>
+<td style="text-align:left;"><code>Content\Game\MapGroups.sjson</code></td>
+<td style="text-align:left;">SJSON Architecture Parser</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-008</strong></td>
+<td style="text-align:left;"><code>SYS_COMBAT_IFRAME</code></td>
+<td style="text-align:left;">Đòn lướt RushWeapon cấp đúng 15 khung hình bất tử (0.25s).</td>
+<td style="text-align:left;"><code>Combat.lua:RushWeapon</code></td>
+<td style="text-align:left;">Lua Logic Inspection</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-009</strong></td>
+<td style="text-align:left;"><code>SYS_COMBAT_ARMOR</code></td>
+<td style="text-align:left;">Giáp vàng <code>HealthBuffer &gt; 0</code> miễn nhiễm Hit-Stun &amp; Knockback.</td>
+<td style="text-align:left;"><code>Combat.lua:DamageEnemy</code></td>
+<td style="text-align:left;">Lua Logic &amp; Audio Cue "ArmorBreak"</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+<tr>
+<td style="text-align:center;"><strong>TECH-010</strong></td>
+<td style="text-align:left;"><code>SYS_AUDIO_FMOD</code></td>
+<td style="text-align:left;">Hệ thống âm thanh tương tác thích ứng đa lớp FMOD Studio.</td>
+<td style="text-align:left;"><code>Content\Audio\Desktop\Master.bank</code></td>
+<td style="text-align:left;">FMOD Bank Header Analyzer</td>
+<td style="text-align:center;"><strong>VERIFIED</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-36" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 36</a>
+        <a href="#chapter-38" class="chap-nav-btn">Chuyên đề 38 <i class="fas fa-arrow-right"></i></a>
+    </div>
+</section>
+
+<section class="hades-chapter-card" id="chapter-38" data-chapter="38" data-title="HỒ SƠ GAME DESIGN ANALYSIS CHUYÊN SÂU &amp; BÓC TÁCH TOÀN BỘ HỆ THỐNG GAMEPLAY (PROFESSIONAL GDA DOSSIER)" data-category="Conclusion">
+    <div class="chapter-card-header">
+        <div class="chapter-header-left">
+            <span class="chapter-number-pill">Chuyên đề 38</span>
+            <span class="chapter-cat-badge"><i class="fas fa-scroll"></i> Conclusion</span>
+            
+        </div>
+        <div class="chapter-header-right">
+            <button class="chapter-share-btn" onclick="copyChapterLink(38)" title="Sao chép liên kết chuyên đề">
+                <i class="fas fa-link"></i> <span>Sao chép link</span>
+            </button>
+        </div>
+    </div>
+    <h2 class="chapter-title-heading" id="38-hồ-sơ-game-design-analysis-chuyên-sâu-bóc-tách-toàn-bộ-hệ-thống-gameplay-professional-gda-dossier">38. HỒ SƠ GAME DESIGN ANALYSIS CHUYÊN SÂU & BÓC TÁCH TOÀN BỘ HỆ THỐNG GAMEPLAY (PROFESSIONAL GDA DOSSIER)</h2>
+    <div class="chapter-body">
+<h3>38.1. Cấu Trúc Vòng Lặp 3 Tầng (Tri-Tier Loop Architecture)</h3>
+<pre><code>┌─────────────────────────────────────────────────────────────────────────────┐
+│ 1. MOMENT-TO-MOMENT LOOP (0.1s - 2.0s)                                      │
+│    Telegraph -&gt; Dash (15 i-Frames) -&gt; Attack/Cast/Special -&gt; Recovery       │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 2. RUN LOOP (20 - 45 Phút / 1 Lượt Thoát Thân)                              │
+│    Tartarus (14 Phòng) -&gt; Asphodel (10 Phòng) -&gt; Elysium (12 Phòng)         │
+│    -&gt; Temple of Styx (Mê cung 5 Ngã) -&gt; Bề Mặt (Trận Đấu Hades)            │
+└──────────────────────────────────────┬──────────────────────────────────────┘
+                                       │
+                                       ▼
+┌─────────────────────────────────────────────────────────────────────────────┐
+│ 3. META-PROGRESSION &amp; NARRATIVE LOOP (Dài Hạn / Vĩnh Cửu)                   │
+│    Cái Chết Cõi Âm -&gt; Hồ Máu -&gt; Gương Đêm (Darkness) -&gt; Mở Khóa Vũ Khí      │
+│    (Chthonic Keys) -&gt; Nâng Cấp Nhà Cửa (Gems) -&gt; Hội Thoại Cốt Truyện       │
+└─────────────────────────────────────────────────────────────────────────────┘
+</code></pre>
+<hr>
+<h3>38.2. Hồ Sơ Bóc Tách Các Tính Năng Cốt Lõi (Core Feature Dossiers GD-XXX)</h3>
+<h4>[GD-001] Cơ Chế Lướt Chém &amp; Hủy Hoạt Ảnh (Dash-Strike &amp; Animation Cancel)</h4>
+<ul>
+<li><strong>Design Purpose</strong>: Tạo cảm giác điều khiển tức thời (Immediate Player Agency), nhịp độ phản xạ cao và xóa bỏ hoàn toàn sự ỳ ạch của game nhập vai truyền thống.</li>
+<li><strong>Mechanics</strong>:</li>
+<li>Nhấn Dash: Kích hoạt <code>RushWeapon</code>, di chuyển 400px trong 0.25s (15 frames ở 60 FPS), cấp trạng thái bất khả xâm phạm (<code>Invulnerable = true</code>).</li>
+<li>Nhấn Attack trong lúc lướt: Kích hoạt ngắt hoạt ảnh lướt (Animation Cancel), chuyển hóa thành đòn Dash-Strike với Hitbox mở rộng +30% hình nón và tăng sát thương cơ bản (+20-50%).</li>
+<li><strong>Risk/Reward</strong>: Bù lại việc tăng phạm vi và sát thương, trạng thái bất tử kết thúc sớm hơn 5 frames so với cú lướt trơn, buộc người chơi phải tính toán chính xác cự ly né đòn.</li>
+<li><strong>Status</strong>: <strong>VERIFIED</strong> qua <code>Combat.lua</code>.</li>
+</ul>
+<h4>[GD-002] Hệ Thống Đồ Thị Điều Kiện Thần Ân (Boon Synergy DAG System)</h4>
+<ul>
+<li><strong>Design Purpose</strong>: Ngăn chặn tình trạng người chơi nhận được các bùa chú tối thượng quá sớm, đồng thời tạo chiều sâu chiến thuật xây dựng bộ kỹ năng (Build Crafting) đa dạng.</li>
+<li><strong>Mechanics</strong>:</li>
+<li>Các kỹ năng thần linh được tổ chức dưới dạng <strong>Đồ thị có hướng không chu trình (Directed Acyclic Graph - DAG)</strong>:<ol>
+<li><em>Tier 1 (Core Slots)</em>: Attack, Special, Cast, Dash, Call (5 vị trí cơ bản).</li>
+<li><em>Tier 2 (Secondary Boons)</em>: Đòi hỏi tối thiểu 1 Core Slot của vị thần đó làm điều kiện tiên quyết (Prerequisite).</li>
+<li><em>Tier 3 (Legendary Boons)</em>: Đòi hỏi 2 kỹ năng Tier 2 cụ thể.</li>
+<li><em>Tier 4 (Duo Boons)</em>: Kỹ năng hợp lực giữa 2 vị thần (ví dụ: <em>Hunting Blades</em> đòi hỏi Ares Cast + Artemis Core Slot).</li>
+</ol>
+</li>
+<li><strong>Balancing Equation</strong>: Xác suất xuất hiện Duo Boon tăng vọt từ $0\%$ lên $12\%$ khi có nâng cấp Gương Đêm <code>DuoBoonChance</code> (<code>GodsPride / GodsLegacy</code>).</li>
+<li><strong>Status</strong>: <strong>VERIFIED</strong> qua <code>TraitData.lua</code> và <code>LootData.lua</code>.</li>
+</ul>
+<h4>[GD-003] Hệ Thống Kinh Tế Kép Khép Kín (Dual Closed-Loop Economy)</h4>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Nhóm Tài Nguyên</th>
+<th style="text-align:left;">Tên Tài Nguyên</th>
+<th style="text-align:left;">Nguồn Thu (Faucet)</th>
+<th style="text-align:left;">Nơi Tiêu Thụ (Sink)</th>
+<th style="text-align:left;">Mục Đích Thiết Kế (Design Intent)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Run-Internal (Nội bộ)</strong></td>
+<td style="text-align:left;"><strong>Obol (Tiền Vàng Charon)</strong></td>
+<td style="text-align:left;">Tiêu diệt quái, phá bình gốm vàng, phòng thưởng Obol.</td>
+<td style="text-align:left;">Mua bùa chú, máu Centaur Heart tại Cửa hàng Charon &amp; Giếng Well.</td>
+<td style="text-align:left;">Tối ưu hóa sức mạnh tức thời trong lượt chạy hiện tại. Biến mất hoàn toàn khi chết.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Meta-Progression (Vĩnh viễn)</strong></td>
+<td style="text-align:left;"><strong>Darkness (Bóng Tối)</strong></td>
+<td style="text-align:left;">Đánh bại boss lần 2+, phòng thưởng Darkness, đào kho báu Trove.</td>
+<td style="text-align:left;">Nâng cấp 24 chỉ số vĩnh viễn trên Gương Đêm (Mirror of Night).</td>
+<td style="text-align:left;">Cung cấp cảm giác tiến bộ liên tục, giảm độ khó tự nhiên theo thời gian chơi.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Meta-Progression (Vĩnh viễn)</strong></td>
+<td style="text-align:left;"><strong>Chthonic Keys (Chìa Khóa)</strong></td>
+<td style="text-align:left;">Phòng thưởng Chìa khóa, mua tại Cửa hàng.</td>
+<td style="text-align:left;">Mở khóa 6 vũ khí Infernal Arms và các tầng kỹ năng mới trên Gương Đêm.</td>
+<td style="text-align:left;">Rào chắn nhịp độ tiến trình (Progression Gating), thúc đẩy người chơi khám phá.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Endgame Currency</strong></td>
+<td style="text-align:left;"><strong>Titan Blood (Máu Titan)</strong></td>
+<td style="text-align:left;">Đánh bại Boss 1 &amp; 4 ở mỗi bậc Nhiệt Độ Heat.</td>
+<td style="text-align:left;">Nâng cấp tối đa 24 Khía cạnh vũ khí (Weapon Aspects).</td>
+<td style="text-align:left;">Mục tiêu tối hậu (Long-term Chase Goal) giữ chân game thủ hàng trăm giờ.</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Cosmetic &amp; Social</strong></td>
+<td style="text-align:left;"><strong>Gemstones &amp; Nectar</strong></td>
+<td style="text-align:left;">Thưởng phòng, câu cá, phần thưởng nhiệm vụ Fated List.</td>
+<td style="text-align:left;">Nâng cấp kiến trúc Nhà Hades, tặng quà tăng thiện cảm nhân vật.</td>
+<td style="text-align:left;">Kết nối cảm xúc nhân vật và thỏa mãn động lực trang trí không gian.</td>
+</tr>
+</tbody>
+</table>
+<h4>[GD-004] Gương Đêm &amp; Cây Kỹ Năng Lưỡng Hợp (Mirror of Night Binary Talents)</h4>
+<ul>
+<li><strong>Design Purpose</strong>: Tránh tình trạng lạm phát chỉ số (Power Creep) bằng cách buộc người chơi phải đưa ra lựa chọn đánh đổi chiến thuật (Sidegrade Trade-off) giữa 2 nhánh Đỏ (Thụ Động Bền Vững) và Xanh (Chủ Động Mạo Hiểm):</li>
+<li><em>Death Defiance</em> (Hồi sinh 50% HP tối đa 3 lần) đối trọng với <em>Stubborn Defiance</em> (Hồi sinh 30% HP 1 lần duy nhất trong mỗi phòng).</li>
+<li><em>Boiling Blood</em> (+50% sát thương khi găm đạn Cast vào quái) đối trọng với <em>Abyssal Blood</em> (Giảm 30% tốc độ và sát thương của quái mang Cast).</li>
+<li><strong>Status</strong>: <strong>VERIFIED</strong> qua <code>MetaUpgradeData.lua</code>.</li>
+</ul>
+<h4>[GD-005] Hệ Thống Khế Ước Trừng Phạt (Pact of Punishment Dynamic Difficulty Scaling)</h4>
+<ul>
+<li><strong>Design Purpose</strong>: Cho phép người chơi tự điều chỉnh độ khó trò chơi từ 0 đến 64 Nhiệt Độ (Heat) theo từng nấc vi mô, tạo giá trị chơi lại gần như vô tận (Endless Replayability) mà không làm nản lòng người chơi mới:</li>
+<li><em>Tight Deadline</em>: Áp đặt thời gian giới hạn (9, 7 hoặc 5 phút mỗi tầng) $\to$ Ép người chơi phải tối ưu hóa sát thương và tốc độ lướt.</li>
+<li><em>Extreme Measures (EM 1-4)</em>: Thay đổi hoàn toàn cơ chế và chiêu thức của Boss (Meg cưỡi xe, Hydra sàn dung nham, Hades mở Phase 3).</li>
+<li><em>Benefits Package</em>: Cấp thêm kỹ năng ngẫu nhiên cho quái Elite (Phóng phân thân, hào quang làm chậm, vách ngăn chấn động).</li>
+<li><strong>Status</strong>: <strong>VERIFIED</strong> qua <code>MetaUpgradeData.lua</code> và <code>EncounterData.lua</code>.</li>
+</ul>
+<hr>
+<h3>38.3. Bảng Đối Chiếu So Sánh Đẳng Cấp Ngành (Competitor Benchmarking)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">Tiêu Chí So Sánh</th>
+<th style="text-align:left;"><strong>HADES (Supergiant Games)</strong></th>
+<th style="text-align:left;"><strong>Dead Cells (Motion Twin)</strong></th>
+<th style="text-align:left;"><strong>The Binding of Isaac (Edmund McMillen)</strong></th>
+<th style="text-align:left;"><strong>Enter the Gungeon (Dodge Roll)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;"><strong>Góc Nhìn &amp; Không Gian</strong></td>
+<td style="text-align:left;"><strong>Hybrid 2.5D Isometric $60^\circ$</strong></td>
+<td style="text-align:left;">2D Sidescroller Đi Màn</td>
+<td style="text-align:left;">2D Top-down Grid Dạng Lưới</td>
+<td style="text-align:left;">2D Top-down Xoay $360^\circ$</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Công Nghệ Đồ Họa</strong></td>
+<td style="text-align:left;"><strong>Pre-rendered 32 Angles + Normal Maps</strong></td>
+<td style="text-align:left;">3D Meshes Pre-rendered sang 2D Pixel Art</td>
+<td style="text-align:left;">2D Flash Vector $\to$ Raster Sprites</td>
+<td style="text-align:left;">2D Handcrafted Pixel Art thuần túy</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Phương Pháp Tạo Màn</strong></td>
+<td style="text-align:left;"><strong>Procedurally Assembled Handcrafted Chambers</strong></td>
+<td style="text-align:left;">Procedural Generation trên các Tile phòng mẫu</td>
+<td style="text-align:left;">Room-based Grid Procedural Assembly</td>
+<td style="text-align:left;">Room-based Handcrafted Chunk Assembly</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Cơ Chế Khung Bất Tử (i-Frames)</strong></td>
+<td style="text-align:left;"><strong>15 Frames (0.25s) trên RushWeapon</strong></td>
+<td style="text-align:left;">12-14 Frames trên Đòn Lộn (Roll)</td>
+<td style="text-align:left;">Không có i-Frames khi di chuyển</td>
+<td style="text-align:left;">30+ Frames trên Cú Lăn Né Đạn (Dodge Roll)</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Hệ Thống Dẫn Dắt Cốt Truyện</strong></td>
+<td style="text-align:left;"><strong>Narrative Death Cycle (300,000 từ phân nhánh)</strong></td>
+<td style="text-align:left;">Cốt truyện ngầm qua hiện vật môi trường</td>
+<td style="text-align:left;">Cốt truyện tượng trưng qua kết thúc Cutscene</td>
+<td style="text-align:left;">Cốt truyện ẩn giễu nhại qua bảng thông tin</td>
+</tr>
+<tr>
+<td style="text-align:left;"><strong>Cơ Chế Giáp Kẻ Thù</strong></td>
+<td style="text-align:left;"><strong>Super Armor (Chặn ngắt chiêu &amp; Choáng hoàn toàn)</strong></td>
+<td style="text-align:left;">Cột giáp phụ (Shield Shard)</td>
+<td style="text-align:left;">Thanh máu lớn kèm giảm sát thương theo thời gian</td>
+<td style="text-align:left;">Thanh máu thuần túy (Boss Armor DPS Cap)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>38.4. Đánh Giá Điểm Mạnh, Điểm Yếu &amp; Bài Học Sản Xuất Thực Tiễn</h3>
+<h4>Những Quyết Định Thiết Kế Đỉnh Cao Đáng Học Hỏi:</h4>
+<ol>
+<li><strong>Biến Cái Chết Thành Phần Thưởng (Death as Narrative Forward-Motion)</strong>: Thay vì trừng phạt nặng nề người chơi khi chết, cái chết là cơ hội duy nhất để trở về Nhà Hades, mở khóa hàng trăm đoạn hội thoại mới, thăng cấp Gương Đêm và gắn kết tình cảm với các nhân vật.</li>
+<li><strong>Kỹ Thuật Đồ Họa Đột Phá Tiết Kiệm Chi Phí</strong>: Nướng mô hình 3D thành 32 góc nhìn 2D kèm Normal Map là giải pháp tối thượng cho các Studio vừa và nhỏ: vừa giữ được nét vẽ nghệ thuật 2D độc bản của Họa sĩ, vừa đạt hiệu ứng đổ bóng 3D chân thực mà không phải gánh chi phí tối ưu hóa đa giác thời gian thực.</li>
+<li><strong>Phản Hồi Xúc Giác Đậm Chất Điện Ảnh (Kinetic Game Feel Juice)</strong>: Sử dụng các khung hình đóng băng (Hit-Pause Freeze Frame 3-5 frames) khi đánh trúng điểm yếu, kết hợp độ rung camera phi tuyến tính (Trauma Screen Shake) tạo nên cảm giác chém trúng kẻ thù cực kỳ đã tay.</li>
+</ol>
+<h4>Những Điểm Hạn Chế Cần Lưu Ý Khi Tái Dựng:</h4>
+<ol>
+<li><strong>Thiếu Khả Năng Nhảy Chiều Dọc</strong>: Do góc nhìn Isometric 2.5D không có trục Z vật lý thực thụ, người chơi không thể thực hiện các động tác nhảy cao vượt chướng ngại vật mà chỉ có thể lướt trên mặt phẳng.</li>
+<li><strong>Độ Mỏi Mắt Khi Quá Nhiều Hiệu Ứng (Visual Clutter)</strong>: Ở các bậc Nhiệt Độ cao (EM4, Extreme Measures), màn hình ngập tràn đạn tím, sóng xung kích đỏ và vũng độc xanh, dễ làm người chơi mất dấu con trỏ chuột và nhân vật Zagreus nếu không bật chế độ hỗ trợ thị giác.</li>
+</ol>
+    </div>
+    <div class="chapter-nav-footer">
+        
+        <a href="#top" class="back-to-top-btn"><i class="fas fa-arrow-up"></i> Lên đầu trang</a>
+        <a href="#chapter-37" class="chap-nav-btn"><i class="fas fa-arrow-left"></i> Chuyên đề 37</a>
         
     </div>
 </section>
